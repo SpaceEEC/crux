@@ -35,8 +35,7 @@ defmodule Crux.MixProject do
        [path: "apps/crux_rest", from_umbrella: true, env: :dev, manager: :mix, override: true]},
       {:crux_gateway,
        [path: "apps/crux_gateway", from_umbrella: true, env: :dev, manager: :mix, override: true]},
-      # {:ex_doc, git: "https://github.com/SpaceEEC/ex_doc", only: :dev, override: true}
-      {:ex_doc, path: "../../ex_doc", only: :dev, override: true}
+      {:ex_doc, git: "https://github.com/SpaceEEC/ex_doc", only: :dev, override: true}
     ]
   end
 end
