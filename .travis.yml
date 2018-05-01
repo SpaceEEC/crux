@@ -10,5 +10,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   local-dir: doc
+  fqdn: crux.randomly.space
   on:
     branch: master
