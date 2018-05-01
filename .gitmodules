@@ -1,0 +1,18 @@
+[submodule "crux_base"]
+	path = crux_base
+	url = git@github.com:spaceeec/crux_base
+[submodule "apps/crux_base"]
+	path = apps/crux_base
+	url = git@github.com:spaceeec/crux_base
+[submodule "apps/crux_rest"]
+	path = apps/crux_rest
+	url = git@github.com:spaceeec/crux_rest
+[submodule "apps/crux_cache"]
+	path = apps/crux_cache
+	url = git@github.com:spaceeec/crux_cache
+[submodule "apps/crux_gateway"]
+	path = apps/crux_gateway
+	url = git@github.com:spaceeec/crux_gateway
+[submodule "apps/crux_structs"]
+	path = apps/crux_structs
+	url = git@github.com:spaceeec/crux_structs
