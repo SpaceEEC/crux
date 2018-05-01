@@ -1,0 +1,3219 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.18.3">
+    <title>Crux.Rest – Crux vdev</title>
+    <link rel="stylesheet" href="dist/app-480ffdc169.css" />
+    
+    <script src="dist/sidebar_items-17bb0be3e1.js"></script>
+    
+    
+    
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+
+    <div class="main">
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Theme</span>
+</button>
+<section class="sidebar">
+
+  
+  <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        Crux
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        vdev
+      </h2>
+    </div>
+    
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+      <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
+    
+
+    
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">Crux vdev</small>
+        Crux.Rest
+        
+          <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+        
+      </h1>
+
+      
+        <section id="moduledoc">
+          <p>  Collection of Rest functions.</p>
+
+        </section>
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:add_guild_member_data/0">add_guild_member_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to add a member to a guild via <a href="#add_guild_member/3"><code class="inline">add_guild_member/3</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:create_channel_invite_data/0">create_channel_invite_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to create invites via <a href="#create_channel_invite/2"><code class="inline">create_channel_invite/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:create_guild_channel_data/0">create_guild_channel_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to create a channel via <a href="#create_guild_channel/2"><code class="inline">create_guild_channel/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:create_guild_emoji_data/0">create_guild_emoji_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to create emojis via <a href="#create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:create_message_data/0">create_message_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to send messages via <a href="#create_message/2"><code class="inline">create_message/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:edit_channel_permissions_data/0">edit_channel_permissions_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to edit overwrites for a role or member with <a href="#edit_channel_permissions/3"><code class="inline">edit_channel_permissions/3</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:embed/0">embed()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to send and embed via <a href="#create_message/2"><code class="inline">create_message/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:file_list_entry/0">file_list_entry()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to attach files via <a href="#create_message/2"><code class="inline">create_message/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:get_messages_data/0">get_messages_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to get messages from the api via <a href="#get_messages/2"><code class="inline">get_messages/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:get_reactions_data/0">get_reactions_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to get more specific users who reacted to a message from the api via <a href="#get_reactions/4"><code class="inline">get_reactions/4</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:list_guild_members_options/0">list_guild_members_options()</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:message_edit_data/0">message_edit_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to edit messages via <a href="#edit_message/2"><code class="inline">edit_message/2</code></a> or <a href="#edit_message/3"><code class="inline">edit_message/3</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:modify_channel_data/0">modify_channel_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to modify a channel via <a href="#modify_channel/2"><code class="inline">modify_channel/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:modify_guild_channel_positions_data_entry/0">modify_guild_channel_positions_data_entry()</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:modify_guild_data/0">modify_guild_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>TBD, see <a href="#modify_guild/2"><code class="inline">modify_guild/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:modify_guild_emoji_data/0">modify_guild_emoji_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to modify a guild emoji via <a href="#modify_guild_emoji/3"><code class="inline">modify_guild_emoji/3</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:modify_guild_member_data/0">modify_guild_member_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to modify a member with <a href="#modify_guild_member/3"><code class="inline">modify_guild_member/3</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:snowflake/0">snowflake()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>A Discord snowflake, fits in a 64bit integer</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_guild_member/3">add_guild_member(guild, user, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Adds a user to a guild via a provided oauth2 access token with the <code class="inline">guilds.join</code> scope</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_pinned_message/1">add_pinned_message(message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Adds a message to the pinned messages of a channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_pinned_message/2">add_pinned_message(channel, message_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Adds a message to the pinned messages of a channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_channel_invite/2">create_channel_invite(channel, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Creates an invite to a channel, see <code class="inline">t:create_channel_invite_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guilad_channel/2">create_guilad_channel(guild_id, data)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild/1">create_guild(data)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_channel/2">create_guild_channel(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Creates a channel in a guild, see <code class="inline">t:create_guild_channel_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_emoji/2">create_guild_emoji(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Creates an emoji in a guild, see <code class="inline">t:create_guild_emoji_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_message/2">create_message(channel_or_message, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Sends a message to a channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_reaction/2">create_reaction(message, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Creates a reaction on a message, or increases its count by one</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_reaction/3">create_reaction(channel, message_id, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Creates a reaction on a message, or increases its count by one</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_all_reactions/2">delete_all_reactions(message, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes all reactions from a messaage</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_all_reactions/3">delete_all_reactions(channel, message_id, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes all reactions from a messaage</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_channel/2">delete_channel(channel, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes a channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_channel_permissions/3">delete_channel_permissions(channel, target, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes an overwrite from a channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild/1">delete_guild(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes a guild, can only be used if the executing user is the owner</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild_emoji/3">delete_guild_emoji(guild, emoji, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes an emoji from a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_invite/1">delete_invite(code)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes an invite</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_message/1">delete_message(message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes a message</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_message/2">delete_message(channel, message_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes a message</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_messages/2">delete_messages(channel, messages)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes 2-100 messages not older than 14 days</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_pinned_message/1">delete_pinned_message(message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes a message from the pinned messages. This does not delete the message itself</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_pinned_message/2">delete_pinned_message(channel_id, message_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes a message from the pinned messages. This does not delete the message itself</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_reaction/4">delete_reaction(message_or_channel, emoji_or_message_id, emoji_or_maybe_user \\ &quot;@me&quot;, mayber_user \\ &quot;@me&quot;)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes a user from a reaction</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edit_channel_permissions/3">edit_channel_permissions(channel, target, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Edits or creates an overwrite for a user, or member</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edit_message/2">edit_message(message, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Edits a message</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edit_message/3">edit_message(channel, message_id, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Edits a message</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gateway/0">gateway()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches the gateway url from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gateway_bot/0">gateway_bot()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches the gateway url along a recommended shards count from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_Reactions/4">get_Reactions(channel_id, message_id, emoji, args)</a>
+  </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_channel/1">get_channel(channel_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets a channel from the api.<br/>  This should <em>NOT</em> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_channel_invites/1">get_channel_invites(channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets invites for the specified channel from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild/1">get_guild(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets a guild from the api.<br/>  This should usually, duo cache, <strong>NOT</strong> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_channels/1">get_guild_channels(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets all channels from a guild via the api.<br/>  This should usually, duo caching, <strong>NOT</strong> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_emoji/2">get_guild_emoji(guild, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets an emoji from a guild<br/>  This should usually, duo cache, <strong>NOT</strong> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_member/2">get_guild_member(guild_id, user)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a member from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_invite/1">get_invite(code)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches an invite from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_message/2">get_message(channel, message_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets a message from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_messages/2">get_messages(channel, args \\ [])</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets 1-100 messages from the api, this limit is enforced on discord’s end</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_pinned_messages/1">get_pinned_messages(channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets a list of pinned messages from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_reactions/4">get_reactions(channel_or_message, emoji_or_message_id, emoji_or_maybe_data \\ [], maybe_data \\ [])</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets users who reacted to a message</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_guild_emojis/1">list_guild_emojis(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets a list of emojis in a guild.<br/>  This should usually, duo cache, <strong>NOT</strong> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_guild_members/2">list_guild_members(guild, options \\ [])</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets a list of members from the guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_channel/2">modify_channel(channel, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifies a channel, see <code class="inline">t:modify_channel_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_current_users_nick/3">modify_current_users_nick(guild, nick, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifies the nickname of the current user in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild/2">modify_guild(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Updates a guild, see <code class="inline">t:modify_guild_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_channel_positions/2">modify_guild_channel_positions(guild, channels)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifyies the position of a list of channels in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_emoji/3">modify_guild_emoji(guild, emoji, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifies a guild emoji</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_member/3">modify_guild_member(guild, member_or_user, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifies a member in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#trigger_typing/1">trigger_typing(message_or_channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br/>  Should generally be used sparingly for commands that may take a while as a form of acknowledging</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+        </section>
+      
+
+      
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Types
+          </h1>
+          <div class="types-list">
+            <div class="detail" id="t:add_guild_member_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:add_guild_member_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">add_guild_member_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1225" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>add_guild_member_data() ::
+  %{
+    :access_token => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:nick) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:roles) => [<a href="#t:snowflake/0">snowflake</a>()],
+    optional(:mute) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:deaf) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  }
+  | [
+      access_token: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      nick: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      roles: [<a href="#t:snowflake/0">snowflake</a>()],
+      mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to add a member to a guild via <a href="#add_guild_member/3"><code class="inline">add_guild_member/3</code></a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:create_channel_invite_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:create_channel_invite_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">create_channel_invite_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L729" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_channel_invite_data() ::
+  %{
+    optional(:max_age) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:max_uses) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:temporary) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:unique) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  }
+  | [
+      max_age: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      max_uses: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      temporary: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      unique: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to create invites via <a href="#create_channel_invite/2"><code class="inline">create_channel_invite/2</code></a>.</p>
+<p>  Notes:</p>
+<ul>
+<li><code class="inline">:max_age</code> 0 indicates no max age, defaults to 86_400 (1 day)
+</li>
+<li><code class="inline">:max_uses</code> 0 indicates no max uses, defaults to 0
+</li>
+<li><code class="inline">:temporary</code> if true, members which do not get a role assigned within 24 hours get automatically kicked, defaults to false
+</li>
+<li><p><code class="inline">:unique</code> if true, always creates a new invite instead of maybe returning a similar one, defaults to false </p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#create-channel-invite-json-params">Discord Docs</a>.</p>
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="t:create_guild_channel_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:create_guild_channel_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">create_guild_channel_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1100" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_channel_data() ::
+  %{
+    optional(:name) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:type) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:bitrate) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | nil,
+    optional(:user_limit) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
+    optional(:permission_overwrites) => [
+      Overwrite.t()
+      | %{
+          :id => <a href="#t:snowflake/0">snowflake</a>(),
+          :type => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+          optional(:allow) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+          optional(:deny) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()
+        }
+    ],
+    optional(:parent_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:nsfw) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  }
+  | [
+      name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      type: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
+      bitrate: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | nil,
+      user_limit: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
+      permission_overwrites: [Overwrite.t()],
+      parent_id: <a href="#t:snowflake/0">snowflake</a>(),
+      nsfw: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to create a channel via <a href="#create_guild_channel/2"><code class="inline">create_guild_channel/2</code></a>.</p>
+<p>  Notes: </p>
+<ul>
+<li><code class="inline">:name</code> has to be [2-100] chars and may only contain [a-Z_-]
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="t:create_guild_emoji_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:create_guild_emoji_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">create_guild_emoji_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L850" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_emoji_data() ::
+  %{
+    :name => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    :image => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
+    optional(:roles) => [Role.t() | <a href="#t:snowflake/0">snowflake</a>()],
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  }
+  | [
+      name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      image: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
+      roles: [Role.t() | <a href="#t:snowflake/0">snowflake</a>()],
+      reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to create emojis via <a href="#create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a>.</p>
+<p>  Notes:</p>
+<ul>
+<li><code class="inline">:name</code> has to be [1-32] chars long, valid chars are [a-Z<em>0-9] (invalid chars may get filtered out instead of erroring).<br/>  A 1 char long name gets suffixed with `</em>` to be 2 chars long.
+</li>
+<li><code class="inline">:image</code> may not be larger than 256kb
+</li>
+<li><code class="inline">:roles</code>, if present limits the emoji to only those roles
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="t:create_message_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:create_message_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">create_message_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L41" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_message_data() ::
+  %{
+    optional(:content) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:nonce) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:tts) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:embed) => <a href="#t:embed/0">embed</a>(),
+    optional(:files) => [<a href="#t:file_list_entry/0">file_list_entry</a>()]
+  }
+  | [
+      content: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      nonce: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      tts: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      embed: <a href="#t:embed/0">embed</a>(),
+      files: [<a href="#t:file_list_entry/0">file_list_entry</a>()]
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to send messages via <a href="#create_message/2"><code class="inline">create_message/2</code></a>.</p>
+<p>  The content my not exceed 2000 chars.<br/>  The nonce has to fit in a 64 bit integer.<br/>  The whole message payload may not be larger than 8mb, this should only be possible when attaching (a) large file(s).</p>
+
+  </section>
+</div>
+<div class="detail" id="t:edit_channel_permissions_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:edit_channel_permissions_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">edit_channel_permissions_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L655" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>edit_channel_permissions_data() ::
+  %{
+    optional(:allow) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:deny) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:type) => :member | :role | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  }
+  | {{:allow, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()}
+     | {:deny, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()}
+     | {:type, :member | :role | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}
+     | {:reason, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to edit overwrites for a role or member with <a href="#edit_channel_permissions/3"><code class="inline">edit_channel_permissions/3</code></a></p>
+<p>  See <a href="https://discordapp.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags">Permissions</a> for available bitflags.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:embed/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:embed/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">embed()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L62" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>embed() :: %{
+  optional(:title) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  optional(:description) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  optional(:url) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  optional(:timestamp) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  optional(:color) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+  optional(:footer) => %{
+    optional(:text) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:icon_url) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  },
+  optional(:image) => %{optional(:url) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()},
+  optional(:thumbnail) => %{optional(:url) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()},
+  optional(:author) => %{
+    optional(:name) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:url) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:icon_url) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  },
+  optional(:fields) => [
+    %{:name => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), :value => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), optional(:inline) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()}
+  ]
+}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to send and embed via <a href="#create_message/2"><code class="inline">create_message/2</code></a>.</p>
+<p>  You should probably consult the <a href="https://discordapp.com/developers/docs/resources/channel#embed-limits">Embed Limits</a> page.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:file_list_entry/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:file_list_entry/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">file_list_entry()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L32" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>file_list_entry() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | {<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to attach files via <a href="#create_message/2"><code class="inline">create_message/2</code></a>.</p>
+<p>  This can be one of:</p>
+<table>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tr>
+<td style="text-align: left"></td><td style="text-align: left">Example</td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="inline">path</code></td><td style="text-align: left"><code class="inline">/home/user/image.png</code> / <code class="inline">https://example.com/image.png</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="inline">{path, name}</code></td><td style="text-align: left"><code class="inline">{one of the above, &quot;other_name.png&quot;}</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="inline">{binary, name}</code></td><td style="text-align: left"><code class="inline">{&lt;&lt;0, 0, 0, 0&gt;&gt;, &quot;other_name.png&quot;}</code></td>
+</tr>
+</table>
+
+  </section>
+</div>
+<div class="detail" id="t:get_messages_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:get_messages_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">get_messages_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L266" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_messages_data() ::
+  %{
+    optional(:around) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:before) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:after) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:limit) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()
+  }
+  | [
+      around: <a href="#t:snowflake/0">snowflake</a>(),
+      before: <a href="#t:snowflake/0">snowflake</a>(),
+      after: <a href="#t:snowflake/0">snowflake</a>(),
+      limit: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to get messages from the api via <a href="#get_messages/2"><code class="inline">get_messages/2</code></a>.</p>
+<p>  Notes:</p>
+<ul>
+<li><code class="inline">:around</code> is inclusive
+</li>
+<li><code class="inline">:before</code> and <code class="inline">:after</code> are exclusive
+</li>
+<li><code class="inline">:limit</code> has to be [1-100], defaults to 50
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="t:get_reactions_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:get_reactions_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">get_reactions_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L348" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_reactions_data() ::
+  %{
+    optional(:before) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:after) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:limit) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()
+  }
+  | [before: <a href="#t:snowflake/0">snowflake</a>(), after: <a href="#t:snowflake/0">snowflake</a>(), limit: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to get more specific users who reacted to a message from the api via <a href="#get_reactions/4"><code class="inline">get_reactions/4</code></a></p>
+<p>  Notes:</p>
+<ul>
+<li><code class="inline">:before</code> seems currently broken on discord’s end
+</li>
+<li><code class="inline">:after</code> is exclusive
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="t:list_guild_members_options/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:list_guild_members_options/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">list_guild_members_options()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1195" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>list_guild_members_options() ::
+  %{optional(:limit) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(), optional(:after) => <a href="#t:snowflake/0">snowflake</a>()}
+  | [limit: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(), after: <a href="#t:snowflake/0">snowflake</a>()]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="t:message_edit_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:message_edit_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">message_edit_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L146" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>message_edit_data() ::
+  %{optional(:content) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), optional(:embed) => <a href="#t:embed/0">embed</a>()}
+  | [content: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), embed: <a href="#t:embed/0">embed</a>()]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to edit messages via <a href="#edit_message/2"><code class="inline">edit_message/2</code></a> or <a href="#edit_message/3"><code class="inline">edit_message/3</code></a>.</p>
+<p>  The content my not exceed 2000 chars, this limit is enfored on discord’s end.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:modify_channel_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:modify_channel_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">modify_channel_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L591" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_channel_data() ::
+  %{
+    optional(:name) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+    optional(:position) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:topic) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+    optional(:nsfw) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:bitrate) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:user_limit) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | nil,
+    optional(:permission_overwrites) => [Overwrite.t()],
+    optional(:parent_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  }
+  | [
+      name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+      position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      topic: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+      nsfw: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      bitrate: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      user_limit: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
+      overwrites: [Overwrite.t()],
+      parent_id: <a href="#t:snowflake/0">snowflake</a>(),
+      reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to modify a channel via <a href="#modify_channel/2"><code class="inline">modify_channel/2</code></a>.</p>
+<p>  Notes</p>
+<ul>
+<li><code class="inline">:name</code> has to be [2-100] chars long.
+</li>
+<li><code class="inline">:topic</code> has to be [0-1024] chars long
+</li>
+<li><code class="inline">:bitrate</code> is in bits [8_000-96_000] (128_000 for VIP servers)
+</li>
+<li><p><code class="inline">:user_limit</code> has to be [0-99], 0 refers to no limit</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#modify-channel-json-params">Discord Docs</a>.</p>
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="t:modify_guild_channel_positions_data_entry/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:modify_guild_channel_positions_data_entry/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">modify_guild_channel_positions_data_entry()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1147" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_channel_positions_data_entry() ::
+  {<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}
+  | {<a href="#t:snowflake/0">snowflake</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}
+  | %{channel: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}
+  | %{id: <a href="#t:snowflake/0">snowflake</a>(), position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="t:modify_guild_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:modify_guild_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">modify_guild_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L999" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_data() ::
+  %{
+    optional(:name) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:region) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:verification_level) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:default_message_notifications) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:explicit_content_filter) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:afk_channel_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:afk_timeout) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:icon) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
+    optional(:owner_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:system_channel_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  }
+  | [
+      name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      region: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      verification_level: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      default_message_notifications: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      explicit_content_filter: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      afk_channel_id: <a href="#t:snowflake/0">snowflake</a>(),
+      afk_timeout: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      icon: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
+      owner_id: <a href="#t:snowflake/0">snowflake</a>(),
+      system_channel_id: <a href="#t:snowflake/0">snowflake</a>(),
+      reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  TBD, see <a href="#modify_guild/2"><code class="inline">modify_guild/2</code></a></p>
+
+  </section>
+</div>
+<div class="detail" id="t:modify_guild_emoji_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:modify_guild_emoji_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">modify_guild_emoji_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L898" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_emoji_data() ::
+  %{
+    optional(:name) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:roles) => [Role.t() | <a href="#t:snowflake/0">snowflake</a>()],
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  } :: [name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), roles: [Role | <a href="#t:snowflake/0">snowflake</a>()], reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p> Used to modify a guild emoji via <a href="#modify_guild_emoji/3"><code class="inline">modify_guild_emoji/3</code></a>.</p>
+<p> See <code class="inline">t:create_guild_emoji_data</code> for name restrictions.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:modify_guild_member_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:modify_guild_member_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">modify_guild_member_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1274" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_member_data() ::
+  %{
+    optional(:nick) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:roles) => [<a href="#t:snowflake/0">snowflake</a>()],
+    optional(:mute) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:deaf) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:channel_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  }
+  | [
+      nick: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      roles: [<a href="#t:snowflake/0">snowflake</a>()],
+      mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      channel_id: <a href="#t:snowflake/0">snowflake</a>(),
+      reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to modify a member with <a href="#modify_guild_member/3"><code class="inline">modify_guild_member/3</code></a>.</p>
+<p>  Notes:</p>
+<pre><code class="elixir">* `:mute`, `:deaf`, and `:channel_id` will silently be discarded by discord if the member is not connected to a voice channel.</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="t:snowflake/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:snowflake/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">snowflake()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L20" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>snowflake() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  A Discord snowflake, fits in a 64bit integer.</p>
+<p>  Received as integers via the gateway, but as strings via http.</p>
+
+  </section>
+</div>
+
+          </div>
+        </section>
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="add_guild_member/3">
+  
+  
+  <div class="detail-header">
+    <a href="#add_guild_member/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">add_guild_member(guild, user, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1261" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>add_guild_member(
+  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  user :: <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  data :: <a href="#t:add_guild_member_data/0">add_guild_member_data</a>()
+) :: {:ok, <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Adds a user to a guild via a provided oauth2 access token with the <code class="inline">guilds.join</code> scope.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#add-guild-member">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="add_pinned_message/1">
+  
+  
+  <div class="detail-header">
+    <a href="#add_pinned_message/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">add_pinned_message(message)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L519" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>add_pinned_message(message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()) ::
+  :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Adds a message to the pinned messages of a channel.</p>
+<p>  You may only have up to 50 pinned messages per channel.<br/>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="add_pinned_message/2">
+  
+  
+  <div class="detail-header">
+    <a href="#add_pinned_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">add_pinned_message(channel, message_id)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L537" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>add_pinned_message(
+  channel :: Crux.Structs.Channel | <a href="#t:snowflake/0">snowflake</a>(),
+  message :: <a href="#t:snowflake/0">snowflake</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Adds a message to the pinned messages of a channel.</p>
+<p>  You may only have up to 50 pinned messages per channel.<br/>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_channel_invite/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_channel_invite/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_channel_invite(channel, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L759" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_channel_invite(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  args :: <a href="#t:create_channel_invite_data/0">create_channel_invite_data</a>()
+) :: {:ok, <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Creates an invite to a channel, see <code class="inline">t:create_channel_invite_data</code> for available options.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#create-channel-invite">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_guilad_channel/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_guilad_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guilad_channel(guild_id, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1142" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="create_guild/1">
+  
+  
+  <div class="detail-header">
+    <a href="#create_guild/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L968" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="create_guild_channel/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_guild_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild_channel(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1140" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_channel(
+  guild :: Crux.Structs.Guild | <a href="#t:snowflake/0">snowflake</a>(),
+  data :: <a href="#t:create_guild_channel_data/0">create_guild_channel_data</a>()
+) :: {:ok, Crux.Structs.Channel} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Creates a channel in a guild, see <code class="inline">t:create_guild_channel_data</code> for available options.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#create-guild-channel">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_guild_emoji/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_guild_emoji/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild_emoji(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L876" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_emoji(
+  guild :: Crux.Structs.Guild | <a href="#t:snowflake/0">snowflake</a>(),
+  data :: <a href="#t:create_guild_emoji_data/0">create_guild_emoji_data</a>()
+) :: {:ok, Crux.Structs.Emoji} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Creates an emoji in a guild, see <code class="inline">t:create_guild_emoji_data</code> for available options.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#create-guild-emoji">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_message/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_message(channel_or_message, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L136" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_message(
+  channel_or_message ::
+    <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  args :: <a href="#t:create_message_data/0">create_message_data</a>()
+) :: {:ok, <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Sends a message to a channel.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#create-message">Discord Docs</a></p>
+
+  </section>
+</div>
+<div class="detail" id="create_reaction/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_reaction/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_reaction(message, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L314" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_reaction(
+  message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(),
+  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Creates a reaction on a message, or increases its count by one.</p>
+<p>For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#create-reaction">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_reaction/3">
+  
+  
+  <div class="detail-header">
+    <a href="#create_reaction/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_reaction(channel, message_id, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L332" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_reaction(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  message_id :: <a href="#t:snowflake/0">snowflake</a>(),
+  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Creates a reaction on a message, or increases its count by one.</p>
+<p>For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#create-reaction">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_all_reactions/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_all_reactions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_all_reactions(message, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L458" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_all_reactions(
+  message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(),
+  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Deletes all reactions from a messaage.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-all-reactions">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_all_reactions/3">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_all_reactions/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_all_reactions(channel, message_id, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L479" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_all_reactions(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  message_id :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Deletes all reactions from a messaage.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-all-reactions">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_channel/2">
+  
+  
+    <span id="delete_channel/1"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_channel(channel, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L645" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_channel(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: {:ok, Crux.Structs.Channel} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes a channel.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#deleteclose-channel">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_channel_permissions/3">
+  
+  
+    <span id="delete_channel_permissions/2"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_channel_permissions/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_channel_permissions(channel, target, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L779" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_channel_permissions(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  target ::
+    Overwrite.t()
+    | Role.t()
+    | <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()
+    | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()
+    | <a href="#t:snowflake/0">snowflake</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes an overwrite from a channel.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-channel-permission">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_guild/1">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_guild/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_guild(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1074" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_guild(guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+  :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes a guild, can only be used if the executing user is the owner.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#delete-guild">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_guild_emoji/3">
+  
+  
+    <span id="delete_guild_emoji/2"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_guild_emoji/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_guild_emoji(guild, emoji, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L955" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_guild_emoji(
+  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  emoji :: <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes an emoji from a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#delete-guild-emoji">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_invite/1">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_invite/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_invite(code)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1362" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_invite(invite_or_code :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()) ::
+  {:ok, <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes an invite.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/invite#get-invite">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_message/1">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_message/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_message(message)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L197" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_message(message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()) ::
+  {:ok, <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes a message</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-message">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_message/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_message(channel, message_id)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L214" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_message(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  message_id :: <a href="#t:snowflake/0">snowflake</a>()
+) :: {:ok, Crux.Structs.Message} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes a message</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-message">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_messages/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_messages/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_messages(channel, messages)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L232" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_messages(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  messages :: [<a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="#t:snowflake/0">snowflake</a>()]
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes 2-100 messages not older than 14 days.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#bulk-delete-messages">Discord Docs</a></p>
+
+  </section>
+</div>
+<div class="detail" id="delete_pinned_message/1">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_pinned_message/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_pinned_message(message)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L548" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_pinned_message(message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()) ::
+  :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes a message from the pinned messages. This does not delete the message itself.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-pinned-channel-message">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_pinned_message/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_pinned_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_pinned_message(channel_id, message_id)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L563" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_pinned_message(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  message :: <a href="#t:snowflake/0">snowflake</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes a message from the pinned messages. This does not delete the message itself.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-pinned-channel-message">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_reaction/4">
+  
+  
+    <span id="delete_reaction/2"></span>
+  
+    <span id="delete_reaction/3"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_reaction/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_reaction(message_or_channel, emoji_or_message_id, emoji_or_maybe_user \\ &quot;@me&quot;, mayber_user \\ &quot;@me&quot;)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L436" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_reaction(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  message :: <a href="#t:snowflake/0">snowflake</a>(),
+  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  user :: <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="#t:snowflake/0">snowflake</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes a user from a reaction.</p>
+<p>  The first argument is optional if a <a href="Crux.Structs.Message.html"><code class="inline">Crux.Structs.Message</code></a> is provided.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-own-reaction">Discord Docs</a> <a href="https://discordapp.com/developers/docs/resources/channel#delete-user-reaction">2</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="edit_channel_permissions/3">
+  
+  
+  <div class="detail-header">
+    <a href="#edit_channel_permissions/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">edit_channel_permissions(channel, target, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L699" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>edit_channel_permissions(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  target ::
+    Overwrite.t()
+    | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()
+    | <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()
+    | Role.t()
+    | <a href="#t:snowflake/0">snowflake</a>(),
+  data :: <a href="#t:edit_channel_permissions_data/0">edit_channel_permissions_data</a>()
+) :: :ok | {:error, :missing_target} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Edits or creates an overwrite for a user, or member.</p>
+<p>If an id is provided for <code class="inline">:target</code>, <code class="inline">:type</code> must be specified in <code class="inline">t:edit_channel_permissions_data</code>.</p>
+<p>For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#edit-channel-permissions">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="edit_message/2">
+  
+  
+  <div class="detail-header">
+    <a href="#edit_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">edit_message(message, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L164" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>edit_message(target :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(), args :: <a href="#t:message_edit_data/0">message_edit_data</a>()) ::
+  {:ok, <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Edits a message.</p>
+<p>For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#edit-message">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="edit_message/3">
+  
+  
+  <div class="detail-header">
+    <a href="#edit_message/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">edit_message(channel, message_id, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L182" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>edit_message(
+  channel_id :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  message_id :: <a href="#t:snowflake/0">snowflake</a>(),
+  args :: <a href="#t:message_edit_data/0">message_edit_data</a>()
+) :: {:ok, <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Edits a message.</p>
+<p>For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#edit-message">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="gateway/0">
+  
+  
+  <div class="detail-header">
+    <a href="#gateway/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">gateway()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1373" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>gateway() :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches the gateway url from the api.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#get-gateway">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="gateway_bot/0">
+  
+  
+  <div class="detail-header">
+    <a href="#gateway_bot/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">gateway_bot()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1383" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>gateway_bot() :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>   Fetches the gateway url along a recommended shards count from the api.</p>
+<p>   For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#get-gateway-bot">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_Reactions/4">
+  
+  
+  <div class="detail-header">
+    <a href="#get_Reactions/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_Reactions(channel_id, message_id, emoji, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L394" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    
+  </section>
+</div>
+<div class="detail" id="get_channel/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_channel/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_channel(channel_id)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L575" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_channel(channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+  {:ok, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets a channel from the api.<br/>  This should <em>NOT</em> be necessary.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#get-channel">Discord Docs</a></p>
+
+  </section>
+</div>
+<div class="detail" id="get_channel_invites/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_channel_invites/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_channel_invites(channel)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L713" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_channel_invites(channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+  {:ok, [<a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets invites for the specified channel from the api.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#get-channel-invites">Discord Docs</a></p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L991" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild(guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+  {:ok, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets a guild from the api.<br/>  This should usually, duo cache, <strong>NOT</strong> be necessary.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild">Discord Docs</a></p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_channels/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_channels/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_channels(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1089" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_channels(guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+  {:ok, [<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets all channels from a guild via the api.<br/>  This should usually, duo caching, <strong>NOT</strong> be necessary.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-channels">Discord Docs</a>-</p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_emoji/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_emoji/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_emoji(guild, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L836" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_emoji(
+  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  emoji :: <a href="#t:snowflake/0">snowflake</a>()
+) :: {:ok, Crux.Structs.Emoji} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets an emoji from a guild<br/>  This should usually, duo cache, <strong>NOT</strong> be necessary.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#get-guild-emoji">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_member/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_member/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_member(guild_id, user)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1190" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_member(
+  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  user :: <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | <a href="#t:snowflake/0">snowflake</a>()
+) :: {:ok, <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a member from the api.</p>
+<p>  This may be necessary for offline members in large guilds.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-member">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_invite/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_invite/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_invite(code)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1348" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_invite(code :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:ok, <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches an invite from the api.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/invite#get-invite">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_message/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_message(channel, message_id)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L253" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_message(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  message_id :: <a href="#t:snowflake/0">snowflake</a>()
+) :: {:ok, Crux.Structs.Message} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets a message from the api.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#get-channel-message">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_messages/2">
+  
+  
+    <span id="get_messages/1"></span>
+  
+  <div class="detail-header">
+    <a href="#get_messages/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_messages(channel, args \\ [])</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L293" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_messages(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  args :: <a href="#t:get_messages_data/0">get_messages_data</a>()
+) :: {:ok, [<a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Gets 1-100 messages from the api, this limit is enforced on discord’s end.</p>
+<p>For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#get-channel-messages">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_pinned_messages/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_pinned_messages/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_pinned_messages(channel)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L798" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_pinned_messages(channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+  {:ok, [<a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets a list of pinned messages from the api.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#get-pinned-messages">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_reactions/4">
+  
+  
+    <span id="get_reactions/2"></span>
+  
+    <span id="get_reactions/3"></span>
+  
+  <div class="detail-header">
+    <a href="#get_reactions/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_reactions(channel_or_message, emoji_or_message_id, emoji_or_maybe_data \\ [], maybe_data \\ [])</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L391" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_reactions(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  args :: <a href="#t:get_reactions_data/0">get_reactions_data</a>()
+) :: {:ok, [<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets users who reacted to a message.</p>
+<p>  The first argument is optional if a <a href="Crux.Structs.Message.html"><code class="inline">Crux.Structs.Message</code></a> is provided.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#get-reactions">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="list_guild_emojis/1">
+  
+  
+  <div class="detail-header">
+    <a href="#list_guild_emojis/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_guild_emojis(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L818" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>list_guild_emojis(guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+  {:ok, [<a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets a list of emojis in a guild.<br/>  This should usually, duo cache, <strong>NOT</strong> be necessary.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#list-guild-emojis">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="list_guild_members/2">
+  
+  
+    <span id="list_guild_members/1"></span>
+  
+  <div class="detail-header">
+    <a href="#list_guild_members/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_guild_members(guild, options \\ [])</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1215" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>list_guild_members(
+  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  options :: <a href="#t:list_guild_members_options/0">list_guild_members_options</a>()
+) :: {:ok, [<a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets a list of members from the guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#list-guild-members">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="modify_channel/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_channel(channel, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L627" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_channel(
+  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(),
+  args :: <a href="#t:modify_channel_data/0">modify_channel_data</a>()
+) :: {:ok, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifies a channel, see <code class="inline">t:modify_channel_data</code> for available options.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#modify-channel">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="modify_current_users_nick/3">
+  
+  
+    <span id="modify_current_users_nick/2"></span>
+  
+  <div class="detail-header">
+    <a href="#modify_current_users_nick/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_current_users_nick(guild, nick, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1336" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_current_users_nick(
+  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  nick :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifies the nickname of the current user in a guild.</p>
+<p>  Yes you read correctly, that has its own endpoint.</p>
+<p>  For more informations, but not an answer to the question why, see <a href="https://discordapp.com/developers/docs/resources/guild#modify-current-user-nick">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="modify_guild/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1039" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild(
+  guild :: Crux.Structs.Guild | <a href="#t:snowflake/0">snowflake</a>(),
+  data :: <a href="#t:modify_guild_data/0">modify_guild_data</a>()
+) :: {:ok, Crux.Structs.Guild} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Updates a guild, see <code class="inline">t:modify_guild_data</code> for available options.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="modify_guild_channel_positions/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_channel_positions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_channel_positions(guild, channels)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1167" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_channel_positions(
+  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  channels :: [<a href="#t:modify_guild_channel_positions_data_entry/0">modify_guild_channel_positions_data_entry</a>()]
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifyies the position of a list of channels in a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#modify-guild-channel-positions">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="modify_guild_emoji/3">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_emoji/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_emoji(guild, emoji, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L927" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_emoji(
+  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  emoji :: <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  data :: <a href="#t:modify_guild_emoji_data/0">modify_guild_emoji_data</a>()
+) :: {:ok, Crux.Structs.Emoji} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifies a guild emoji.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#modify-guild-emoji">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="modify_guild_member/3">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_member/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_member(guild, member_or_user, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L1313" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_member(
+  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  member_or_user ::
+    <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  data :: <a href="#t:modify_guild_member_data/0">modify_guild_member_data</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifies a member in a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#modify-guild-member">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="trigger_typing/1">
+  
+  
+  <div class="detail-header">
+    <a href="#trigger_typing/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">trigger_typing(message_or_channel)</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_rest/lib/rest.ex#L506" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>trigger_typing(
+  message_or_channel ::
+    <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br/>  Should generally be used sparingly for commands that may take a while as a form of acknowledging.</p>
+<p>  Consider sending a message and edit that later on instead.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#trigger-typing-indicator">Discord Docs</a>.</p>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.18.3),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-9bd040e5e5.js"></script>
+  
+  
+  
+  
+  </body>
+</html>
+

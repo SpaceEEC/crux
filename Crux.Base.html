@@ -1,0 +1,406 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.18.3">
+    <title>Crux.Base – Crux vdev</title>
+    <link rel="stylesheet" href="dist/app-480ffdc169.css" />
+    
+    <script src="dist/sidebar_items-17bb0be3e1.js"></script>
+    
+    
+    
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+
+    <div class="main">
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Theme</span>
+</button>
+<section class="sidebar">
+
+  
+  <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        Crux
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        vdev
+      </h2>
+    </div>
+    
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+      <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
+    
+
+    
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">Crux vdev</small>
+        Crux.Base
+        
+          <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_base/lib/base.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+        
+      </h1>
+
+      
+        <section id="moduledoc">
+          <p>  Crux “Base” module providing an example implementation of <a href="Crux.Gateway.html"><code class="inline">Crux.Gateway</code></a>, <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a>, and <a href="Crux.Cache.html"><code class="inline">Crux.Cache</code></a> while using <a href="Crux.Structs.html"><code class="inline">Crux.Structs</code></a>.</p>
+<p>  You can set as environment for <code class="inline">:crux_base</code> a <code class="inline">token</code>.<br/>  If the token is provided it will be forwarded to both <a href="Crux.Gateway.html"><code class="inline">Crux.Gateway</code></a> and <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a>.<br/>  Also this will fetch and put the gateway <code class="inline">:url</code> and recommended <code class="inline">:shard_count</code> if not already specified.</p>
+<p>  For task based cosuming you can use the provided <a href="Crux.Base.TaskConsumer.html"><code class="inline">Crux.Base.TaskConsumer</code></a> and <a href="Crux.Base.ConsumerSupervisor.html"><code class="inline">Crux.Base.ConsumerSupervisor</code></a> modules.<br/>  You are also free to roll your own consumer / producer consumer setup by subscribing to the producers fetchable via <a href="Crux.Base.html#producers/0"><code class="inline">Crux.Base.producers/0</code></a>.</p>
+
+        </section>
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:channel_id/0">channel_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:guild_id/0">guild_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:message_id/0">message_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a message</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:shard_id/0">shard_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a shard</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:snowflake/0">snowflake()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>A discord snowflake</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#producers/0">producers()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Computes a map of all producers keyed by shard_id</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+        </section>
+      
+
+      
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Types
+          </h1>
+          <div class="types-list">
+            <div class="detail" id="t:channel_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:channel_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">channel_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_base/lib/base.ex#L111" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>channel_id() :: <a href="#t:snowflake/0">snowflake</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a channel.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:guild_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:guild_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">guild_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_base/lib/base.ex#L106" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>guild_id() :: <a href="#t:snowflake/0">snowflake</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a guild.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:message_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:message_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">message_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_base/lib/base.ex#L101" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>message_id() :: <a href="#t:snowflake/0">snowflake</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a message.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:shard_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:shard_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">shard_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_base/lib/base.ex#L96" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>shard_id() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a shard.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:snowflake/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:snowflake/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">snowflake()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_base/lib/base.ex#L91" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>snowflake() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  A discord snowflake.</p>
+
+  </section>
+</div>
+
+          </div>
+        </section>
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="producers/0">
+  
+  
+  <div class="detail-header">
+    <a href="#producers/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">producers()</span>
+    
+      <a href="https://github.com/SpaceEEC/%{app}/blob/master/apps/crux_base/lib/base.ex#L70" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>producers() :: %{required(<a href="#t:shard_id/0">shard_id</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pid</a>() | :not_found}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Computes a map of all producers keyed by shard_id.</p>
+<p>  Values are either a <code class="inline">pid/0</code> or, if for some reason the producer could not be found, <code class="inline">:not_found</code>.<br/>  Similar to <a href="Crux.Gateway.Connection.Producer.html#producers/0"><code class="inline">Crux.Gateway.Connection.Producer.producers/0</code></a>, but they are emitting <code class="inline">Crux.Base.Consumer.event()</code>s instead of raw discord api payloads.</p>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.18.3),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-9bd040e5e5.js"></script>
+  
+  
+  
+  
+  </body>
+</html>
+
