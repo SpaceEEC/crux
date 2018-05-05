@@ -8,7 +8,7 @@
     <title>Crux.Structs.Emoji – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-17bb0be3e1.js"></script>
+    <script src="dist/sidebar_items-760cae9fdd.js"></script>
     
     
     
@@ -113,6 +113,31 @@
 
 
           
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create/1">create(data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Creates a <a href="Crux.Structs.Emoji.html#content"><code class="inline">Crux.Structs.Emoji</code></a> struct from raw data</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#to_identifier/1">to_identifier(identifier)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Converts an <a href="Crux.Structs.Emoji.html#content"><code class="inline">Crux.Structs.Emoji</code></a>, a <a href="Crux.Structs.Reaction.html"><code class="inline">Crux.Structs.Reaction</code></a>, or a <code class="inline">String.t()</code> to its discord identifier format</p>
+</div>
+  
+</div>
+
+  </div>
+
 
           
 
@@ -139,7 +164,7 @@
     </a>
     <span class="signature">t()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L18" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L20" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -149,13 +174,13 @@
       <div class="specs">
         
           <pre>t() :: %Crux.Structs.Emoji{
-  animated: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  managed: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+  animated: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>() | nil,
+  id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
+  managed: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>() | nil,
   name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  require_colons: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+  require_colons: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>() | nil,
   roles: <a href="https://hexdocs.pm/elixir/MapSet.html#t:t/1">MapSet.t</a>(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()),
-  user: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
+  user: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil
 }</pre>
         
       </div>
@@ -170,6 +195,111 @@
         </section>
       
 
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="create/1">
+  
+  
+  <div class="detail-header">
+    <a href="#create/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L35" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>  Creates a <a href="Crux.Structs.Emoji.html#content"><code class="inline">Crux.Structs.Emoji</code></a> struct from raw data.</p>
+<blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
+</blockquote>
+
+  </section>
+</div>
+<div class="detail" id="to_identifier/1">
+  
+  
+  <div class="detail-header">
+    <a href="#to_identifier/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">to_identifier(identifier)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L94" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>to_identifier(
+  emoji :: <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="Crux.Structs.Reaction.html#t:t/0">Crux.Structs.Reaction.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Converts an <a href="Crux.Structs.Emoji.html#content"><code class="inline">Crux.Structs.Emoji</code></a>, a <a href="Crux.Structs.Reaction.html"><code class="inline">Crux.Structs.Reaction</code></a>, or a <code class="inline">String.t()</code> to its discord identifier format.</p>
+<p>  &gt; This is automatically done if using a appropriate rest function.</p>
+<h2 id="to_identifier/1-examples" class="section-heading">
+  <a href="#to_identifier/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="elixir"># A custom emoji
+iex&gt; %Crux.Structs.Emoji{animated: false, id: 396521773216301056, name: &quot;blobwavereverse&quot;}
+...&gt; |&gt; Crux.Structs.Emoji.to_identifier()
+&quot;blobwavereverse:396521773216301056&quot;
+
+# A custom animated emoji
+iex&gt; %Crux.Structs.Emoji{animated: true, id: 396521774466203659, name: &quot;ablobwavereverse&quot;}
+...&gt; |&gt; Crux.Structs.Emoji.to_identifier()
+&quot;a:ablobwavereverse:396521774466203659&quot;
+
+# A regular emoji
+iex&gt; %Crux.Structs.Emoji{animated: false, id: nil, name: &quot;👋&quot;}
+...&gt; |&gt; Crux.Structs.Emoji.to_identifier()
+&quot;%F0%9F%91%8B&quot;
+
+# A reaction struct
+iex&gt; %Crux.Structs.Reaction{
+...&gt;   emoji: %Crux.Structs.Emoji{animated: false, id: 356830260626456586, name: &quot;blobReach&quot;}
+...&gt; }
+...&gt; |&gt; Crux.Structs.Emoji.to_identifier()
+&quot;blobReach:356830260626456586&quot;
+
+# An already encoded identifier
+iex&gt; &quot;👀&quot; |&gt; URI.encode_www_form()
+...&gt; |&gt; Crux.Structs.Emoji.to_identifier()
+&quot;%F0%9F%91%80&quot;
+
+# A custom emoji&#39;s identifier
+iex&gt; &quot;eyesRight:271412698267254784&quot;
+...&gt; |&gt; Crux.Structs.Emoji.to_identifier()
+&quot;eyesRight:271412698267254784&quot;
+</code></pre>
+
+  </section>
+</div>
+
+        </section>
       
 
       

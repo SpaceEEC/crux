@@ -8,7 +8,7 @@
     <title>Crux.Structs – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-17bb0be3e1.js"></script>
+    <script src="dist/sidebar_items-760cae9fdd.js"></script>
     
     
     
@@ -72,7 +72,7 @@
 
       <h1>
         <small class="visible-xs">Crux vdev</small>
-        Crux.Structs
+        Crux.Structs <small>behaviour</small>
         
           <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
@@ -118,6 +118,22 @@
 
 
           
+  <div class="summary-callbacks summary">
+    <h2>
+      <a href="#callbacks">Callbacks</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:create/1">create(data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Can be implemented by structs to transform the inital data</p>
+</div>
+  
+</div>
+
+  </div>
+
 
         </section>
       
@@ -143,7 +159,7 @@
     </a>
     <span class="signature">create(data, target)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs.ex#L19" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs.ex#L71" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -152,13 +168,60 @@
     
       <div class="specs">
         
-          <pre>create(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>(), target :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">struct</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>()</pre>
+          <pre>create(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>(), target :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">struct</a>()</pre>
+        
+          <pre>create(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>(), target :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()) :: [<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">struct</a>()]</pre>
         
       </div>
     
   </div>
   <section class="docstring">
     <p>  Creates a struct or a list of structs invoking their <code class="inline">create/1</code> function if available.</p>
+<h2 id="create/2-examples" class="section-heading">
+  <a href="#create/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="elixir"># A single member
+iex&gt; %{
+...&gt;   &quot;nick&quot; =&gt; &quot;nick&quot;,
+...&gt;   &quot;user&quot; =&gt; %{&quot;username&quot; =&gt; &quot;space&quot;, &quot;discriminator&quot; =&gt; &quot;0001&quot;, &quot;id&quot; =&gt; &quot;218348062828003328&quot;, &quot;avatar&quot; =&gt; &quot;646a356e237350bf8b8dfde15667dfc4&quot;},
+...&gt;   &quot;roles&quot; =&gt; [&quot;251158405832638465&quot;, &quot;373405430589816834&quot;],
+...&gt;   &quot;mute&quot; =&gt; false,
+...&gt;   &quot;deaf&quot; =&gt; false,
+...&gt;   &quot;joined_at&quot; =&gt; &quot;2016-11-02T00:51:21.342000+00:00&quot;
+...&gt; }
+...&gt; |&gt; Crux.Structs.create(Crux.Structs.Member)
+%Crux.Structs.Member{
+  nick: &quot;nick&quot;,
+  user: 218348062828003328,
+  roles: MapSet.new([251158405832638465, 373405430589816834]),
+  mute: false,
+  deaf: false,
+  joined_at: &quot;2016-11-02T00:51:21.342000+00:00&quot;,
+  guild_id: nil
+}
+
+# A single user
+iex&gt; %{&quot;username&quot; =&gt; &quot;space&quot;, &quot;discriminator&quot; =&gt; &quot;0001&quot;, &quot;id&quot; =&gt; &quot;218348062828003328&quot;, &quot;avatar&quot; =&gt; &quot;46a356e237350bf8b8dfde15667dfc4&quot;}
+...&gt; |&gt; Crux.Structs.create(Crux.Structs.User)
+%Crux.Structs.User{username: &quot;space&quot;, discriminator: &quot;0001&quot;, id: 218348062828003328, avatar: &quot;46a356e237350bf8b8dfde15667dfc4&quot;}
+
+# Multiple users
+iex&gt; [
+...&gt;   %{&quot;username&quot; =&gt; &quot;space&quot;, &quot;discriminator&quot; =&gt; &quot;0001&quot;, &quot;id&quot; =&gt; &quot;218348062828003328&quot;, &quot;avatar&quot; =&gt; &quot;46a356e237350bf8b8dfde15667dfc4&quot;},
+...&gt;   %{&quot;username&quot; =&gt; &quot;Drahcirius&quot;, &quot;discriminator&quot; =&gt; &quot;1336&quot;, &quot;id&quot; =&gt; &quot;130175406673231873&quot;, &quot;avatar&quot; =&gt; &quot;c896aebec82c90f590b08cfebcdc4e3b&quot;}
+...&gt; ]
+...&gt; |&gt; Crux.Structs.create(Crux.Structs.User)
+[
+  %Crux.Structs.User{username: &quot;space&quot;, discriminator: &quot;0001&quot;, id: 218348062828003328, avatar: &quot;46a356e237350bf8b8dfde15667dfc4&quot;},
+  %Crux.Structs.User{username: &quot;Drahcirius&quot;, discriminator: &quot;1336&quot;, id: 130175406673231873, avatar: &quot;c896aebec82c90f590b08cfebcdc4e3b&quot;}
+]
+
+# Fallback
+iex&gt; Crux.Structs.create(nil, nil)
+nil
+</code></pre>
 
   </section>
 </div>
@@ -166,6 +229,48 @@
         </section>
       
 
+      
+        <section id="callbacks" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#callbacks">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Callbacks
+          </h1>
+          <div class="detail" id="c:create/1">
+  
+  
+  <div class="detail-header">
+    <a href="#c:create/1" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <span class="signature">create(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs.ex#L11" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+      <span class="note">(optional)</span>
+    
+    
+      <div class="specs">
+        
+          <pre>create(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">struct</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Can be implemented by structs to transform the inital data.</p>
+
+  </section>
+</div>
+
+        </section>
       
           <footer class="footer">
         <p>

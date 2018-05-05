@@ -8,7 +8,7 @@
     <title>Crux.Structs.Util – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-17bb0be3e1.js"></script>
+    <script src="dist/sidebar_items-760cae9fdd.js"></script>
     
     
     
@@ -170,7 +170,7 @@
     </a>
     <span class="signature">atomify(input)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L40" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L147" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -186,6 +186,37 @@
   </div>
   <section class="docstring">
     <p>  Atomifies all keys in a passed list or map to avoid the mess of mixed string and atom keys the gateway sends.</p>
+<h2 id="atomify/1-examples" class="section-heading">
+  <a href="#atomify/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="elixir"># A map
+iex&gt; %{&quot;username&quot; =&gt; &quot;space&quot;, &quot;discriminator&quot; =&gt; &quot;0001&quot;, &quot;id&quot; =&gt; &quot;218348062828003328&quot;, &quot;avatar&quot; =&gt; &quot;46a356e237350bf8b8dfde15667dfc4&quot;}
+...&gt; |&gt; Crux.Structs.Util.atomify()
+%{username: &quot;space&quot;, discriminator: &quot;0001&quot;, id: &quot;218348062828003328&quot;, avatar: &quot;46a356e237350bf8b8dfde15667dfc4&quot;}
+
+# A list
+iex&gt; [
+...&gt;   %{&quot;username&quot; =&gt; &quot;space&quot;, &quot;discriminator&quot; =&gt; &quot;0001&quot;, &quot;id&quot; =&gt; &quot;218348062828003328&quot;, &quot;avatar&quot; =&gt; &quot;46a356e237350bf8b8dfde15667dfc4&quot;},
+...&gt;   %{&quot;username&quot; =&gt; &quot;Drahcirius&quot;, &quot;discriminator&quot; =&gt; &quot;1336&quot;, &quot;id&quot; =&gt; &quot;130175406673231873&quot;, &quot;avatar&quot; =&gt; &quot;c896aebec82c90f590b08cfebcdc4e3b&quot;}
+...&gt; ]
+...&gt; |&gt; Crux.Structs.Util.atomify()
+[
+  %{username: &quot;space&quot;, discriminator: &quot;0001&quot;, id: &quot;218348062828003328&quot;, avatar: &quot;46a356e237350bf8b8dfde15667dfc4&quot;},
+  %{username: &quot;Drahcirius&quot;, discriminator: &quot;1336&quot;, id: &quot;130175406673231873&quot;, avatar: &quot;c896aebec82c90f590b08cfebcdc4e3b&quot;}
+]
+
+# A nested map
+iex&gt; %{&quot;foo&quot; =&gt; &quot;bar&quot;, &quot;bar&quot; =&gt; %{&quot;baz&quot; =&gt; &quot;foo&quot;}}
+...&gt; |&gt; Crux.Structs.Util.atomify()
+%{foo: &quot;bar&quot;, bar: %{baz: &quot;foo&quot;}}
+
+# A nested list
+iex&gt; [[%{&quot;foo&quot; =&gt; &quot;bar&quot;}], %{&quot;bar&quot; =&gt; &quot;foo&quot;}]
+...&gt; |&gt; Crux.Structs.Util.atomify()
+[[%{foo: &quot;bar&quot;}], %{bar: &quot;foo&quot;}]
+</code></pre>
 
   </section>
 </div>
@@ -199,7 +230,7 @@
     </a>
     <span class="signature">id_to_int(str)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L13" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L30" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -215,6 +246,23 @@
   </div>
   <section class="docstring">
     <p>  Converts a string, likely Discord snowflake, to an integer</p>
+<h2 id="id_to_int/1-examples" class="section-heading">
+  <a href="#id_to_int/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="elixir"># A string
+iex&gt; &quot;218348062828003328&quot; |&gt; Crux.Structs.Util.id_to_int()
+218348062828003328
+
+# Already a number
+iex&gt; 218348062828003328 |&gt; Crux.Structs.Util.id_to_int()
+218348062828003328
+
+# Fallback
+iex&gt; nil |&gt; Crux.Structs.Util.id_to_int()
+nil
+</code></pre>
 
   </section>
 </div>
@@ -230,7 +278,7 @@
     </a>
     <span class="signature">raw_data_to_map(data, target, key \\ :id)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L19" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L82" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -246,6 +294,51 @@
   </div>
   <section class="docstring">
     <p>  Converts a list of raw api data to structs keyed under the passed key.</p>
+<h2 id="raw_data_to_map/3-examples" class="section-heading">
+  <a href="#raw_data_to_map/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="elixir">iex&gt; [
+...&gt; %{&quot;username&quot; =&gt; &quot;space&quot;, &quot;discriminator&quot; =&gt; &quot;0001&quot;, &quot;id&quot; =&gt; &quot;218348062828003328&quot;, &quot;avatar&quot; =&gt; &quot;46a356e237350bf8b8dfde15667dfc4&quot;},
+...&gt; %{&quot;username&quot; =&gt; &quot;Drahcirius&quot;, &quot;discriminator&quot; =&gt; &quot;1336&quot;, &quot;id&quot; =&gt; &quot;130175406673231873&quot;, &quot;avatar&quot; =&gt; &quot;c896aebec82c90f590b08cfebcdc4e3b&quot;}
+...&gt; ]
+...&gt; |&gt; Crux.Structs.Util.raw_data_to_map(Crux.Structs.User)
+%{
+  130175406673231873 =&gt; %Crux.Structs.User{
+    username: &quot;Drahcirius&quot;,
+    discriminator: &quot;1336&quot;,
+    id: 130175406673231873,
+    avatar: &quot;c896aebec82c90f590b08cfebcdc4e3b&quot;
+  },
+  218348062828003328 =&gt; %Crux.Structs.User{
+    username: &quot;space&quot;,
+    discriminator: &quot;0001&quot;,
+    id: 218348062828003328,
+    avatar: &quot;46a356e237350bf8b8dfde15667dfc4&quot;
+  }
+}
+
+iex&gt; [
+...&gt; %{&quot;username&quot; =&gt; &quot;space&quot;, &quot;discriminator&quot; =&gt; &quot;0001&quot;, &quot;id&quot; =&gt; &quot;218348062828003328&quot;, &quot;avatar&quot; =&gt; &quot;46a356e237350bf8b8dfde15667dfc4&quot;},
+...&gt; %{&quot;username&quot; =&gt; &quot;Drahcirius&quot;, &quot;discriminator&quot; =&gt; &quot;1336&quot;, &quot;id&quot; =&gt; &quot;130175406673231873&quot;, &quot;avatar&quot; =&gt; &quot;c896aebec82c90f590b08cfebcdc4e3b&quot;}
+...&gt; ]
+...&gt; |&gt; Crux.Structs.Util.raw_data_to_map(Crux.Structs.User, :username)
+%{
+  &quot;Drahcirius&quot; =&gt; %Crux.Structs.User{
+    username: &quot;Drahcirius&quot;,
+    discriminator: &quot;1336&quot;,
+    id: 130175406673231873,
+    avatar: &quot;c896aebec82c90f590b08cfebcdc4e3b&quot;
+  },
+  &quot;space&quot; =&gt; %Crux.Structs.User{
+    username: &quot;space&quot;,
+    discriminator: &quot;0001&quot;,
+    id: 218348062828003328,
+    avatar: &quot;46a356e237350bf8b8dfde15667dfc4&quot;
+  }
+}
+</code></pre>
 
   </section>
 </div>
@@ -259,7 +352,7 @@
     </a>
     <span class="signature">string_to_atom(string)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L31" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L107" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -276,6 +369,19 @@
   <section class="docstring">
     <p>  Converts a string to an atom.</p>
 <p>  Returns an already converted atom as is instead of raising</p>
+<h2 id="string_to_atom/1-examples" class="section-heading">
+  <a href="#string_to_atom/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="elixir"># A string
+iex&gt; &quot;id&quot; |&gt; Crux.Structs.Util.string_to_atom()
+:id
+
+# Already an atom
+iex&gt; :id |&gt; Crux.Structs.Util.string_to_atom()
+:id
+</code></pre>
 
   </section>
 </div>

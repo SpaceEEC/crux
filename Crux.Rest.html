@@ -8,7 +8,7 @@
     <title>Crux.Rest – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-17bb0be3e1.js"></script>
+    <script src="dist/sidebar_items-760cae9fdd.js"></script>
     
     
     
@@ -278,6 +278,15 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#add_guild_member_role/4">add_guild_member_role(guild, member, role, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Adds a role to a member</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#add_pinned_message/1">add_pinned_message(message)</a>
   </div>
   
@@ -287,7 +296,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#add_pinned_message/2">add_pinned_message(channel, message_id)</a>
+    <a href="#add_pinned_message/2">add_pinned_message(channel, message)</a>
   </div>
   
     <div class="summary-synopsis"><p>Adds a message to the pinned messages of a channel</p>
@@ -301,12 +310,6 @@
   
     <div class="summary-synopsis"><p>Creates an invite to a channel, see <code class="inline">t:create_channel_invite_data</code> for available options</p>
 </div>
-  
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#create_guilad_channel/2">create_guilad_channel(guild_id, data)</a>
-  </div>
   
 </div>
 <div class="summary-row">
@@ -353,7 +356,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#create_reaction/3">create_reaction(channel, message_id, emoji)</a>
+    <a href="#create_reaction/3">create_reaction(channel, message, emoji)</a>
   </div>
   
     <div class="summary-synopsis"><p>Creates a reaction on a message, or increases its count by one</p>
@@ -371,7 +374,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#delete_all_reactions/3">delete_all_reactions(channel, message_id, emoji)</a>
+    <a href="#delete_all_reactions/3">delete_all_reactions(channel, message, emoji)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes all reactions from a messaage</p>
@@ -434,7 +437,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#delete_message/2">delete_message(channel, message_id)</a>
+    <a href="#delete_message/2">delete_message(channel, message)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes a message</p>
@@ -461,7 +464,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#delete_pinned_message/2">delete_pinned_message(channel_id, message_id)</a>
+    <a href="#delete_pinned_message/2">delete_pinned_message(channel, message)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes a message from the pinned messages. This does not delete the message itself</p>
@@ -524,13 +527,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#get_Reactions/4">get_Reactions(channel_id, message_id, emoji, args)</a>
-  </div>
-  
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#get_channel/1">get_channel(channel_id)</a>
+    <a href="#get_channel/1">get_channel(channel)</a>
   </div>
   
     <div class="summary-synopsis"><p>Gets a channel from the api.<br/>  This should <em>NOT</em> be necessary</p>
@@ -575,7 +572,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#get_guild_member/2">get_guild_member(guild_id, user)</a>
+    <a href="#get_guild_member/2">get_guild_member(guild, user)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches a member from the api</p>
@@ -593,7 +590,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#get_message/2">get_message(channel, message_id)</a>
+    <a href="#get_message/2">get_message(channel, message)</a>
   </div>
   
     <div class="summary-synopsis"><p>Gets a message from the api</p>
@@ -692,7 +689,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#modify_guild_member/3">modify_guild_member(guild, member_or_user, data)</a>
+    <a href="#modify_guild_member/3">modify_guild_member(guild, member, data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Modifies a member in a guild</p>
@@ -701,7 +698,16 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#trigger_typing/1">trigger_typing(message_or_channel)</a>
+    <a href="#remove_guild_member_role/4">remove_guild_member_role(guild, member, role, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Removes a role from a member</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#trigger_typing/1">trigger_typing(channel)</a>
   </div>
   
     <div class="summary-synopsis"><p>Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br/>  Should generally be used sparingly for commands that may take a while as a form of acknowledging</p>
@@ -737,7 +743,7 @@
     </a>
     <span class="signature">add_guild_member_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1225" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1182" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -749,7 +755,7 @@
           <pre>add_guild_member_data() ::
   %{
     :access_token => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-    optional(:nick) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:nick) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
     optional(:roles) => [<a href="#t:snowflake/0">snowflake</a>()],
     optional(:mute) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
     optional(:deaf) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
@@ -757,7 +763,7 @@
   }
   | [
       access_token: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-      nick: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      nick: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
       roles: [<a href="#t:snowflake/0">snowflake</a>()],
       mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
       deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
@@ -782,7 +788,7 @@
     </a>
     <span class="signature">create_channel_invite_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L729" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L709" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -837,7 +843,7 @@
     </a>
     <span class="signature">create_guild_channel_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1100" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1057" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -861,7 +867,7 @@
           optional(:deny) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()
         }
     ],
-    optional(:parent_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:parent_id) => <a href="#t:snowflake/0">snowflake</a>() | nil,
     optional(:nsfw) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
     optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
   }
@@ -870,8 +876,16 @@
       type: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
       bitrate: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | nil,
       user_limit: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
-      permission_overwrites: [Overwrite.t()],
-      parent_id: <a href="#t:snowflake/0">snowflake</a>(),
+      permission_overwrites: [
+        Overwrite.t()
+        | %{
+            :id => <a href="#t:snowflake/0">snowflake</a>(),
+            :type => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+            optional(:allow) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+            optional(:deny) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()
+          }
+      ],
+      parent_id: <a href="#t:snowflake/0">snowflake</a>() | nil,
       nsfw: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
       reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
     ]</pre>
@@ -899,7 +913,7 @@
     </a>
     <span class="signature">create_guild_emoji_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L850" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L820" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -912,13 +926,13 @@
   %{
     :name => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
     :image => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
-    optional(:roles) => [Role.t() | <a href="#t:snowflake/0">snowflake</a>()],
+    optional(:roles) => [<a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>() | <a href="#t:snowflake/0">snowflake</a>()],
     optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
   }
   | [
       name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
       image: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
-      roles: [Role.t() | <a href="#t:snowflake/0">snowflake</a>()],
+      roles: [<a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>() | <a href="#t:snowflake/0">snowflake</a>()],
       reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
     ]</pre>
         
@@ -949,7 +963,7 @@
     </a>
     <span class="signature">create_message_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L41" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L43" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -993,7 +1007,7 @@
     </a>
     <span class="signature">edit_channel_permissions_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L655" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L633" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1006,7 +1020,7 @@
   %{
     optional(:allow) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
     optional(:deny) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
-    optional(:type) => :member | :role | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:type) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
     optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
   }
   | {{:allow, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()}
@@ -1033,7 +1047,7 @@
     </a>
     <span class="signature">embed()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L62" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L64" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1083,7 +1097,7 @@
     </a>
     <span class="signature">file_list_entry()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L32" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L34" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1131,7 +1145,7 @@
     </a>
     <span class="signature">get_messages_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L266" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L261" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1181,7 +1195,7 @@
     </a>
     <span class="signature">get_reactions_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L348" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L338" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1223,7 +1237,7 @@
     </a>
     <span class="signature">list_guild_members_options()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1195" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1153" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1253,7 +1267,7 @@
     </a>
     <span class="signature">message_edit_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L146" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L148" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1263,7 +1277,7 @@
       <div class="specs">
         
           <pre>message_edit_data() ::
-  %{optional(:content) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), optional(:embed) => <a href="#t:embed/0">embed</a>()}
+  %{optional(:content) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil, optional(:embed) => <a href="#t:embed/0">embed</a>() | nil}
   | [content: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), embed: <a href="#t:embed/0">embed</a>()]</pre>
         
       </div>
@@ -1285,7 +1299,7 @@
     </a>
     <span class="signature">modify_channel_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L591" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L571" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1303,7 +1317,7 @@
     optional(:bitrate) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
     optional(:user_limit) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | nil,
     optional(:permission_overwrites) => [Overwrite.t()],
-    optional(:parent_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:parent_id) => <a href="#t:snowflake/0">snowflake</a>() | nil,
     optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
   }
   | [
@@ -1314,7 +1328,7 @@
       bitrate: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
       user_limit: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
       overwrites: [Overwrite.t()],
-      parent_id: <a href="#t:snowflake/0">snowflake</a>(),
+      parent_id: <a href="#t:snowflake/0">snowflake</a>() | nil,
       reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
     ]</pre>
         
@@ -1348,7 +1362,7 @@
     </a>
     <span class="signature">modify_guild_channel_positions_data_entry()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1147" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1112" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1380,7 +1394,7 @@
     </a>
     <span class="signature">modify_guild_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L999" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L958" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1396,11 +1410,12 @@
     optional(:verification_level) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
     optional(:default_message_notifications) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
     optional(:explicit_content_filter) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
-    optional(:afk_channel_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:afk_channel_id) => <a href="#t:snowflake/0">snowflake</a>() | nil,
     optional(:afk_timeout) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
-    optional(:icon) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
+    optional(:icon) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>() | nil,
+    optional(:splash) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>() | nil,
     optional(:owner_id) => <a href="#t:snowflake/0">snowflake</a>(),
-    optional(:system_channel_id) => <a href="#t:snowflake/0">snowflake</a>(),
+    optional(:system_channel_id) => <a href="#t:snowflake/0">snowflake</a>() | nil,
     optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
   }
   | [
@@ -1409,11 +1424,12 @@
       verification_level: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
       default_message_notifications: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
       explicit_content_filter: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
-      afk_channel_id: <a href="#t:snowflake/0">snowflake</a>(),
+      afk_channel_id: <a href="#t:snowflake/0">snowflake</a>() | nil,
       afk_timeout: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
-      icon: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>(),
+      icon: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>() | nil,
+      splash: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>() | nil,
       owner_id: <a href="#t:snowflake/0">snowflake</a>(),
-      system_channel_id: <a href="#t:snowflake/0">snowflake</a>(),
+      system_channel_id: <a href="#t:snowflake/0">snowflake</a>() | nil,
       reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
     ]</pre>
         
@@ -1435,7 +1451,7 @@
     </a>
     <span class="signature">modify_guild_emoji_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L898" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L867" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1447,9 +1463,13 @@
           <pre>modify_guild_emoji_data() ::
   %{
     optional(:name) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-    optional(:roles) => [Role.t() | <a href="#t:snowflake/0">snowflake</a>()],
+    optional(:roles) => [<a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>() | <a href="#t:snowflake/0">snowflake</a>()],
     optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
-  } :: [name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), roles: [Role | <a href="#t:snowflake/0">snowflake</a>()], reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()]</pre>
+  } :: [
+    name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    roles: [<a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>() | <a href="#t:snowflake/0">snowflake</a>()],
+    reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  ]</pre>
         
       </div>
     
@@ -1470,7 +1490,7 @@
     </a>
     <span class="signature">modify_guild_member_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1274" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1226" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1481,7 +1501,7 @@
         
           <pre>modify_guild_member_data() ::
   %{
-    optional(:nick) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:nick) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
     optional(:roles) => [<a href="#t:snowflake/0">snowflake</a>()],
     optional(:mute) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
     optional(:deaf) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
@@ -1489,7 +1509,7 @@
     optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
   }
   | [
-      nick: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      nick: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
       roles: [<a href="#t:snowflake/0">snowflake</a>()],
       mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
       deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
@@ -1517,7 +1537,7 @@
     </a>
     <span class="signature">snowflake()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L20" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L22" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1534,6 +1554,8 @@
   <section class="docstring">
     <p>  A Discord snowflake, fits in a 64bit integer.</p>
 <p>  Received as integers via the gateway, but as strings via http.</p>
+<blockquote><p>They are normalized to integers via <a href="Crux.Structs.html"><code class="inline">Crux.Structs</code></a>.</p>
+</blockquote>
 
   </section>
 </div>
@@ -1561,7 +1583,7 @@
     </a>
     <span class="signature">add_guild_member(guild, user, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1261" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1210" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1571,8 +1593,8 @@
       <div class="specs">
         
           <pre>add_guild_member(
-  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  user :: <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
   data :: <a href="#t:add_guild_member_data/0">add_guild_member_data</a>()
 ) :: {:ok, <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -1582,6 +1604,43 @@
   <section class="docstring">
     <p>  Adds a user to a guild via a provided oauth2 access token with the <code class="inline">guilds.join</code> scope.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#add-guild-member">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="add_guild_member_role/4">
+  
+  
+    <span id="add_guild_member_role/3"></span>
+  
+  <div class="detail-header">
+    <a href="#add_guild_member_role/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">add_guild_member_role(guild, member, role, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1294" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>add_guild_member_role(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  member :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  role :: <a href="Crux.Rest.Util.html#t:role_id_resolvable/0">Crux.Rest.Util.role_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Adds a role to a member.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#add-guild-member-role">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1595,7 +1654,7 @@
     </a>
     <span class="signature">add_pinned_message(message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L519" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L498" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1624,9 +1683,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">add_pinned_message(channel, message_id)</span>
+    <span class="signature">add_pinned_message(channel, message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L537" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L511" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1636,8 +1695,8 @@
       <div class="specs">
         
           <pre>add_pinned_message(
-  channel :: Crux.Structs.Channel | <a href="#t:snowflake/0">snowflake</a>(),
-  message :: <a href="#t:snowflake/0">snowflake</a>()
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -1659,7 +1718,7 @@
     </a>
     <span class="signature">create_channel_invite(channel, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L759" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L734" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1669,7 +1728,7 @@
       <div class="specs">
         
           <pre>create_channel_invite(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
   args :: <a href="#t:create_channel_invite_data/0">create_channel_invite_data</a>()
 ) :: {:ok, <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -1682,28 +1741,6 @@
 
   </section>
 </div>
-<div class="detail" id="create_guilad_channel/2">
-  
-  
-  <div class="detail-header">
-    <a href="#create_guilad_channel/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <span class="signature">create_guilad_channel(guild_id, data)</span>
-    
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1142" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-    
-    
-    
-  </div>
-  <section class="docstring">
-    
-  </section>
-</div>
 <div class="detail" id="create_guild/1">
   
   
@@ -1714,7 +1751,7 @@
     </a>
     <span class="signature">create_guild(data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L968" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L929" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1736,7 +1773,7 @@
     </a>
     <span class="signature">create_guild_channel(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1140" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1105" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1746,9 +1783,9 @@
       <div class="specs">
         
           <pre>create_guild_channel(
-  guild :: Crux.Structs.Guild | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
   data :: <a href="#t:create_guild_channel_data/0">create_guild_channel_data</a>()
-) :: {:ok, Crux.Structs.Channel} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+) :: {:ok, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
     
@@ -1769,7 +1806,7 @@
     </a>
     <span class="signature">create_guild_emoji(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L876" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L843" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1779,7 +1816,7 @@
       <div class="specs">
         
           <pre>create_guild_emoji(
-  guild :: Crux.Structs.Guild | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
   data :: <a href="#t:create_guild_emoji_data/0">create_guild_emoji_data</a>()
 ) :: {:ok, Crux.Structs.Emoji} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -1802,7 +1839,7 @@
     </a>
     <span class="signature">create_message(channel_or_message, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L136" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L138" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1812,8 +1849,7 @@
       <div class="specs">
         
           <pre>create_message(
-  channel_or_message ::
-    <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
   args :: <a href="#t:create_message_data/0">create_message_data</a>()
 ) :: {:ok, <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -1836,7 +1872,7 @@
     </a>
     <span class="signature">create_reaction(message, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L314" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L306" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1846,8 +1882,8 @@
       <div class="specs">
         
           <pre>create_reaction(
-  message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(),
-  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -1867,9 +1903,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">create_reaction(channel, message_id, emoji)</span>
+    <span class="signature">create_reaction(channel, message, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L332" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L319" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1879,9 +1915,9 @@
       <div class="specs">
         
           <pre>create_reaction(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  message_id :: <a href="#t:snowflake/0">snowflake</a>(),
-  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_id_resolvable/0">Crux.Rest.Util.emoji_id_resolvable</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -1903,7 +1939,7 @@
     </a>
     <span class="signature">delete_all_reactions(message, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L458" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L445" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1914,14 +1950,14 @@
         
           <pre>delete_all_reactions(
   message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(),
-  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>Deletes all reactions from a messaage.</p>
+    <p>  Deletes all reactions from a messaage.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-all-reactions">Discord Docs</a>.</p>
 
   </section>
@@ -1934,9 +1970,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">delete_all_reactions(channel, message_id, emoji)</span>
+    <span class="signature">delete_all_reactions(channel, message, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L479" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L458" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1946,16 +1982,16 @@
       <div class="specs">
         
           <pre>delete_all_reactions(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  message_id :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>Deletes all reactions from a messaage.</p>
+    <p>  Deletes all reactions from a messaage.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-all-reactions">Discord Docs</a>.</p>
 
   </section>
@@ -1972,7 +2008,7 @@
     </a>
     <span class="signature">delete_channel(channel, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L645" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L621" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1982,9 +2018,9 @@
       <div class="specs">
         
           <pre>delete_channel(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
   reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
-) :: {:ok, Crux.Structs.Channel} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+) :: {:ok, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
     
@@ -2007,7 +2043,7 @@
     </a>
     <span class="signature">delete_channel_permissions(channel, target, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L779" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L751" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2017,13 +2053,8 @@
       <div class="specs">
         
           <pre>delete_channel_permissions(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  target ::
-    Overwrite.t()
-    | Role.t()
-    | <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()
-    | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()
-    | <a href="#t:snowflake/0">snowflake</a>(),
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  target :: <a href="Crux.Rest.Util.html#t:overwrite_target_resolvable/0">Crux.Rest.Util.overwrite_target_resolvable</a>(),
   reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -2046,7 +2077,7 @@
     </a>
     <span class="signature">delete_guild(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1074" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1030" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2055,7 +2086,7 @@
     
       <div class="specs">
         
-          <pre>delete_guild(guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+          <pre>delete_guild(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
   :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2079,7 +2110,7 @@
     </a>
     <span class="signature">delete_guild_emoji(guild, emoji, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L955" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L914" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2089,8 +2120,8 @@
       <div class="specs">
         
           <pre>delete_guild_emoji(
-  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  emoji :: <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_id_resolvable/0">Crux.Rest.Util.emoji_id_resolvable</a>(),
   reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -2113,7 +2144,7 @@
     </a>
     <span class="signature">delete_invite(code)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1362" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1348" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2144,7 +2175,7 @@
     </a>
     <span class="signature">delete_message(message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L197" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L199" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2173,9 +2204,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">delete_message(channel, message_id)</span>
+    <span class="signature">delete_message(channel, message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L214" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L211" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2185,8 +2216,8 @@
       <div class="specs">
         
           <pre>delete_message(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  message_id :: <a href="#t:snowflake/0">snowflake</a>()
+  channel_id :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message_id :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()
 ) :: {:ok, Crux.Structs.Message} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2208,7 +2239,7 @@
     </a>
     <span class="signature">delete_messages(channel, messages)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L232" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L227" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2218,8 +2249,8 @@
       <div class="specs">
         
           <pre>delete_messages(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  messages :: [<a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="#t:snowflake/0">snowflake</a>()]
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  messages :: [<a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()]
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2241,7 +2272,7 @@
     </a>
     <span class="signature">delete_pinned_message(message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L548" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L526" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2270,9 +2301,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">delete_pinned_message(channel_id, message_id)</span>
+    <span class="signature">delete_pinned_message(channel, message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L563" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L539" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2282,8 +2313,8 @@
       <div class="specs">
         
           <pre>delete_pinned_message(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  message :: <a href="#t:snowflake/0">snowflake</a>()
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2309,7 +2340,7 @@
     </a>
     <span class="signature">delete_reaction(message_or_channel, emoji_or_message_id, emoji_or_maybe_user \\ &quot;@me&quot;, mayber_user \\ &quot;@me&quot;)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L436" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L420" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2319,10 +2350,10 @@
       <div class="specs">
         
           <pre>delete_reaction(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  message :: <a href="#t:snowflake/0">snowflake</a>(),
-  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  user :: <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="#t:snowflake/0">snowflake</a>()
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2345,7 +2376,7 @@
     </a>
     <span class="signature">edit_channel_permissions(channel, target, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L699" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L676" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2355,13 +2386,8 @@
       <div class="specs">
         
           <pre>edit_channel_permissions(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  target ::
-    Overwrite.t()
-    | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()
-    | <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()
-    | Role.t()
-    | <a href="#t:snowflake/0">snowflake</a>(),
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  target :: <a href="Crux.Rest.Util.html#t:overwrite_target_resolvable/0">Crux.Rest.Util.overwrite_target_resolvable</a>(),
   data :: <a href="#t:edit_channel_permissions_data/0">edit_channel_permissions_data</a>()
 ) :: :ok | {:error, :missing_target} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -2385,7 +2411,7 @@
     </a>
     <span class="signature">edit_message(message, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L164" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L166" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2416,7 +2442,7 @@
     </a>
     <span class="signature">edit_message(channel, message_id, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L182" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L181" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2426,8 +2452,8 @@
       <div class="specs">
         
           <pre>edit_message(
-  channel_id :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  message_id :: <a href="#t:snowflake/0">snowflake</a>(),
+  channel_id :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message_id :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
   args :: <a href="#t:message_edit_data/0">message_edit_data</a>()
 ) :: {:ok, <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -2450,7 +2476,7 @@
     </a>
     <span class="signature">gateway()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1373" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1359" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2480,7 +2506,7 @@
     </a>
     <span class="signature">gateway_bot()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1383" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1369" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2500,28 +2526,6 @@
 
   </section>
 </div>
-<div class="detail" id="get_Reactions/4">
-  
-  
-  <div class="detail-header">
-    <a href="#get_Reactions/4" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <span class="signature">get_Reactions(channel_id, message_id, emoji, args)</span>
-    
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L394" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-    
-    
-    
-  </div>
-  <section class="docstring">
-    
-  </section>
-</div>
 <div class="detail" id="get_channel/1">
   
   
@@ -2530,9 +2534,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">get_channel(channel_id)</span>
+    <span class="signature">get_channel(channel)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L575" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L553" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2541,7 +2545,7 @@
     
       <div class="specs">
         
-          <pre>get_channel(channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+          <pre>get_channel(channel :: <a href="Crux.Rest.Util.html#t:resolve_channel_id/0">Crux.Rest.Util.resolve_channel_id</a>()) ::
   {:ok, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2563,7 +2567,7 @@
     </a>
     <span class="signature">get_channel_invites(channel)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L713" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L691" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2572,7 +2576,7 @@
     
       <div class="specs">
         
-          <pre>get_channel_invites(channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+          <pre>get_channel_invites(channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>()) ::
   {:ok, [<a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2594,7 +2598,7 @@
     </a>
     <span class="signature">get_guild(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L991" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L948" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2603,7 +2607,7 @@
     
       <div class="specs">
         
-          <pre>get_guild(guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+          <pre>get_guild(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
   {:ok, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2625,7 +2629,7 @@
     </a>
     <span class="signature">get_guild_channels(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1089" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1044" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2634,7 +2638,7 @@
     
       <div class="specs">
         
-          <pre>get_guild_channels(guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+          <pre>get_guild_channels(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
   {:ok, [<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2656,7 +2660,7 @@
     </a>
     <span class="signature">get_guild_emoji(guild, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L836" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L803" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2666,8 +2670,8 @@
       <div class="specs">
         
           <pre>get_guild_emoji(
-  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  emoji :: <a href="#t:snowflake/0">snowflake</a>()
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_id_resolvable/0">Crux.Rest.Util.emoji_id_resolvable</a>()
 ) :: {:ok, Crux.Structs.Emoji} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2687,9 +2691,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">get_guild_member(guild_id, user)</span>
+    <span class="signature">get_guild_member(guild, user)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1190" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1145" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2699,8 +2703,8 @@
       <div class="specs">
         
           <pre>get_guild_member(
-  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  user :: <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | <a href="#t:snowflake/0">snowflake</a>()
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>()
 ) :: {:ok, <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2723,7 +2727,7 @@
     </a>
     <span class="signature">get_invite(code)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1348" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1334" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2752,9 +2756,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">get_message(channel, message_id)</span>
+    <span class="signature">get_message(channel, message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L253" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L245" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2764,8 +2768,8 @@
       <div class="specs">
         
           <pre>get_message(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  message_id :: <a href="#t:snowflake/0">snowflake</a>()
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message_id :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()
 ) :: {:ok, Crux.Structs.Message} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2789,7 +2793,7 @@
     </a>
     <span class="signature">get_messages(channel, args \\ [])</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L293" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L285" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2799,7 +2803,7 @@
       <div class="specs">
         
           <pre>get_messages(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
   args :: <a href="#t:get_messages_data/0">get_messages_data</a>()
 ) :: {:ok, [<a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -2822,7 +2826,7 @@
     </a>
     <span class="signature">get_pinned_messages(channel)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L798" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L767" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2831,7 +2835,7 @@
     
       <div class="specs">
         
-          <pre>get_pinned_messages(channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+          <pre>get_pinned_messages(channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>()) ::
   {:ok, [<a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2857,7 +2861,7 @@
     </a>
     <span class="signature">get_reactions(channel_or_message, emoji_or_message_id, emoji_or_maybe_data \\ [], maybe_data \\ [])</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L391" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L378" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2867,9 +2871,9 @@
       <div class="specs">
         
           <pre>get_reactions(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  emoji :: Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>(),
   args :: <a href="#t:get_reactions_data/0">get_reactions_data</a>()
 ) :: {:ok, [<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -2893,7 +2897,7 @@
     </a>
     <span class="signature">list_guild_emojis(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L818" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L786" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2902,7 +2906,7 @@
     
       <div class="specs">
         
-          <pre>list_guild_emojis(guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>()) ::
+          <pre>list_guild_emojis(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
   {:ok, [<a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
@@ -2926,7 +2930,7 @@
     </a>
     <span class="signature">list_guild_members(guild, options \\ [])</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1215" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1170" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2936,7 +2940,7 @@
       <div class="specs">
         
           <pre>list_guild_members(
-  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
   options :: <a href="#t:list_guild_members_options/0">list_guild_members_options</a>()
 ) :: {:ok, [<a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -2959,7 +2963,7 @@
     </a>
     <span class="signature">modify_channel(channel, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L627" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L604" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2969,7 +2973,7 @@
       <div class="specs">
         
           <pre>modify_channel(
-  channel :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(),
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
   args :: <a href="#t:modify_channel_data/0">modify_channel_data</a>()
 ) :: {:ok, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -2994,7 +2998,7 @@
     </a>
     <span class="signature">modify_current_users_nick(guild, nick, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1336" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1276" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3004,7 +3008,7 @@
       <div class="specs">
         
           <pre>modify_current_users_nick(
-  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
   nick :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
   reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
@@ -3014,7 +3018,7 @@
   </div>
   <section class="docstring">
     <p>  Modifies the nickname of the current user in a guild.</p>
-<p>  Yes you read correctly, that has its own endpoint.</p>
+<p>  Yes, you read correctly, that has its own endpoint.<br/>  Great, isn’t it?</p>
 <p>  For more informations, but not an answer to the question why, see <a href="https://discordapp.com/developers/docs/resources/guild#modify-current-user-nick">Discord Docs</a>.</p>
 
   </section>
@@ -3029,7 +3033,7 @@
     </a>
     <span class="signature">modify_guild(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1039" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L997" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3039,9 +3043,9 @@
       <div class="specs">
         
           <pre>modify_guild(
-  guild :: Crux.Structs.Guild | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
   data :: <a href="#t:modify_guild_data/0">modify_guild_data</a>()
-) :: {:ok, Crux.Structs.Guild} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+) :: {:ok, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
     
@@ -3062,7 +3066,7 @@
     </a>
     <span class="signature">modify_guild_channel_positions(guild, channels)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1167" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1127" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3072,7 +3076,7 @@
       <div class="specs">
         
           <pre>modify_guild_channel_positions(
-  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
   channels :: [<a href="#t:modify_guild_channel_positions_data_entry/0">modify_guild_channel_positions_data_entry</a>()]
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -3095,7 +3099,7 @@
     </a>
     <span class="signature">modify_guild_emoji(guild, emoji, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L927" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L888" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3105,8 +3109,8 @@
       <div class="specs">
         
           <pre>modify_guild_emoji(
-  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  emoji :: <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_id_resolvable/0">Crux.Rest.Util.emoji_id_resolvable</a>(),
   data :: <a href="#t:modify_guild_emoji_data/0">modify_guild_emoji_data</a>()
 ) :: {:ok, Crux.Structs.Emoji} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -3127,9 +3131,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">modify_guild_member(guild, member_or_user, data)</span>
+    <span class="signature">modify_guild_member(guild, member, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1313" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1254" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3139,9 +3143,8 @@
       <div class="specs">
         
           <pre>modify_guild_member(
-  guild :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
-  member_or_user ::
-    <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="#t:snowflake/0">snowflake</a>(),
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  member :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
   data :: <a href="#t:modify_guild_member_data/0">modify_guild_member_data</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
@@ -3154,17 +3157,19 @@
 
   </section>
 </div>
-<div class="detail" id="trigger_typing/1">
+<div class="detail" id="remove_guild_member_role/4">
   
+  
+    <span id="remove_guild_member_role/3"></span>
   
   <div class="detail-header">
-    <a href="#trigger_typing/1" class="detail-link" title="Link to this function">
+    <a href="#remove_guild_member_role/4" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">trigger_typing(message_or_channel)</span>
+    <span class="signature">remove_guild_member_role(guild, member, role, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L506" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1316" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3173,10 +3178,43 @@
     
       <div class="specs">
         
-          <pre>trigger_typing(
-  message_or_channel ::
-    <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:snowflake/0">snowflake</a>()
+          <pre>remove_guild_member_role(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  member :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  role :: <a href="Crux.Rest.Util.html#t:role_id_resolvable/0">Crux.Rest.Util.role_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
 ) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Removes a role from a member.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#remove-guild-member-role">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="trigger_typing/1">
+  
+  
+  <div class="detail-header">
+    <a href="#trigger_typing/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">trigger_typing(channel)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L483" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>trigger_typing(channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>()) ::
+  :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
         
       </div>
     
