@@ -388,7 +388,7 @@
 
 <pre><code class="elixir">iex&gt; :administrator
 ...&gt; |&gt; Crux.Structs.Permissions.add(:manage_guild)
-0x28
+%Crux.Structs.Permissions{bitfield: 0x28}
 </code></pre>
 
   </section>
@@ -542,7 +542,7 @@ true
 
 <pre><code class="elixir">iex&gt; [0x8, 0x10, 0x20]
 ...&gt; |&gt; Crux.Structs.Permissions.remove([0x10, 0x20])
-0x8
+%Crux.Structs.Permissions{bitfield: 0x8}
 </code></pre>
 
   </section>
