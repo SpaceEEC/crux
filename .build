@@ -4,7 +4,7 @@ fonts/icomoon.eot
 fonts/icomoon.svg
 fonts/icomoon.ttf
 fonts/icomoon.woff
-dist/sidebar_items-c524016f19.js
+dist/sidebar_items-074d1b7db2.js
 api-reference.html
 search.html
 404.html
@@ -42,6 +42,7 @@ Crux.Structs.Invite.html
 Crux.Structs.Member.html
 Crux.Structs.Message.html
 Crux.Structs.Overwrite.html
+Crux.Structs.Permissions.html
 Crux.Structs.Presence.html
 Crux.Structs.Reaction.html
 Crux.Structs.Role.html
