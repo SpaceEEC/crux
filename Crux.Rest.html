@@ -8,7 +8,7 @@
     <title>Crux.Rest – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-760cae9fdd.js"></script>
+    <script src="dist/sidebar_items-c524016f19.js"></script>
     
     
     
@@ -194,6 +194,15 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:guild_role_data/0">guild_role_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to create a role in a guild with <code class="inline">create_guild_role/2</code></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:list_guild_members_options/0">list_guild_members_options()</a>
   </div>
   
@@ -305,6 +314,15 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#begin_guild_prune/2">begin_guild_prune(guild, days)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Prunes members in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#create_channel_invite/2">create_channel_invite(channel, args)</a>
   </div>
   
@@ -316,6 +334,15 @@
   <div class="summary-signature">
     <a href="#create_guild/1">create_guild(data)</a>
   </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_ban/3">create_guild_ban(guild, user, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Bans a user  from a guild, the user does not have to be part of the guild</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -333,6 +360,15 @@
   </div>
   
     <div class="summary-synopsis"><p>Creates an emoji in a guild, see <code class="inline">t:create_guild_emoji_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_integration/2">create_guild_integration(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Attaches an integration from the current user to a guild</p>
 </div>
   
 </div>
@@ -360,6 +396,15 @@
   </div>
   
     <div class="summary-synopsis"><p>Creates a reaction on a message, or increases its count by one</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_role/2">create_role(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Creates a role in a guild</p>
 </div>
   
 </div>
@@ -414,6 +459,24 @@
   </div>
   
     <div class="summary-synopsis"><p>Deletes an emoji from a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild_integration/2">delete_guild_integration(guild, integration_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes an integration from a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild_role/3">delete_guild_role(guild, role, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Deletes a role in a guild</p>
 </div>
   
 </div>
@@ -554,10 +617,37 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_guild_ban/2">get_guild_ban(guild, user)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a single ban entry by id</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_bans/1">get_guild_bans(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a map of banned users along their ban reasons</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_guild_channels/1">get_guild_channels(guild)</a>
   </div>
   
     <div class="summary-synopsis"><p>Gets all channels from a guild via the api.<br/>  This should usually, duo caching, <strong>NOT</strong> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_embed/1">get_guild_embed(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a guild’s embed (server widget)</p>
 </div>
   
 </div>
@@ -572,10 +662,64 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_guild_integrations/1">get_guild_integrations(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a list of guild integrations</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_invites/1">get_guild_invites(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches all available invites in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_guild_member/2">get_guild_member(guild, user)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches a member from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_prune_count/2">get_guild_prune_count(guild, days)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches the number of members in a guild that would be removed when pruned</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_roles/1">get_guild_roles(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a list of roles in a guild.<br/>  This should usually, duo caching, <strong>NOT</strong> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_vanity_url/1">get_guild_vanity_url(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches the vanity url of a guild, if any</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_voice_regions/1">get_guild_voice_regions(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a list of voice regions for a guild. Returns VIP servers when the guild is VIP-enabled</p>
 </div>
   
 </div>
@@ -680,10 +824,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#modify_guild_embed/2">modify_guild_embed(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifies a guild’s embed (server widget)</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#modify_guild_emoji/3">modify_guild_emoji(guild, emoji, data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Modifies a guild emoji</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_integration/3">modify_guild_integration(guild, integration_id, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifies an integreation for a guild</p>
 </div>
   
 </div>
@@ -698,10 +860,46 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#modify_guild_role/3">modify_guild_role(guild, role, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifies a role in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_role_positions/2">modify_guild_role_positions(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifies the positions of a list of role objects for a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#remove_guild_ban/3">remove_guild_ban(guild, user, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Removes a ban for a user from a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#remove_guild_member_role/4">remove_guild_member_role(guild, member, role, reason \\ nil)</a>
   </div>
   
     <div class="summary-synopsis"><p>Removes a role from a member</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#sync_guild_integration/2">sync_guild_integration(guild, integration_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Syncs an integration for a guild</p>
 </div>
   
 </div>
@@ -1227,6 +1425,51 @@
 
   </section>
 </div>
+<div class="detail" id="t:guild_role_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:guild_role_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">guild_role_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1419" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>guild_role_data() ::
+  %{
+    optional(:name) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:permissions) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:color) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    optional(:hoist) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:mentionable) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+    optional(:reason) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+  }
+  | [
+      name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+      permissions: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      color: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+      hoist: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      mentionable: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+      reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    ]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to create a role in a guild with <code class="inline">create_guild_role/2</code>.</p>
+
+  </section>
+</div>
 <div class="detail" id="t:list_guild_members_options/0">
   
   
@@ -1708,6 +1951,39 @@
 
   </section>
 </div>
+<div class="detail" id="begin_guild_prune/2">
+  
+  
+  <div class="detail-header">
+    <a href="#begin_guild_prune/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">begin_guild_prune(guild, days)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1525" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>begin_guild_prune(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  days :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()
+) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Prunes members in a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#begin-guild-prune">Discord Docs</a>.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_channel_invite/2">
   
   
@@ -1761,6 +2037,42 @@
   </div>
   <section class="docstring">
     
+  </section>
+</div>
+<div class="detail" id="create_guild_ban/3">
+  
+  
+    <span id="create_guild_ban/2"></span>
+  
+  <div class="detail-header">
+    <a href="#create_guild_ban/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild_ban(guild, user, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1376" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_ban(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Bans a user  from a guild, the user does not have to be part of the guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#create-guild-ban">Discord Docs</a>.</p>
+
   </section>
 </div>
 <div class="detail" id="create_guild_channel/2">
@@ -1826,6 +2138,40 @@
   <section class="docstring">
     <p>  Creates an emoji in a guild, see <code class="inline">t:create_guild_emoji_data</code> for available options.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#create-guild-emoji">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_guild_integration/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_guild_integration/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild_integration(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1594" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_integration(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data ::
+    %{type: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), id: <a href="#t:snowflake/0">snowflake</a>()} | [type: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), id: <a href="#t:snowflake/0">snowflake</a>()]
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Attaches an integration from the current user to a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#create-guild-integration">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1926,6 +2272,39 @@
   <section class="docstring">
     <p>Creates a reaction on a message, or increases its count by one.</p>
 <p>For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#create-reaction">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_role/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_role/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_role(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1444" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_role(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data :: <a href="#t:guild_role_data/0">guild_role_data</a>()
+) :: {:ok, <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Creates a role in a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#create-guild-role">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -2134,6 +2513,75 @@
 
   </section>
 </div>
+<div class="detail" id="delete_guild_integration/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_guild_integration/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_guild_integration(guild, integration_id)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1635" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_guild_integration(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  integration_id :: <a href="#t:snowflake/0">snowflake</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes an integration from a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#delete-guild-integration">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_guild_role/3">
+  
+  
+    <span id="delete_guild_role/2"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_guild_role/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_guild_role(guild, role, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1495" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_guild_role(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  role :: <a href="Crux.Rest.Util.html#t:role_id_resolvable/0">Crux.Rest.Util.role_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Deletes a role in a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#delete-guild-role">Discord Docs</a>.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_invite/1">
   
   
@@ -2144,7 +2592,7 @@
     </a>
     <span class="signature">delete_invite(code)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1348" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1726" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2476,7 +2924,7 @@
     </a>
     <span class="signature">gateway()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1359" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1737" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2506,7 +2954,7 @@
     </a>
     <span class="signature">gateway_bot()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1369" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1747" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2619,6 +3067,81 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_ban/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_ban/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_ban(guild, user)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1352" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_ban(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>()
+) ::
+  {:ok, %{user: <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(), reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil}}
+  | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a single ban entry by id.</p>
+<blockquote><p>Returns {:error, %Crux.Rest.ApiError{status_code: 404, code: 10026, …}} when the user is not banned.</p>
+</blockquote>
+<p>For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-ban">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_bans/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_bans/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_bans(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1333" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_bans(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  {:ok,
+   %{
+     optional(<a href="#t:snowflake/0">snowflake</a>()) => %{
+       user: <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(),
+       reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil
+     }
+   }}
+  | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a map of banned users along their ban reasons.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-bans">discord Docs</a>.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_channels/1">
   
   
@@ -2647,6 +3170,39 @@
   <section class="docstring">
     <p>  Gets all channels from a guild via the api.<br/>  This should usually, duo caching, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-channels">Discord Docs</a>-</p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_embed/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_embed/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_embed(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1662" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_embed(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a guild’s embed (server widget).</p>
+<blockquote><p>Returns a <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-embed">Guild Embed Object</a>.</p>
+</blockquote>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-embed">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -2680,6 +3236,70 @@
   <section class="docstring">
     <p>  Gets an emoji from a guild<br/>  This should usually, duo cache, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#get-guild-emoji">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_integrations/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_integrations/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_integrations(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1577" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_integrations(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a list of guild integrations.</p>
+<blockquote><p>Returns a list of <a href="https://discordapp.com/developers/docs/resources/guild#integration-object">Integration Objects</a>.</p>
+</blockquote>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-integration">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_invites/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_invites/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_invites(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1559" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_invites(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  {:ok, %{optional(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) => <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()}} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches all available invites in a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-invites">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -2717,6 +3337,133 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_prune_count/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_prune_count/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_prune_count(guild, days)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1509" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_prune_count(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  days :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()
+) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches the number of members in a guild that would be removed when pruned.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-prune-count">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_roles/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_roles/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_roles(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1408" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_roles(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  {:ok, %{optional(<a href="#t:snowflake/0">snowflake</a>()) => <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()}} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a list of roles in a guild.<br/>  This should usually, duo caching, <strong>NOT</strong> be necessary.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-roles">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_vanity_url/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_vanity_url/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_vanity_url(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1695" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_vanity_url(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  {:ok, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches the vanity url of a guild, if any</p>
+
+  </section>
+</div>
+<div class="detail" id="get_guild_voice_regions/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_voice_regions/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_voice_regions(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1543" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_voice_regions(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a list of voice regions for a guild. Returns VIP servers when the guild is VIP-enabled.</p>
+<blockquote><p>Returns a list of <a href="https://discordapp.com/developers/docs/resources/voice#voice-region-object">Voice Region Objects</a>.</p>
+</blockquote>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-voice-regions">Discord Docs</a>.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_invite/1">
   
   
@@ -2727,7 +3474,7 @@
     </a>
     <span class="signature">get_invite(code)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1334" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1712" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3089,6 +3836,43 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild_embed/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_embed/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_embed(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1684" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_embed(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data ::
+    %{optional(:enabled) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(), optional(:channel_id) => <a href="#t:snowflake/0">snowflake</a>()}
+    | [enabled: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(), channel_id: <a href="#t:snowflake/0">snowflake</a>()]
+) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifies a guild’s embed (server widget).</p>
+<blockquote><p>Returns the updated <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-embed">Guild Embed Object</a>.</p>
+</blockquote>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#modify-guild-embed">Discord Docs</a>.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_guild_emoji/3">
   
   
@@ -3120,6 +3904,50 @@
   <section class="docstring">
     <p>  Modifies a guild emoji.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#modify-guild-emoji">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="modify_guild_integration/3">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_integration/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_integration(guild, integration_id, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1620" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_integration(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  integration_id :: <a href="#t:snowflake/0">snowflake</a>(),
+  data ::
+    %{
+      optional(:expire_behavior) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+      optional(:expire_grace_period) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+      optional(:enable_emoticons) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()
+    }
+    | [
+        expire_behavior: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+        expire_grace_period: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+        enable_emoticons: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()
+      ]
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifies an integreation for a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#modify-guild-integration">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -3157,6 +3985,109 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild_role/3">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_role/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_role(guild, role, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1478" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_role(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  role :: <a href="Crux.Rest.Util.html#t:role_id_resolvable/0">Crux.Rest.Util.role_id_resolvable</a>(),
+  data :: <a href="#t:guild_role_data/0">guild_role_data</a>()
+) :: {:ok, <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifies a role in a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#modify-guild-role">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="modify_guild_role_positions/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_role_positions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_role_positions(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1460" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_role_positions(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data :: <a href="Crux.Rest.Util.html#t:modify_guild_role_positions_data/0">Crux.Rest.Util.modify_guild_role_positions_data</a>()
+) :: {:ok, %{optional(<a href="#t:snowflake/0">snowflake</a>()) => <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()}} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifies the positions of a list of role objects for a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#modify-guild-role-positions">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="remove_guild_ban/3">
+  
+  
+    <span id="remove_guild_ban/2"></span>
+  
+  <div class="detail-header">
+    <a href="#remove_guild_ban/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">remove_guild_ban(guild, user, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1393" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>remove_guild_ban(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Removes a ban for a user from a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#remove-guild-ban">Discord Docs</a>.</p>
+
+  </section>
+</div>
 <div class="detail" id="remove_guild_member_role/4">
   
   
@@ -3191,6 +4122,39 @@
   <section class="docstring">
     <p>  Removes a role from a member.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#remove-guild-member-role">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="sync_guild_integration/2">
+  
+  
+  <div class="detail-header">
+    <a href="#sync_guild_integration/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">sync_guild_integration(guild, integration_id)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1648" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>sync_guild_integration(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  integration_id :: <a href="#t:snowflake/0">snowflake</a>()
+) :: :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Syncs an integration for a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#sync-guild-integration">Discord Docs</a>.</p>
 
   </section>
 </div>

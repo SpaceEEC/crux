@@ -8,7 +8,7 @@
     <title>Crux.Rest.Util – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-760cae9fdd.js"></script>
+    <script src="dist/sidebar_items-c524016f19.js"></script>
     
     
     
@@ -149,6 +149,15 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:guild_role_position_resolvable/0">guild_role_position_resolvable()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>All available types which can be resolved into a role position</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:message_id_resolvable/0">message_id_resolvable()</a>
   </div>
   
@@ -266,6 +275,15 @@
   </div>
   
     <div class="summary-synopsis"><p>Resolves a <a href="#t:guild_id_resolvable/0"><code class="inline">guild_id_resolvable/0</code></a> into a guild id</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#resolve_guild_role_position/1">resolve_guild_role_position(arg1)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Resolves a <a href="#t:guild_role_position_resolvable/0"><code class="inline">guild_role_position_resolvable/0</code></a> into a role position</p>
 </div>
   
 </div>
@@ -480,6 +498,39 @@
   </div>
   <section class="docstring">
     <p>  All available types that can be resolved into a guild id.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:guild_role_position_resolvable/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:guild_role_position_resolvable/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">guild_role_position_resolvable()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/util.ex#L365" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>guild_role_position_resolvable() ::
+  {<a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}
+  | %{id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}
+  | {<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}
+  | %{role: <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>(), position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  All available types which can be resolved into a role position.</p>
 
   </section>
 </div>
@@ -757,7 +808,7 @@ iex&gt; 222079895583457280
       <div class="specs">
         
           <pre>resolve_channel_position(channel :: <a href="#t:channel_position_resolvable/0">channel_position_resolvable</a>()) :: %{
-  id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
 }</pre>
         
@@ -920,6 +971,59 @@ iex&gt; %Crux.Structs.Message{guild_id: 222078108977594368}
 iex&gt; 222078108977594368
 ...&gt; |&gt; Crux.Rest.Util.resolve_guild_id()
 222078108977594368
+</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="resolve_guild_role_position/1">
+  
+  
+  <div class="detail-header">
+    <a href="#resolve_guild_role_position/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">resolve_guild_role_position(arg1)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/util.ex#L409" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>resolve_guild_role_position(role :: <a href="#t:guild_role_position_resolvable/0">guild_role_position_resolvable</a>()) :: %{
+  id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
+  position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
+}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Resolves a <a href="#t:guild_role_position_resolvable/0"><code class="inline">guild_role_position_resolvable/0</code></a> into a role position.</p>
+<h2 id="resolve_guild_role_position/1-examples" class="section-heading">
+  <a href="#resolve_guild_role_position/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="elixir">iex&gt; {%Crux.Structs.Role{id: 373405430589816834}, 5}
+...&gt; |&gt; Crux.Rest.Util.resolve_guild_role_position()
+%{id: 373405430589816834, position: 5}
+
+iex&gt; %{id: 373405430589816834, position: 5}
+...&gt; |&gt; Crux.Rest.Util.resolve_guild_role_position()
+%{id: 373405430589816834, position: 5}
+
+iex&gt; %{role: %Crux.Structs.Role{id: 373405430589816834}, position: 5}
+...&gt; |&gt; Crux.Rest.Util.resolve_guild_role_position()
+%{id: 373405430589816834, position: 5}
+
+iex&gt; {373405430589816834, 5}
+...&gt; |&gt; Crux.Rest.Util.resolve_guild_role_position()
+%{id: 373405430589816834, position: 5}
 </code></pre>
 
   </section>
