@@ -629,7 +629,7 @@
     </a>
     <span class="signature">guild_ban_add_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L291" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L293" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -639,7 +639,8 @@
       <div class="specs">
         
           <pre>guild_ban_add_event() ::
-  {:GUILD_BAN_ADD, {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(), <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()},
+  {:GUILD_BAN_ADD,
+   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>(), <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()},
    <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
         
       </div>
@@ -647,6 +648,7 @@
   </div>
   <section class="docstring">
     <p>  Emitted whenever a user is banned from a guild.</p>
+<p>  A member is emitted when it was cached, a user if not.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-ban-add">Discord Docs</a>.</p>
 
   </section>
@@ -661,7 +663,7 @@
     </a>
     <span class="signature">guild_ban_remove_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L311" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L314" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -755,7 +757,7 @@
     </a>
     <span class="signature">guild_emojis_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L333" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L336" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -788,7 +790,7 @@
     </a>
     <span class="signature">guild_integrations_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L355" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L358" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -819,7 +821,7 @@
     </a>
     <span class="signature">guild_member_add_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L372" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L375" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -850,7 +852,7 @@
     </a>
     <span class="signature">guild_member_remove_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L386" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L391" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -860,7 +862,8 @@
       <div class="specs">
         
           <pre>guild_member_remove_event() ::
-  {:GUILD_MEMBER_REMOVE, {<a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>(), <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()},
+  {:GUILD_MEMBER_REMOVE,
+   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>(), <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()},
    <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
         
       </div>
@@ -868,6 +871,7 @@
   </div>
   <section class="docstring">
     <p>  Emitted whenever a user leaves a guild.<br/>  This includes kicks and bans (only if the user is present in the guild)</p>
+<p>  A member is emitted when it was cached, a user if not.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-member-remove">Discord Docs</a>.</p>
 
   </section>
@@ -882,7 +886,7 @@
     </a>
     <span class="signature">guild_member_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L410" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L418" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -916,7 +920,7 @@
     </a>
     <span class="signature">guild_members_chunk_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L434" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L442" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -947,7 +951,7 @@
     </a>
     <span class="signature">guild_role_create_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L447" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L455" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -978,7 +982,7 @@
     </a>
     <span class="signature">guild_role_delete_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L487" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L495" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1009,7 +1013,7 @@
     </a>
     <span class="signature">guild_role_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L466" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L474" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1075,7 +1079,7 @@
     </a>
     <span class="signature">message_create_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L505" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L513" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1106,7 +1110,7 @@
     </a>
     <span class="signature">message_delete_bulk_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L562" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L570" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1138,7 +1142,7 @@
     </a>
     <span class="signature">message_delete_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L544" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L552" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1170,7 +1174,7 @@
     </a>
     <span class="signature">message_reaction_add_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L580" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L588" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1203,7 +1207,7 @@
     </a>
     <span class="signature">message_reaction_remove_all_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L618" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L626" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1235,7 +1239,7 @@
     </a>
     <span class="signature">message_reaction_remove_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L589" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L597" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1268,7 +1272,7 @@
     </a>
     <span class="signature">message_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L520" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L528" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1305,7 +1309,7 @@
     </a>
     <span class="signature">presence_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L636" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L644" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1405,7 +1409,7 @@
     </a>
     <span class="signature">typing_start_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L673" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L681" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1438,7 +1442,7 @@
     </a>
     <span class="signature">user_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L694" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L702" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1471,7 +1475,7 @@
     </a>
     <span class="signature">voice_server_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L742" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L750" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1505,7 +1509,7 @@
     </a>
     <span class="signature">voice_state_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L717" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L725" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1539,7 +1543,7 @@
     </a>
     <span class="signature">webhooks_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L754" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L762" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

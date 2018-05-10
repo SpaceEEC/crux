@@ -86,7 +86,7 @@
           <p>  Provides a <code class="inline">__using__</code> macro to inject two functions to simplify consuming of gateway events.</p>
 <p>  A somewhat example of this:</p>
 <p>  A Supervisor, like <a href="Crux.Base.ConsumerSupervisor.html"><code class="inline">Crux.Base.ConsumerSupervisor</code></a>, and</p>
-<pre><code class="ex">defmodule Bot.Consumer do
+<pre><code class="elixir">defmodule Bot.Consumer do
   use Crux.Base.TaskConsumer
 
   def handle_event({:MESSAGE_CREATE, message, _shard_id}) do

@@ -85,7 +85,7 @@
         <section id="moduledoc">
           <p>  Supervises a consumer, for example, a module using <a href="Crux.Base.TaskConsumer.html"><code class="inline">Crux.Base.TaskConsumer</code></a>.</p>
 <p>  A somewhat example of this:</p>
-<pre><code class="ex">defmodule Bot.Supervisor do
+<pre><code class="elixir">defmodule Bot.Supervisor do
   def start_link(_), do: Supervisor.start_link(__MODULE__, %{}, name: __MODULE__)
 
   def init(_args) do
