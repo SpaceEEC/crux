@@ -8,7 +8,7 @@
     <title>Crux.Structs.Permissions – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-074d1b7db2.js"></script>
+    <script src="dist/sidebar_items-29a87857a7.js"></script>
     
     
     
@@ -107,7 +107,7 @@
     <a href="#t:permission_name/0">permission_name()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Union type of all valid single permission atoms</p>
+    <div class="summary-synopsis"><p>Union type of all valid permission name atoms</p>
 </div>
   
 </div>
@@ -124,6 +124,9 @@
   <div class="summary-signature">
     <a href="#t:t/0">t()</a>
   </div>
+  
+    <div class="summary-synopsis"><p>Represents a <code class="inline">Crux.Struct.Permissions</code></p>
+</div>
   
 </div>
 
@@ -168,6 +171,33 @@
   </div>
   
     <div class="summary-synopsis"><p>Creates a new <a href="Crux.Structs.Permissions.html#content"><code class="inline">Crux.Structs.Permissions</code></a> struct from a valid <a href="#t:permissions/0"><code class="inline">permissions/0</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#permission_all/0">permission_all()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Returns the integer value of all permissions together</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#permission_names/0">permission_names()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Returns a list of permission keys</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#permissions/0">permissions()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Returns a map of permissions, keyed under their permission name with the bit value</p>
 </div>
   
 </div>
@@ -236,7 +266,7 @@
     </a>
     <span class="signature">permission_name()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L48" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L65" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -279,7 +309,7 @@
     
   </div>
   <section class="docstring">
-    <p>  Union type of all valid single permission atoms</p>
+    <p>  Union type of all valid permission name atoms</p>
 
   </section>
 </div>
@@ -293,7 +323,7 @@
     </a>
     <span class="signature">permissions()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L87" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L107" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -323,7 +353,7 @@
     </a>
     <span class="signature">t()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L80" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L100" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -338,7 +368,8 @@
     
   </div>
   <section class="docstring">
-    
+    <p>  Represents a <code class="inline">Crux.Struct.Permissions</code>.</p>
+
   </section>
 </div>
 
@@ -365,7 +396,7 @@
     </a>
     <span class="signature">add(base, to_add)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L203" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L223" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -405,7 +436,7 @@
     </a>
     <span class="signature">from(member, guild, channel \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L299" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L319" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -443,7 +474,7 @@
     </a>
     <span class="signature">has(current, want)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L254" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L274" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -490,7 +521,7 @@ true
     </a>
     <span class="signature">new(permissions)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L153" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L173" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -509,6 +540,93 @@ true
 
   </section>
 </div>
+<div class="detail" id="permission_all/0">
+  
+  
+  <div class="detail-header">
+    <a href="#permission_all/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">permission_all()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L60" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>permission_all() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Returns the integer value of all permissions together.</p>
+
+  </section>
+</div>
+<div class="detail" id="permission_names/0">
+  
+  
+  <div class="detail-header">
+    <a href="#permission_names/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">permission_names()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L53" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>permission_names() :: [<a href="#t:permission_name/0">permission_name</a>()]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>Returns a list of permission keys.</p>
+
+  </section>
+</div>
+<div class="detail" id="permissions/0">
+  
+  
+  <div class="detail-header">
+    <a href="#permissions/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">permissions()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L46" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>permissions() :: %{optional(<a href="#t:permission_name/0">permission_name</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Returns a map of permissions, keyed under their permission name with the bit value.</p>
+
+  </section>
+</div>
 <div class="detail" id="remove/2">
   
   
@@ -519,7 +637,7 @@ true
     </a>
     <span class="signature">remove(base, to_remove)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L224" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L244" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -557,7 +675,7 @@ true
     </a>
     <span class="signature">resolve(permissions)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L140" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L160" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -615,7 +733,7 @@ iex&gt; [:manage_roles, 0x400, 0x800, :add_reactions]
     </a>
     <span class="signature">to_list(permissions)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L183" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L203" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -655,7 +773,7 @@ iex&gt; [:manage_roles, 0x400, 0x800, :add_reactions]
     </a>
     <span class="signature">to_map(permissions)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L161" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L181" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
