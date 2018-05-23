@@ -8,7 +8,7 @@
     <title>Crux.Structs.Util – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-29a87857a7.js"></script>
+    <script src="dist/sidebar_items-4fc11690d5.js"></script>
     
     
     
@@ -170,7 +170,7 @@
     </a>
     <span class="signature">atomify(input)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L147" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/util.ex#L153" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -216,6 +216,11 @@ iex&gt; %{&quot;foo&quot; =&gt; &quot;bar&quot;, &quot;bar&quot; =&gt; %{&quot;b
 iex&gt; [[%{&quot;foo&quot; =&gt; &quot;bar&quot;}], %{&quot;bar&quot; =&gt; &quot;foo&quot;}]
 ...&gt; |&gt; Crux.Structs.Util.atomify()
 [[%{foo: &quot;bar&quot;}], %{bar: &quot;foo&quot;}]
+
+# A struct
+iex&gt; %Crux.Structs.Overwrite{id: 448394877194076161, type: &quot;role&quot;, allow: 0, deny: 0}
+...&gt; |&gt; Crux.Structs.Util.atomify()
+%{id: 448394877194076161, type: &quot;role&quot;, allow: 0, deny: 0}
 </code></pre>
 
   </section>

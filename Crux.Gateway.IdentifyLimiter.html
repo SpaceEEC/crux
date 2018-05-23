@@ -8,7 +8,7 @@
     <title>Crux.Gateway.IdentifyLimiter – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-29a87857a7.js"></script>
+    <script src="dist/sidebar_items-4fc11690d5.js"></script>
     
     
     
@@ -116,7 +116,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#queue/1">queue(packet)</a>
+    <a href="#queue/2">queue(packet, shard_id \\ nil)</a>
   </div>
   
     <div class="summary-synopsis"><p>Starts the module if necessary and queues the packet.<br/>  Blocks the process until the identify may be sent</p>
@@ -176,15 +176,17 @@
 
   </section>
 </div>
-<div class="detail" id="queue/1">
+<div class="detail" id="queue/2">
   
+  
+    <span id="queue/1"></span>
   
   <div class="detail-header">
-    <a href="#queue/1" class="detail-link" title="Link to this function">
+    <a href="#queue/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">queue(packet)</span>
+    <span class="signature">queue(packet, shard_id \\ nil)</span>
     
       <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/identify_limiter.ex#L30" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
@@ -195,7 +197,7 @@
     
       <div class="specs">
         
-          <pre>queue(packet :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
+          <pre>queue(packet :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(), shard_id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
         
       </div>
     
