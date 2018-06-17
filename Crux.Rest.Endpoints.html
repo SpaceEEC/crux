@@ -8,7 +8,7 @@
     <title>Crux.Rest.Endpoints – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-4fc11690d5.js"></script>
+    <script src="dist/sidebar_items-5e92d5b534.js"></script>
     
     
     
@@ -259,10 +259,37 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#me/1">me(suffix \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used for functions related to the current user</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#me_guilds/1">me_guilds(suffix \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used for functions related to the current user’s guilds</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#message_reactions/4">message_reactions(channel_id, message_id, emoji, suffix \\ nil)</a>
   </div>
   
     <div class="summary-synopsis"><p>Used for reactions related functions</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#users/1">users(suffix \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used for functions related to users</p>
 </div>
   
 </div>
@@ -823,6 +850,68 @@
 
   </section>
 </div>
+<div class="detail" id="me/1">
+  
+  
+    <span id="me/0"></span>
+  
+  <div class="detail-header">
+    <a href="#me/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">me(suffix \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L181" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>me(suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used for functions related to the current user.</p>
+
+  </section>
+</div>
+<div class="detail" id="me_guilds/1">
+  
+  
+    <span id="me_guilds/0"></span>
+  
+  <div class="detail-header">
+    <a href="#me_guilds/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">me_guilds(suffix \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L189" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>me_guilds(suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used for functions related to the current user’s guilds.</p>
+
+  </section>
+</div>
 <div class="detail" id="message_reactions/4">
   
   
@@ -856,6 +945,37 @@
   </div>
   <section class="docstring">
     <p>  Used for reactions related functions.</p>
+
+  </section>
+</div>
+<div class="detail" id="users/1">
+  
+  
+    <span id="users/0"></span>
+  
+  <div class="detail-header">
+    <a href="#users/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">users(suffix \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L173" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>users(suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used for functions related to users.</p>
 
   </section>
 </div>

@@ -8,7 +8,7 @@
     <title>Crux.Rest – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-4fc11690d5.js"></script>
+    <script src="dist/sidebar_items-5e92d5b534.js"></script>
     
     
     
@@ -122,6 +122,15 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:create_group_dm_data/0">create_group_dm_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to create a group dm with <a href="#create_group_dm/1"><code class="inline">create_group_dm/1</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:create_guild_channel_data/0">create_guild_channel_data()</a>
   </div>
   
@@ -176,6 +185,15 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:get_current_user_guild_data/0">get_current_user_guild_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to list the current user’s guilds in <code class="inline">get_current_user_guild_/1</code></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:get_messages_data/0">get_messages_data()</a>
   </div>
   
@@ -222,6 +240,15 @@
   </div>
   
     <div class="summary-synopsis"><p>Used to modify a channel via <a href="#modify_channel/2"><code class="inline">modify_channel/2</code></a></p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:modify_current_user_data/0">modify_current_user_data()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Used to modify the currently logged in <a href="#modify_current_user/1"><code class="inline">modify_current_user/1</code></a></p>
 </div>
   
 </div>
@@ -327,6 +354,24 @@
   </div>
   
     <div class="summary-synopsis"><p>Creates an invite to a channel, see <code class="inline">t:create_channel_invite_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_dm/1">create_dm(user)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Creates a new dm channel with a user</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_group_dm/1">create_group_dm(data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Creates a group dm with multiple users</p>
 </div>
   
 </div>
@@ -608,6 +653,15 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_current_user_guilds/1">get_current_user_guilds(data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a list of partial <code class="inline">Crux.Structs.Guilds</code> the current user is a member of</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_guild/1">get_guild(guild)</a>
   </div>
   
@@ -770,6 +824,33 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_user/1">get_user(user)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a user from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_dms/0">get_user_dms()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Fetches a list of <a href="Crux.Structs.Channel.html"><code class="inline">Crux.Structs.Channel</code></a>. (DMChannels in this case)</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#leave_guild/1">leave_guild(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Leaves a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#list_guild_emojis/1">list_guild_emojis(guild)</a>
   </div>
   
@@ -792,6 +873,15 @@
   </div>
   
     <div class="summary-synopsis"><p>Modifies a channel, see <code class="inline">t:modify_channel_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_current_user/1">modify_current_user(data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Modifes the currently logged in user</p>
 </div>
   
 </div>
@@ -1026,6 +1116,48 @@
 </li>
 <li><p><code class="inline">:unique</code> if true, always creates a new invite instead of maybe returning a similar one, defaults to false</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#create-channel-invite-json-params">Discord Docs</a>.</p>
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="t:create_group_dm_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:create_group_dm_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">create_group_dm_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1831" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_group_dm_data() ::
+  %{
+    :access_tokens => [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()],
+    optional(:nicks) => %{
+      required(<a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>()) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    }
+  }
+  | [access_tokens: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), nicks: %{}]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to create a group dm with <a href="#create_group_dm/1"><code class="inline">create_group_dm/1</code></a>.</p>
+<ul>
+<li><code class="inline">:access_tokens</code> are meant to be obtained on your own via oauth2, they have to have the <code class="inline">gdm.join</code> scope.
+</li>
+<li><code class="inline">:nicks</code> is a map of ids and their respective nicknames to give a user.
 </li>
 </ul>
 
@@ -1333,6 +1465,39 @@
 
   </section>
 </div>
+<div class="detail" id="t:get_current_user_guild_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:get_current_user_guild_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">get_current_user_guild_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1771" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_current_user_guild_data() :: %{
+  optional(:before) => <a href="#t:snowflake/0">snowflake</a>(),
+  optional(:after) => <a href="#t:snowflake/0">snowflake</a>(),
+  optional(:limit) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()
+}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to list the current user’s guilds in <code class="inline">get_current_user_guild_/1</code>.</p>
+
+  </section>
+</div>
 <div class="detail" id="t:get_messages_data/0">
   
   
@@ -1590,6 +1755,44 @@
 </li>
 <li><p><code class="inline">:user_limit</code> has to be [0-99], 0 refers to no limit</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#modify-channel-json-params">Discord Docs</a>.</p>
+</li>
+</ul>
+
+  </section>
+</div>
+<div class="detail" id="t:modify_current_user_data/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:modify_current_user_data/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">modify_current_user_data()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1747" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_current_user_data() ::
+  %{
+    optional(:username) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:avatar) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>() | nil
+  }
+  | [username: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), avatar: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>() | nil]</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Used to modify the currently logged in <a href="#modify_current_user/1"><code class="inline">modify_current_user/1</code></a>.</p>
+<ul>
+<li><code class="inline">:avatar</code> is similarly to <code class="inline">u:file_list_entry/0</code> except you obviously can’t “rename” the avatar.
 </li>
 </ul>
 
@@ -2014,6 +2217,68 @@
   <section class="docstring">
     <p>  Creates an invite to a channel, see <code class="inline">t:create_channel_invite_data</code> for available options.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#create-channel-invite">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_dm/1">
+  
+  
+  <div class="detail-header">
+    <a href="#create_dm/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_dm(user)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1818" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_dm(user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>()) ::
+  {:ok, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Creates a new dm channel with a user.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/user#create-dm">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_group_dm/1">
+  
+  
+  <div class="detail-header">
+    <a href="#create_group_dm/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_group_dm(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1844" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_group_dm(data :: <a href="#t:create_group_dm_data/0">create_group_dm_data</a>()) ::
+  {:ok, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Creates a group dm with multiple users.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/user#create-group-dm">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -2924,7 +3189,7 @@
     </a>
     <span class="signature">gateway()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1736" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1860" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2954,7 +3219,7 @@
     </a>
     <span class="signature">gateway_bot()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1746" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1870" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3033,6 +3298,37 @@
   <section class="docstring">
     <p>  Gets invites for the specified channel from the api.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#get-channel-invites">Discord Docs</a></p>
+
+  </section>
+</div>
+<div class="detail" id="get_current_user_guilds/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_current_user_guilds/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_current_user_guilds(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1784" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_current_user_guilds(data :: <a href="#t:get_current_user_guild_data/0">get_current_user_guild_data</a>()) ::
+  {:ok, [<a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a list of partial <code class="inline">Crux.Structs.Guilds</code> the current user is a member of.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/user#get-current-user-guilds">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -3634,6 +3930,98 @@
 
   </section>
 </div>
+<div class="detail" id="get_user/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user(user)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1737" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_user(user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:ok, <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a user from the api.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/user#get-user">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="get_user_dms/0">
+  
+  
+  <div class="detail-header">
+    <a href="#get_user_dms/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user_dms()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1807" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_user_dms() :: {:ok, [<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()]} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Fetches a list of <a href="Crux.Structs.Channel.html"><code class="inline">Crux.Structs.Channel</code></a>. (DMChannels in this case)</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/user#get-user-dms">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="leave_guild/1">
+  
+  
+  <div class="detail-header">
+    <a href="#leave_guild/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">leave_guild(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1795" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>leave_guild(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  :ok | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Leaves a guild.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/user#leave-guild">Discord Docs</a>.</p>
+
+  </section>
+</div>
 <div class="detail" id="list_guild_emojis/1">
   
   
@@ -3730,6 +4118,37 @@
   <section class="docstring">
     <p>  Modifies a channel, see <code class="inline">t:modify_channel_data</code> for available options.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#modify-channel">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="modify_current_user/1">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_current_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_current_user(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1761" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_current_user(data :: <a href="#t:modify_current_user_data/0">modify_current_user_data</a>()) ::
+  {:ok, <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Modifes the currently logged in user.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/user#modify-current-user">Discord Docs</a>.</p>
 
   </section>
 </div>
