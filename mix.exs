@@ -17,11 +17,11 @@ defmodule Crux.MixProject do
 
   defp groups_for_modules do
     [
-      "Crux.Base": [~r/Crux\.Base.*/],
-      "Crux.Cache": [~r/Crux\.Cache.*/],
-      "Crux.Gateway": [~r/Crux\.Gatewaye.*/],
-      "Crux.Rest": [~r/Crux\.Rest.*/],
-      "Crux.Structs": [~r/Crux\.Structs.*/]
+      "Base": [~r/Crux\.Base.*/],
+      "Cache": [~r/Crux\.Cache.*/],
+      "Gateway": [~r/Crux\.Gateway.*/],
+      "Rest": [~r/Crux\.Rest.*/],
+      "Structs": [~r/Crux\.Structs.*/]
     ]
   end
 
