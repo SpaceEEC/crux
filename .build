@@ -4,7 +4,7 @@ fonts/icomoon.eot
 fonts/icomoon.svg
 fonts/icomoon.ttf
 fonts/icomoon.woff
-dist/sidebar_items-5e92d5b534.js
+dist/sidebar_items-7069eeda4d.js
 api-reference.html
 search.html
 404.html
@@ -28,6 +28,7 @@ Crux.Gateway.Connection.RateLimiter.html
 Crux.Gateway.IdentifyLimiter.html
 Crux.Gateway.Util.html
 Crux.Rest.html
+Crux.Rest.CDN.html
 Crux.Rest.Endpoints.html
 Crux.Rest.Handler.html
 Crux.Rest.Handler.Global.html
