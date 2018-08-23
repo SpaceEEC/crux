@@ -8,7 +8,7 @@
     <title>Crux.Rest.Endpoints – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-7069eeda4d.js"></script>
+    <script src="dist/sidebar_items-ff9b7271e2.js"></script>
     
     
     
@@ -60,6 +60,8 @@
     
 
     
+      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
+    
   </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
@@ -107,6 +109,15 @@
     <div class="summary-row">
   <div class="summary-signature">
     <a href="#api/0">api()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Base API address</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#base_url/0">base_url()</a>
   </div>
   
     <div class="summary-synopsis"><p>Base API address</p>
@@ -323,7 +334,7 @@
     </a>
     <span class="signature">api()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L10" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L15" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -333,6 +344,36 @@
       <div class="specs">
         
           <pre>api() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  Base API address.</p>
+<p>  Deprecated, use <a href="#base_url/0"><code class="inline">base_url/0</code></a> instead.</p>
+
+  </section>
+</div>
+<div class="detail" id="base_url/0">
+  
+  
+  <div class="detail-header">
+    <a href="#base_url/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">base_url()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L30" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>base_url() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
         
       </div>
     
@@ -352,7 +393,7 @@
     </a>
     <span class="signature">cdn()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L19" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L24" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -368,7 +409,7 @@
   </div>
   <section class="docstring">
     <p>  Base CDN address.</p>
-<p>  Deprecated, use <a href="Crux.Rest.CDN.html#cdn/0"><code class="inline">Crux.Rest.CDN.cdn/0</code></a> instead.</p>
+<p>  Deprecated, use <a href="https://hexdocs.pm/crux_rest/0.1.6/Crux.Rest.CDN.html#cdn/0"><code class="inline">Crux.Rest.CDN.cdn/0</code></a> instead.</p>
 
   </section>
 </div>
@@ -384,7 +425,7 @@
     </a>
     <span class="signature">channel(channel_id, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L47" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L58" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -416,7 +457,7 @@
     </a>
     <span class="signature">channel_messages(channel_id, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L56" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L67" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -448,7 +489,7 @@
     </a>
     <span class="signature">channel_permissions(channel_id, target_id)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L93" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L104" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -482,7 +523,7 @@
     </a>
     <span class="signature">channel_pins(channel_id, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L84" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L95" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -512,7 +553,7 @@
     </a>
     <span class="signature">gateway()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L25" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L36" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -541,7 +582,7 @@
     </a>
     <span class="signature">gateway_bot()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L31" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L42" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -574,7 +615,7 @@
     </a>
     <span class="signature">guild(guild_id \\ nil, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L103" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L114" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -606,7 +647,7 @@
     </a>
     <span class="signature">guild_bans(guild_id, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L127" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L138" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -638,7 +679,7 @@
     </a>
     <span class="signature">guild_emojis(guild_id, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L111" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L122" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -670,7 +711,7 @@
     </a>
     <span class="signature">guild_integrations(guild_id, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L144" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L155" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -704,7 +745,7 @@
     </a>
     <span class="signature">guild_member_roles(guild_id, member_id, role_id \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L160" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L171" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -739,7 +780,7 @@
     </a>
     <span class="signature">guild_members(guild_id, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L119" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L130" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -769,7 +810,7 @@
     </a>
     <span class="signature">guild_own_nick(guild_id)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L168" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L179" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -800,7 +841,7 @@
     </a>
     <span class="signature">guild_roles(guild_id, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L135" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L146" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -832,7 +873,7 @@
     </a>
     <span class="signature">invite(code \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L39" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L50" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -863,7 +904,7 @@
     </a>
     <span class="signature">me(suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L184" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L195" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -894,7 +935,7 @@
     </a>
     <span class="signature">me_guilds(suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L192" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L203" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -925,7 +966,7 @@
     </a>
     <span class="signature">message_reactions(channel_id, message_id, emoji, suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L72" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L83" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -961,7 +1002,7 @@
     </a>
     <span class="signature">users(suffix \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L176" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L187" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

@@ -8,7 +8,7 @@
     <title>Crux.Gateway.Command – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-7069eeda4d.js"></script>
+    <script src="dist/sidebar_items-ff9b7271e2.js"></script>
     
     
     
@@ -59,6 +59,8 @@
       <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
     
 
+    
+      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
     
   </ul>
   <div class="gradient"></div>
@@ -525,7 +527,7 @@
         
           <pre>voice_state_update(
   guild_id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
-  channel_id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
+  channel_id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>() | nil,
   states :: [self_mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(), self_deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()]
 ) :: <a href="#t:gateway_command/0">gateway_command</a>()</pre>
         

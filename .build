@@ -4,7 +4,7 @@ fonts/icomoon.eot
 fonts/icomoon.svg
 fonts/icomoon.ttf
 fonts/icomoon.woff
-dist/sidebar_items-7069eeda4d.js
+dist/sidebar_items-ff9b7271e2.js
 api-reference.html
 search.html
 404.html
@@ -51,4 +51,5 @@ Crux.Structs.User.html
 Crux.Structs.Util.html
 Crux.Structs.VoiceState.html
 Crux.Rest.ApiError.html
+Mix.Tasks.Bangify.html
 index.html

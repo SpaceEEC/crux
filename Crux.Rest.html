@@ -8,7 +8,7 @@
     <title>Crux.Rest – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-7069eeda4d.js"></script>
+    <script src="dist/sidebar_items-ff9b7271e2.js"></script>
     
     
     
@@ -59,6 +59,8 @@
       <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
     
 
+    
+      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
     
   </ul>
   <div class="gradient"></div>
@@ -314,10 +316,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#add_guild_member!/3">add_guild_member!(guild, user, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#add_guild_member/3"><code class="inline">add_guild_member/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#add_guild_member_role/4">add_guild_member_role(guild, member, role, reason \\ nil)</a>
   </div>
   
     <div class="summary-synopsis"><p>Adds a role to a member</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_guild_member_role!/4">add_guild_member_role!(guild, member, role, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#add_guild_member_role/4"><code class="inline">add_guild_member_role/4</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -341,10 +361,37 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#add_pinned_message!/1">add_pinned_message!(message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#add_pinned_message/1"><code class="inline">add_pinned_message/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_pinned_message!/2">add_pinned_message!(channel, message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#add_pinned_message/2"><code class="inline">add_pinned_message/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#begin_guild_prune/2">begin_guild_prune(guild, days)</a>
   </div>
   
     <div class="summary-synopsis"><p>Prunes members in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#begin_guild_prune!/2">begin_guild_prune!(guild, days)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#begin_guild_prune/2"><code class="inline">begin_guild_prune/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -359,10 +406,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#create_channel_invite!/2">create_channel_invite!(channel, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_channel_invite/2"><code class="inline">create_channel_invite/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#create_dm/1">create_dm(user)</a>
   </div>
   
     <div class="summary-synopsis"><p>Creates a new dm channel with a user</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_dm!/1">create_dm!(user)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_dm/1"><code class="inline">create_dm/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -377,8 +442,26 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#create_group_dm!/1">create_group_dm!(data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_group_dm/1"><code class="inline">create_group_dm/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#create_guild/1">create_guild(data)</a>
   </div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild!/1">create_guild!(data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_guild/1"><code class="inline">create_guild/1</code></a>, but raises an exception if it fails</p>
+</div>
   
 </div>
 <div class="summary-row">
@@ -387,6 +470,15 @@
   </div>
   
     <div class="summary-synopsis"><p>Bans a user  from a guild, the user does not have to be part of the guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_ban!/3">create_guild_ban!(guild, user, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_guild_ban/3"><code class="inline">create_guild_ban/3</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -401,10 +493,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#create_guild_channel!/2">create_guild_channel!(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_guild_channel/2"><code class="inline">create_guild_channel/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#create_guild_emoji/2">create_guild_emoji(guild, data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Creates an emoji in a guild, see <code class="inline">t:create_guild_emoji_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_emoji!/2">create_guild_emoji!(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -419,10 +529,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#create_guild_integration!/2">create_guild_integration!(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_guild_integration/2"><code class="inline">create_guild_integration/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#create_message/2">create_message(channel_or_message, args)</a>
   </div>
   
     <div class="summary-synopsis"><p>Sends a message to a channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_message!/2">create_message!(channel_or_message, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_message/2"><code class="inline">create_message/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -446,10 +574,37 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#create_reaction!/2">create_reaction!(message, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_reaction/2"><code class="inline">create_reaction/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_reaction!/3">create_reaction!(channel, message, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_reaction/3"><code class="inline">create_reaction/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#create_role/2">create_role(guild, data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Creates a role in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_role!/2">create_role!(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#create_role/2"><code class="inline">create_role/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -473,10 +628,37 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#delete_all_reactions!/2">delete_all_reactions!(message, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_all_reactions/2"><code class="inline">delete_all_reactions/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_all_reactions!/3">delete_all_reactions!(channel, message, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_all_reactions/3"><code class="inline">delete_all_reactions/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#delete_channel/2">delete_channel(channel, reason \\ nil)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes a channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_channel!/2">delete_channel!(channel, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_channel/2"><code class="inline">delete_channel/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -491,10 +673,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#delete_channel_permissions!/3">delete_channel_permissions!(channel, target, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_channel_permissions/3"><code class="inline">delete_channel_permissions/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#delete_guild/1">delete_guild(guild)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes a guild, can only be used if the executing user is the owner</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild!/1">delete_guild!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_guild/1"><code class="inline">delete_guild/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -509,10 +709,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#delete_guild_emoji!/3">delete_guild_emoji!(guild, emoji, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_guild_emoji/3"><code class="inline">delete_guild_emoji/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#delete_guild_integration/2">delete_guild_integration(guild, integration_id)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes an integration from a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild_integration!/2">delete_guild_integration!(guild, integration_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_guild_integration/2"><code class="inline">delete_guild_integration/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -527,10 +745,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#delete_guild_role!/3">delete_guild_role!(guild, role, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_guild_role/3"><code class="inline">delete_guild_role/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#delete_invite/1">delete_invite(code)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes an invite</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_invite!/1">delete_invite!(code)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_invite/1"><code class="inline">delete_invite/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -554,10 +790,37 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#delete_message!/1">delete_message!(message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_message/1"><code class="inline">delete_message/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_message!/2">delete_message!(channel, message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_message/2"><code class="inline">delete_message/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#delete_messages/2">delete_messages(channel, messages)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes 2-100 messages not older than 14 days</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_messages!/2">delete_messages!(channel, messages)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_messages/2"><code class="inline">delete_messages/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -581,6 +844,24 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#delete_pinned_message!/1">delete_pinned_message!(message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_pinned_message/1"><code class="inline">delete_pinned_message/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_pinned_message!/2">delete_pinned_message!(channel, message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_pinned_message/2"><code class="inline">delete_pinned_message/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#delete_reaction/4">delete_reaction(message_or_channel, emoji_or_message_id, emoji_or_maybe_user \\ &quot;@me&quot;, mayber_user \\ &quot;@me&quot;)</a>
   </div>
   
@@ -590,10 +871,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#delete_reaction!/4">delete_reaction!(message_or_channel, emoji_or_message_id, emoji_or_maybe_user \\ &quot;@me&quot;, mayber_user \\ &quot;@me&quot;)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#delete_reaction/4"><code class="inline">delete_reaction/4</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#edit_channel_permissions/3">edit_channel_permissions(channel, target, data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Edits or creates an overwrite for a user, or member</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edit_channel_permissions!/3">edit_channel_permissions!(channel, target, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#edit_channel_permissions/3"><code class="inline">edit_channel_permissions/3</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -617,10 +916,37 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#edit_message!/2">edit_message!(message, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#edit_message/2"><code class="inline">edit_message/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edit_message!/3">edit_message!(channel, message_id, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#edit_message/3"><code class="inline">edit_message/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#gateway/0">gateway()</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches the gateway url from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gateway!/0">gateway!()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#gateway/0"><code class="inline">gateway/0</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -635,10 +961,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#gateway_bot!/0">gateway_bot!()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#gateway_bot/0"><code class="inline">gateway_bot/0</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_channel/1">get_channel(channel)</a>
   </div>
   
     <div class="summary-synopsis"><p>Gets a channel from the api.<br/>  This should <em>NOT</em> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_channel!/1">get_channel!(channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_channel/1"><code class="inline">get_channel/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -653,10 +997,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_channel_invites!/1">get_channel_invites!(channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_channel_invites/1"><code class="inline">get_channel_invites/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_current_user_guilds/1">get_current_user_guilds(data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches a list of partial <code class="inline">Crux.Structs.Guilds</code> the current user is a member of</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_current_user_guilds!/1">get_current_user_guilds!(data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_current_user_guilds/1"><code class="inline">get_current_user_guilds/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -671,10 +1033,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_guild!/1">get_guild!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild/1"><code class="inline">get_guild/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_guild_ban/2">get_guild_ban(guild, user)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches a single ban entry by id</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_ban!/2">get_guild_ban!(guild, user)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_ban/2"><code class="inline">get_guild_ban/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -689,10 +1069,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_guild_bans!/1">get_guild_bans!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_bans/1"><code class="inline">get_guild_bans/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_guild_channels/1">get_guild_channels(guild)</a>
   </div>
   
     <div class="summary-synopsis"><p>Gets all channels from a guild via the api.<br/>  This should usually, due to caching, <strong>NOT</strong> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_channels!/1">get_guild_channels!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_channels/1"><code class="inline">get_guild_channels/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -707,10 +1105,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_guild_embed!/1">get_guild_embed!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_embed/1"><code class="inline">get_guild_embed/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_guild_emoji/2">get_guild_emoji(guild, emoji)</a>
   </div>
   
     <div class="summary-synopsis"><p>Gets an emoji from a guild<br/>  This should usually, due to cache, <strong>NOT</strong> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_emoji!/2">get_guild_emoji!(guild, emoji)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_emoji/2"><code class="inline">get_guild_emoji/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -725,10 +1141,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_guild_integrations!/1">get_guild_integrations!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_integrations/1"><code class="inline">get_guild_integrations/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_guild_invites/1">get_guild_invites(guild)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches all available invites in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_invites!/1">get_guild_invites!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_invites/1"><code class="inline">get_guild_invites/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -743,10 +1177,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_guild_member!/2">get_guild_member!(guild, user)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_member/2"><code class="inline">get_guild_member/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_guild_prune_count/2">get_guild_prune_count(guild, days)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches the number of members in a guild that would be removed when pruned</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_prune_count!/2">get_guild_prune_count!(guild, days)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_prune_count/2"><code class="inline">get_guild_prune_count/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -761,10 +1213,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_guild_roles!/1">get_guild_roles!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_roles/1"><code class="inline">get_guild_roles/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_guild_vanity_url/1">get_guild_vanity_url(guild)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches the vanity url of a guild, if any</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_vanity_url!/1">get_guild_vanity_url!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_vanity_url/1"><code class="inline">get_guild_vanity_url/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -779,10 +1249,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_guild_voice_regions!/1">get_guild_voice_regions!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_guild_voice_regions/1"><code class="inline">get_guild_voice_regions/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_invite/1">get_invite(code)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches an invite from the api</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_invite!/1">get_invite!(code)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_invite/1"><code class="inline">get_invite/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -797,10 +1285,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_message!/2">get_message!(channel, message)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_message/2"><code class="inline">get_message/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_messages/2">get_messages(channel, args \\ [])</a>
   </div>
   
     <div class="summary-synopsis"><p>Gets 1-100 messages from the api, this limit is enforced on discord’s end</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_messages!/2">get_messages!(channel, args \\ [])</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_messages/2"><code class="inline">get_messages/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -815,10 +1321,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_pinned_messages!/1">get_pinned_messages!(channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_pinned_messages/1"><code class="inline">get_pinned_messages/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_reactions/4">get_reactions(channel_or_message, emoji_or_message_id, emoji_or_maybe_data \\ [], maybe_data \\ [])</a>
   </div>
   
     <div class="summary-synopsis"><p>Gets users who reacted to a message</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_reactions!/4">get_reactions!(channel_or_message, emoji_or_message_id, emoji_or_maybe_data \\ [], maybe_data \\ [])</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_reactions/4"><code class="inline">get_reactions/4</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -833,10 +1357,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#get_user!/1">get_user!(user)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_user/1"><code class="inline">get_user/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_user_dms/0">get_user_dms()</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches a list of <a href="Crux.Structs.Channel.html"><code class="inline">Crux.Structs.Channel</code></a>. (DMChannels in this case)</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_dms!/0">get_user_dms!()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#get_user_dms/0"><code class="inline">get_user_dms/0</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -851,10 +1393,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#leave_guild!/1">leave_guild!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#leave_guild/1"><code class="inline">leave_guild/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#list_guild_emojis/1">list_guild_emojis(guild)</a>
   </div>
   
     <div class="summary-synopsis"><p>Gets a list of emojis in a guild.<br/>  This should usually, due to cache, <strong>NOT</strong> be necessary</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_guild_emojis!/1">list_guild_emojis!(guild)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#list_guild_emojis/1"><code class="inline">list_guild_emojis/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -869,10 +1429,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#list_guild_members!/2">list_guild_members!(guild, options \\ [])</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#list_guild_members/2"><code class="inline">list_guild_members/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#modify_channel/2">modify_channel(channel, args)</a>
   </div>
   
     <div class="summary-synopsis"><p>Modifies a channel, see <code class="inline">t:modify_channel_data</code> for available options</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_channel!/2">modify_channel!(channel, args)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_channel/2"><code class="inline">modify_channel/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -887,10 +1465,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#modify_current_user!/1">modify_current_user!(data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_current_user/1"><code class="inline">modify_current_user/1</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#modify_current_users_nick/3">modify_current_users_nick(guild, nick, reason \\ nil)</a>
   </div>
   
     <div class="summary-synopsis"><p>Modifies the nickname of the current user in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_current_users_nick!/3">modify_current_users_nick!(guild, nick, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_current_users_nick/3"><code class="inline">modify_current_users_nick/3</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -905,10 +1501,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#modify_guild!/2">modify_guild!(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_guild/2"><code class="inline">modify_guild/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#modify_guild_channel_positions/2">modify_guild_channel_positions(guild, channels)</a>
   </div>
   
     <div class="summary-synopsis"><p>Modifyies the position of a list of channels in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_channel_positions!/2">modify_guild_channel_positions!(guild, channels)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_guild_channel_positions/2"><code class="inline">modify_guild_channel_positions/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -923,10 +1537,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#modify_guild_embed!/2">modify_guild_embed!(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_guild_embed/2"><code class="inline">modify_guild_embed/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#modify_guild_emoji/3">modify_guild_emoji(guild, emoji, data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Modifies a guild emoji</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_emoji!/3">modify_guild_emoji!(guild, emoji, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_guild_emoji/3"><code class="inline">modify_guild_emoji/3</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -941,10 +1573,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#modify_guild_integration!/3">modify_guild_integration!(guild, integration_id, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_guild_integration/3"><code class="inline">modify_guild_integration/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#modify_guild_member/3">modify_guild_member(guild, member, data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Modifies a member in a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_member!/3">modify_guild_member!(guild, member, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_guild_member/3"><code class="inline">modify_guild_member/3</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -959,10 +1609,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#modify_guild_role!/3">modify_guild_role!(guild, role, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_guild_role/3"><code class="inline">modify_guild_role/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#modify_guild_role_positions/2">modify_guild_role_positions(guild, data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Modifies the positions of a list of role objects for a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_role_positions!/2">modify_guild_role_positions!(guild, data)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#modify_guild_role_positions/2"><code class="inline">modify_guild_role_positions/2</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -977,10 +1645,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#remove_guild_ban!/3">remove_guild_ban!(guild, user, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#remove_guild_ban/3"><code class="inline">remove_guild_ban/3</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#remove_guild_member_role/4">remove_guild_member_role(guild, member, role, reason \\ nil)</a>
   </div>
   
     <div class="summary-synopsis"><p>Removes a role from a member</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#remove_guild_member_role!/4">remove_guild_member_role!(guild, member, role, reason \\ nil)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#remove_guild_member_role/4"><code class="inline">remove_guild_member_role/4</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -995,10 +1681,28 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#sync_guild_integration!/2">sync_guild_integration!(guild, integration_id)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#sync_guild_integration/2"><code class="inline">sync_guild_integration/2</code></a>, but raises an exception if it fails</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#trigger_typing/1">trigger_typing(channel)</a>
   </div>
   
     <div class="summary-synopsis"><p>Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br/>  Should generally be used sparingly for commands that may take a while as a form of acknowledging</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#trigger_typing!/1">trigger_typing!(channel)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The same as <a href="#trigger_typing/1"><code class="inline">trigger_typing/1</code></a>, but raises an exception if it fails</p>
 </div>
   
 </div>
@@ -1031,7 +1735,7 @@
     </a>
     <span class="signature">add_guild_member_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1182" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1185" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1076,7 +1780,7 @@
     </a>
     <span class="signature">create_channel_invite_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L709" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L712" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1131,7 +1835,7 @@
     </a>
     <span class="signature">create_group_dm_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1831" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1834" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1173,7 +1877,7 @@
     </a>
     <span class="signature">create_guild_channel_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1057" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1060" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1243,7 +1947,7 @@
     </a>
     <span class="signature">create_guild_emoji_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L820" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L823" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1293,7 +1997,7 @@
     </a>
     <span class="signature">create_message_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L43" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L45" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1337,7 +2041,7 @@
     </a>
     <span class="signature">edit_channel_permissions_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L633" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L636" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1377,7 +2081,7 @@
     </a>
     <span class="signature">embed()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L64" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L66" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1427,7 +2131,7 @@
     </a>
     <span class="signature">file_list_entry()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L34" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L36" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1475,7 +2179,7 @@
     </a>
     <span class="signature">get_current_user_guild_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1771" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1774" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1508,7 +2212,7 @@
     </a>
     <span class="signature">get_messages_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L261" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L264" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1558,7 +2262,7 @@
     </a>
     <span class="signature">get_reactions_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L338" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L341" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1600,7 +2304,7 @@
     </a>
     <span class="signature">guild_role_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1418" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1421" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1645,7 +2349,7 @@
     </a>
     <span class="signature">list_guild_members_options()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1153" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1156" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1675,7 +2379,7 @@
     </a>
     <span class="signature">message_edit_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L148" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L151" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1707,7 +2411,7 @@
     </a>
     <span class="signature">modify_channel_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L571" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L574" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1770,7 +2474,7 @@
     </a>
     <span class="signature">modify_current_user_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1747" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1750" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1808,7 +2512,7 @@
     </a>
     <span class="signature">modify_guild_channel_positions_data_entry()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1112" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1115" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1840,7 +2544,7 @@
     </a>
     <span class="signature">modify_guild_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L958" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L961" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1897,7 +2601,7 @@
     </a>
     <span class="signature">modify_guild_emoji_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L867" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L870" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1936,7 +2640,7 @@
     </a>
     <span class="signature">modify_guild_member_data()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1226" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1229" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1983,7 +2687,7 @@
     </a>
     <span class="signature">snowflake()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L22" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L24" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2029,7 +2733,7 @@
     </a>
     <span class="signature">add_guild_member(guild, user, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1210" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1213" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2053,6 +2757,39 @@
 
   </section>
 </div>
+<div class="detail" id="add_guild_member!/3">
+  
+  
+  <div class="detail-header">
+    <a href="#add_guild_member!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">add_guild_member!(guild, user, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>add_guild_member!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  data :: <a href="#t:add_guild_member_data/0">add_guild_member_data</a>()
+) :: <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#add_guild_member/3"><code class="inline">add_guild_member/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="add_guild_member_role/4">
   
   
@@ -2065,7 +2802,7 @@
     </a>
     <span class="signature">add_guild_member_role(guild, member, role, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1294" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1297" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2090,6 +2827,42 @@
 
   </section>
 </div>
+<div class="detail" id="add_guild_member_role!/4">
+  
+  
+    <span id="add_guild_member_role!/3"></span>
+  
+  <div class="detail-header">
+    <a href="#add_guild_member_role!/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">add_guild_member_role!(guild, member, role, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>add_guild_member_role!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  member :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  role :: <a href="Crux.Rest.Util.html#t:role_id_resolvable/0">Crux.Rest.Util.role_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#add_guild_member_role/4"><code class="inline">add_guild_member_role/4</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="add_pinned_message/1">
   
   
@@ -2100,7 +2873,7 @@
     </a>
     <span class="signature">add_pinned_message(message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L498" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L501" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2131,7 +2904,7 @@
     </a>
     <span class="signature">add_pinned_message(channel, message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L511" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L514" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2154,6 +2927,67 @@
 
   </section>
 </div>
+<div class="detail" id="add_pinned_message!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#add_pinned_message!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">add_pinned_message!(message)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>add_pinned_message!(message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#add_pinned_message/1"><code class="inline">add_pinned_message/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
+<div class="detail" id="add_pinned_message!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#add_pinned_message!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">add_pinned_message!(channel, message)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>add_pinned_message!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#add_pinned_message/2"><code class="inline">add_pinned_message/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="begin_guild_prune/2">
   
   
@@ -2164,7 +2998,7 @@
     </a>
     <span class="signature">begin_guild_prune(guild, days)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1524" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1527" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2187,6 +3021,38 @@
 
   </section>
 </div>
+<div class="detail" id="begin_guild_prune!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#begin_guild_prune!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">begin_guild_prune!(guild, days)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>begin_guild_prune!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  days :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()
+) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#begin_guild_prune/2"><code class="inline">begin_guild_prune/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_channel_invite/2">
   
   
@@ -2197,7 +3063,7 @@
     </a>
     <span class="signature">create_channel_invite(channel, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L734" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L737" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2220,6 +3086,38 @@
 
   </section>
 </div>
+<div class="detail" id="create_channel_invite!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_channel_invite!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_channel_invite!(channel, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_channel_invite!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  args :: <a href="#t:create_channel_invite_data/0">create_channel_invite_data</a>()
+) :: <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_channel_invite/2"><code class="inline">create_channel_invite/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_dm/1">
   
   
@@ -2230,7 +3128,7 @@
     </a>
     <span class="signature">create_dm(user)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1818" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1821" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2251,6 +3149,36 @@
 
   </section>
 </div>
+<div class="detail" id="create_dm!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#create_dm!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_dm!(user)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_dm!(user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>()) ::
+  <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_dm/1"><code class="inline">create_dm/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_group_dm/1">
   
   
@@ -2261,7 +3189,7 @@
     </a>
     <span class="signature">create_group_dm(data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1844" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1847" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2282,6 +3210,36 @@
 
   </section>
 </div>
+<div class="detail" id="create_group_dm!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#create_group_dm!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_group_dm!(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_group_dm!(data :: <a href="#t:create_group_dm_data/0">create_group_dm_data</a>()) ::
+  <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_group_dm/1"><code class="inline">create_group_dm/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_guild/1">
   
   
@@ -2292,7 +3250,7 @@
     </a>
     <span class="signature">create_guild(data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L929" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L932" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2302,6 +3260,29 @@
   </div>
   <section class="docstring">
     
+  </section>
+</div>
+<div class="detail" id="create_guild!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#create_guild!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild!(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_guild/1"><code class="inline">create_guild/1</code></a>, but raises an exception if it fails.</p>
+
   </section>
 </div>
 <div class="detail" id="create_guild_ban/3">
@@ -2316,7 +3297,7 @@
     </a>
     <span class="signature">create_guild_ban(guild, user, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1375" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1378" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2340,6 +3321,41 @@
 
   </section>
 </div>
+<div class="detail" id="create_guild_ban!/3">
+  
+  
+    <span id="create_guild_ban!/2"></span>
+  
+  <div class="detail-header">
+    <a href="#create_guild_ban!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild_ban!(guild, user, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_ban!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_guild_ban/3"><code class="inline">create_guild_ban/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_guild_channel/2">
   
   
@@ -2350,7 +3366,7 @@
     </a>
     <span class="signature">create_guild_channel(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1105" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1108" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2373,6 +3389,38 @@
 
   </section>
 </div>
+<div class="detail" id="create_guild_channel!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_guild_channel!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild_channel!(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_channel!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data :: <a href="#t:create_guild_channel_data/0">create_guild_channel_data</a>()
+) :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_guild_channel/2"><code class="inline">create_guild_channel/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_guild_emoji/2">
   
   
@@ -2383,7 +3431,7 @@
     </a>
     <span class="signature">create_guild_emoji(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L843" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L846" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2406,6 +3454,38 @@
 
   </section>
 </div>
+<div class="detail" id="create_guild_emoji!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_guild_emoji!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild_emoji!(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_emoji!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data :: <a href="#t:create_guild_emoji_data/0">create_guild_emoji_data</a>()
+) :: Crux.Structs.Emoji | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_guild_integration/2">
   
   
@@ -2416,7 +3496,7 @@
     </a>
     <span class="signature">create_guild_integration(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1593" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1596" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2440,6 +3520,39 @@
 
   </section>
 </div>
+<div class="detail" id="create_guild_integration!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_guild_integration!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_guild_integration!(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_guild_integration!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data ::
+    %{type: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), id: <a href="#t:snowflake/0">snowflake</a>()} | [type: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), id: <a href="#t:snowflake/0">snowflake</a>()]
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_guild_integration/2"><code class="inline">create_guild_integration/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_message/2">
   
   
@@ -2450,7 +3563,7 @@
     </a>
     <span class="signature">create_message(channel_or_message, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L138" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L139" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2473,6 +3586,38 @@
 
   </section>
 </div>
+<div class="detail" id="create_message!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_message!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_message!(channel_or_message, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_message!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  args :: <a href="#t:create_message_data/0">create_message_data</a>()
+) :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_message/2"><code class="inline">create_message/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_reaction/2">
   
   
@@ -2483,7 +3628,7 @@
     </a>
     <span class="signature">create_reaction(message, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L306" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L309" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2516,7 +3661,7 @@
     </a>
     <span class="signature">create_reaction(channel, message, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L319" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L322" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2540,6 +3685,71 @@
 
   </section>
 </div>
+<div class="detail" id="create_reaction!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_reaction!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_reaction!(message, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_reaction!(
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_reaction/2"><code class="inline">create_reaction/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
+<div class="detail" id="create_reaction!/3">
+  
+  
+  <div class="detail-header">
+    <a href="#create_reaction!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_reaction!(channel, message, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_reaction!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_id_resolvable/0">Crux.Rest.Util.emoji_id_resolvable</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_reaction/3"><code class="inline">create_reaction/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="create_role/2">
   
   
@@ -2550,7 +3760,7 @@
     </a>
     <span class="signature">create_role(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1443" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1446" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2573,6 +3783,38 @@
 
   </section>
 </div>
+<div class="detail" id="create_role!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#create_role!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_role!(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>create_role!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data :: <a href="#t:guild_role_data/0">guild_role_data</a>()
+) :: <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#create_role/2"><code class="inline">create_role/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_all_reactions/2">
   
   
@@ -2583,7 +3825,7 @@
     </a>
     <span class="signature">delete_all_reactions(message, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L445" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L448" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2616,7 +3858,7 @@
     </a>
     <span class="signature">delete_all_reactions(channel, message, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L458" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L461" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2640,6 +3882,71 @@
 
   </section>
 </div>
+<div class="detail" id="delete_all_reactions!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_all_reactions!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_all_reactions!(message, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_all_reactions!(
+  message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_all_reactions/2"><code class="inline">delete_all_reactions/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_all_reactions!/3">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_all_reactions!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_all_reactions!(channel, message, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_all_reactions!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_all_reactions/3"><code class="inline">delete_all_reactions/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_channel/2">
   
   
@@ -2652,7 +3959,7 @@
     </a>
     <span class="signature">delete_channel(channel, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L621" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L624" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2675,6 +3982,40 @@
 
   </section>
 </div>
+<div class="detail" id="delete_channel!/2">
+  
+  
+    <span id="delete_channel!/1"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_channel!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_channel!(channel, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_channel!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_channel/2"><code class="inline">delete_channel/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_channel_permissions/3">
   
   
@@ -2687,7 +4028,7 @@
     </a>
     <span class="signature">delete_channel_permissions(channel, target, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L751" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L754" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2711,6 +4052,41 @@
 
   </section>
 </div>
+<div class="detail" id="delete_channel_permissions!/3">
+  
+  
+    <span id="delete_channel_permissions!/2"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_channel_permissions!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_channel_permissions!(channel, target, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_channel_permissions!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  target :: <a href="Crux.Rest.Util.html#t:overwrite_target_resolvable/0">Crux.Rest.Util.overwrite_target_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_channel_permissions/3"><code class="inline">delete_channel_permissions/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_guild/1">
   
   
@@ -2721,7 +4097,7 @@
     </a>
     <span class="signature">delete_guild(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1030" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1033" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2742,6 +4118,36 @@
 
   </section>
 </div>
+<div class="detail" id="delete_guild!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_guild!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_guild!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_guild!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_guild/1"><code class="inline">delete_guild/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_guild_emoji/3">
   
   
@@ -2754,7 +4160,7 @@
     </a>
     <span class="signature">delete_guild_emoji(guild, emoji, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L914" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L917" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2778,6 +4184,41 @@
 
   </section>
 </div>
+<div class="detail" id="delete_guild_emoji!/3">
+  
+  
+    <span id="delete_guild_emoji!/2"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_guild_emoji!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_guild_emoji!(guild, emoji, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_guild_emoji!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_id_resolvable/0">Crux.Rest.Util.emoji_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_guild_emoji/3"><code class="inline">delete_guild_emoji/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_guild_integration/2">
   
   
@@ -2788,7 +4229,7 @@
     </a>
     <span class="signature">delete_guild_integration(guild, integration_id)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1634" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1637" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2811,6 +4252,38 @@
 
   </section>
 </div>
+<div class="detail" id="delete_guild_integration!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_guild_integration!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_guild_integration!(guild, integration_id)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_guild_integration!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  integration_id :: <a href="#t:snowflake/0">snowflake</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_guild_integration/2"><code class="inline">delete_guild_integration/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_guild_role/3">
   
   
@@ -2823,7 +4296,7 @@
     </a>
     <span class="signature">delete_guild_role(guild, role, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1494" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1497" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2847,6 +4320,41 @@
 
   </section>
 </div>
+<div class="detail" id="delete_guild_role!/3">
+  
+  
+    <span id="delete_guild_role!/2"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_guild_role!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_guild_role!(guild, role, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_guild_role!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  role :: <a href="Crux.Rest.Util.html#t:role_id_resolvable/0">Crux.Rest.Util.role_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_guild_role/3"><code class="inline">delete_guild_role/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_invite/1">
   
   
@@ -2857,7 +4365,7 @@
     </a>
     <span class="signature">delete_invite(code)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1725" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1728" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2878,6 +4386,36 @@
 
   </section>
 </div>
+<div class="detail" id="delete_invite!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_invite!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_invite!(code)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_invite!(invite_or_code :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()) ::
+  <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_invite/1"><code class="inline">delete_invite/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_message/1">
   
   
@@ -2888,7 +4426,7 @@
     </a>
     <span class="signature">delete_message(message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L199" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L202" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2919,7 +4457,7 @@
     </a>
     <span class="signature">delete_message(channel, message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L211" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L214" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2942,6 +4480,68 @@
 
   </section>
 </div>
+<div class="detail" id="delete_message!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_message!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_message!(message)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_message!(message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()) ::
+  <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_message/1"><code class="inline">delete_message/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_message!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_message!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_message!(channel, message)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_message!(
+  channel_id :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message_id :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()
+) :: Crux.Structs.Message | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_message/2"><code class="inline">delete_message/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_messages/2">
   
   
@@ -2952,7 +4552,7 @@
     </a>
     <span class="signature">delete_messages(channel, messages)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L227" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L230" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2975,6 +4575,38 @@
 
   </section>
 </div>
+<div class="detail" id="delete_messages!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_messages!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_messages!(channel, messages)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_messages!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  messages :: [<a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()]
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_messages/2"><code class="inline">delete_messages/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_pinned_message/1">
   
   
@@ -2985,7 +4617,7 @@
     </a>
     <span class="signature">delete_pinned_message(message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L526" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L529" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3016,7 +4648,7 @@
     </a>
     <span class="signature">delete_pinned_message(channel, message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L539" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L542" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3039,6 +4671,67 @@
 
   </section>
 </div>
+<div class="detail" id="delete_pinned_message!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_pinned_message!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_pinned_message!(message)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_pinned_message!(message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_pinned_message/1"><code class="inline">delete_pinned_message/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
+<div class="detail" id="delete_pinned_message!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#delete_pinned_message!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_pinned_message!(channel, message)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_pinned_message!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_pinned_message/2"><code class="inline">delete_pinned_message/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="delete_reaction/4">
   
   
@@ -3053,7 +4746,7 @@
     </a>
     <span class="signature">delete_reaction(message_or_channel, emoji_or_message_id, emoji_or_maybe_user \\ &quot;@me&quot;, mayber_user \\ &quot;@me&quot;)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L420" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L423" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3079,6 +4772,44 @@
 
   </section>
 </div>
+<div class="detail" id="delete_reaction!/4">
+  
+  
+    <span id="delete_reaction!/2"></span>
+  
+    <span id="delete_reaction!/3"></span>
+  
+  <div class="detail-header">
+    <a href="#delete_reaction!/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_reaction!(message_or_channel, emoji_or_message_id, emoji_or_maybe_user \\ &quot;@me&quot;, mayber_user \\ &quot;@me&quot;)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>delete_reaction!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#delete_reaction/4"><code class="inline">delete_reaction/4</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="edit_channel_permissions/3">
   
   
@@ -3089,7 +4820,7 @@
     </a>
     <span class="signature">edit_channel_permissions(channel, target, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L676" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L679" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3114,6 +4845,39 @@
 
   </section>
 </div>
+<div class="detail" id="edit_channel_permissions!/3">
+  
+  
+  <div class="detail-header">
+    <a href="#edit_channel_permissions!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">edit_channel_permissions!(channel, target, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>edit_channel_permissions!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  target :: <a href="Crux.Rest.Util.html#t:overwrite_target_resolvable/0">Crux.Rest.Util.overwrite_target_resolvable</a>(),
+  data :: <a href="#t:edit_channel_permissions_data/0">edit_channel_permissions_data</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#edit_channel_permissions/3"><code class="inline">edit_channel_permissions/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="edit_message/2">
   
   
@@ -3124,7 +4888,7 @@
     </a>
     <span class="signature">edit_message(message, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L166" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L169" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3155,7 +4919,7 @@
     </a>
     <span class="signature">edit_message(channel, message_id, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L181" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L184" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3179,6 +4943,69 @@
 
   </section>
 </div>
+<div class="detail" id="edit_message!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#edit_message!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">edit_message!(message, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>edit_message!(target :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(), args :: <a href="#t:message_edit_data/0">message_edit_data</a>()) ::
+  <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#edit_message/2"><code class="inline">edit_message/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
+<div class="detail" id="edit_message!/3">
+  
+  
+  <div class="detail-header">
+    <a href="#edit_message!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">edit_message!(channel, message_id, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>edit_message!(
+  channel_id :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message_id :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  args :: <a href="#t:message_edit_data/0">message_edit_data</a>()
+) :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#edit_message/3"><code class="inline">edit_message/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="gateway/0">
   
   
@@ -3189,7 +5016,7 @@
     </a>
     <span class="signature">gateway()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1860" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1863" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3209,6 +5036,35 @@
 
   </section>
 </div>
+<div class="detail" id="gateway!/0">
+  
+  
+  <div class="detail-header">
+    <a href="#gateway!/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">gateway!()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>gateway!() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#gateway/0"><code class="inline">gateway/0</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="gateway_bot/0">
   
   
@@ -3219,7 +5075,7 @@
     </a>
     <span class="signature">gateway_bot()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1870" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1873" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3239,6 +5095,35 @@
 
   </section>
 </div>
+<div class="detail" id="gateway_bot!/0">
+  
+  
+  <div class="detail-header">
+    <a href="#gateway_bot!/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">gateway_bot!()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>gateway_bot!() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#gateway_bot/0"><code class="inline">gateway_bot/0</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_channel/1">
   
   
@@ -3249,7 +5134,7 @@
     </a>
     <span class="signature">get_channel(channel)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L553" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L556" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3270,6 +5155,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_channel!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_channel!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_channel!(channel)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_channel!(channel :: <a href="Crux.Rest.Util.html#t:resolve_channel_id/0">Crux.Rest.Util.resolve_channel_id</a>()) ::
+  <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_channel/1"><code class="inline">get_channel/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_channel_invites/1">
   
   
@@ -3280,7 +5195,7 @@
     </a>
     <span class="signature">get_channel_invites(channel)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L691" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L694" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3301,6 +5216,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_channel_invites!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_channel_invites!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_channel_invites!(channel)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_channel_invites!(channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>()) ::
+  [<a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_channel_invites/1"><code class="inline">get_channel_invites/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_current_user_guilds/1">
   
   
@@ -3311,7 +5256,7 @@
     </a>
     <span class="signature">get_current_user_guilds(data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1784" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1787" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3332,6 +5277,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_current_user_guilds!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_current_user_guilds!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_current_user_guilds!(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_current_user_guilds!(data :: <a href="#t:get_current_user_guild_data/0">get_current_user_guild_data</a>()) ::
+  [<a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_current_user_guilds/1"><code class="inline">get_current_user_guilds/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild/1">
   
   
@@ -3342,7 +5317,7 @@
     </a>
     <span class="signature">get_guild(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L948" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L951" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3363,6 +5338,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild/1"><code class="inline">get_guild/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_ban/2">
   
   
@@ -3373,7 +5378,7 @@
     </a>
     <span class="signature">get_guild_ban(guild, user)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1352" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1355" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3400,6 +5405,38 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_ban!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_ban!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_ban!(guild, user)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_ban!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>()
+) :: %{user: <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(), reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_ban/2"><code class="inline">get_guild_ban/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_bans/1">
   
   
@@ -3410,7 +5447,7 @@
     </a>
     <span class="signature">get_guild_bans(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1333" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1336" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3438,6 +5475,42 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_bans!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_bans!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_bans!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_bans!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  %{
+    optional(<a href="#t:snowflake/0">snowflake</a>()) => %{
+      user: <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(),
+      reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil
+    }
+  }
+  | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_bans/1"><code class="inline">get_guild_bans/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_channels/1">
   
   
@@ -3448,7 +5521,7 @@
     </a>
     <span class="signature">get_guild_channels(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1044" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1047" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3469,6 +5542,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_channels!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_channels!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_channels!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_channels!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  [<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_channels/1"><code class="inline">get_guild_channels/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_embed/1">
   
   
@@ -3479,7 +5582,7 @@
     </a>
     <span class="signature">get_guild_embed(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1661" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1664" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3502,6 +5605,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_embed!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_embed!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_embed!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_embed!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_embed/1"><code class="inline">get_guild_embed/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_emoji/2">
   
   
@@ -3512,7 +5645,7 @@
     </a>
     <span class="signature">get_guild_emoji(guild, emoji)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L803" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L806" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3535,6 +5668,38 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_emoji!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_emoji!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_emoji!(guild, emoji)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_emoji!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_id_resolvable/0">Crux.Rest.Util.emoji_id_resolvable</a>()
+) :: Crux.Structs.Emoji | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_emoji/2"><code class="inline">get_guild_emoji/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_integrations/1">
   
   
@@ -3545,7 +5710,7 @@
     </a>
     <span class="signature">get_guild_integrations(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1576" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1579" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3568,6 +5733,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_integrations!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_integrations!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_integrations!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_integrations!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">list</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_integrations/1"><code class="inline">get_guild_integrations/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_invites/1">
   
   
@@ -3578,7 +5773,7 @@
     </a>
     <span class="signature">get_guild_invites(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1558" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1561" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3599,6 +5794,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_invites!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_invites!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_invites!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_invites!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  %{optional(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) => <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_invites/1"><code class="inline">get_guild_invites/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_member/2">
   
   
@@ -3609,7 +5834,7 @@
     </a>
     <span class="signature">get_guild_member(guild, user)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1145" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1148" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3633,6 +5858,38 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_member!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_member!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_member!(guild, user)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_member!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>()
+) :: <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_member/2"><code class="inline">get_guild_member/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_prune_count/2">
   
   
@@ -3643,7 +5900,7 @@
     </a>
     <span class="signature">get_guild_prune_count(guild, days)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1508" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1511" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3666,6 +5923,38 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_prune_count!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_prune_count!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_prune_count!(guild, days)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_prune_count!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  days :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()
+) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_prune_count/2"><code class="inline">get_guild_prune_count/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_roles/1">
   
   
@@ -3676,7 +5965,7 @@
     </a>
     <span class="signature">get_guild_roles(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1407" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1410" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3697,6 +5986,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_roles!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_roles!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_roles!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_roles!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  %{optional(<a href="#t:snowflake/0">snowflake</a>()) => <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_roles/1"><code class="inline">get_guild_roles/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_vanity_url/1">
   
   
@@ -3707,7 +6026,7 @@
     </a>
     <span class="signature">get_guild_vanity_url(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1694" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1697" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3727,6 +6046,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_vanity_url!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_vanity_url!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_vanity_url!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_vanity_url!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_vanity_url/1"><code class="inline">get_guild_vanity_url/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_guild_voice_regions/1">
   
   
@@ -3737,7 +6086,7 @@
     </a>
     <span class="signature">get_guild_voice_regions(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1542" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1545" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3760,6 +6109,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_guild_voice_regions!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_guild_voice_regions!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_guild_voice_regions!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_guild_voice_regions!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_guild_voice_regions/1"><code class="inline">get_guild_voice_regions/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_invite/1">
   
   
@@ -3770,7 +6149,7 @@
     </a>
     <span class="signature">get_invite(code)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1711" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1714" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3791,6 +6170,35 @@
 
   </section>
 </div>
+<div class="detail" id="get_invite!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_invite!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_invite!(code)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_invite!(code :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_invite/1"><code class="inline">get_invite/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_message/2">
   
   
@@ -3801,7 +6209,7 @@
     </a>
     <span class="signature">get_message(channel, message)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L245" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L248" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3824,6 +6232,38 @@
 
   </section>
 </div>
+<div class="detail" id="get_message!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_message!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_message!(channel, message)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_message!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message_id :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>()
+) :: Crux.Structs.Message | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_message/2"><code class="inline">get_message/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_messages/2">
   
   
@@ -3836,7 +6276,7 @@
     </a>
     <span class="signature">get_messages(channel, args \\ [])</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L285" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L288" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3859,6 +6299,40 @@
 
   </section>
 </div>
+<div class="detail" id="get_messages!/2">
+  
+  
+    <span id="get_messages!/1"></span>
+  
+  <div class="detail-header">
+    <a href="#get_messages!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_messages!(channel, args \\ [])</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_messages!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  args :: <a href="#t:get_messages_data/0">get_messages_data</a>()
+) :: [<a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_messages/2"><code class="inline">get_messages/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_pinned_messages/1">
   
   
@@ -3869,7 +6343,7 @@
     </a>
     <span class="signature">get_pinned_messages(channel)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L767" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L770" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3890,6 +6364,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_pinned_messages!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_pinned_messages!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_pinned_messages!(channel)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_pinned_messages!(channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>()) ::
+  [<a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_pinned_messages/1"><code class="inline">get_pinned_messages/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_reactions/4">
   
   
@@ -3904,7 +6408,7 @@
     </a>
     <span class="signature">get_reactions(channel_or_message, emoji_or_message_id, emoji_or_maybe_data \\ [], maybe_data \\ [])</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L378" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L381" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3930,6 +6434,44 @@
 
   </section>
 </div>
+<div class="detail" id="get_reactions!/4">
+  
+  
+    <span id="get_reactions!/2"></span>
+  
+    <span id="get_reactions!/3"></span>
+  
+  <div class="detail-header">
+    <a href="#get_reactions!/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_reactions!(channel_or_message, emoji_or_message_id, emoji_or_maybe_data \\ [], maybe_data \\ [])</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_reactions!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  message :: <a href="Crux.Rest.Util.html#t:message_id_resolvable/0">Crux.Rest.Util.message_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_identifier_resolvable/0">Crux.Rest.Util.emoji_identifier_resolvable</a>(),
+  args :: <a href="#t:get_reactions_data/0">get_reactions_data</a>()
+) :: [<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_reactions/4"><code class="inline">get_reactions/4</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_user/1">
   
   
@@ -3940,7 +6482,7 @@
     </a>
     <span class="signature">get_user(user)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1737" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1740" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3961,6 +6503,36 @@
 
   </section>
 </div>
+<div class="detail" id="get_user!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_user!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user!(user)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_user!(user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_user/1"><code class="inline">get_user/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="get_user_dms/0">
   
   
@@ -3971,7 +6543,7 @@
     </a>
     <span class="signature">get_user_dms()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1807" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1810" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3991,6 +6563,35 @@
 
   </section>
 </div>
+<div class="detail" id="get_user_dms!/0">
+  
+  
+  <div class="detail-header">
+    <a href="#get_user_dms!/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user_dms!()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>get_user_dms!() :: [<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#get_user_dms/0"><code class="inline">get_user_dms/0</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="leave_guild/1">
   
   
@@ -4001,7 +6602,7 @@
     </a>
     <span class="signature">leave_guild(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1795" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1798" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4022,6 +6623,35 @@
 
   </section>
 </div>
+<div class="detail" id="leave_guild!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#leave_guild!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">leave_guild!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>leave_guild!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#leave_guild/1"><code class="inline">leave_guild/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="list_guild_emojis/1">
   
   
@@ -4032,7 +6662,7 @@
     </a>
     <span class="signature">list_guild_emojis(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L786" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L789" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4053,6 +6683,36 @@
 
   </section>
 </div>
+<div class="detail" id="list_guild_emojis!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#list_guild_emojis!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_guild_emojis!(guild)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>list_guild_emojis!(guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>()) ::
+  [<a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#list_guild_emojis/1"><code class="inline">list_guild_emojis/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="list_guild_members/2">
   
   
@@ -4065,7 +6725,7 @@
     </a>
     <span class="signature">list_guild_members(guild, options \\ [])</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1170" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1173" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4088,6 +6748,40 @@
 
   </section>
 </div>
+<div class="detail" id="list_guild_members!/2">
+  
+  
+    <span id="list_guild_members!/1"></span>
+  
+  <div class="detail-header">
+    <a href="#list_guild_members!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_guild_members!(guild, options \\ [])</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>list_guild_members!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  options :: <a href="#t:list_guild_members_options/0">list_guild_members_options</a>()
+) :: [<a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#list_guild_members/2"><code class="inline">list_guild_members/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_channel/2">
   
   
@@ -4098,7 +6792,7 @@
     </a>
     <span class="signature">modify_channel(channel, args)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L604" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L607" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4121,6 +6815,38 @@
 
   </section>
 </div>
+<div class="detail" id="modify_channel!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_channel!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_channel!(channel, args)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_channel!(
+  channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  args :: <a href="#t:modify_channel_data/0">modify_channel_data</a>()
+) :: <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_channel/2"><code class="inline">modify_channel/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_current_user/1">
   
   
@@ -4131,7 +6857,7 @@
     </a>
     <span class="signature">modify_current_user(data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1761" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1764" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4152,6 +6878,36 @@
 
   </section>
 </div>
+<div class="detail" id="modify_current_user!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_current_user!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_current_user!(data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_current_user!(data :: <a href="#t:modify_current_user_data/0">modify_current_user_data</a>()) ::
+  <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_current_user/1"><code class="inline">modify_current_user/1</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_current_users_nick/3">
   
   
@@ -4164,7 +6920,7 @@
     </a>
     <span class="signature">modify_current_users_nick(guild, nick, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1276" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1279" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4189,6 +6945,41 @@
 
   </section>
 </div>
+<div class="detail" id="modify_current_users_nick!/3">
+  
+  
+    <span id="modify_current_users_nick!/2"></span>
+  
+  <div class="detail-header">
+    <a href="#modify_current_users_nick!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_current_users_nick!(guild, nick, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_current_users_nick!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  nick :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_current_users_nick/3"><code class="inline">modify_current_users_nick/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_guild/2">
   
   
@@ -4199,7 +6990,7 @@
     </a>
     <span class="signature">modify_guild(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L997" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1000" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4222,6 +7013,38 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild!(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data :: <a href="#t:modify_guild_data/0">modify_guild_data</a>()
+) :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_guild/2"><code class="inline">modify_guild/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_guild_channel_positions/2">
   
   
@@ -4232,7 +7055,7 @@
     </a>
     <span class="signature">modify_guild_channel_positions(guild, channels)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1127" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1130" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4255,6 +7078,38 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild_channel_positions!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_channel_positions!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_channel_positions!(guild, channels)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_channel_positions!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  channels :: [<a href="#t:modify_guild_channel_positions_data_entry/0">modify_guild_channel_positions_data_entry</a>()]
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_guild_channel_positions/2"><code class="inline">modify_guild_channel_positions/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_guild_embed/2">
   
   
@@ -4265,7 +7120,7 @@
     </a>
     <span class="signature">modify_guild_embed(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1683" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1686" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4292,6 +7147,40 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild_embed!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_embed!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_embed!(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_embed!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data ::
+    %{optional(:enabled) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(), optional(:channel_id) => <a href="#t:snowflake/0">snowflake</a>()}
+    | [enabled: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(), channel_id: <a href="#t:snowflake/0">snowflake</a>()]
+) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_guild_embed/2"><code class="inline">modify_guild_embed/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_guild_emoji/3">
   
   
@@ -4302,7 +7191,7 @@
     </a>
     <span class="signature">modify_guild_emoji(guild, emoji, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L888" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L891" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4326,6 +7215,39 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild_emoji!/3">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_emoji!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_emoji!(guild, emoji, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_emoji!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  emoji :: <a href="Crux.Rest.Util.html#t:emoji_id_resolvable/0">Crux.Rest.Util.emoji_id_resolvable</a>(),
+  data :: <a href="#t:modify_guild_emoji_data/0">modify_guild_emoji_data</a>()
+) :: Crux.Structs.Emoji | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_guild_emoji/3"><code class="inline">modify_guild_emoji/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_guild_integration/3">
   
   
@@ -4336,7 +7258,7 @@
     </a>
     <span class="signature">modify_guild_integration(guild, integration_id, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1619" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1622" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4370,6 +7292,49 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild_integration!/3">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_integration!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_integration!(guild, integration_id, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_integration!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  integration_id :: <a href="#t:snowflake/0">snowflake</a>(),
+  data ::
+    %{
+      optional(:expire_behavior) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+      optional(:expire_grace_period) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+      optional(:enable_emoticons) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()
+    }
+    | [
+        expire_behavior: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+        expire_grace_period: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+        enable_emoticons: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()
+      ]
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_guild_integration/3"><code class="inline">modify_guild_integration/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_guild_member/3">
   
   
@@ -4380,7 +7345,7 @@
     </a>
     <span class="signature">modify_guild_member(guild, member, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1254" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1257" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4404,6 +7369,39 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild_member!/3">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_member!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_member!(guild, member, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_member!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  member :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  data :: <a href="#t:modify_guild_member_data/0">modify_guild_member_data</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_guild_member/3"><code class="inline">modify_guild_member/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_guild_role/3">
   
   
@@ -4414,7 +7412,7 @@
     </a>
     <span class="signature">modify_guild_role(guild, role, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1477" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1480" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4438,6 +7436,39 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild_role!/3">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_role!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_role!(guild, role, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_role!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  role :: <a href="Crux.Rest.Util.html#t:role_id_resolvable/0">Crux.Rest.Util.role_id_resolvable</a>(),
+  data :: <a href="#t:guild_role_data/0">guild_role_data</a>()
+) :: <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_guild_role/3"><code class="inline">modify_guild_role/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="modify_guild_role_positions/2">
   
   
@@ -4448,7 +7479,7 @@
     </a>
     <span class="signature">modify_guild_role_positions(guild, data)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1459" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1462" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4471,6 +7502,38 @@
 
   </section>
 </div>
+<div class="detail" id="modify_guild_role_positions!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#modify_guild_role_positions!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">modify_guild_role_positions!(guild, data)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>modify_guild_role_positions!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  data :: <a href="Crux.Rest.Util.html#t:modify_guild_role_positions_data/0">Crux.Rest.Util.modify_guild_role_positions_data</a>()
+) :: %{optional(<a href="#t:snowflake/0">snowflake</a>()) => <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#modify_guild_role_positions/2"><code class="inline">modify_guild_role_positions/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="remove_guild_ban/3">
   
   
@@ -4483,7 +7546,7 @@
     </a>
     <span class="signature">remove_guild_ban(guild, user, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1392" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1395" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4507,6 +7570,41 @@
 
   </section>
 </div>
+<div class="detail" id="remove_guild_ban!/3">
+  
+  
+    <span id="remove_guild_ban!/2"></span>
+  
+  <div class="detail-header">
+    <a href="#remove_guild_ban!/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">remove_guild_ban!(guild, user, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>remove_guild_ban!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  user :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#remove_guild_ban/3"><code class="inline">remove_guild_ban/3</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="remove_guild_member_role/4">
   
   
@@ -4519,7 +7617,7 @@
     </a>
     <span class="signature">remove_guild_member_role(guild, member, role, reason \\ nil)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1316" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1319" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4544,6 +7642,42 @@
 
   </section>
 </div>
+<div class="detail" id="remove_guild_member_role!/4">
+  
+  
+    <span id="remove_guild_member_role!/3"></span>
+  
+  <div class="detail-header">
+    <a href="#remove_guild_member_role!/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">remove_guild_member_role!(guild, member, role, reason \\ nil)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>remove_guild_member_role!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  member :: <a href="Crux.Rest.Util.html#t:user_id_resolvable/0">Crux.Rest.Util.user_id_resolvable</a>(),
+  role :: <a href="Crux.Rest.Util.html#t:role_id_resolvable/0">Crux.Rest.Util.role_id_resolvable</a>(),
+  reason :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#remove_guild_member_role/4"><code class="inline">remove_guild_member_role/4</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="sync_guild_integration/2">
   
   
@@ -4554,7 +7688,7 @@
     </a>
     <span class="signature">sync_guild_integration(guild, integration_id)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1647" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1650" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4577,6 +7711,38 @@
 
   </section>
 </div>
+<div class="detail" id="sync_guild_integration!/2">
+  
+  
+  <div class="detail-header">
+    <a href="#sync_guild_integration!/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">sync_guild_integration!(guild, integration_id)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>sync_guild_integration!(
+  guild :: <a href="Crux.Rest.Util.html#t:guild_id_resolvable/0">Crux.Rest.Util.guild_id_resolvable</a>(),
+  integration_id :: <a href="#t:snowflake/0">snowflake</a>()
+) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#sync_guild_integration/2"><code class="inline">sync_guild_integration/2</code></a>, but raises an exception if it fails.</p>
+
+  </section>
+</div>
 <div class="detail" id="trigger_typing/1">
   
   
@@ -4587,7 +7753,7 @@
     </a>
     <span class="signature">trigger_typing(channel)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L483" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L486" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4606,6 +7772,36 @@
     <p>  Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br/>  Should generally be used sparingly for commands that may take a while as a form of acknowledging.</p>
 <p>  Consider sending a message and edit that later on instead.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#trigger-typing-indicator">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="trigger_typing!/1">
+  
+  
+  <div class="detail-header">
+    <a href="#trigger_typing!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">trigger_typing!(channel)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L10" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>trigger_typing!(channel :: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>()) ::
+  :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>The same as <a href="#trigger_typing/1"><code class="inline">trigger_typing/1</code></a>, but raises an exception if it fails.</p>
 
   </section>
 </div>

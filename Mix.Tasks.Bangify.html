@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.18.3">
-    <title>Crux.Base.ConsumerSupervisor – Crux vdev</title>
+    <title>bangify – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
     <script src="dist/sidebar_items-ff9b7271e2.js"></script>
@@ -14,7 +14,7 @@
     
     
   </head>
-  <body data-type="modules">
+  <body data-type="tasks">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
 
     <div class="main">
@@ -74,9 +74,9 @@
 
       <h1>
         <small class="visible-xs">Crux vdev</small>
-        Crux.Base.ConsumerSupervisor
+        mix bangify
         
-          <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer_supervisor.ex#L1" title="View Source" class="view-source" rel="help">
+          <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/mix/tasks/bangify.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -84,21 +84,37 @@
       </h1>
 
       
-        <section id="moduledoc">
-          <p>  Supervises a consumer, for example, a module using <a href="Crux.Base.TaskConsumer.html"><code class="inline">Crux.Base.TaskConsumer</code></a>.</p>
-<p>  A somewhat example of this:</p>
-<pre><code class="elixir">defmodule Bot.Supervisor do
-  def start_link(_), do: Supervisor.start_link(__MODULE__, %{}, name: __MODULE__)
 
-  def init(_args) do
-    children = [
-      # other childrens...
-      {Crux.Base.ConsumerSupervisor, [Bot.Consumer]}
-    ]
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
 
-    Supervisor.init(children, strategy: :one_for_one)
-  end
-end</code></pre>
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#run/1">run(_)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>A task needs to implement <code class="inline">run</code> which receives<br/>a list of command line args</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
 
         </section>
       
@@ -106,7 +122,40 @@ end</code></pre>
       
 
       
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="run/1">
+  
+  
+  <div class="detail-header">
+    <a href="#run/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">run(_)</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/mix/tasks/bangify.ex#L34" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>A task needs to implement <code class="inline">run</code> which receives<br/>a list of command line args.</p>
+<p>Callback implementation for <a href="https://hexdocs.pm/mix/Mix.Task.html#c:run/1"><code class="inline">Mix.Task.run/1</code></a>.</p>
 
+  </section>
+</div>
+
+        </section>
       
 
       
