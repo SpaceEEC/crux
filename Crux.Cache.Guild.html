@@ -8,7 +8,7 @@
     <title>Crux.Cache.Guild – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-ff9b7271e2.js"></script>
+    <script src="dist/sidebar_items-48084e000f.js"></script>
     
     
     
@@ -118,7 +118,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#delete/1">delete(id)</a>
+    <a href="#delete/1">delete(guild_id)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes a guild</p>
@@ -127,7 +127,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#delete/2">delete(id, data)</a>
+    <a href="#delete/2">delete(guild_id, data)</a>
   </div>
   
     <div class="summary-synopsis"><p>Deletes a:</p>
@@ -144,7 +144,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#fetch/1">fetch(id)</a>
+    <a href="#fetch/1">fetch(guild_id)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches a guild from the cache by id</p>
@@ -153,7 +153,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#fetch!/1">fetch!(id)</a>
+    <a href="#fetch!/1">fetch!(guild_id)</a>
   </div>
   
     <div class="summary-synopsis"><p>Fetches a guild from the cache by id, raises if not found</p>
@@ -194,7 +194,7 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#lookup/1">lookup(id)</a>
+    <a href="#lookup/1">lookup(guild_id)</a>
   </div>
   
     <div class="summary-synopsis"><p>Looks up the <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types"><code class="inline">pid/0</code></a> of a <a href="Crux.Cache.Guild.html#content"><code class="inline">Crux.Cache.Guild</code></a>’s  <a href="https://hexdocs.pm/elixir/GenServer.html"><code class="inline">GenServer</code></a> by guild id</p>
@@ -276,7 +276,7 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">delete(id)</span>
+    <span class="signature">delete(guild_id)</span>
     
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L85" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
@@ -287,7 +287,7 @@
     
       <div class="specs">
         
-          <pre>delete(id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()) :: :ok | :error</pre>
+          <pre>delete(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) :: :ok | :error</pre>
         
       </div>
     
@@ -306,7 +306,7 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">delete(id, data)</span>
+    <span class="signature">delete(guild_id, data)</span>
     
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L94" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
@@ -317,7 +317,7 @@
     
       <div class="specs">
         
-          <pre>delete(id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(), data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: :ok | :error</pre>
+          <pre>delete(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: :ok | :error</pre>
         
       </div>
     
@@ -343,7 +343,7 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">fetch(id)</span>
+    <span class="signature">fetch(guild_id)</span>
     
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L100" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
@@ -354,7 +354,8 @@
     
       <div class="specs">
         
-          <pre>fetch(id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()) :: {:ok, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()} | :error</pre>
+          <pre>fetch(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) ::
+  {:ok, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()} | :error</pre>
         
       </div>
     
@@ -372,9 +373,9 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">fetch!(id)</span>
+    <span class="signature">fetch!(guild_id)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L106" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L107" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -383,7 +384,8 @@
     
       <div class="specs">
         
-          <pre>fetch!(id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()) :: <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+          <pre>fetch!(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) ::
+  <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
         
       </div>
     
@@ -403,7 +405,7 @@
     </a>
     <span class="signature">init(guild)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L161" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L162" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -480,7 +482,7 @@
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">lookup(id)</span>
+    <span class="signature">lookup(guild_id)</span>
     
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L29" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
@@ -491,7 +493,7 @@
     
       <div class="specs">
         
-          <pre>lookup(id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pid</a>()} | :error</pre>
+          <pre>lookup(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pid</a>()} | :error</pre>
         
       </div>
     

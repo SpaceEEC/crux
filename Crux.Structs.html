@@ -8,7 +8,7 @@
     <title>Crux.Structs – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-ff9b7271e2.js"></script>
+    <script src="dist/sidebar_items-48084e000f.js"></script>
     
     
     
@@ -161,7 +161,7 @@
     </a>
     <span class="signature">create(data, target)</span>
     
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs.ex#L73" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs.ex#L77" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -219,6 +219,10 @@ iex&gt; [
   %Crux.Structs.User{username: &quot;space&quot;, discriminator: &quot;0001&quot;, id: 218348062828003328, avatar: &quot;46a356e237350bf8b8dfde15667dfc4&quot;},
   %Crux.Structs.User{username: &quot;Drahcirius&quot;, discriminator: &quot;1336&quot;, id: 130175406673231873, avatar: &quot;c896aebec82c90f590b08cfebcdc4e3b&quot;}
 ]
+
+# Does not alter already structs
+iex&gt; Crux.Structs.create(%Crux.Structs.Member{}, Crux.Structs.Member)
+%Crux.Structs.Member{}
 
 # Fallback
 iex&gt; Crux.Structs.create(nil, nil)

@@ -8,7 +8,7 @@
     <title>Crux.Base.Consumer – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-480ffdc169.css" />
     
-    <script src="dist/sidebar_items-ff9b7271e2.js"></script>
+    <script src="dist/sidebar_items-48084e000f.js"></script>
     
     
     
@@ -109,7 +109,7 @@
     <a href="#t:channel_create_event/0">channel_create_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a channel is created</p>
+    <div class="summary-synopsis"><p>Emitted whenever a channel was created</p>
 </div>
   
 </div>
@@ -118,7 +118,16 @@
     <a href="#t:channel_delete_event/0">channel_delete_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a channel is deleted</p>
+    <div class="summary-synopsis"><p>Emitted whenever a channel was deleted</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:channel_id/0">channel_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a channel</p>
 </div>
   
 </div>
@@ -127,7 +136,7 @@
     <a href="#t:channel_pins_update_event/0">channel_pins_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a message is pinned or unpinned</p>
+    <div class="summary-synopsis"><p>Emitted whenever a message was pinned or unpinned</p>
 </div>
   
 </div>
@@ -136,7 +145,7 @@
     <a href="#t:channel_update_event/0">channel_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a channel is updated</p>
+    <div class="summary-synopsis"><p>Emitted whenever a channel was updated</p>
 </div>
   
 </div>
@@ -154,7 +163,7 @@
     <a href="#t:guild_ban_add_event/0">guild_ban_add_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a user is banned from a guild</p>
+    <div class="summary-synopsis"><p>Emitted whenever a user was banned from a guild</p>
 </div>
   
 </div>
@@ -163,7 +172,7 @@
     <a href="#t:guild_ban_remove_event/0">guild_ban_remove_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a user is unbanned from a guild</p>
+    <div class="summary-synopsis"><p>Emitted whenever a user was unbanned from a guild</p>
 </div>
   
 </div>
@@ -172,7 +181,7 @@
     <a href="#t:guild_create_event/0">guild_create_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever the client joins a guild</p>
+    <div class="summary-synopsis"><p>Emitted whenever the client joined a guild</p>
 </div>
   
 </div>
@@ -181,7 +190,7 @@
     <a href="#t:guild_delete_event/0">guild_delete_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever the client leaves a guild</p>
+    <div class="summary-synopsis"><p>Emitted whenever the client left a guild or a guild became unavailable</p>
 </div>
   
 </div>
@@ -196,10 +205,19 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:guild_id/0">guild_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a guild</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:guild_integrations_update_event/0">guild_integrations_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever one of a guild’s integration is updated</p>
+    <div class="summary-synopsis"><p>Emitted whenever one of a guild’s integration was updated</p>
 </div>
   
 </div>
@@ -208,7 +226,7 @@
     <a href="#t:guild_member_add_event/0">guild_member_add_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a user joins a guild</p>
+    <div class="summary-synopsis"><p>Emitted whenever a user joined a guild</p>
 </div>
   
 </div>
@@ -217,7 +235,7 @@
     <a href="#t:guild_member_remove_event/0">guild_member_remove_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a user leaves a guild.<br/>  This includes kicks and bans (only if the user is present in the guild)</p>
+    <div class="summary-synopsis"><p>Emitted whenever a user left a guild.<br/>  This includes kicks and bans</p>
 </div>
   
 </div>
@@ -226,7 +244,7 @@
     <a href="#t:guild_member_update_event/0">guild_member_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a guild member is updated</p>
+    <div class="summary-synopsis"><p>Emitted whenever a guild member was updated</p>
 </div>
   
 </div>
@@ -235,7 +253,7 @@
     <a href="#t:guild_members_chunk_event/0">guild_members_chunk_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a chunk of guild members is received</p>
+    <div class="summary-synopsis"><p>Emitted whenever a chunk of guild members was received</p>
 </div>
   
 </div>
@@ -244,7 +262,7 @@
     <a href="#t:guild_role_create_event/0">guild_role_create_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a role is created</p>
+    <div class="summary-synopsis"><p>Emitted whenever a role was created</p>
 </div>
   
 </div>
@@ -253,7 +271,7 @@
     <a href="#t:guild_role_delete_event/0">guild_role_delete_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a role is deleted</p>
+    <div class="summary-synopsis"><p>Emitted whenever a role was deleted</p>
 </div>
   
 </div>
@@ -262,7 +280,7 @@
     <a href="#t:guild_role_update_event/0">guild_role_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a role is updated</p>
+    <div class="summary-synopsis"><p>Emitted whenever a role was updated</p>
 </div>
   
 </div>
@@ -271,7 +289,7 @@
     <a href="#t:guild_update_event/0">guild_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a guild updates</p>
+    <div class="summary-synopsis"><p>Emitted whenever a guild updated</p>
 </div>
   
 </div>
@@ -280,7 +298,7 @@
     <a href="#t:message_create_event/0">message_create_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a message is created. (Sent to a channel)</p>
+    <div class="summary-synopsis"><p>Emitted whenever a message was created. (Sent to a channel)</p>
 </div>
   
 </div>
@@ -289,7 +307,7 @@
     <a href="#t:message_delete_bulk_event/0">message_delete_bulk_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a bulk of messages is deleted</p>
+    <div class="summary-synopsis"><p>Emitted whenever a bulk of messages was deleted</p>
 </div>
   
 </div>
@@ -298,7 +316,16 @@
     <a href="#t:message_delete_event/0">message_delete_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a channel is deleted</p>
+    <div class="summary-synopsis"><p>Emitted whenever a channel was deleted</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:message_id/0">message_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a message</p>
 </div>
   
 </div>
@@ -307,7 +334,7 @@
     <a href="#t:message_reaction_add_event/0">message_reaction_add_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a reaction is added to a message</p>
+    <div class="summary-synopsis"><p>Emitted whenever a reaction was added to a message</p>
 </div>
   
 </div>
@@ -316,7 +343,7 @@
     <a href="#t:message_reaction_remove_all_event/0">message_reaction_remove_all_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a user explicitly removes all reactions from a message</p>
+    <div class="summary-synopsis"><p>Emitted whenever a user explicitly removed all reactions from a message</p>
 </div>
   
 </div>
@@ -325,7 +352,7 @@
     <a href="#t:message_reaction_remove_event/0">message_reaction_remove_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a reaction is removed from a message</p>
+    <div class="summary-synopsis"><p>Emitted whenever a reaction was removed from a message</p>
 </div>
   
 </div>
@@ -334,7 +361,7 @@
     <a href="#t:message_update_event/0">message_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a message is updated.<br/>  This can be an “embed update” (discord auto embedding stuff) or a full message update</p>
+    <div class="summary-synopsis"><p>Emitted whenever a message was updated</p>
 </div>
   
 </div>
@@ -343,7 +370,7 @@
     <a href="#t:presence_update_event/0">presence_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a user’s presence updates</p>
+    <div class="summary-synopsis"><p>Emitted whenever a user’s presence updated</p>
 </div>
   
 </div>
@@ -367,10 +394,46 @@
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:role_id/0">role_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a role</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:shard_id/0">shard_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a shard</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:snowflake/0">snowflake()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>A discord snowflake.<br/>  See <code class="inline">t:Crux.Rest.Snowflake/0</code> for more information</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:typing_start_event/0">typing_start_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a user starts typing in a channel</p>
+    <div class="summary-synopsis"><p>Emitted whenever a user started typing in a channel</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:user_id/0">user_id()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The id of a user</p>
 </div>
   
 </div>
@@ -379,7 +442,7 @@
     <a href="#t:user_update_event/0">user_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever properties about the current user change</p>
+    <div class="summary-synopsis"><p>Emitted whenever properties about the current user changed</p>
 </div>
   
 </div>
@@ -388,7 +451,7 @@
     <a href="#t:voice_server_update_event/0">voice_server_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever guild’s voice server is updated</p>
+    <div class="summary-synopsis"><p>Emitted whenever guild’s voice server was updated</p>
 </div>
   
 </div>
@@ -397,7 +460,7 @@
     <a href="#t:voice_state_update_event/0">voice_state_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever someone joins/leaves/moves a voice channels</p>
+    <div class="summary-synopsis"><p>Emitted whenever the voice state of a member changed</p>
 </div>
   
 </div>
@@ -406,7 +469,7 @@
     <a href="#t:webhooks_update_event/0">webhooks_update_event()</a>
   </div>
   
-    <div class="summary-synopsis"><p>Emitted whenever a channel’s webhook is created, updtaed, or deleted</p>
+    <div class="summary-synopsis"><p>Emitted whenever a channel’s webhook was created, updated, or deleted</p>
 </div>
   
 </div>
@@ -441,7 +504,7 @@
     </a>
     <span class="signature">channel_create_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L128" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L163" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -451,14 +514,14 @@
       <div class="specs">
         
           <pre>channel_create_event() ::
-  {:CHANNEL_CREATE, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:CHANNEL_CREATE, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a channel is created.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#channel-create">Discord Docs</a>.</p>
+    <p>  Emitted whenever a channel was created.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#channel-create">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -472,7 +535,7 @@
     </a>
     <span class="signature">channel_delete_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L169" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L203" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -482,14 +545,43 @@
       <div class="specs">
         
           <pre>channel_delete_event() ::
-  {:CHANNEL_DELETE, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:CHANNEL_DELETE, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a channel is deleted.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#channel-delete">Discord Docs</a>.</p>
+    <p>  Emitted whenever a channel was deleted.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#channel-delete">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:channel_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:channel_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">channel_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L62" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>channel_id() :: <a href="#t:snowflake/0">snowflake</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a channel.</p>
 
   </section>
 </div>
@@ -503,7 +595,7 @@
     </a>
     <span class="signature">channel_pins_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L186" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L222" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -513,15 +605,16 @@
       <div class="specs">
         
           <pre>channel_pins_update_event() ::
-  {:CHANNEL_PINS_UPDATE, {<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:CHANNEL_PINS_UPDATE,
+   {<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:channel_id/0">channel_id</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a message is pinned or unpinned.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#channel-pins-update">Discord Docs</a>.</p>
+    <p>  Emitted whenever a message was pinned or unpinned.</p>
+<p>  The first element is the channel id if the channel was not cached.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#channel-pins-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -535,7 +628,7 @@
     </a>
     <span class="signature">channel_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L149" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L184" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -546,15 +639,15 @@
         
           <pre>channel_update_event() ::
   {:CHANNEL_UPDATE, {<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | nil, <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a channel is updated.</p>
+    <p>  Emitted whenever a channel was updated.</p>
 <p>  The first element is the channel before the update, or nil if not cached previously.<br/>  The second element is the new channel.</p>
-<p>  For more infomrations see <a href="https://discordapp.com/developers/docs/topics/gateway#channel-update">Discord Docs</a>.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#channel-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -568,7 +661,7 @@
     </a>
     <span class="signature">event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L42" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L77" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -631,7 +724,7 @@
     </a>
     <span class="signature">guild_ban_add_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L293" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L329" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -642,16 +735,16 @@
         
           <pre>guild_ban_add_event() ::
   {:GUILD_BAN_ADD,
-   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>(), <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>(),
+    <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:guild_id/0">guild_id</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a user is banned from a guild.</p>
-<p>  A member is emitted when it was cached, a user if not.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-ban-add">Discord Docs</a>.</p>
+    <p>  Emitted whenever a user was banned from a guild.</p>
+<p>  Emits the user if the member was not cached.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-ban-add">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -665,7 +758,7 @@
     </a>
     <span class="signature">guild_ban_remove_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L314" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L350" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -675,15 +768,15 @@
       <div class="specs">
         
           <pre>guild_ban_remove_event() ::
-  {:GUILD_BAN_REMOVE, {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(), <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:GUILD_BAN_REMOVE,
+   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(), <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:guild_id/0">guild_id</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>Emitted whenever a user is unbanned from a guild.</p>
-<p>For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-ban-removed">Discord Docs</a>.</p>
+    <p>Emitted whenever a user was unbanned from a guild.</p>
+<p>For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-ban-removed">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -697,7 +790,7 @@
     </a>
     <span class="signature">guild_create_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L204" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L240" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -706,15 +799,14 @@
     
       <div class="specs">
         
-          <pre>guild_create_event() ::
-  {:GUILD_CREATE, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>(), <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+          <pre>guild_create_event() :: {:GUILD_CREATE, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>(), <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever the client joins a guild.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-create">Discord Docs</a>.</p>
+    <p>  Emitted whenever the client joined a guild.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-create">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -728,7 +820,7 @@
     </a>
     <span class="signature">guild_delete_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L269" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L305" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -737,15 +829,14 @@
     
       <div class="specs">
         
-          <pre>guild_delete_event() ::
-  {:GUILD_DELETE, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>(), <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+          <pre>guild_delete_event() :: {:GUILD_DELETE, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>(), <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever the client leaves a guild.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-delete">Discord Docs</a>.</p>
+    <p>  Emitted whenever the client left a guild or a guild became unavailable.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-delete">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -759,7 +850,7 @@
     </a>
     <span class="signature">guild_emojis_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L336" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L373" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -770,7 +861,7 @@
         
           <pre>guild_emojis_update_event() ::
   {:GUILD_EMOJIS_UPDATE, {[<a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>()], [<a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>()]},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
@@ -778,7 +869,36 @@
   <section class="docstring">
     <p>  Emitted whenever a guild’s emojis updated.</p>
 <p>  The first element is a list of the emojis before the update.<br/>  The second element is al ist of the emojis after the update.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-emojis-update">Discord Docs</a>.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-emojis-update">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:guild_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:guild_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">guild_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L53" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>guild_id() :: <a href="#t:snowflake/0">snowflake</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a guild.</p>
 
   </section>
 </div>
@@ -792,7 +912,7 @@
     </a>
     <span class="signature">guild_integrations_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L358" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L397" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -802,14 +922,15 @@
       <div class="specs">
         
           <pre>guild_integrations_update_event() ::
-  {:GUILD_INTEGRATIONS_UPDATE, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>(), <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:GUILD_INTEGRATIONS_UPDATE, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:guild_id/0">guild_id</a>(), <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever one of a guild’s integration is updated.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-integrations-update">Discord Docs</a>.</p>
+    <p>  Emitted whenever one of a guild’s integration was updated.</p>
+<p>  Emits the guild id, if the guild was not cached.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-integrations-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -823,7 +944,7 @@
     </a>
     <span class="signature">guild_member_add_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L375" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L414" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -833,14 +954,14 @@
       <div class="specs">
         
           <pre>guild_member_add_event() ::
-  {:GUILD_MEMBER_ADD, <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>(), <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:GUILD_MEMBER_ADD, <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>(), <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a user joins a guild.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-member-add">Discord Docs</a>.</p>
+    <p>  Emitted whenever a user joined a guild.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-member-add">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -854,7 +975,7 @@
     </a>
     <span class="signature">guild_member_remove_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L391" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L432" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -865,16 +986,17 @@
         
           <pre>guild_member_remove_event() ::
   {:GUILD_MEMBER_REMOVE,
-   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>(), <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>(),
+    <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:guild_id/0">guild_id</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a user leaves a guild.<br/>  This includes kicks and bans (only if the user is present in the guild)</p>
-<p>  A member is emitted when it was cached, a user if not.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-member-remove">Discord Docs</a>.</p>
+    <p>  Emitted whenever a user left a guild.<br/>  This includes kicks and bans.</p>
+<p>  Emits the user if the member was not cached.</p>
+<p>  The second element is the guild id, if the guild was not cached.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-member-remove">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -888,7 +1010,7 @@
     </a>
     <span class="signature">guild_member_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L418" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L457" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -899,16 +1021,15 @@
         
           <pre>guild_member_update_event() ::
   {:GUILD_MEMBER_UPDATE,
-   {<a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | nil, <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   {<a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>() | nil, <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a guild member is updated.</p>
+    <p>  Emitted whenever a guild member was updated.</p>
 <p>  The first element is the member before the update or nil if uncached previously.<br/>  The second element is the member after the update.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-member-update">Discord Docs</a>.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-member-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -922,7 +1043,7 @@
     </a>
     <span class="signature">guild_members_chunk_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L442" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L480" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -932,14 +1053,14 @@
       <div class="specs">
         
           <pre>guild_members_chunk_event() ::
-  {:GUILD_MEMBERS_CHUNK, [<a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()], <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:GUILD_MEMBERS_CHUNK, [<a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()], <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a chunk of guild members is received.</p>
-<p>  For more informations see <a href="Crux.Gateway.Command.html#request_guild_members/2"><code class="inline">Crux.Gateway.Command.request_guild_members/2</code></a> and <a href="https://discordapp.com/developers/docs/topics/gateway#guild-members-chunk">Discord Docs</a>.</p>
+    <p>  Emitted whenever a chunk of guild members was received.</p>
+<p>  For more information see <a href="Crux.Gateway.Command.html#request_guild_members/2"><code class="inline">Crux.Gateway.Command.request_guild_members/2</code></a> and <a href="https://discordapp.com/developers/docs/topics/gateway#guild-members-chunk">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -953,7 +1074,7 @@
     </a>
     <span class="signature">guild_role_create_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L455" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L493" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -963,14 +1084,14 @@
       <div class="specs">
         
           <pre>guild_role_create_event() ::
-  {:GUILD_ROLE_CREATE, <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>(), <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:GUILD_ROLE_CREATE, <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>(), <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a role is created.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-role-create">Discord Docs</a>.</p>
+    <p>  Emitted whenever a role was created.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-role-create">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -984,7 +1105,7 @@
     </a>
     <span class="signature">guild_role_delete_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L495" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L534" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -994,14 +1115,17 @@
       <div class="specs">
         
           <pre>guild_role_delete_event() ::
-  {:GUILD_ROLE_DELETE, <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>(), <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:GUILD_ROLE_DELETE,
+   <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>() | {<a href="#t:role_id/0">role_id</a>(), <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:guild_id/0">guild_id</a>()},
+   <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a role is deleted.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-role-delete">Discord Docs</a>.</p>
+    <p>  Emitted whenever a role was deleted.</p>
+<p>  If the role is not cached emits a tuple of the role id and if not cached the guild id, or guild.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-role-delete">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1015,7 +1139,7 @@
     </a>
     <span class="signature">guild_role_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L474" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L512" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1026,15 +1150,15 @@
         
           <pre>guild_role_update_event() ::
   {:GUILD_ROLE_UPDATE, {<a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>() | nil, <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a role is updated.</p>
+    <p>  Emitted whenever a role was updated.</p>
 <p>  The first element is the role before the update or nil if previously cached.<br/>  The second element is the role after the update.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-role-update">Discord Docs</a>.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-role-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1048,7 +1172,7 @@
     </a>
     <span class="signature">guild_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L214" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L250" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1059,15 +1183,15 @@
         
           <pre>guild_update_event() ::
   {:GUILD_UPDATE, {<a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | nil, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a guild updates.</p>
+    <p>  Emitted whenever a guild updated.</p>
 <p>  The first element is the guild before the update or nil if uncached previously.<br/>  The second element is the guild after the update.</p>
-<p>  Fore more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-update">Discord Docs</a>.</p>
+<p>  Fore more information see <a href="https://discordapp.com/developers/docs/topics/gateway#guild-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1081,7 +1205,7 @@
     </a>
     <span class="signature">message_create_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L513" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L555" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1091,14 +1215,14 @@
       <div class="specs">
         
           <pre>message_create_event() ::
-  {:MESSAGE_CREATE, <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(), <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:MESSAGE_CREATE, <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(), <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a message is created. (Sent to a channel)</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#message-create">Discord Docs</a>.</p>
+    <p>  Emitted whenever a message was created. (Sent to a channel)</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#message-create">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1112,7 +1236,7 @@
     </a>
     <span class="signature">message_delete_bulk_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L570" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L631" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1122,15 +1246,16 @@
       <div class="specs">
         
           <pre>message_delete_bulk_event() ::
-  {:MESSAGE_DELETE_BULK, {[<a href="Crux.Base.html#t:message_id/0">Crux.Base.message_id</a>()], <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:MESSAGE_DELETE_BULK,
+   {[<a href="#t:message_id/0">message_id</a>()], <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:channel_id/0">channel_id</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a bulk of messages is deleted.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#message-delete-bulk">Discord Docs</a>.</p>
+    <p>  Emitted whenever a bulk of messages was deleted.</p>
+<p>  Emits the channel id if the channel was not cached.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#message-delete-bulk">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1144,7 +1269,7 @@
     </a>
     <span class="signature">message_delete_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L552" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L607" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1154,15 +1279,46 @@
       <div class="specs">
         
           <pre>message_delete_event() ::
-  {:MESSAGE_DELETE, {<a href="Crux.Base.html#t:message_id/0">Crux.Base.message_id</a>(), <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:MESSAGE_DELETE,
+   {<a href="#t:message_id/0">message_id</a>(), <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | {<a href="#t:channel_id/0">channel_id</a>(), <a href="#t:guild_id/0">guild_id</a>()}},
+   <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a channel is deleted.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#message-delete">Discord Docs</a>.</p>
+    <p>  Emitted whenever a channel was deleted.</p>
+<p>  Emits as second element a tuple of channel and guild id if the channel was not cached.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#message-delete">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:message_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:message_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">message_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L67" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>message_id() :: <a href="#t:snowflake/0">snowflake</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a message.</p>
 
   </section>
 </div>
@@ -1176,7 +1332,7 @@
     </a>
     <span class="signature">message_reaction_add_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L588" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L649" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1187,15 +1343,15 @@
         
           <pre>message_reaction_add_event() ::
   {:MESSAGE_REACTION_ADD,
-   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(), <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="Crux.Base.html#t:message_id/0">Crux.Base.message_id</a>(),
-    <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>()}, <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="#t:user_id/0">user_id</a>(), <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:channel_id/0">channel_id</a>(),
+    <a href="#t:message_id/0">message_id</a>(), <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a reaction is added to a message.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#message-reaction-add">Discord Docs</a>.</p>
+    <p>  Emitted whenever a reaction was added to a message.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#message-reaction-add">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1209,7 +1365,7 @@
     </a>
     <span class="signature">message_reaction_remove_all_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L626" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L699" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1220,14 +1376,14 @@
         
           <pre>message_reaction_remove_all_event() ::
   {:MESSAGE_REACTION_REMOVE_ALL,
-   {<a href="Crux.Base.html#t:message_id/0">Crux.Base.message_id</a>(), <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()}}</pre>
+   {<a href="#t:message_id/0">message_id</a>(), <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:channel_id/0">channel_id</a>()}}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a user explicitly removes all reactions from a message.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#message-reaction-remove-all">Discord Docs</a>.</p>
+    <p>  Emitted whenever a user explicitly removed all reactions from a message.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#message-reaction-remove-all">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1241,7 +1397,7 @@
     </a>
     <span class="signature">message_reaction_remove_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L597" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L659" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1252,15 +1408,15 @@
         
           <pre>message_reaction_remove_event() ::
   {:MESSAGE_REACTION_REMOVE,
-   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(), <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="Crux.Base.html#t:message_id/0">Crux.Base.message_id</a>(),
-    <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>()}, <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(), <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="#t:message_id/0">message_id</a>(),
+    <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a reaction is removed from a message.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#message-reaction-remove">Discord Docs</a>.</p>
+    <p>  Emitted whenever a reaction was removed from a message.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#message-reaction-remove">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1274,7 +1430,7 @@
     </a>
     <span class="signature">message_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L528" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L582" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1286,18 +1442,16 @@
           <pre>message_update_event() ::
   {:MESSAGE_UPDATE,
    <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()
-   | %{
-       channel_id: <a href="Crux.Base.html#t:channel_id/0">Crux.Base.channel_id</a>(),
-       id: <a href="Crux.Base.html#t:message_id/0">Crux.Base.message_id</a>(),
-       embeds: [<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()]
-     }, <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   | %{channel_id: <a href="#t:channel_id/0">channel_id</a>(), id: <a href="#t:message_id/0">message_id</a>(), embeds: [<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()]},
+   <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a message is updated.<br/>  This can be an “embed update” (discord auto embedding stuff) or a full message update.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#message-update">Discord Docs</a>.</p>
+    <p>  Emitted whenever a message was updated.</p>
+<p>  Emits a partial object for “embed update”s (discord auto embedding websites/images/videos)<br/>  Or a full message for “actual” message updates.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#message-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1311,7 +1465,7 @@
     </a>
     <span class="signature">presence_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L644" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L721" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1321,14 +1475,14 @@
       <div class="specs">
         
           <pre>presence_update_event() ::
-  {:PRESENCE_UPDATE, {Presence.t() | nil, Presence.t()}, <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:PRESENCE_UPDATE, {Presence.t() | nil, Presence.t()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a user’s presence updates.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#presence-update">Discord Docs</a>.</p>
+    <p>  Emitted whenever a user’s presence updated.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#presence-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1342,7 +1496,7 @@
     </a>
     <span class="signature">ready_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L84" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L119" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1360,14 +1514,14 @@
      guilds: [<a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()],
      session_id: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
      _trace: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()]
-   }, <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   }, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
     <p>  Emitted when a gateway connection completed the initial handshake with the gateway.<br/>  The guilds are not yet sent!</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#ready">Discord Docs</a>.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#ready">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1381,7 +1535,7 @@
     </a>
     <span class="signature">resumed_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L119" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L154" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1390,14 +1544,101 @@
     
       <div class="specs">
         
-          <pre>resumed_event() :: {:RESUMED, %{_trace: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()]}, <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+          <pre>resumed_event() :: {:RESUMED, %{_trace: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()]}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
     <p>  Emitted whenever a gateway connection resumed after unexpectedly disconnecting.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#resumed">Discord Docs</a>.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#resumed">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:role_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:role_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">role_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L57" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>role_id() :: <a href="#t:snowflake/0">snowflake</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a role.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:shard_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:shard_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">shard_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L42" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>shard_id() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a shard.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:snowflake/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:snowflake/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">snowflake()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L48" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>snowflake() :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  A discord snowflake.<br/>  See <code class="inline">t:Crux.Rest.Snowflake/0</code> for more information.</p>
 
   </section>
 </div>
@@ -1411,7 +1652,7 @@
     </a>
     <span class="signature">typing_start_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L681" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L760" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1421,16 +1662,46 @@
       <div class="specs">
         
           <pre>typing_start_event() ::
-  {:TYPING_START, {<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>(), <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:TYPING_START,
+   {<a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:channel_id/0">channel_id</a>(), <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | <a href="#t:user_id/0">user_id</a>(),
+    <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a user starts typing in a channel.</p>
-<p>  The third element is the timestamp of when the user started typing.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#typing-start">Discord Docs</a>.</p>
+    <p>  Emitted whenever a user started typing in a channel.</p>
+<p>  The first element is the channel id if the channel was not cached.<br/>  The second element is the user id if the user was not cached.<br/>  The third element is the timestamp of when the user started typing.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#typing-start">Discord Docs</a>.</p>
+
+  </section>
+</div>
+<div class="detail" id="t:user_id/0">
+  
+  
+  <div class="detail-header">
+    <a href="#t:user_id/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">user_id()</span>
+    
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L72" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+      <div class="specs">
+        
+          <pre>user_id() :: <a href="#t:snowflake/0">snowflake</a>()</pre>
+        
+      </div>
+    
+  </div>
+  <section class="docstring">
+    <p>  The id of a user.</p>
 
   </section>
 </div>
@@ -1444,7 +1715,7 @@
     </a>
     <span class="signature">user_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L702" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L794" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1455,15 +1726,15 @@
         
           <pre>user_update_event() ::
   {:USER_UPDATE, {<a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>() | nil, <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever properties about the current user change.</p>
+    <p>  Emitted whenever properties about the current user changed.</p>
 <p>  The first element is the user before the update or nil if previously cached.<br/>  The second element is the user after the update.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#user-update">Discord Docs</a>.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#user-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1477,7 +1748,7 @@
     </a>
     <span class="signature">voice_server_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L750" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L842" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1488,16 +1759,15 @@
         
           <pre>voice_server_update_event() ::
   {:VOICE_SERVER_UPDATE,
-   %{token: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), guild_id: <a href="Crux.Base.html#t:guild_id/0">Crux.Base.guild_id</a>(), endpoint: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   %{token: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), guild_id: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), endpoint: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever guild’s voice server is updated.</p>
-<p>  &gt; This is the raw, but atomified, payload from discord, you can directly forward it to lavalink etc.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#voice-server-update">Discord Docs</a>.</p>
+    <p>  Emitted whenever guild’s voice server was updated.</p>
+<p>  &gt; This is the raw, but atomified, payload from discord, you can directly forward it to, for example, Lavalink.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#voice-server-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1511,7 +1781,7 @@
     </a>
     <span class="signature">voice_state_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L725" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L817" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1522,16 +1792,15 @@
         
           <pre>voice_state_update_event() ::
   {:VOICE_STATE_UPDATE,
-   {<a href="Crux.Structs.VoiceState.html#t:t/0">Crux.Structs.VoiceState.t</a>() | nil, <a href="Crux.Structs.VoiceState.html#t:t/0">Crux.Structs.VoiceState.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+   {<a href="Crux.Structs.VoiceState.html#t:t/0">Crux.Structs.VoiceState.t</a>() | nil, <a href="Crux.Structs.VoiceState.html#t:t/0">Crux.Structs.VoiceState.t</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever someone joins/leaves/moves a voice channels.</p>
+    <p>  Emitted whenever the voice state of a member changed.</p>
 <p>  The first element is the voice state before the update or nil if previously cached.<br/>  The second element is the voice state after the update.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#voice-state-update">Discord Docs</a>.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#voice-state-update">Discord Docs</a>.</p>
 
   </section>
 </div>
@@ -1545,7 +1814,7 @@
     </a>
     <span class="signature">webhooks_update_event()</span>
     
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L762" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer.ex#L856" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1555,15 +1824,17 @@
       <div class="specs">
         
           <pre>webhooks_update_event() ::
-  {:WEBHOOKS_UPDATE, {<a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>(), <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()},
-   <a href="Crux.Base.html#t:shard_id/0">Crux.Base.shard_id</a>()}</pre>
+  {:WEBHOOKS_UPDATE,
+   {<a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="#t:guild_id/0">guild_id</a>(),
+    <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>() | <a href="#t:channel_id/0">channel_id</a>()}, <a href="#t:shard_id/0">shard_id</a>()}</pre>
         
       </div>
     
   </div>
   <section class="docstring">
-    <p>  Emitted whenever a channel’s webhook is created, updtaed, or deleted.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/topics/gateway#webhooks-update">Discord Docs</a>.</p>
+    <p>  Emitted whenever a channel’s webhook was created, updated, or deleted.</p>
+<p>  Emits the guild id if the guild was not cached.<br/>  Emits the channel id if the channel was not cached.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/topics/gateway#webhooks-update">Discord Docs</a>.</p>
 
   </section>
 </div>
