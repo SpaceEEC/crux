@@ -1,22 +1,17 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.18.3">
+    <meta name="generator" content="ExDoc v0.19.1">
     <title>Crux.Cache – Crux vdev</title>
-    <link rel="stylesheet" href="dist/app-480ffdc169.css" />
-    
-    <script src="dist/sidebar_items-48084e000f.js"></script>
-    
-    
-    
+    <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
+    <script src="dist/sidebar_items-4564dfbe41.js"></script>
     
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-
     <div class="main">
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" aria-hidden="true"></span>
@@ -28,17 +23,14 @@
 </button>
 <section class="sidebar">
 
-  
   <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectLink">
     <div class="sidebar-projectDetails">
       <h1 class="sidebar-projectName">
-        Crux
-      </h1>
+Crux      </h1>
       <h2 class="sidebar-projectVersion">
         vdev
       </h2>
     </div>
-    
   </a>
 
   <form class="sidebar-search" action="search.html">
@@ -51,17 +43,11 @@
   <ul class="sidebar-listNav">
     <li><a id="extras-list" href="#full-list">Pages</a></li>
 
-    
       <li><a id="modules-list" href="#full-list">Modules</a></li>
-    
 
-    
       <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
-    
 
-    
       <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
-    
   </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
@@ -74,18 +60,16 @@
 
       <h1>
         <small class="visible-xs">Crux vdev</small>
-        Crux.Cache <small>behaviour</small>
-        
+Crux.Cache <small>behaviour</small>        
           <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
-        
       </h1>
 
-      
+
         <section id="moduledoc">
-          <p>  Behaviour all caches must implement. (Looking at custom ones you may want to write)</p>
+<p>  Behaviour all caches must implement. (Looking at custom ones you may want to write)</p>
 <p>  There are exceptions:</p>
 <ul>
 <li><p>User cache:</p>
@@ -103,11 +87,8 @@
 </ul>
 </li>
 </ul>
-
         </section>
-      
 
-      
         <section id="summary" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#summary">
@@ -116,558 +97,403 @@
             </a>
             Summary
           </h1>
-          
   <div class="summary-types summary">
     <h2>
       <a href="#types">Types</a>
     </h2>
-    <div class="summary-row">
+<div class="summary-row">
   <div class="summary-signature">
     <a href="#t:key/0">key()</a>
   </div>
-  
     <div class="summary-synopsis"><p>Default caches are using Discord Snowflakes as identifiers</p>
 </div>
-  
 </div>
-
   </div>
-
-
-          
   <div class="summary-functions summary">
     <h2>
       <a href="#functions">Functions</a>
     </h2>
-    <div class="summary-row">
+<div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_cache/0">channel_cache()</a>
   </div>
-  
     <div class="summary-synopsis"><p>Fetches the module handling the guild cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#emoji_cache/0">emoji_cache()</a>
   </div>
-  
     <div class="summary-synopsis"><p>Fetches the module handling the emoji cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_cache/0">guild_cache()</a>
   </div>
-  
     <div class="summary-synopsis"><p>Fetches the module handling the guild caching</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#presence_cache/0">presence_cache()</a>
   </div>
-  
     <div class="summary-synopsis"><p>Fetches the module handling the presence cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#user_cache/0">user_cache()</a>
   </div>
-  
     <div class="summary-synopsis"><p>Fetches the module handling the user cache</p>
 </div>
-  
 </div>
-
   </div>
-
-
-          
   <div class="summary-callbacks summary">
     <h2>
       <a href="#callbacks">Callbacks</a>
     </h2>
-    <div class="summary-row">
+<div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete/1">delete(id)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Deletes data from the cache by key</p>
 </div>
-  
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#c:fetch/1">fetch(id)</a>
-  </div>
-  
-    <div class="summary-synopsis"><p>Fetches data from the cache by key</p>
-</div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:fetch!/1">fetch!(id)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Fetches data from the cache by key, raises if not found</p>
 </div>
-  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:fetch/1">fetch(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Fetches data from the cache by key</p>
+</div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:insert/1">insert(data)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Inserts data into the cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:start_link/1">start_link(args)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used to start anything fitting under a supervision tree, like for example a <a href="https://hexdocs.pm/elixir/GenServer.html"><code class="inline">GenServer</code></a>, instructed with handling the cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:update/1">update(data)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Inserts data into the cache</p>
 </div>
-  
 </div>
-
   </div>
-
-
         </section>
-      
 
-      
         <section id="types" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#types">
               <span class="icon-link" aria-hidden="true"></span>
               <span class="sr-only">Link to this section</span>
             </a>
-            Types
-          </h1>
+Types          </h1>
           <div class="types-list">
-            <div class="detail" id="t:key/0">
-  
-  
-  <div class="detail-header">
+<div class="detail" id="t:key/0">
+    <div class="detail-header">
     <a href="#t:key/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">key()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L18" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>key() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>Default caches are using Discord Snowflakes as identifiers.</p>
+<p>Default caches are using Discord Snowflakes as identifiers.</p>
 <p>Custom caches my obviously implement their own key type.</p>
-
   </section>
 </div>
-
           </div>
         </section>
-      
-
-      
         <section id="functions" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#functions">
               <span class="icon-link" aria-hidden="true"></span>
               <span class="sr-only">Link to this section</span>
             </a>
-            Functions
-          </h1>
-          <div class="detail" id="channel_cache/0">
-  
-  
-  <div class="detail-header">
+Functions          </h1>
+          <div class="functions-list">
+<div class="detail" id="channel_cache/0">
+    <div class="detail-header">
     <a href="#channel_cache/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">channel_cache()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L90" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>channel_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Fetches the module handling the guild cache.</p>
+<p>  Fetches the module handling the guild cache.</p>
 <p>  Defaults to <a href="Crux.Cache.Channel.html"><code class="inline">Crux.Cache.Channel</code></a>.</p>
-
   </section>
 </div>
 <div class="detail" id="emoji_cache/0">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#emoji_cache/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">emoji_cache()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L98" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>emoji_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Fetches the module handling the emoji cache.</p>
+<p>  Fetches the module handling the emoji cache.</p>
 <p>  Defaults to <a href="Crux.Cache.Emoji.html"><code class="inline">Crux.Cache.Emoji</code></a>.</p>
-
   </section>
 </div>
 <div class="detail" id="guild_cache/0">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#guild_cache/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">guild_cache()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L82" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>guild_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Fetches the module handling the guild caching.</p>
+<p>  Fetches the module handling the guild caching.</p>
 <p>  Defaults to <a href="Crux.Cache.Guild.html"><code class="inline">Crux.Cache.Guild</code></a>.</p>
-
   </section>
 </div>
 <div class="detail" id="presence_cache/0">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#presence_cache/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">presence_cache()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L106" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>presence_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Fetches the module handling the presence cache.</p>
+<p>  Fetches the module handling the presence cache.</p>
 <p>  Defaults to <a href="Crux.Cache.Presence.html"><code class="inline">Crux.Cache.Presence</code></a>.</p>
-
   </section>
 </div>
 <div class="detail" id="user_cache/0">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#user_cache/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">user_cache()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L114" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>user_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Fetches the module handling the user cache.</p>
+<p>  Fetches the module handling the user cache.</p>
 <p>  Defaults to <a href="Crux.Cache.User.html"><code class="inline">Crux.Cache.User</code></a>.</p>
-
   </section>
 </div>
-
+          </div>
         </section>
-      
-
-      
         <section id="callbacks" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#callbacks">
               <span class="icon-link" aria-hidden="true"></span>
               <span class="sr-only">Link to this section</span>
             </a>
-            Callbacks
-          </h1>
-          <div class="detail" id="c:delete/1">
-  
-  
-  <div class="detail-header">
+Callbacks          </h1>
+          <div class="callbacks-list">
+<div class="detail" id="c:delete/1">
+    <div class="detail-header">
     <a href="#c:delete/1" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
     </a>
     <span class="signature">delete(id)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L62" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>delete(id :: <a href="#t:key/0">key</a>()) :: :ok</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>Deletes data from the cache by key.</p>
+<p>Deletes data from the cache by key.</p>
 <p>Always returns <code class="inline">:ok</code>, even when the key did not exist.</p>
-
-  </section>
-</div>
-<div class="detail" id="c:fetch/1">
-  
-  
-  <div class="detail-header">
-    <a href="#c:fetch/1" class="detail-link" title="Link to this callback">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this callback</span>
-    </a>
-    <span class="signature">fetch(id)</span>
-    
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L67" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-    
-    
-    
-      <div class="specs">
-        
-          <pre>fetch(id :: <a href="#t:key/0">key</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()} | :error</pre>
-        
-      </div>
-    
-  </div>
-  <section class="docstring">
-    <p>Fetches data from the cache by key.</p>
-
   </section>
 </div>
 <div class="detail" id="c:fetch!/1">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#c:fetch!/1" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
     </a>
     <span class="signature">fetch!(id)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L72" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>fetch!(id :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">identifier</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>() | :error</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>Fetches data from the cache by key, raises if not found.</p>
-
+<p>Fetches data from the cache by key, raises if not found.</p>
+  </section>
+</div>
+<div class="detail" id="c:fetch/1">
+    <div class="detail-header">
+    <a href="#c:fetch/1" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <span class="signature">fetch(id)</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L67" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>fetch(id :: <a href="#t:key/0">key</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()} | :error</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Fetches data from the cache by key.</p>
   </section>
 </div>
 <div class="detail" id="c:insert/1">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#c:insert/1" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
     </a>
     <span class="signature">insert(data)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L40" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>insert(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>Inserts data into the cache.</p>
+<p>Inserts data into the cache.</p>
 <p>Returns the atomified data allowing the operation to be chained.</p>
 <p>For example something like that:</p>
-<pre><code class="elixir">id =
-  raw_data
-  |&gt; Cache.insert()
-  |&gt; Map.get(:id)</code></pre>
-
+<pre><code class="nohighlight makeup elixir"><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w">
+  </span><span class="n">raw_data</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="9099575279-1">(</span><span class="p" data-group-id="9099575279-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="9099575279-2">(</span><span class="ss">:id</span><span class="p" data-group-id="9099575279-2">)</span></code></pre>
   </section>
 </div>
 <div class="detail" id="c:start_link/1">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#c:start_link/1" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
     </a>
     <span class="signature">start_link(args)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L25" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
     
-    
       <span class="note">(optional)</span>
     
-    
       <div class="specs">
-        
           <pre>start_link(args :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/Supervisor.html#t:on_start/0">Supervisor.on_start</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>Used to start anything fitting under a supervision tree, like for example a <a href="https://hexdocs.pm/elixir/GenServer.html"><code class="inline">GenServer</code></a>, instructed with handling the cache.</p>
+<p>Used to start anything fitting under a supervision tree, like for example a <a href="https://hexdocs.pm/elixir/GenServer.html"><code class="inline">GenServer</code></a>, instructed with handling the cache.</p>
 <p>Optional, you maybe want to use external caching, e.g. Redis, not requiring anything like that.</p>
-
   </section>
 </div>
 <div class="detail" id="c:update/1">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#c:update/1" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
     </a>
     <span class="signature">update(data)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache.ex#L55" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>update(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>Inserts data into the cache.</p>
+<p>Inserts data into the cache.</p>
 <p>Returns “updated” data including changes by merging.<br/>For example from a message embed update to a full message object</p>
-<pre><code class="elixir">content =
-  partial_message # only contains `:id`, `:channel_id`, and `:embeds`
-  |&gt; Cache.update()
-  |&gt; Map.get(:content) # present if the message was cached previously</code></pre>
-
+<pre><code class="nohighlight makeup elixir"><span class="n">content</span><span class="w"> </span><span class="o">=</span><span class="w">
+  </span><span class="n">partial_message</span><span class="w"> </span><span class="c1"># only contains `:id`, `:channel_id`, and `:embeds`</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">update</span><span class="p" data-group-id="7219141596-1">(</span><span class="p" data-group-id="7219141596-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="7219141596-2">(</span><span class="ss">:content</span><span class="p" data-group-id="7219141596-2">)</span><span class="w"> </span><span class="c1"># present if the message was cached previously</span></code></pre>
   </section>
 </div>
-
+          </div>
         </section>
-      
           <footer class="footer">
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.18.3),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.1),
           </span>
           <span class="line">
             designed by
@@ -679,10 +505,7 @@
   </div>
 </section>
 </div>
-  <script src="dist/app-9bd040e5e5.js"></script>
-  
-  
-  
+  <script src="dist/app-3f669e16ee.js"></script>
   
   </body>
 </html>

@@ -1,22 +1,17 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.18.3">
+    <meta name="generator" content="ExDoc v0.19.1">
     <title>Crux.Rest.Endpoints – Crux vdev</title>
-    <link rel="stylesheet" href="dist/app-480ffdc169.css" />
-    
-    <script src="dist/sidebar_items-48084e000f.js"></script>
-    
-    
-    
+    <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
+    <script src="dist/sidebar_items-4564dfbe41.js"></script>
     
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-
     <div class="main">
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" aria-hidden="true"></span>
@@ -28,17 +23,14 @@
 </button>
 <section class="sidebar">
 
-  
   <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectLink">
     <div class="sidebar-projectDetails">
       <h1 class="sidebar-projectName">
-        Crux
-      </h1>
+Crux      </h1>
       <h2 class="sidebar-projectVersion">
         vdev
       </h2>
     </div>
-    
   </a>
 
   <form class="sidebar-search" action="search.html">
@@ -51,17 +43,11 @@
   <ul class="sidebar-listNav">
     <li><a id="extras-list" href="#full-list">Pages</a></li>
 
-    
       <li><a id="modules-list" href="#full-list">Modules</a></li>
-    
 
-    
       <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
-    
 
-    
       <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
-    
   </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
@@ -74,23 +60,18 @@
 
       <h1>
         <small class="visible-xs">Crux vdev</small>
-        Crux.Rest.Endpoints
-        
+Crux.Rest.Endpoints        
           <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
-        
       </h1>
 
-      
+
         <section id="moduledoc">
-          <p>  Endpoints being used by the <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a> module, you do not need to worry about it.</p>
-
+<p>  Endpoints being used by the <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a> module, you do not need to worry about it.</p>
         </section>
-      
 
-      
         <section id="summary" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#summary">
@@ -99,938 +80,689 @@
             </a>
             Summary
           </h1>
-          
-
-          
   <div class="summary-functions summary">
     <h2>
       <a href="#functions">Functions</a>
     </h2>
-    <div class="summary-row">
+<div class="summary-row">
   <div class="summary-signature">
     <a href="#api/0">api()</a>
+      <span class="deprecated" title="Use Crux.Structs.Endpoints.base_url/0 instead">deprecated</span>
   </div>
-  
     <div class="summary-synopsis"><p>Base API address</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#base_url/0">base_url()</a>
   </div>
-  
     <div class="summary-synopsis"><p>Base API address</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#cdn/0">cdn()</a>
+      <span class="deprecated" title="Use Crux.Structs.CDN.base_url/0 instead">deprecated</span>
   </div>
-  
     <div class="summary-synopsis"><p>Base CDN address</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel/2">channel(channel_id, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for channel related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_messages/2">channel_messages(channel_id, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for channel messages related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_permissions/2">channel_permissions(channel_id, target_id)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for channel permissions related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_pins/2">channel_pins(channel_id, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for pin related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#gateway/0">gateway()</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used to obtain the gateway address</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#gateway_bot/0">gateway_bot()</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used to obtain the gateway address along the recommended shard count</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild/2">guild(guild_id \\ nil, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for guild related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_bans/2">guild_bans(guild_id, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for ban related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_emojis/2">guild_emojis(guild_id, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for guild emoji related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_integrations/2">guild_integrations(guild_id, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for integration related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_member_roles/3">guild_member_roles(guild_id, member_id, role_id \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for role related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_members/2">guild_members(guild_id, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for guild members related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_own_nick/1">guild_own_nick(guild_id)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Discord being special</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_roles/2">guild_roles(guild_id, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for role related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#invite/1">invite(code \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for invite related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#me/1">me(suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for functions related to the current user</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#me_guilds/1">me_guilds(suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for functions related to the current user’s guilds</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#message_reactions/4">message_reactions(channel_id, message_id, emoji, suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for reactions related functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#users/1">users(suffix \\ nil)</a>
   </div>
-  
     <div class="summary-synopsis"><p>Used for functions related to users</p>
 </div>
-  
 </div>
-
   </div>
-
-
-          
-
         </section>
-      
 
-      
-
-      
         <section id="functions" class="details-list">
           <h1 class="section-heading">
             <a class="hover-link" href="#functions">
               <span class="icon-link" aria-hidden="true"></span>
               <span class="sr-only">Link to this section</span>
             </a>
-            Functions
-          </h1>
-          <div class="detail" id="api/0">
-  
-  
-  <div class="detail-header">
+Functions          </h1>
+          <div class="functions-list">
+<div class="detail" id="api/0">
+    <div class="detail-header">
     <a href="#api/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">api()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L15" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>api() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
+    <div class="deprecated">
+      This function is deprecated. Use Crux.Structs.Endpoints.base_url/0 instead.
+    </div>
   <section class="docstring">
-    <p>  Base API address.</p>
+<p>  Base API address.</p>
 <p>  Deprecated, use <a href="#base_url/0"><code class="inline">base_url/0</code></a> instead.</p>
-
   </section>
 </div>
 <div class="detail" id="base_url/0">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#base_url/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">base_url()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L30" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>base_url() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Base API address.</p>
-
+<p>  Base API address.</p>
   </section>
 </div>
 <div class="detail" id="cdn/0">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#cdn/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">cdn()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L24" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>cdn() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
+    <div class="deprecated">
+      This function is deprecated. Use Crux.Structs.CDN.base_url/0 instead.
+    </div>
   <section class="docstring">
-    <p>  Base CDN address.</p>
+<p>  Base CDN address.</p>
 <p>  Deprecated, use <a href="https://hexdocs.pm/crux_rest/0.1.6/Crux.Rest.CDN.html#cdn/0"><code class="inline">Crux.Rest.CDN.cdn/0</code></a> instead.</p>
-
   </section>
 </div>
 <div class="detail" id="channel/2">
   
-  
     <span id="channel/1"></span>
-  
   <div class="detail-header">
     <a href="#channel/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">channel(channel_id, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L58" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>channel(channel_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil) ::
   <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for channel related functions.</p>
-
+<p>  Used for channel related functions.</p>
   </section>
 </div>
 <div class="detail" id="channel_messages/2">
   
-  
     <span id="channel_messages/1"></span>
-  
   <div class="detail-header">
     <a href="#channel_messages/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">channel_messages(channel_id, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L67" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>channel_messages(
   channel_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil
 ) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for channel messages related functions.</p>
-
+<p>  Used for channel messages related functions.</p>
   </section>
 </div>
 <div class="detail" id="channel_permissions/2">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#channel_permissions/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">channel_permissions(channel_id, target_id)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L104" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>channel_permissions(
   channel_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   target_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()
 ) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for channel permissions related functions.</p>
-
+<p>  Used for channel permissions related functions.</p>
   </section>
 </div>
 <div class="detail" id="channel_pins/2">
   
-  
     <span id="channel_pins/1"></span>
-  
   <div class="detail-header">
     <a href="#channel_pins/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">channel_pins(channel_id, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L95" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>channel_pins(channel_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil) ::
   <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for pin related functions.</p>
-
+<p>  Used for pin related functions.</p>
   </section>
 </div>
 <div class="detail" id="gateway/0">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#gateway/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">gateway()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L36" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>gateway() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used to obtain the gateway address.</p>
-
+<p>  Used to obtain the gateway address.</p>
   </section>
 </div>
 <div class="detail" id="gateway_bot/0">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#gateway_bot/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">gateway_bot()</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L42" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>gateway_bot() :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used to obtain the gateway address along the recommended shard count.</p>
-
+<p>  Used to obtain the gateway address along the recommended shard count.</p>
   </section>
 </div>
 <div class="detail" id="guild/2">
   
-  
     <span id="guild/0"></span>
-  
+
     <span id="guild/1"></span>
-  
   <div class="detail-header">
     <a href="#guild/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">guild(guild_id \\ nil, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L114" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>guild(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil) ::
   <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for guild related functions.</p>
-
+<p>  Used for guild related functions.</p>
   </section>
 </div>
 <div class="detail" id="guild_bans/2">
   
-  
     <span id="guild_bans/1"></span>
-  
   <div class="detail-header">
     <a href="#guild_bans/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">guild_bans(guild_id, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L138" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>guild_bans(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil) ::
   <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for ban related functions.</p>
-
+<p>  Used for ban related functions.</p>
   </section>
 </div>
 <div class="detail" id="guild_emojis/2">
   
-  
     <span id="guild_emojis/1"></span>
-  
   <div class="detail-header">
     <a href="#guild_emojis/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">guild_emojis(guild_id, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L122" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>guild_emojis(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil) ::
   <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for guild emoji related functions.</p>
-
+<p>  Used for guild emoji related functions.</p>
   </section>
 </div>
 <div class="detail" id="guild_integrations/2">
   
-  
     <span id="guild_integrations/1"></span>
-  
   <div class="detail-header">
     <a href="#guild_integrations/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">guild_integrations(guild_id, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L155" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>guild_integrations(
   guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil
 ) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for integration related functions.</p>
-
+<p>  Used for integration related functions.</p>
   </section>
 </div>
 <div class="detail" id="guild_member_roles/3">
   
-  
     <span id="guild_member_roles/2"></span>
-  
   <div class="detail-header">
     <a href="#guild_member_roles/3" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">guild_member_roles(guild_id, member_id, role_id \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L171" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>guild_member_roles(
   guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   member_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   role_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()
 ) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for role related functions.</p>
-
+<p>  Used for role related functions.</p>
   </section>
 </div>
 <div class="detail" id="guild_members/2">
   
-  
     <span id="guild_members/1"></span>
-  
   <div class="detail-header">
     <a href="#guild_members/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">guild_members(guild_id, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L130" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>guild_members(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil) ::
   <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for guild members related functions.</p>
-
+<p>  Used for guild members related functions.</p>
   </section>
 </div>
 <div class="detail" id="guild_own_nick/1">
-  
-  
-  <div class="detail-header">
+    <div class="detail-header">
     <a href="#guild_own_nick/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">guild_own_nick(guild_id)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L179" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>guild_own_nick(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>Discord being special.</p>
-
+<p>Discord being special.</p>
   </section>
 </div>
 <div class="detail" id="guild_roles/2">
   
-  
     <span id="guild_roles/1"></span>
-  
   <div class="detail-header">
     <a href="#guild_roles/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">guild_roles(guild_id, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L146" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>guild_roles(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil) ::
   <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for role related functions.</p>
-
+<p>  Used for role related functions.</p>
   </section>
 </div>
 <div class="detail" id="invite/1">
   
-  
     <span id="invite/0"></span>
-  
   <div class="detail-header">
     <a href="#invite/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">invite(code \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L50" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>invite(code :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for invite related functions.</p>
-
+<p>  Used for invite related functions.</p>
   </section>
 </div>
 <div class="detail" id="me/1">
   
-  
     <span id="me/0"></span>
-  
   <div class="detail-header">
     <a href="#me/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">me(suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L195" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>me(suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for functions related to the current user.</p>
-
+<p>  Used for functions related to the current user.</p>
   </section>
 </div>
 <div class="detail" id="me_guilds/1">
   
-  
     <span id="me_guilds/0"></span>
-  
   <div class="detail-header">
     <a href="#me_guilds/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">me_guilds(suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L203" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>me_guilds(suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for functions related to the current user’s guilds.</p>
-
+<p>  Used for functions related to the current user’s guilds.</p>
   </section>
 </div>
 <div class="detail" id="message_reactions/4">
   
-  
     <span id="message_reactions/3"></span>
-  
   <div class="detail-header">
     <a href="#message_reactions/4" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">message_reactions(channel_id, message_id, emoji, suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L83" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
-      <div class="specs">
         
+      <div class="specs">
           <pre>message_reactions(
   channel_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   message_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   emoji :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
   suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil
 ) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for reactions related functions.</p>
-
+<p>  Used for reactions related functions.</p>
   </section>
 </div>
 <div class="detail" id="users/1">
   
-  
     <span id="users/0"></span>
-  
   <div class="detail-header">
     <a href="#users/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">users(suffix \\ nil)</span>
-    
       <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L187" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
-    
-    
+        
       <div class="specs">
-        
           <pre>users(suffix :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
-        
       </div>
-    
   </div>
   <section class="docstring">
-    <p>  Used for functions related to users.</p>
-
+<p>  Used for functions related to users.</p>
   </section>
 </div>
-
+          </div>
         </section>
-      
-
-      
           <footer class="footer">
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.18.3),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.1),
           </span>
           <span class="line">
             designed by
@@ -1042,10 +774,7 @@
   </div>
 </section>
 </div>
-  <script src="dist/app-9bd040e5e5.js"></script>
-  
-  
-  
+  <script src="dist/app-3f669e16ee.js"></script>
   
   </body>
 </html>

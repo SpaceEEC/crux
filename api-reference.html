@@ -4,19 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.18.3">
+    <meta name="generator" content="ExDoc v0.19.1">
     <title>API Reference – Crux vdev</title>
-    <link rel="stylesheet" href="dist/app-480ffdc169.css" />
-    
-    <script src="dist/sidebar_items-48084e000f.js"></script>
-    
-    
-    
+    <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
+    <script src="dist/sidebar_items-4564dfbe41.js"></script>
     
   </head>
   <body data-type="extras">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-
 <div class="main">
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" aria-hidden="true"></span>
@@ -28,17 +23,14 @@
 </button>
 <section class="sidebar">
 
-  
   <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectLink">
     <div class="sidebar-projectDetails">
       <h1 class="sidebar-projectName">
-        Crux
-      </h1>
+Crux      </h1>
       <h2 class="sidebar-projectVersion">
         vdev
       </h2>
     </div>
-    
   </a>
 
   <form class="sidebar-search" action="search.html">
@@ -51,17 +43,11 @@
   <ul class="sidebar-listNav">
     <li><a id="extras-list" href="#full-list">Pages</a></li>
 
-    
       <li><a id="modules-list" href="#full-list">Modules</a></li>
-    
 
-    
       <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
-    
 
-    
       <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
-    
   </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
@@ -77,7 +63,6 @@
   API Reference
 </h1>
 
-
   <section class="details-list">
     <h2 id="modules" class="section-heading">
   <a href="#modules" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
@@ -85,305 +70,302 @@
 </h2>
 
     <div class="summary">
-      <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Base.html">Crux.Base</a></div>
-  
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Crux.Base.html">Crux.Base</a>
+  </div>
     <div class="summary-synopsis"><p>Crux “Base” module providing an example implementation of <a href="Crux.Gateway.html"><code class="inline">Crux.Gateway</code></a>, <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a>, and <a href="Crux.Cache.html"><code class="inline">Crux.Cache</code></a> while using <a href="Crux.Structs.html"><code class="inline">Crux.Structs</code></a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Base.Consumer.html">Crux.Base.Consumer</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Base.Consumer.html">Crux.Base.Consumer</a>
+  </div>
     <div class="summary-synopsis"><p>Handles consuming and processing of events received from the gateway.<br/>  To consume those processed events subscribe with a consumer to a producer.<br/>  You can fetch said producers via <a href="Crux.Base.html#producers/0"><code class="inline">Crux.Base.producers/0</code></a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Base.ConsumerSupervisor.html">Crux.Base.ConsumerSupervisor</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Base.ConsumerSupervisor.html">Crux.Base.ConsumerSupervisor</a>
+  </div>
     <div class="summary-synopsis"><p>Supervises a consumer, for example, a module using <a href="Crux.Base.TaskConsumer.html"><code class="inline">Crux.Base.TaskConsumer</code></a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Base.TaskConsumer.html">Crux.Base.TaskConsumer</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Base.TaskConsumer.html">Crux.Base.TaskConsumer</a>
+  </div>
     <div class="summary-synopsis"><p>Provides a <code class="inline">__using__</code> macro to inject two functions to simplify consuming of gateway events</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Cache.html">Crux.Cache</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Cache.html">Crux.Cache</a>
+  </div>
     <div class="summary-synopsis"><p>Behaviour all caches must implement. (Looking at custom ones you may want to write)</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Cache.Base.html">Crux.Cache.Base</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Cache.Base.html">Crux.Cache.Base</a>
+  </div>
     <div class="summary-synopsis"><p>Base cache utilising ETS tables, <a href="http://www.erlang.org/doc/man/ets.html#new-2"><code class="inline">:ets.new/2</code></a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Cache.Channel.html">Crux.Cache.Channel</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Cache.Channel.html">Crux.Cache.Channel</a>
+  </div>
     <div class="summary-synopsis"><p>Default <a href="Crux.Structs.Channel.html"><code class="inline">Crux.Structs.Channel</code></a> cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Cache.Emoji.html">Crux.Cache.Emoji</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Cache.Emoji.html">Crux.Cache.Emoji</a>
+  </div>
     <div class="summary-synopsis"><p>Default <a href="Crux.Structs.Emoji.html"><code class="inline">Crux.Structs.Emoji</code></a> cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Cache.Guild.html">Crux.Cache.Guild</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Cache.Guild.html">Crux.Cache.Guild</a>
+  </div>
     <div class="summary-synopsis"><p>Default <a href="Crux.Structs.Channel.html"><code class="inline">Crux.Structs.Channel</code></a> cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Cache.Presence.html">Crux.Cache.Presence</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Cache.Presence.html">Crux.Cache.Presence</a>
+  </div>
     <div class="summary-synopsis"><p>Default <a href="Crux.Structs.Presence.html"><code class="inline">Crux.Structs.Presence</code></a> cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Cache.User.html">Crux.Cache.User</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Cache.User.html">Crux.Cache.User</a>
+  </div>
     <div class="summary-synopsis"><p>Default <a href="Crux.Structs.User.html"><code class="inline">Crux.Structs.User</code></a> cache</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Gateway.html">Crux.Gateway</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Gateway.html">Crux.Gateway</a>
+  </div>
     <div class="summary-synopsis"><p>Main entry point to start the Gateway connection</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Gateway.Application.html">Crux.Gateway.Application</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Gateway.Application.html">Crux.Gateway.Application</a>
+  </div>
     <div class="summary-synopsis"><p>Root for the supervision tree</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Gateway.Command.html">Crux.Gateway.Command</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Gateway.Command.html">Crux.Gateway.Command</a>
+  </div>
     <div class="summary-synopsis"><p>Builds <a href="https://discordapp.com/developers/docs/topics/gateway#commands-and-events-gateway-commands">Gateway Commands</a>.<br/>Note: Only the sent ones can be found here</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Gateway.Connection.html">Crux.Gateway.Connection</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Gateway.Connection.html">Crux.Gateway.Connection</a>
+  </div>
     <div class="summary-synopsis"><p>Handles the actual connection to Discord</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Gateway.Connection.Producer.html">Crux.Gateway.Connection.Producer</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Gateway.Connection.Producer.html">Crux.Gateway.Connection.Producer</a>
+  </div>
     <div class="summary-synopsis"><p>Handles dispatching of packets received from the gateway</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Gateway.Connection.RateLimiter.html">Crux.Gateway.Connection.RateLimiter</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Gateway.Connection.RateLimiter.html">Crux.Gateway.Connection.RateLimiter</a>
+  </div>
     <div class="summary-synopsis"><p>Handles <a href="https://discordapp.com/developers/docs/topics/gateway#rate-limiting">Rate Limiting</a> for the gateway</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Gateway.IdentifyLimiter.html">Crux.Gateway.IdentifyLimiter</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Gateway.IdentifyLimiter.html">Crux.Gateway.IdentifyLimiter</a>
+  </div>
     <div class="summary-synopsis"><p>Handles the <a href="https://discordapp.com/developers/docs/topics/gateway#identifying">Identifying</a> rate limit of 1 per 5 seconds</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Gateway.Util.html">Crux.Gateway.Util</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Gateway.Util.html">Crux.Gateway.Util</a>
+  </div>
     <div class="summary-synopsis"><p>Collection of util functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Rest.html">Crux.Rest</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Rest.html">Crux.Rest</a>
+  </div>
     <div class="summary-synopsis"><p>Collection of Rest functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Rest.CDN.html">Crux.Rest.CDN</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Rest.CDN.html">Crux.Rest.CDN</a>
+  </div>
     <div class="summary-synopsis"><p>Functions to generate cdn urls pointing to avatars, icons, etc</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Rest.Endpoints.html">Crux.Rest.Endpoints</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Rest.Endpoints.html">Crux.Rest.Endpoints</a>
+  </div>
     <div class="summary-synopsis"><p>Endpoints being used by the <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a> module, you do not need to worry about it</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Rest.Handler.html">Crux.Rest.Handler</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Rest.Handler.html">Crux.Rest.Handler</a>
+  </div>
     <div class="summary-synopsis"><p>Handles per route rate limiting</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Rest.Handler.Global.html">Crux.Rest.Handler.Global</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Rest.Handler.Global.html">Crux.Rest.Handler.Global</a>
+  </div>
     <div class="summary-synopsis"><p>Handles global rate limits and the average time offset to discord</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Rest.Util.html">Crux.Rest.Util</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Rest.Util.html">Crux.Rest.Util</a>
+  </div>
     <div class="summary-synopsis"><p>Collection of util functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.html">Crux.Structs</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.html">Crux.Structs</a>
+  </div>
     <div class="summary-synopsis"><p>Provides a unified function to create one or a list of structs, invoking their <code class="inline">create/1</code> function if available</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Attachment.html">Crux.Structs.Attachment</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Attachment.html">Crux.Structs.Attachment</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/channel#attachment-object-attachment-structure">Attachment Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Channel.html">Crux.Structs.Channel</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Channel.html">Crux.Structs.Channel</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/channel#channel-object-channel-structure">Channel Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Embed.html">Crux.Structs.Embed</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Embed.html">Crux.Structs.Embed</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/channel#embed-object-embed-structure">Embed Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Emoji.html">Crux.Structs.Emoji</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Emoji.html">Crux.Structs.Emoji</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/emoji#emoji-object-emoji-structure">Emoji Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Guild.html">Crux.Structs.Guild</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Guild.html">Crux.Structs.Guild</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/guild#guild-object-guild-structure">Guild Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Invite.html">Crux.Structs.Invite</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Invite.html">Crux.Structs.Invite</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/invite#invite-object">Invite Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Member.html">Crux.Structs.Member</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Member.html">Crux.Structs.Member</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/guild#guild-member-object-guild-member-structure">Guild Member Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Message.html">Crux.Structs.Message</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Message.html">Crux.Structs.Message</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/channel#message-object-message-structure">Message Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Overwrite.html">Crux.Structs.Overwrite</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Overwrite.html">Crux.Structs.Overwrite</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/channel#overwrite-object-overwrite-structure">Overwrite Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Permissions.html">Crux.Structs.Permissions</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Permissions.html">Crux.Structs.Permissions</a>
+  </div>
     <div class="summary-synopsis"><p>Custom non discord api struct to help with working with permissions</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Presence.html">Crux.Structs.Presence</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Presence.html">Crux.Structs.Presence</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/topics/gateway#presence-update-presence-update-event-fields">Presence Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Reaction.html">Crux.Structs.Reaction</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Reaction.html">Crux.Structs.Reaction</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/channel#reaction-object">Reaction Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Role.html">Crux.Structs.Role</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Role.html">Crux.Structs.Role</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/topics/permissions#role-object-role-structure">Role Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.User.html">Crux.Structs.User</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.User.html">Crux.Structs.User</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/user#user-object-user-structure">User Object</a></p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.Util.html">Crux.Structs.Util</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.Util.html">Crux.Structs.Util</a>
+  </div>
     <div class="summary-synopsis"><p>Collection of util functions</p>
 </div>
-  
 </div>
 <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Structs.VoiceState.html">Crux.Structs.VoiceState</a></div>
-  
+  <div class="summary-signature">
+    <a href="Crux.Structs.VoiceState.html">Crux.Structs.VoiceState</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/voice#voice-state-object-voice-state-structure">Voice State Object</a></p>
 </div>
-  
 </div>
-
     </div>
   </section>
-
-
 
   <section class="details-list">
     <h2 id="exceptions" class="section-heading">
@@ -392,18 +374,15 @@
 </h2>
 
     <div class="summary">
-      <div class="summary-row">
-  <div class="summary-signature"><a href="Crux.Rest.ApiError.html">Crux.Rest.ApiError</a></div>
-  
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Crux.Rest.ApiError.html">Crux.Rest.ApiError</a>
+  </div>
     <div class="summary-synopsis"><p>Represents a Discord API error</p>
 </div>
-  
 </div>
-
     </div>
   </section>
-
-
 
   <section class="details-list">
     <h2 id="mix-tasks" class="section-heading">
@@ -412,20 +391,18 @@
 </h2>
 
     <div class="summary">
-      <div class="summary-row">
-  <div class="summary-signature"><a href="Mix.Tasks.Bangify.html">bangify</a></div>
-  
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mix.Tasks.Bangify.html">bangify</a>
+  </div>
 </div>
-
     </div>
   </section>
-
-
       <footer class="footer">
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.18.3),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.1),
           </span>
           <span class="line">
             designed by
@@ -437,10 +414,7 @@
   </div>
 </section>
 </div>
-  <script src="dist/app-9bd040e5e5.js"></script>
-  
-  
-  
+  <script src="dist/app-3f669e16ee.js"></script>
   
   </body>
 </html>
