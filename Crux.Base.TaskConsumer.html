@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Crux.Base.TaskConsumer – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-4564dfbe41.js"></script>
+    <script src="dist/sidebar_items-80a3cc3133.js"></script>
     
   </head>
   <body data-type="modules">
@@ -72,15 +72,15 @@ Crux.Base.TaskConsumer <small>behaviour</small>
 <p>  Provides a <code class="inline">__using__</code> macro to inject two functions to simplify consuming of gateway events.</p>
 <p>  A somewhat example of this:</p>
 <p>  A Supervisor, like <a href="Crux.Base.ConsumerSupervisor.html"><code class="inline">Crux.Base.ConsumerSupervisor</code></a>, and</p>
-<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Consumer</span><span class="w"> </span><span class="k" data-group-id="2932966053-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Consumer</span><span class="w"> </span><span class="k" data-group-id="5988665094-1">do</span><span class="w">
   </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Base.TaskConsumer</span><span class="w">
 
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">handle_event</span><span class="p" data-group-id="2932966053-2">(</span><span class="p" data-group-id="2932966053-3">{</span><span class="ss">:MESSAGE_CREATE</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="c">_shard_id</span><span class="p" data-group-id="2932966053-3">}</span><span class="p" data-group-id="2932966053-2">)</span><span class="w"> </span><span class="k" data-group-id="2932966053-4">do</span><span class="w">
-    </span><span class="nc">IO</span><span class="o">.</span><span class="n">inspect</span><span class="p" data-group-id="2932966053-5">(</span><span class="n">message</span><span class="p" data-group-id="2932966053-5">)</span><span class="w">
-  </span><span class="k" data-group-id="2932966053-4">end</span><span class="w">
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">handle_event</span><span class="p" data-group-id="5988665094-2">(</span><span class="p" data-group-id="5988665094-3">{</span><span class="ss">:MESSAGE_CREATE</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="c">_shard_id</span><span class="p" data-group-id="5988665094-3">}</span><span class="p" data-group-id="5988665094-2">)</span><span class="w"> </span><span class="k" data-group-id="5988665094-4">do</span><span class="w">
+    </span><span class="nc">IO</span><span class="o">.</span><span class="n">inspect</span><span class="p" data-group-id="5988665094-5">(</span><span class="n">message</span><span class="p" data-group-id="5988665094-5">)</span><span class="w">
+  </span><span class="k" data-group-id="5988665094-4">end</span><span class="w">
 
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">handle_event</span><span class="p" data-group-id="2932966053-6">(</span><span class="c">_event</span><span class="p" data-group-id="2932966053-6">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
-</span><span class="k" data-group-id="2932966053-1">end</span></code></pre>
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">handle_event</span><span class="p" data-group-id="5988665094-6">(</span><span class="c">_event</span><span class="p" data-group-id="5988665094-6">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
+</span><span class="k" data-group-id="5988665094-1">end</span></code></pre>
         </section>
 
         <section id="summary" class="details-list">
