@@ -39,7 +39,7 @@ Links:
 ## Crux Cache
 
 Provides caches to add, fetch, update, and remove `Crux.Structs`.
-Also provides a behaviour to implement custom caches which may override the default ones. (For example instead of ets)
+Also provides a behaviour to implement custom caches which may override the default ones. (For example using redis instead of ets)
 
 Links:
  - [Hex](https://hex.pm/packages/crux_cache)
