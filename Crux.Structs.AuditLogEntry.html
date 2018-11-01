@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.19.1">
-    <title>Crux.Structs.VoiceState – Crux vdev</title>
+    <title>Crux.Structs.AuditLogEntry – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
     <script src="dist/sidebar_items-3d543ca6b1.js"></script>
     
@@ -60,8 +60,8 @@ Crux      </h1>
 
       <h1>
         <small class="visible-xs">Crux vdev</small>
-Crux.Structs.VoiceState        
-          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/voice_state.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Structs.AuditLogEntry        
+          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_entry.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -69,7 +69,7 @@ Crux.Structs.VoiceState
 
 
         <section id="moduledoc">
-<p>  Represents a Discord <a href="https://discordapp.com/developers/docs/resources/voice#voice-state-object-voice-state-structure">Voice State Object</a></p>
+<p>  Represents a Discord <a href="https://discordapp.com/developers/docs/resources/audit-log">Audit Log Object</a></p>
         </section>
 
         <section id="summary" class="details-list">
@@ -86,6 +86,13 @@ Crux.Structs.VoiceState
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:event_name/0">event_name()</a>
+  </div>
+    <div class="summary-synopsis"><p>Union type of audit log event name atoms</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:t/0">t()</a>
   </div>
 </div>
@@ -98,7 +105,21 @@ Crux.Structs.VoiceState
   <div class="summary-signature">
     <a href="#create/1">create(data)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates a <a href="Crux.Structs.VoiceState.html#content"><code class="inline">Crux.Structs.VoiceState</code></a> struct from raw data</p>
+    <div class="summary-synopsis"><p>Creates a <a href="Crux.Structs.AuditLogEntry.html#content"><code class="inline">Crux.Structs.AuditLogEntry</code></a> struct from raw data</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#event_name/1">event_name(action_type)</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets the event name from the action type id</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#events/0">events()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns a map of all audit log event names with their id</p>
 </div>
 </div>
   </div>
@@ -112,6 +133,52 @@ Crux.Structs.VoiceState
             </a>
 Types          </h1>
           <div class="types-list">
+<div class="detail" id="t:event_name/0">
+    <div class="detail-header">
+    <a href="#t:event_name/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">event_name()</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_entry.ex#L42" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>event_name() ::
+  :guild_update
+  | :channel_create
+  | :channel_update
+  | :channel_delete
+  | :channel_overwrite_create
+  | :channel_overwrite_update
+  | :channel_overwrite_delete
+  | :member_kick
+  | :member_prune
+  | :member_ban_add
+  | :member_ban_remove
+  | :member_update
+  | :member_role_update
+  | :role_create
+  | :role_update
+  | :role_delete
+  | :invite_create
+  | :invite_update
+  | :invite_delete
+  | :webhook_create
+  | :webhook_update
+  | :webhook_delete
+  | :emoji_create
+  | :emoji_update
+  | :emoji_delete
+  | :message_delete</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Union type of audit log event name atoms.</p>
+  </section>
+</div>
 <div class="detail" id="t:t/0">
     <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
@@ -119,22 +186,20 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/voice_state.ex#L23" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_entry.ex#L94" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>t() :: %Crux.Structs.VoiceState{
-  channel_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
-  deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  guild_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  self_deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  self_mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  session_id: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  suppress: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  user_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
+          <pre>t() :: %Crux.Structs.AuditLogEntry{
+  action_type: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+  changes: %{optional(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) => <a href="Crux.Structs.AuditLogChange.html#t:t/0">Crux.Structs.AuditLogChange.t</a>()},
+  id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
+  options: %{} | nil,
+  reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  target_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
+  user_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()
 }</pre>
       </div>
   </div>
@@ -158,15 +223,55 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/voice_state.ex#L40" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_entry.ex#L109" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
           </div>
   <section class="docstring">
-<p>  Creates a <a href="Crux.Structs.VoiceState.html#content"><code class="inline">Crux.Structs.VoiceState</code></a> struct from raw data.</p>
+<p>  Creates a <a href="Crux.Structs.AuditLogEntry.html#content"><code class="inline">Crux.Structs.AuditLogEntry</code></a> struct from raw data.</p>
 <blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
 </blockquote>
+  </section>
+</div>
+<div class="detail" id="event_name/1">
+    <div class="detail-header">
+    <a href="#event_name/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">event_name(action_type)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_entry.ex#L82" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>event_name(action_type :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Gets the event name from the action type id</p>
+  </section>
+</div>
+<div class="detail" id="events/0">
+    <div class="detail-header">
+    <a href="#events/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">events()</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_entry.ex#L76" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>events() :: %{optional(<a href="#t:event_name/0">event_name</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Returns a map of all audit log event names with their id</p>
   </section>
 </div>
           </div>

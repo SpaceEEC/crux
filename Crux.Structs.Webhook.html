@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.19.1">
-    <title>Crux.Structs.VoiceState – Crux vdev</title>
+    <title>Crux.Structs.Webhook – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
     <script src="dist/sidebar_items-3d543ca6b1.js"></script>
     
@@ -60,8 +60,8 @@ Crux      </h1>
 
       <h1>
         <small class="visible-xs">Crux vdev</small>
-Crux.Structs.VoiceState        
-          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/voice_state.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Structs.Webhook        
+          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -69,7 +69,12 @@ Crux.Structs.VoiceState
 
 
         <section id="moduledoc">
-<p>  Represents a Discord <a href="https://discordapp.com/developers/docs/resources/voice#voice-state-object-voice-state-structure">Voice State Object</a></p>
+<p>  Represents a Discord <a href="https://discordapp.com/developers/docs/resources/webhook#webhook-object">Webhook Object</a></p>
+<p>Differences opposed to the Discord API Object:</p>
+<ul>
+<li><code class="inline">:user</code> is just the user id
+</li>
+</ul>
         </section>
 
         <section id="summary" class="details-list">
@@ -98,7 +103,14 @@ Crux.Structs.VoiceState
   <div class="summary-signature">
     <a href="#create/1">create(data)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates a <a href="Crux.Structs.VoiceState.html#content"><code class="inline">Crux.Structs.VoiceState</code></a> struct from raw data</p>
+    <div class="summary-synopsis"><p>Creates a <a href="Crux.Structs.Webhook.html#content"><code class="inline">Crux.Structs.Webhook</code></a> struct from raw data</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#to_mention/1">to_mention(webhook)</a>
+  </div>
+    <div class="summary-synopsis"><p>Converts a <a href="Crux.Structs.Webhook.html#content"><code class="inline">Crux.Structs.Webhook</code></a> into its discord mention format</p>
 </div>
 </div>
   </div>
@@ -119,22 +131,20 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/voice_state.ex#L23" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L23" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>t() :: %Crux.Structs.VoiceState{
-  channel_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
-  deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  guild_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  self_deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  self_mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  session_id: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  suppress: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  user_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
+          <pre>t() :: %Crux.Structs.Webhook{
+  avatar: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  channel_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
+  guild_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>() | nil,
+  id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
+  name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  token: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  user: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>() | nil
 }</pre>
       </div>
   </div>
@@ -158,15 +168,41 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/voice_state.ex#L40" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L38" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
           </div>
   <section class="docstring">
-<p>  Creates a <a href="Crux.Structs.VoiceState.html#content"><code class="inline">Crux.Structs.VoiceState</code></a> struct from raw data.</p>
+<p>  Creates a <a href="Crux.Structs.Webhook.html#content"><code class="inline">Crux.Structs.Webhook</code></a> struct from raw data.</p>
 <blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
 </blockquote>
+  </section>
+</div>
+<div class="detail" id="to_mention/1">
+    <div class="detail-header">
+    <a href="#to_mention/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">to_mention(webhook)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L63" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>to_mention(webhook :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Converts a <a href="Crux.Structs.Webhook.html#content"><code class="inline">Crux.Structs.Webhook</code></a> into its discord mention format. </p>
+<blockquote><p>Although the discord client does not autocomplete it for you, mentioning one still works.</p>
+</blockquote>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4936667963-1">%</span><span class="nc" data-group-id="4936667963-1">Crux.Structs.Webhook</span><span class="p" data-group-id="4936667963-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p" data-group-id="4936667963-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Webhook</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="4936667963-2">(</span><span class="p" data-group-id="4936667963-2">)</span><span class="w">
+</span><span class="s">&quot;&lt;@218348062828003328&gt;&quot;</span><span class="w">
+</span></code></pre>
   </section>
 </div>
           </div>
