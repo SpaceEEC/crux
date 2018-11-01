@@ -18,7 +18,7 @@ Links:
 ## Crux Rest
 
 Handles Discord's RESTful bot api, including queues, rate limits, and retries.  
-Returns transformed `Crux.Structs` directly. (Blocks calling process when rate limitted)
+Returns transformed `Crux.Structs` directly. (Blocks calling process when rate limited)
 
 Links:
  - [Hex](https://hex.pm/packages/crux_rest)
