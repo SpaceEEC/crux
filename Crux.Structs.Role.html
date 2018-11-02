@@ -134,9 +134,9 @@ Types          </h1>
       <div class="specs">
           <pre>t() :: %Crux.Structs.Role{
   color: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  guild_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  guild_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   hoist: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
   managed: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
   mentionable: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
   name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
@@ -195,8 +195,8 @@ Functions          </h1>
   <section class="docstring">
 <p>  Converts a <a href="Crux.Structs.Role.html#content"><code class="inline">Crux.Structs.Role</code></a> into its discord mention format.</p>
 <p>  ## Example</p>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1119626860-1">%</span><span class="nc" data-group-id="1119626860-1">Crux.Structs.Role</span><span class="p" data-group-id="1119626860-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">376146940762783746</span><span class="p" data-group-id="1119626860-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Role</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="1119626860-2">(</span><span class="p" data-group-id="1119626860-2">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5804083905-1">%</span><span class="nc" data-group-id="5804083905-1">Crux.Structs.Role</span><span class="p" data-group-id="5804083905-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">376146940762783746</span><span class="p" data-group-id="5804083905-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Role</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="5804083905-2">(</span><span class="p" data-group-id="5804083905-2">)</span><span class="w">
 </span><span class="s">&quot;&lt;@&amp;376146940762783746&gt;&quot;</span><span class="w">
 </span></code></pre>
   </section>

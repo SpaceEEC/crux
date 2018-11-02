@@ -139,12 +139,12 @@ Types          </h1>
       <div class="specs">
           <pre>t() :: %Crux.Structs.Member{
   deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>() | nil,
-  guild_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
+  guild_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>() | nil,
   joined_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
   mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>() | nil,
   nick: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
-  roles: <a href="https://hexdocs.pm/elixir/MapSet.html#t:t/1">MapSet.t</a>(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()),
-  user: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
+  roles: <a href="https://hexdocs.pm/elixir/MapSet.html#t:t/1">MapSet.t</a>(<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()),
+  user: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()
 }</pre>
       </div>
   </div>
@@ -203,13 +203,13 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># Without nickname</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1246558249-1">%</span><span class="nc" data-group-id="1246558249-1">Crux.Structs.Member</span><span class="p" data-group-id="1246558249-1">{</span><span class="ss">user</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">nick</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="1246558249-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Member</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="1246558249-2">(</span><span class="p" data-group-id="1246558249-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="7795719347-1">%</span><span class="nc" data-group-id="7795719347-1">Crux.Structs.Member</span><span class="p" data-group-id="7795719347-1">{</span><span class="ss">user</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">nick</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="7795719347-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Member</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="7795719347-2">(</span><span class="p" data-group-id="7795719347-2">)</span><span class="w">
 </span><span class="s">&quot;&lt;@218348062828003328&gt;&quot;</span><span class="w">
 
 </span><span class="c1"># With nickname</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1246558249-3">%</span><span class="nc" data-group-id="1246558249-3">Crux.Structs.Member</span><span class="p" data-group-id="1246558249-3">{</span><span class="ss">user</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">nick</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;weltraum&quot;</span><span class="p" data-group-id="1246558249-3">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Member</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="1246558249-4">(</span><span class="p" data-group-id="1246558249-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="7795719347-3">%</span><span class="nc" data-group-id="7795719347-3">Crux.Structs.Member</span><span class="p" data-group-id="7795719347-3">{</span><span class="ss">user</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">nick</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;weltraum&quot;</span><span class="p" data-group-id="7795719347-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Member</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="7795719347-4">(</span><span class="p" data-group-id="7795719347-4">)</span><span class="w">
 </span><span class="s">&quot;&lt;@!218348062828003328&gt;&quot;</span><span class="w">
 </span></code></pre>
   </section>
