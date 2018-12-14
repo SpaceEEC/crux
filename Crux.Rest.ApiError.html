@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Crux.Rest.ApiError – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-3d543ca6b1.js"></script>
+    <script src="dist/sidebar_items-4ca017c559.js"></script>
     
   </head>
   <body data-type="exceptions">
@@ -70,7 +70,7 @@ Crux.Rest.ApiError <small>exception</small>
 
         <section id="moduledoc">
 <p>  Represents a Discord API error.</p>
-<p>  Raised or returned whenever the api responded with a non <code class="inline">200</code> / <code class="inline">204</code> status code</p>
+<p>  Raised or returned whenever the api responded with a non <code class="inline">2xx</code> status code</p>
         </section>
 
         <section id="summary" class="details-list">
@@ -152,11 +152,13 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L23" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L31" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.0)</span>
+    
       <div class="specs">
           <pre>t() :: %{
   status_code: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
@@ -211,11 +213,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">exception(msg)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L35" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L44" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.0)</span>
+    
       <div class="specs">
           <pre>exception(message :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="Crux.Rest.ApiError.html#t:t/0">Crux.Rest.ApiError.t</a>()</pre>
       </div>
@@ -231,11 +235,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">exception(error, status_code, path, method)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L48" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L59" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.0)</span>
+    
       <div class="specs">
           <pre>exception(
   error :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>(),

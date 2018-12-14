@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Crux.Gateway – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-3d543ca6b1.js"></script>
+    <script src="dist/sidebar_items-4ca017c559.js"></script>
     
   </head>
   <body data-type="modules">
@@ -102,6 +102,12 @@ Crux.Gateway
 </ul>
 <blockquote><p>See <a href="Crux.Gateway.Connection.Producer.html"><code class="inline">Crux.Gateway.Connection.Producer</code></a> for more info.</p>
 </blockquote>
+<ul>
+<li>Optionally <code class="inline">:presence</code>, which is used for the initial presence of every session.<br/>  This should be a presence or a function with an arity of one (the shard id) and returning a presence.
+</li>
+</ul>
+<blockquote><p>If a function, it will be invoked whenever a shard is about to identify.<br/>  If omitted the presence will default to online and no game.</p>
+</blockquote>
         </section>
 
         <section id="summary" class="details-list">
@@ -153,7 +159,7 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">gateway_options()</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L30" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L36" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -165,7 +171,8 @@ Types          </h1>
   optional(:shard_count) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
   optional(:shards) => [<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | <a href="https://hexdocs.pm/elixir/Range.html#t:t/0">Range.t</a>()],
   optional(:dispatcher) =>
-    <a href="https://hexdocs.pm/gen_stage/0.13.1/GenStage.Dispatcher.html#t:t/0">GenStage.Dispatcher.t</a>() | {<a href="https://hexdocs.pm/gen_stage/0.13.1/GenStage.Dispatcher.html#t:t/0">GenStage.Dispatcher.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}
+    <a href="https://hexdocs.pm/gen_stage/0.13.1/GenStage.Dispatcher.html#t:t/0">GenStage.Dispatcher.t</a>() | {<a href="https://hexdocs.pm/gen_stage/0.13.1/GenStage.Dispatcher.html#t:t/0">GenStage.Dispatcher.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()},
+  optional(:presence) => (<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() -> <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()
 }</pre>
       </div>
   </div>
@@ -193,7 +200,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">start(args \\ %{})</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L44" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L51" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

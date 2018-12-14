@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Crux.Gateway.Command – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-3d543ca6b1.js"></script>
+    <script src="dist/sidebar_items-4ca017c559.js"></script>
     
   </head>
   <body data-type="modules">
@@ -162,7 +162,7 @@ Crux.Gateway.Command
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#identify/1">identify(map)</a>
+    <a href="#identify/1">identify(args)</a>
   </div>
     <div class="summary-synopsis"><p>Builds an <a href="https://discordapp.com/developers/docs/topics/gateway#identify">Identify</a> command</p>
 </div>
@@ -213,7 +213,7 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">activity()</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L107" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L120" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -291,8 +291,8 @@ Functions          </h1>
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">identify(map)</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L56" class="view-source" rel="help" title="View Source">
+    <span class="signature">identify(args)</span>
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L57" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -300,9 +300,10 @@ Functions          </h1>
       <div class="specs">
           <pre>identify(
   data :: %{
-    shard_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
-    shard_count: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
-    token: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+    :shard_id => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    :shard_count => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+    :token => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    optional(:presence) => (<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() -> <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()
   }
 ) :: <a href="#t:gateway_command/0">gateway_command</a>()</pre>
       </div>
@@ -321,7 +322,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">request_guild_members(guild_id, opts \\ [])</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L141" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L163" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -348,7 +349,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">resume(map)</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L157" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L179" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -373,13 +374,14 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">status_update(status, game \\ nil)</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L119" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L132" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>status_update(status :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), game :: <a href="#t:activity/0">activity</a>()) :: <a href="#t:gateway_command/0">gateway_command</a>()</pre>
+          <pre>status_update(status :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), game :: <a href="#t:activity/0">activity</a>() | nil) ::
+  <a href="#t:gateway_command/0">gateway_command</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -398,7 +400,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">voice_state_update(guild_id, channel_id \\ nil, states \\ [])</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L91" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L104" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

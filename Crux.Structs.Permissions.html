@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Crux.Structs.Permissions – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-3d543ca6b1.js"></script>
+    <script src="dist/sidebar_items-4ca017c559.js"></script>
     
   </head>
   <body data-type="modules">
@@ -205,11 +205,13 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">permission_name()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L65" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L74" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>permission_name() ::
   :create_instant_invite
@@ -254,11 +256,13 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">permissions()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L108" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L120" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>permissions() ::
   <a href="#t:t/0">t</a>() | [<a href="#t:permission_name/0">permission_name</a>()] | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | <a href="#t:permission_name/0">permission_name</a>()</pre>
@@ -275,11 +279,13 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L101" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L112" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>t() :: %Crux.Structs.Permissions{bitfield: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()}</pre>
       </div>
@@ -305,11 +311,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">add(base, to_add)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L224" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L244" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>add(base :: <a href="#t:permissions/0">permissions</a>(), to_add :: <a href="#t:permissions/0">permissions</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
@@ -322,8 +330,8 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="ss">:administrator</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">add</span><span class="p" data-group-id="5957290665-1">(</span><span class="ss">:manage_guild</span><span class="p" data-group-id="5957290665-1">)</span><span class="w">
-</span><span class="p" data-group-id="5957290665-2">%</span><span class="nc" data-group-id="5957290665-2">Crux.Structs.Permissions</span><span class="p" data-group-id="5957290665-2">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x28</span><span class="p" data-group-id="5957290665-2">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">add</span><span class="p" data-group-id="9632740601-1">(</span><span class="ss">:manage_guild</span><span class="p" data-group-id="9632740601-1">)</span><span class="w">
+</span><span class="p" data-group-id="9632740601-2">%</span><span class="nc" data-group-id="9632740601-2">Crux.Structs.Permissions</span><span class="p" data-group-id="9632740601-2">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x28</span><span class="p" data-group-id="9632740601-2">}</span><span class="w">
 </span></code></pre>
   </section>
 </div>
@@ -336,11 +344,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">from(member, guild, channel \\ nil)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L320" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L345" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>from(
   member ::
@@ -365,11 +375,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">has(current, want)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L275" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L299" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>has(<a href="#t:permissions/0">permissions</a>(), <a href="#t:permissions/0">permissions</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()</pre>
       </div>
@@ -382,16 +394,16 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># All permissions except administrator set, but administrator overrides</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="9367301958-1">(</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x7ff7fcf7</span><span class="p" data-group-id="9367301958-1">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="9879818850-1">(</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x7ff7fcf7</span><span class="p" data-group-id="9879818850-1">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="9367301958-2">(</span><span class="p" data-group-id="9367301958-3">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p">,</span><span class="w"> </span><span class="ss">:read_message_history</span><span class="p" data-group-id="9367301958-3">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9367301958-4">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p" data-group-id="9367301958-4">]</span><span class="p" data-group-id="9367301958-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="9879818850-2">(</span><span class="p" data-group-id="9879818850-3">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p">,</span><span class="w"> </span><span class="ss">:read_message_history</span><span class="p" data-group-id="9879818850-3">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9879818850-4">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p" data-group-id="9879818850-4">]</span><span class="p" data-group-id="9879818850-2">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="9367301958-5">(</span><span class="ss">:administrator</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8</span><span class="p" data-group-id="9367301958-5">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="9879818850-5">(</span><span class="ss">:administrator</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8</span><span class="p" data-group-id="9879818850-5">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="9367301958-6">(</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="ss">:administrator</span><span class="p" data-group-id="9367301958-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="9879818850-6">(</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="ss">:administrator</span><span class="p" data-group-id="9879818850-6">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 </span></code></pre>
   </section>
@@ -403,11 +415,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">new(permissions)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L174" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L188" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>new(permissions :: <a href="#t:permissions/0">permissions</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
@@ -423,11 +437,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">permission_all()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L60" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L67" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>permission_all() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()</pre>
       </div>
@@ -443,11 +459,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">permission_names()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L53" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L59" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>permission_names() :: [<a href="#t:permission_name/0">permission_name</a>()]</pre>
       </div>
@@ -463,11 +481,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">permissions()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L46" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L51" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>permissions() :: %{optional(<a href="#t:permission_name/0">permission_name</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()}</pre>
       </div>
@@ -483,11 +503,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">remove(base, to_remove)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L245" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L267" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>remove(base :: <a href="#t:permissions/0">permissions</a>(), to_remove :: <a href="#t:permissions/0">permissions</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
@@ -499,9 +521,9 @@ Functions          </h1>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="8540044449-1">[</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="mh">0x20</span><span class="p" data-group-id="8540044449-1">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">remove</span><span class="p" data-group-id="8540044449-2">(</span><span class="p" data-group-id="8540044449-3">[</span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="mh">0x20</span><span class="p" data-group-id="8540044449-3">]</span><span class="p" data-group-id="8540044449-2">)</span><span class="w">
-</span><span class="p" data-group-id="8540044449-4">%</span><span class="nc" data-group-id="8540044449-4">Crux.Structs.Permissions</span><span class="p" data-group-id="8540044449-4">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x8</span><span class="p" data-group-id="8540044449-4">}</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4130808360-1">[</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="mh">0x20</span><span class="p" data-group-id="4130808360-1">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">remove</span><span class="p" data-group-id="4130808360-2">(</span><span class="p" data-group-id="4130808360-3">[</span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="mh">0x20</span><span class="p" data-group-id="4130808360-3">]</span><span class="p" data-group-id="4130808360-2">)</span><span class="w">
+</span><span class="p" data-group-id="4130808360-4">%</span><span class="nc" data-group-id="4130808360-4">Crux.Structs.Permissions</span><span class="p" data-group-id="4130808360-4">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x8</span><span class="p" data-group-id="4130808360-4">}</span><span class="w">
 </span></code></pre>
   </section>
 </div>
@@ -512,11 +534,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">resolve(permissions)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L161" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L174" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>resolve(permissions :: <a href="#t:permissions/0">permissions</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
       </div>
@@ -530,26 +554,26 @@ Functions          </h1>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A single bitflag</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="mh">0x8</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="8618108537-1">(</span><span class="p" data-group-id="8618108537-1">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5803094013-1">(</span><span class="p" data-group-id="5803094013-1">)</span><span class="w">
 </span><span class="mh">0x8</span><span class="w">
 
 </span><span class="c1"># A single permissions constant</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="ss">:administrator</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="8618108537-2">(</span><span class="p" data-group-id="8618108537-2">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5803094013-2">(</span><span class="p" data-group-id="5803094013-2">)</span><span class="w">
 </span><span class="mh">0x8</span><span class="w">
 
 </span><span class="c1"># A list of bitflags</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="8618108537-3">[</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4</span><span class="p" data-group-id="8618108537-3">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="8618108537-4">(</span><span class="p" data-group-id="8618108537-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5803094013-3">[</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4</span><span class="p" data-group-id="5803094013-3">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5803094013-4">(</span><span class="p" data-group-id="5803094013-4">)</span><span class="w">
 </span><span class="mh">0xC</span><span class="w">
 
 </span><span class="c1"># A list of permissions constants</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="8618108537-5">[</span><span class="ss">:administrator</span><span class="p">,</span><span class="w"> </span><span class="ss">:ban_members</span><span class="p" data-group-id="8618108537-5">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="8618108537-6">(</span><span class="p" data-group-id="8618108537-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5803094013-5">[</span><span class="ss">:administrator</span><span class="p">,</span><span class="w"> </span><span class="ss">:ban_members</span><span class="p" data-group-id="5803094013-5">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5803094013-6">(</span><span class="p" data-group-id="5803094013-6">)</span><span class="w">
 </span><span class="mh">0xC</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="8618108537-7">[</span><span class="ss">:manage_roles</span><span class="p">,</span><span class="w"> </span><span class="mh">0x400</span><span class="p">,</span><span class="w"> </span><span class="mh">0x800</span><span class="p">,</span><span class="w"> </span><span class="ss">:add_reactions</span><span class="p" data-group-id="8618108537-7">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="8618108537-8">(</span><span class="p" data-group-id="8618108537-8">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5803094013-7">[</span><span class="ss">:manage_roles</span><span class="p">,</span><span class="w"> </span><span class="mh">0x400</span><span class="p">,</span><span class="w"> </span><span class="mh">0x800</span><span class="p">,</span><span class="w"> </span><span class="ss">:add_reactions</span><span class="p" data-group-id="5803094013-7">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5803094013-8">(</span><span class="p" data-group-id="5803094013-8">)</span><span class="w">
 </span><span class="mh">0x10000C40</span><span class="w">
 </span></code></pre>
   </section>
@@ -561,11 +585,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">to_list(permissions)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L204" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L222" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>to_list(permissions :: <a href="#t:permissions/0">permissions</a>()) :: [<a href="#t:permission_name/0">permission_name</a>()]</pre>
       </div>
@@ -580,8 +606,8 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="mh">0x30</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">to_list</span><span class="p" data-group-id="0820774147-1">(</span><span class="p" data-group-id="0820774147-1">)</span><span class="w">
-</span><span class="p" data-group-id="0820774147-2">[</span><span class="ss">:manage_guild</span><span class="p">,</span><span class="w"> </span><span class="ss">:manage_channels</span><span class="p" data-group-id="0820774147-2">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">to_list</span><span class="p" data-group-id="4022516166-1">(</span><span class="p" data-group-id="4022516166-1">)</span><span class="w">
+</span><span class="p" data-group-id="4022516166-2">[</span><span class="ss">:manage_guild</span><span class="p">,</span><span class="w"> </span><span class="ss">:manage_channels</span><span class="p" data-group-id="4022516166-2">]</span><span class="w">
 </span></code></pre>
   </section>
 </div>
@@ -592,11 +618,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">to_map(permissions)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L182" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L198" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.3)</span>
+    
       <div class="specs">
           <pre>to_map(permissions :: <a href="#t:permissions/0">permissions</a>()) :: %{
   optional(<a href="#t:permission_name/0">permission_name</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()

@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Crux.Structs.Emoji – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-3d543ca6b1.js"></script>
+    <script src="dist/sidebar_items-4ca017c559.js"></script>
     
   </head>
   <body data-type="modules">
@@ -131,11 +131,13 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L23" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L28" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.0)</span>
+    
       <div class="specs">
           <pre>t() :: %Crux.Structs.Emoji{
   animated: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>() | nil,
@@ -168,11 +170,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L38" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L45" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-          </div>
+    
+      <span class="note">(since 0.1.0)</span>
+      </div>
   <section class="docstring">
 <p>  Creates a <a href="Crux.Structs.Emoji.html#content"><code class="inline">Crux.Structs.Emoji</code></a> struct from raw data.</p>
 <blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
@@ -186,11 +190,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">to_identifier(identifier)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L97" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/emoji.ex#L105" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.1)</span>
+    
       <div class="specs">
           <pre>to_identifier(
   emoji :: <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | <a href="Crux.Structs.Reaction.html#t:t/0">Crux.Structs.Reaction.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
@@ -206,35 +212,35 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A custom emoji</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4900035790-1">%</span><span class="nc" data-group-id="4900035790-1">Crux.Structs.Emoji</span><span class="p" data-group-id="4900035790-1">{</span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">396521773216301056</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;blobwavereverse&quot;</span><span class="p" data-group-id="4900035790-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="4900035790-2">(</span><span class="p" data-group-id="4900035790-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9271032963-1">%</span><span class="nc" data-group-id="9271032963-1">Crux.Structs.Emoji</span><span class="p" data-group-id="9271032963-1">{</span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">396521773216301056</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;blobwavereverse&quot;</span><span class="p" data-group-id="9271032963-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="9271032963-2">(</span><span class="p" data-group-id="9271032963-2">)</span><span class="w">
 </span><span class="s">&quot;blobwavereverse:396521773216301056&quot;</span><span class="w">
 
 </span><span class="c1"># A custom animated emoji</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4900035790-3">%</span><span class="nc" data-group-id="4900035790-3">Crux.Structs.Emoji</span><span class="p" data-group-id="4900035790-3">{</span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">396521774466203659</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ablobwavereverse&quot;</span><span class="p" data-group-id="4900035790-3">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="4900035790-4">(</span><span class="p" data-group-id="4900035790-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9271032963-3">%</span><span class="nc" data-group-id="9271032963-3">Crux.Structs.Emoji</span><span class="p" data-group-id="9271032963-3">{</span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">396521774466203659</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ablobwavereverse&quot;</span><span class="p" data-group-id="9271032963-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="9271032963-4">(</span><span class="p" data-group-id="9271032963-4">)</span><span class="w">
 </span><span class="s">&quot;a:ablobwavereverse:396521774466203659&quot;</span><span class="w">
 
 </span><span class="c1"># A regular emoji</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4900035790-5">%</span><span class="nc" data-group-id="4900035790-5">Crux.Structs.Emoji</span><span class="p" data-group-id="4900035790-5">{</span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;👋&quot;</span><span class="p" data-group-id="4900035790-5">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="4900035790-6">(</span><span class="p" data-group-id="4900035790-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9271032963-5">%</span><span class="nc" data-group-id="9271032963-5">Crux.Structs.Emoji</span><span class="p" data-group-id="9271032963-5">{</span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;👋&quot;</span><span class="p" data-group-id="9271032963-5">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="9271032963-6">(</span><span class="p" data-group-id="9271032963-6">)</span><span class="w">
 </span><span class="s">&quot;%F0%9F%91%8B&quot;</span><span class="w">
 
 </span><span class="c1"># A reaction struct</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4900035790-7">%</span><span class="nc" data-group-id="4900035790-7">Crux.Structs.Reaction</span><span class="p" data-group-id="4900035790-7">{</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="ss">emoji</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4900035790-8">%</span><span class="nc" data-group-id="4900035790-8">Crux.Structs.Emoji</span><span class="p" data-group-id="4900035790-8">{</span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">356830260626456586</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;blobReach&quot;</span><span class="p" data-group-id="4900035790-8">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="p" data-group-id="4900035790-7">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="4900035790-9">(</span><span class="p" data-group-id="4900035790-9">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9271032963-7">%</span><span class="nc" data-group-id="9271032963-7">Crux.Structs.Reaction</span><span class="p" data-group-id="9271032963-7">{</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="ss">emoji</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9271032963-8">%</span><span class="nc" data-group-id="9271032963-8">Crux.Structs.Emoji</span><span class="p" data-group-id="9271032963-8">{</span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">356830260626456586</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;blobReach&quot;</span><span class="p" data-group-id="9271032963-8">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="p" data-group-id="9271032963-7">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="9271032963-9">(</span><span class="p" data-group-id="9271032963-9">)</span><span class="w">
 </span><span class="s">&quot;blobReach:356830260626456586&quot;</span><span class="w">
 
 </span><span class="c1"># An already encoded identifier</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="s">&quot;👀&quot;</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">URI</span><span class="o">.</span><span class="n">encode_www_form</span><span class="p" data-group-id="4900035790-10">(</span><span class="p" data-group-id="4900035790-10">)</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="4900035790-11">(</span><span class="p" data-group-id="4900035790-11">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="s">&quot;👀&quot;</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">URI</span><span class="o">.</span><span class="n">encode_www_form</span><span class="p" data-group-id="9271032963-10">(</span><span class="p" data-group-id="9271032963-10">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="9271032963-11">(</span><span class="p" data-group-id="9271032963-11">)</span><span class="w">
 </span><span class="s">&quot;%F0%9F%91%80&quot;</span><span class="w">
 
 </span><span class="c1"># A custom emoji&#39;s identifier</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="s">&quot;eyesRight:271412698267254784&quot;</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="4900035790-12">(</span><span class="p" data-group-id="4900035790-12">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Emoji</span><span class="o">.</span><span class="n">to_identifier</span><span class="p" data-group-id="9271032963-12">(</span><span class="p" data-group-id="9271032963-12">)</span><span class="w">
 </span><span class="s">&quot;eyesRight:271412698267254784&quot;</span><span class="w">
 </span></code></pre>
   </section>

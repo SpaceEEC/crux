@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.1">
     <title>Crux.Structs.Webhook – Crux vdev</title>
     <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-3d543ca6b1.js"></script>
+    <script src="dist/sidebar_items-4ca017c559.js"></script>
     
   </head>
   <body data-type="modules">
@@ -131,11 +131,13 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <span class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L23" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L28" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.6)</span>
+    
       <div class="specs">
           <pre>t() :: %Crux.Structs.Webhook{
   avatar: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
@@ -168,11 +170,13 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L38" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L45" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-          </div>
+    
+      <span class="note">(since 0.1.6)</span>
+      </div>
   <section class="docstring">
 <p>  Creates a <a href="Crux.Structs.Webhook.html#content"><code class="inline">Crux.Structs.Webhook</code></a> struct from raw data.</p>
 <blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
@@ -186,21 +190,23 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <span class="signature">to_mention(webhook)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L63" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/webhook.ex#L71" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
+    
+      <span class="note">(since 0.1.6)</span>
+    
       <div class="specs">
           <pre>to_mention(webhook :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>()) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
       </div>
   </div>
   <section class="docstring">
-<p>  Converts a <a href="Crux.Structs.Webhook.html#content"><code class="inline">Crux.Structs.Webhook</code></a> into its discord mention format. </p>
+<p>  Converts a <a href="Crux.Structs.Webhook.html#content"><code class="inline">Crux.Structs.Webhook</code></a> into its discord mention format.</p>
 <blockquote><p>Although the discord client does not autocomplete it for you, mentioning one still works.</p>
 </blockquote>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="7466250590-1">%</span><span class="nc" data-group-id="7466250590-1">Crux.Structs.Webhook</span><span class="p" data-group-id="7466250590-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p" data-group-id="7466250590-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Webhook</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="7466250590-2">(</span><span class="p" data-group-id="7466250590-2">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3783619606-1">%</span><span class="nc" data-group-id="3783619606-1">Crux.Structs.Webhook</span><span class="p" data-group-id="3783619606-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p" data-group-id="3783619606-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Webhook</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="3783619606-2">(</span><span class="p" data-group-id="3783619606-2">)</span><span class="w">
 </span><span class="s">&quot;&lt;@218348062828003328&gt;&quot;</span><span class="w">
 </span></code></pre>
   </section>
