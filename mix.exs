@@ -17,11 +17,11 @@ defmodule Crux.MixProject do
 
   defp groups_for_modules do
     [
-      "Base": [~r/Crux\.Base.*/],
-      "Cache": [~r/Crux\.Cache.*/],
-      "Gateway": [~r/Crux\.Gateway.*/],
-      "Rest": [~r/Crux\.Rest.*/],
-      "Structs": [~r/Crux\.Structs.*/]
+      Base: [~r/Crux\.Base.*/],
+      Cache: [~r/Crux\.Cache.*/],
+      Gateway: [~r/Crux\.Gateway.*/],
+      Rest: [~r/Crux\.Rest.*/],
+      Structs: [~r/Crux\.Structs.*/]
     ]
   end
 
@@ -35,7 +35,11 @@ defmodule Crux.MixProject do
        [path: "apps/crux_rest", from_umbrella: true, env: :dev, manager: :mix, override: true]},
       {:crux_gateway,
        [path: "apps/crux_gateway", from_umbrella: true, env: :dev, manager: :mix, override: true]},
-      {:ex_doc, git: "https://github.com/SpaceEEC/ex_doc", only: :dev, override: true}
+      {:ex_doc,
+       git: "https://github.com/spaceeec/ex_doc",
+       branch: "feat/umbrella",
+       only: :dev,
+       runtime: false, override: true}
     ]
   end
 end
