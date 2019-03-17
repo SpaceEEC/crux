@@ -4,34 +4,34 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.19.1">
-    <title>Crux.Base.TaskConsumer – Crux vdev</title>
-    <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-4ca017c559.js"></script>
+    <meta name="generator" content="ExDoc v0.19.3">
+    <title>Crux.Base.TaskConsumer — Crux vdev</title>
+    <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
+    <script src="dist/sidebar_items-7673142791.js"></script>
+      <script src="config.js"></script>
+    <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
     
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
     <div class="main">
 <button class="sidebar-button sidebar-toggle">
-  <span class="icon-menu" aria-hidden="true"></span>
-  <span class="sr-only">Toggle Sidebar</span>
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
 </button>
 <button class="sidebar-button night-mode-toggle">
-  <span class="icon-theme" aria-hidden="true"></span>
-  <span class="sr-only">Toggle Theme</span>
+  <span class="icon-theme" title="Toggle night/day mode"></span>
 </button>
 <section class="sidebar">
 
-  <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectLink">
+  <div class="sidebar-header">
     <div class="sidebar-projectDetails">
-      <h1 class="sidebar-projectName">
-Crux      </h1>
+      <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
+Crux      </a>
       <h2 class="sidebar-projectVersion">
         vdev
       </h2>
     </div>
-  </a>
+  </div>
 
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button">
@@ -72,15 +72,15 @@ Crux.Base.TaskConsumer <small>behaviour</small>
 <p>  Provides a <code class="inline">__using__</code> macro to inject two functions to simplify consuming of gateway events.</p>
 <p>  A somewhat example of this:</p>
 <p>  A Supervisor, like <a href="Crux.Base.ConsumerSupervisor.html"><code class="inline">Crux.Base.ConsumerSupervisor</code></a>, and</p>
-<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Consumer</span><span class="w"> </span><span class="k" data-group-id="2551598590-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Consumer</span><span class="w"> </span><span class="k" data-group-id="2300909921-1">do</span><span class="w">
   </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Base.TaskConsumer</span><span class="w">
 
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">handle_event</span><span class="p" data-group-id="2551598590-2">(</span><span class="p" data-group-id="2551598590-3">{</span><span class="ss">:MESSAGE_CREATE</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="c">_shard_id</span><span class="p" data-group-id="2551598590-3">}</span><span class="p" data-group-id="2551598590-2">)</span><span class="w"> </span><span class="k" data-group-id="2551598590-4">do</span><span class="w">
-    </span><span class="nc">IO</span><span class="o">.</span><span class="n">inspect</span><span class="p" data-group-id="2551598590-5">(</span><span class="n">message</span><span class="p" data-group-id="2551598590-5">)</span><span class="w">
-  </span><span class="k" data-group-id="2551598590-4">end</span><span class="w">
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">handle_event</span><span class="p" data-group-id="2300909921-2">(</span><span class="p" data-group-id="2300909921-3">{</span><span class="ss">:MESSAGE_CREATE</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="c">_shard_id</span><span class="p" data-group-id="2300909921-3">}</span><span class="p" data-group-id="2300909921-2">)</span><span class="w"> </span><span class="k" data-group-id="2300909921-4">do</span><span class="w">
+    </span><span class="nc">IO</span><span class="o">.</span><span class="n">inspect</span><span class="p" data-group-id="2300909921-5">(</span><span class="n">message</span><span class="p" data-group-id="2300909921-5">)</span><span class="w">
+  </span><span class="k" data-group-id="2300909921-4">end</span><span class="w">
 
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">handle_event</span><span class="p" data-group-id="2551598590-6">(</span><span class="c">_event</span><span class="p" data-group-id="2551598590-6">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
-</span><span class="k" data-group-id="2551598590-1">end</span></code></pre>
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">handle_event</span><span class="p" data-group-id="2300909921-6">(</span><span class="c">_event</span><span class="p" data-group-id="2300909921-6">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
+</span><span class="k" data-group-id="2300909921-1">end</span></code></pre>
         </section>
 
         <section id="summary" class="details-list">
@@ -125,13 +125,13 @@ Crux.Base.TaskConsumer <small>behaviour</small>
             </a>
 Types          </h1>
           <div class="types-list">
-<div class="detail" id="t:event/0">
+<section class="detail" id="t:event/0">
     <div class="detail-header">
     <a href="#t:event/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
     </a>
-    <span class="signature">event()</span>
+    <h1 class="signature">event()</span>
       <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/task_consumer.ex#L44" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
@@ -144,7 +144,7 @@ Types          </h1>
   <section class="docstring">
 <p>  All available element types.</p>
   </section>
-</div>
+</section>
           </div>
         </section>
         <section id="callbacks" class="details-list">
@@ -155,13 +155,13 @@ Types          </h1>
             </a>
 Callbacks          </h1>
           <div class="callbacks-list">
-<div class="detail" id="c:handle_event/1">
+<section class="detail" id="c:handle_event/1">
     <div class="detail-header">
     <a href="#c:handle_event/1" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
     </a>
-    <span class="signature">handle_event(event)</span>
+    <h1 class="signature">handle_event(event)</span>
       <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/task_consumer.ex#L51" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
@@ -173,16 +173,16 @@ Callbacks          </h1>
   </div>
   <section class="docstring">
 <p>  Will handle events.</p>
-<p>  Be sure to have one “catch all” clause to not crash your consumer when you receive an event you didn’t handle.</p>
+<p>  Be sure to have one &quot;catch all&quot; clause to not crash your consumer when you receive an event you didn&#39;t handle.</p>
   </section>
-</div>
+</section>
           </div>
         </section>
           <footer class="footer">
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.1),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
           </span>
           <span class="line">
             designed by
@@ -194,7 +194,6 @@ Callbacks          </h1>
   </div>
 </section>
 </div>
-  <script src="dist/app-3f669e16ee.js"></script>
   
   </body>
 </html>

@@ -4,34 +4,34 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.19.1">
-    <title>Crux.Gateway.Command – Crux vdev</title>
-    <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-4ca017c559.js"></script>
+    <meta name="generator" content="ExDoc v0.19.3">
+    <title>Crux.Gateway.Command — Crux vdev</title>
+    <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
+    <script src="dist/sidebar_items-7673142791.js"></script>
+      <script src="config.js"></script>
+    <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
     
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
     <div class="main">
 <button class="sidebar-button sidebar-toggle">
-  <span class="icon-menu" aria-hidden="true"></span>
-  <span class="sr-only">Toggle Sidebar</span>
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
 </button>
 <button class="sidebar-button night-mode-toggle">
-  <span class="icon-theme" aria-hidden="true"></span>
-  <span class="sr-only">Toggle Theme</span>
+  <span class="icon-theme" title="Toggle night/day mode"></span>
 </button>
 <section class="sidebar">
 
-  <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectLink">
+  <div class="sidebar-header">
     <div class="sidebar-projectDetails">
-      <h1 class="sidebar-projectName">
-Crux      </h1>
+      <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
+Crux      </a>
       <h2 class="sidebar-projectVersion">
         vdev
       </h2>
     </div>
-  </a>
+  </div>
 
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button">
@@ -143,9 +143,9 @@ Crux.Gateway.Command
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#t:gateway_command/0">gateway_command()</a>
+    <a href="#t:command/0">command()</a>
   </div>
-    <div class="summary-synopsis"><p>Encoded command ready to be sent to the gateway via <a href="Crux.Gateway.Connection.html#send_command/2"><code class="inline">Crux.Gateway.Connection.send_command/2</code></a></p>
+    <div class="summary-synopsis"><p>Encoded command ready to be sent to the gateway via <code class="inline">Crux.Gateway.Connection.send_command/2</code></p>
 </div>
 </div>
   </div>
@@ -206,13 +206,13 @@ Crux.Gateway.Command
             </a>
 Types          </h1>
           <div class="types-list">
-<div class="detail" id="t:activity/0">
+<section class="detail" id="t:activity/0">
     <div class="detail-header">
     <a href="#t:activity/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
     </a>
-    <span class="signature">activity()</span>
+    <h1 class="signature">activity()</span>
       <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L120" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
@@ -232,28 +232,28 @@ Types          </h1>
 <blockquote><p>Note that streaming requires a twitch url pointing to a possible channel!</p>
 </blockquote>
   </section>
-</div>
-<div class="detail" id="t:gateway_command/0">
+</section>
+<section class="detail" id="t:command/0">
     <div class="detail-header">
-    <a href="#t:gateway_command/0" class="detail-link" title="Link to this type">
+    <a href="#t:command/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
     </a>
-    <span class="signature">gateway_command()</span>
+    <h1 class="signature">command()</span>
       <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L33" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>gateway_command() :: {:binary, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>()}</pre>
+          <pre>command() :: <a href="https://hexdocs.pm/websockex/0.4.1/WebSockex.html#t:frame/0">WebSockex.frame</a>()</pre>
       </div>
   </div>
   <section class="docstring">
-<p>  Encoded command ready to be sent to the gateway via <a href="Crux.Gateway.Connection.html#send_command/2"><code class="inline">Crux.Gateway.Connection.send_command/2</code></a>.</p>
+<p>  Encoded command ready to be sent to the gateway via <code class="inline">Crux.Gateway.Connection.send_command/2</code>.</p>
 <p>  If you want to build custom commands,<br/>  pass <a href="http://www.erlang.org/doc/man/erlang.html#term_to_binary-1"><code class="inline">:erlang.term_to_binary/1</code></a> a map with the keys <code class="inline">op</code> and <code class="inline">d</code>,<br/>  and wrap it in a tuple with <code class="inline">:binary</code> as first element.</p>
   </section>
-</div>
+</section>
           </div>
         </section>
         <section id="functions" class="details-list">
@@ -264,34 +264,34 @@ Types          </h1>
             </a>
 Functions          </h1>
           <div class="functions-list">
-<div class="detail" id="heartbeat/1">
+<section class="detail" id="heartbeat/1">
     <div class="detail-header">
     <a href="#heartbeat/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">heartbeat(sequence)</span>
+    <h1 class="signature">heartbeat(sequence)</span>
       <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L41" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>heartbeat(sequence :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()) :: <a href="#t:gateway_command/0">gateway_command</a>()</pre>
+          <pre>heartbeat(sequence :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()) :: <a href="#t:command/0">command</a>()</pre>
       </div>
   </div>
   <section class="docstring">
 <p>Builds a <a href="https://discordapp.com/developers/docs/topics/gateway#heartbeat">Heartbeat</a> command.</p>
 <p>Used to signalize the server that the client is still alive and able to receive messages.</p>
   </section>
-</div>
-<div class="detail" id="identify/1">
+</section>
+<section class="detail" id="identify/1">
     <div class="detail-header">
     <a href="#identify/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">identify(args)</span>
+    <h1 class="signature">identify(args)</span>
       <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L57" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
@@ -303,17 +303,17 @@ Functions          </h1>
     :shard_id => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
     :shard_count => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
     :token => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-    optional(:presence) => (<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() -> <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()
+    optional(:presence) => <a href="Crux.Gateway.html#t:presence/0">Crux.Gateway.presence</a>()
   }
-) :: <a href="#t:gateway_command/0">gateway_command</a>()</pre>
+) :: <a href="#t:command/0">command</a>()</pre>
       </div>
   </div>
   <section class="docstring">
 <p>  Builds an <a href="https://discordapp.com/developers/docs/topics/gateway#identify">Identify</a> command.</p>
-<p>  Used to identify the gateway connection and “log in”.</p>
+<p>  Used to identify the gateway connection and &quot;log in&quot;.</p>
   </section>
-</div>
-<div class="detail" id="request_guild_members/2">
+</section>
+<section class="detail" id="request_guild_members/2">
   
     <span id="request_guild_members/1"></span>
   <div class="detail-header">
@@ -321,7 +321,7 @@ Functions          </h1>
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">request_guild_members(guild_id, opts \\ [])</span>
+    <h1 class="signature">request_guild_members(guild_id, opts \\ [])</span>
       <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L163" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
@@ -331,7 +331,7 @@ Functions          </h1>
           <pre>request_guild_members(
   guild_id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
   opts :: [query: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), limit: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()]
-) :: <a href="#t:gateway_command/0">gateway_command</a>()</pre>
+) :: <a href="#t:command/0">command</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -339,17 +339,17 @@ Functions          </h1>
 <p>Used to request guild member for a specific guild.</p>
 <blockquote><p>Note: This must be sent to the connection handling the guild, not just any connection.</p>
 </blockquote>
-<p>The gateway will respond with <code class="inline">:GUILD_MEMBER_CHUNK</code> (a) packet(s).</p>
+<p>The gateway will respond with <code class="inline">:GUILD_MEMBER_CHUNK</code> packets until all appropriate members are received.</p>
   </section>
-</div>
-<div class="detail" id="resume/1">
+</section>
+<section class="detail" id="resume/1">
     <div class="detail-header">
     <a href="#resume/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">resume(map)</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L179" class="view-source" rel="help" title="View Source">
+    <h1 class="signature">resume(map)</span>
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L184" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -357,15 +357,15 @@ Functions          </h1>
       <div class="specs">
           <pre>resume(
   data :: %{seq: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(), token: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), session: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}
-) :: <a href="#t:gateway_command/0">gateway_command</a>()</pre>
+) :: <a href="#t:command/0">command</a>()</pre>
       </div>
   </div>
   <section class="docstring">
 <p>Builds a <a href="https://discordapp.com/developers/docs/topics/gateway#resume">Resume</a> command.</p>
 <p>Used to resume into a session which was unexpectly disconnected and may be resumable.</p>
   </section>
-</div>
-<div class="detail" id="status_update/2">
+</section>
+<section class="detail" id="status_update/2">
   
     <span id="status_update/1"></span>
   <div class="detail-header">
@@ -373,23 +373,22 @@ Functions          </h1>
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">status_update(status, game \\ nil)</span>
+    <h1 class="signature">status_update(status, game \\ nil)</span>
       <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L132" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>status_update(status :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), game :: <a href="#t:activity/0">activity</a>() | nil) ::
-  <a href="#t:gateway_command/0">gateway_command</a>()</pre>
+          <pre>status_update(status :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), game :: <a href="#t:activity/0">activity</a>() | nil) :: <a href="#t:command/0">command</a>()</pre>
       </div>
   </div>
   <section class="docstring">
 <p>  Builds a <a href="https://discordapp.com/developers/docs/topics/gateway#update-status">Status Update</a> command.</p>
 <p>  Used to update the status of the client, including activity.</p>
   </section>
-</div>
-<div class="detail" id="voice_state_update/3">
+</section>
+<section class="detail" id="voice_state_update/3">
   
     <span id="voice_state_update/1"></span>
 
@@ -399,7 +398,7 @@ Functions          </h1>
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">voice_state_update(guild_id, channel_id \\ nil, states \\ [])</span>
+    <h1 class="signature">voice_state_update(guild_id, channel_id \\ nil, states \\ [])</span>
       <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/command.ex#L104" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
@@ -410,21 +409,21 @@ Functions          </h1>
   guild_id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
   channel_id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>() | nil,
   states :: [self_mute: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(), self_deaf: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()]
-) :: <a href="#t:gateway_command/0">gateway_command</a>()</pre>
+) :: <a href="#t:command/0">command</a>()</pre>
       </div>
   </div>
   <section class="docstring">
 <p>Builds a <a href="https://discordapp.com/developers/docs/topics/gateway#voice-state-update">Voice State Update</a> command.</p>
-<p>Used to join, switch between, and leave voice channels.</p>
+<p>Used to join, switch between, and leave voice channels and/or change self_mute or self_deaf states.</p>
   </section>
-</div>
+</section>
           </div>
         </section>
           <footer class="footer">
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.1),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
           </span>
           <span class="line">
             designed by
@@ -436,7 +435,6 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  <script src="dist/app-3f669e16ee.js"></script>
   
   </body>
 </html>

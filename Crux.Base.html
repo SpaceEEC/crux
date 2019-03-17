@@ -4,34 +4,34 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.19.1">
-    <title>Crux.Base – Crux vdev</title>
-    <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-4ca017c559.js"></script>
+    <meta name="generator" content="ExDoc v0.19.3">
+    <title>Crux.Base — Crux vdev</title>
+    <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
+    <script src="dist/sidebar_items-7673142791.js"></script>
+      <script src="config.js"></script>
+    <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
     
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
     <div class="main">
 <button class="sidebar-button sidebar-toggle">
-  <span class="icon-menu" aria-hidden="true"></span>
-  <span class="sr-only">Toggle Sidebar</span>
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
 </button>
 <button class="sidebar-button night-mode-toggle">
-  <span class="icon-theme" aria-hidden="true"></span>
-  <span class="sr-only">Toggle Theme</span>
+  <span class="icon-theme" title="Toggle night/day mode"></span>
 </button>
 <section class="sidebar">
 
-  <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectLink">
+  <div class="sidebar-header">
     <div class="sidebar-projectDetails">
-      <h1 class="sidebar-projectName">
-Crux      </h1>
+      <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
+Crux      </a>
       <h2 class="sidebar-projectVersion">
         vdev
       </h2>
     </div>
-  </a>
+  </div>
 
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button">
@@ -69,7 +69,7 @@ Crux.Base
 
 
         <section id="moduledoc">
-<p>  Crux “Base” module providing an example implementation of <a href="Crux.Gateway.html"><code class="inline">Crux.Gateway</code></a>, <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a>, and <a href="Crux.Cache.html"><code class="inline">Crux.Cache</code></a> while using <a href="Crux.Structs.html"><code class="inline">Crux.Structs</code></a>.</p>
+<p>  Crux &quot;Base&quot; module providing an example implementation of <a href="Crux.Gateway.html"><code class="inline">Crux.Gateway</code></a>, <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a>, and <a href="Crux.Cache.html"><code class="inline">Crux.Cache</code></a> while using <a href="Crux.Structs.html"><code class="inline">Crux.Structs</code></a>.</p>
 <p>  You can set as environment for <code class="inline">:crux_base</code> a <code class="inline">token</code>.<br/>  If the token is provided it will be forwarded to both <a href="Crux.Gateway.html"><code class="inline">Crux.Gateway</code></a> and <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a>.<br/>  Also this will fetch and put the gateway <code class="inline">:url</code> and recommended <code class="inline">:shard_count</code> if not already specified.</p>
 <p>  For task based cosuming you can use the provided <a href="Crux.Base.TaskConsumer.html"><code class="inline">Crux.Base.TaskConsumer</code></a> and <a href="Crux.Base.ConsumerSupervisor.html"><code class="inline">Crux.Base.ConsumerSupervisor</code></a> modules.<br/>  You are also free to roll your own consumer / producer consumer setup by subscribing to the producers fetchable via <a href="Crux.Base.html#producers/0"><code class="inline">Crux.Base.producers/0</code></a>.</p>
         </section>
@@ -104,13 +104,13 @@ Crux.Base
             </a>
 Functions          </h1>
           <div class="functions-list">
-<div class="detail" id="producers/0">
+<section class="detail" id="producers/0">
     <div class="detail-header">
     <a href="#producers/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">producers()</span>
+    <h1 class="signature">producers()</span>
       <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base.ex#L70" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
@@ -122,16 +122,16 @@ Functions          </h1>
   </div>
   <section class="docstring">
 <p>  Computes a map of all producers keyed by shard_id.</p>
-<p>  Values are either a <code class="inline">pid/0</code> or, if for some reason the producer could not be found, <code class="inline">:not_found</code>.<br/>  Similar to <a href="Crux.Gateway.Connection.Producer.html#producers/0"><code class="inline">Crux.Gateway.Connection.Producer.producers/0</code></a>, but they are emitting <code class="inline">Crux.Base.Consumer.event()</code>s instead of raw discord api payloads.</p>
+<p>  Values are either a <code class="inline">pid/0</code> or, if for some reason the producer could not be found, <code class="inline">:not_found</code>.<br/>  Similar to <code class="inline">Crux.Gateway.Connection.Producer.producers/0</code>, but they are emitting <code class="inline">Crux.Base.Consumer.event()</code>s instead of raw discord api payloads.</p>
   </section>
-</div>
+</section>
           </div>
         </section>
           <footer class="footer">
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.1),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
           </span>
           <span class="line">
             designed by
@@ -143,7 +143,6 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  <script src="dist/app-3f669e16ee.js"></script>
   
   </body>
 </html>

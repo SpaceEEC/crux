@@ -4,34 +4,34 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.19.1">
-    <title>Crux.Rest.ApiError – Crux vdev</title>
-    <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
-    <script src="dist/sidebar_items-4ca017c559.js"></script>
+    <meta name="generator" content="ExDoc v0.19.3">
+    <title>Crux.Rest.ApiError — Crux vdev</title>
+    <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
+    <script src="dist/sidebar_items-7673142791.js"></script>
+      <script src="config.js"></script>
+    <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
     
   </head>
   <body data-type="exceptions">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
     <div class="main">
 <button class="sidebar-button sidebar-toggle">
-  <span class="icon-menu" aria-hidden="true"></span>
-  <span class="sr-only">Toggle Sidebar</span>
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
 </button>
 <button class="sidebar-button night-mode-toggle">
-  <span class="icon-theme" aria-hidden="true"></span>
-  <span class="sr-only">Toggle Theme</span>
+  <span class="icon-theme" title="Toggle night/day mode"></span>
 </button>
 <section class="sidebar">
 
-  <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectLink">
+  <div class="sidebar-header">
     <div class="sidebar-projectDetails">
-      <h1 class="sidebar-projectName">
-Crux      </h1>
+      <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
+Crux      </a>
       <h2 class="sidebar-projectVersion">
         vdev
       </h2>
     </div>
-  </a>
+  </div>
 
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button">
@@ -104,13 +104,16 @@ Crux.Rest.ApiError <small>exception</small>
 <td style="text-align: left"><code class="inline">status_code</code></td><td style="text-align: left">HTTP status code</td><td style="text-align: left"><code class="inline">400</code>, <code class="inline">404</code>, <code class="inline">403</code></td>
 </tr>
 <tr>
-<td style="text-align: left"><code class="inline">code</code></td><td style="text-align: left">See Discord’s <a href="https://discordapp.com/developers/docs/topics/opcodes-and-status-codes#json-json-error-codes">JSON Error Codes</a></td><td style="text-align: left"><code class="inline">10006</code>, <code class="inline">90001</code></td>
+<td style="text-align: left"><code class="inline">code</code></td><td style="text-align: left">See Discord&#39;s <a href="https://discordapp.com/developers/docs/topics/opcodes-and-status-codes#json-json-error-codes">JSON Error Codes</a></td><td style="text-align: left"><code class="inline">10006</code>, <code class="inline">90001</code></td>
 </tr>
 <tr>
 <td style="text-align: left"><code class="inline">message</code></td><td style="text-align: left">Message describing the error</td><td style="text-align: left"><code class="inline">Unknown Invite</code></td>
 </tr>
 <tr>
 <td style="text-align: left"><code class="inline">path</code></td><td style="text-align: left">Path of the request</td><td style="text-align: left"><code class="inline">/invites/broken</code></td>
+</tr>
+<tr>
+<td style="text-align: left"><code class="inline">method</code></td><td style="text-align: left">HTTP verb</td><td style="text-align: left">:get, :post, :patch</td>
 </tr>
 </table>
 </div>
@@ -129,9 +132,9 @@ Crux.Rest.ApiError <small>exception</small>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#exception/4">exception(error, status_code, path, method)</a>
+    <a href="#exception/2">exception(map1, map2)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates a full <a href="Crux.Rest.ApiError.html#content"><code class="inline">Crux.Rest.ApiError</code></a> struct, returned / raised by all <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a> functions in case of an API error</p>
+    <div class="summary-synopsis"><p>Creates a full <a href="#content"><code class="inline">Crux.Rest.ApiError</code></a> struct, returned / raised by all <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a> functions in case of an API error</p>
 </div>
 </div>
   </div>
@@ -145,14 +148,14 @@ Crux.Rest.ApiError <small>exception</small>
             </a>
 Types          </h1>
           <div class="types-list">
-<div class="detail" id="t:t/0">
+<section class="detail" id="t:t/0">
     <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
     </a>
-    <span class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L31" class="view-source" rel="help" title="View Source">
+    <h1 class="signature">t()</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L32" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -164,7 +167,7 @@ Types          </h1>
   status_code: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
   code: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
   message: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  path: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  path: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>(),
   method: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
 }</pre>
       </div>
@@ -185,7 +188,7 @@ Types          </h1>
 <td style="text-align: left"><code class="inline">status_code</code></td><td style="text-align: left">HTTP status code</td><td style="text-align: left"><code class="inline">400</code>, <code class="inline">404</code>, <code class="inline">403</code></td>
 </tr>
 <tr>
-<td style="text-align: left"><code class="inline">code</code></td><td style="text-align: left">See Discord’s <a href="https://discordapp.com/developers/docs/topics/opcodes-and-status-codes#json-json-error-codes">JSON Error Codes</a></td><td style="text-align: left"><code class="inline">10006</code>, <code class="inline">90001</code></td>
+<td style="text-align: left"><code class="inline">code</code></td><td style="text-align: left">See Discord&#39;s <a href="https://discordapp.com/developers/docs/topics/opcodes-and-status-codes#json-json-error-codes">JSON Error Codes</a></td><td style="text-align: left"><code class="inline">10006</code>, <code class="inline">90001</code></td>
 </tr>
 <tr>
 <td style="text-align: left"><code class="inline">message</code></td><td style="text-align: left">Message describing the error</td><td style="text-align: left"><code class="inline">Unknown Invite</code></td>
@@ -193,9 +196,12 @@ Types          </h1>
 <tr>
 <td style="text-align: left"><code class="inline">path</code></td><td style="text-align: left">Path of the request</td><td style="text-align: left"><code class="inline">/invites/broken</code></td>
 </tr>
+<tr>
+<td style="text-align: left"><code class="inline">method</code></td><td style="text-align: left">HTTP verb</td><td style="text-align: left">:get, :post, :patch</td>
+</tr>
 </table>
   </section>
-</div>
+</section>
           </div>
         </section>
         <section id="functions" class="details-list">
@@ -206,14 +212,14 @@ Types          </h1>
             </a>
 Functions          </h1>
           <div class="functions-list">
-<div class="detail" id="exception/1">
+<section class="detail" id="exception/1">
     <div class="detail-header">
     <a href="#exception/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">exception(msg)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L44" class="view-source" rel="help" title="View Source">
+    <h1 class="signature">exception(msg)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L45" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -227,15 +233,15 @@ Functions          </h1>
   <section class="docstring">
 <p>  Default implementation only providing a <code class="inline">message</code> for <a href="https://hexdocs.pm/elixir/Kernel.html#raise/2"><code class="inline">raise/2</code></a></p>
   </section>
-</div>
-<div class="detail" id="exception/4">
+</section>
+<section class="detail" id="exception/2">
     <div class="detail-header">
-    <a href="#exception/4" class="detail-link" title="Link to this function">
+    <a href="#exception/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <span class="signature">exception(error, status_code, path, method)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L59" class="view-source" rel="help" title="View Source">
+    <h1 class="signature">exception(map1, map2)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L58" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -243,25 +249,21 @@ Functions          </h1>
       <span class="note">(since 0.1.0)</span>
     
       <div class="specs">
-          <pre>exception(
-  error :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>(),
-  status_code :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
-  path :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  method :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
-) :: <a href="Crux.Rest.ApiError.html#t:t/0">Crux.Rest.ApiError.t</a>()</pre>
+          <pre>exception(<a href="Crux.Rest.Request.html#t:t/0">Crux.Rest.Request.t</a>(), <a href="https://hexdocs.pm/httpoison/1.1.1/HTTPoison.Response.html#t:t/0">HTTPoison.Response.t</a>()) ::
+  <a href="Crux.Rest.ApiError.html#t:t/0">Crux.Rest.ApiError.t</a>()</pre>
       </div>
   </div>
   <section class="docstring">
-<p>  Creates a full <a href="Crux.Rest.ApiError.html#content"><code class="inline">Crux.Rest.ApiError</code></a> struct, returned / raised by all <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a> functions in case of an API error.</p>
+<p>  Creates a full <a href="#content"><code class="inline">Crux.Rest.ApiError</code></a> struct, returned / raised by all <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a> functions in case of an API error.</p>
   </section>
-</div>
+</section>
           </div>
         </section>
           <footer class="footer">
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.1),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
           </span>
           <span class="line">
             designed by
@@ -273,7 +275,6 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  <script src="dist/app-3f669e16ee.js"></script>
   
   </body>
 </html>
