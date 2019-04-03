@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.3">
     <title>Crux.Base.ConsumerSupervisor — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
-    <script src="dist/sidebar_items-7673142791.js"></script>
+    <script src="dist/sidebar_items-45467cebcb.js"></script>
       <script src="config.js"></script>
     <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
     
@@ -71,18 +71,18 @@ Crux.Base.ConsumerSupervisor
         <section id="moduledoc">
 <p>  Supervises a consumer, for example, a module using <a href="Crux.Base.TaskConsumer.html"><code class="inline">Crux.Base.TaskConsumer</code></a>.</p>
 <p>  A somewhat example of this:</p>
-<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Supervisor</span><span class="w"> </span><span class="k" data-group-id="4685639782-1">do</span><span class="w">
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">start_link</span><span class="p" data-group-id="4685639782-2">(</span><span class="bp">_</span><span class="p" data-group-id="4685639782-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="4685639782-3">(</span><span class="bp">__MODULE__</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4685639782-4">%{</span><span class="p" data-group-id="4685639782-4">}</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="bp">__MODULE__</span><span class="p" data-group-id="4685639782-3">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Supervisor</span><span class="w"> </span><span class="k" data-group-id="3225595336-1">do</span><span class="w">
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">start_link</span><span class="p" data-group-id="3225595336-2">(</span><span class="bp">_</span><span class="p" data-group-id="3225595336-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="3225595336-3">(</span><span class="bp">__MODULE__</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3225595336-4">%{</span><span class="p" data-group-id="3225595336-4">}</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="bp">__MODULE__</span><span class="p" data-group-id="3225595336-3">)</span><span class="w">
 
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">init</span><span class="p" data-group-id="4685639782-5">(</span><span class="c">_args</span><span class="p" data-group-id="4685639782-5">)</span><span class="w"> </span><span class="k" data-group-id="4685639782-6">do</span><span class="w">
-    </span><span class="n">children</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="4685639782-7">[</span><span class="w">
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">init</span><span class="p" data-group-id="3225595336-5">(</span><span class="c">_args</span><span class="p" data-group-id="3225595336-5">)</span><span class="w"> </span><span class="k" data-group-id="3225595336-6">do</span><span class="w">
+    </span><span class="n">children</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="3225595336-7">[</span><span class="w">
       </span><span class="c1"># other childrens...</span><span class="w">
-      </span><span class="p" data-group-id="4685639782-8">{</span><span class="nc">Crux.Base.ConsumerSupervisor</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4685639782-9">[</span><span class="nc">Bot.Consumer</span><span class="p" data-group-id="4685639782-9">]</span><span class="p" data-group-id="4685639782-8">}</span><span class="w">
-    </span><span class="p" data-group-id="4685639782-7">]</span><span class="w">
+      </span><span class="err">{</span><span class="nc">Crux.Base.ConsumerSupervisor</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3225595336-8">{</span><span class="nc">Bot.Consumer</span><span class="p">,</span><span class="w"> </span><span class="nc">Bot.CruxBase</span><span class="p" data-group-id="3225595336-8">}</span><span class="p" data-group-id="3225595336-7">]</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 
-    </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">init</span><span class="p" data-group-id="4685639782-10">(</span><span class="n">children</span><span class="p">,</span><span class="w"> </span><span class="ss">strategy</span><span class="p">:</span><span class="w"> </span><span class="ss">:one_for_one</span><span class="p" data-group-id="4685639782-10">)</span><span class="w">
-  </span><span class="k" data-group-id="4685639782-6">end</span><span class="w">
-</span><span class="k" data-group-id="4685639782-1">end</span></code></pre>
+    </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">init</span><span class="p" data-group-id="3225595336-9">(</span><span class="n">children</span><span class="p">,</span><span class="w"> </span><span class="ss">strategy</span><span class="p">:</span><span class="w"> </span><span class="ss">:one_for_one</span><span class="p" data-group-id="3225595336-9">)</span><span class="w">
+  </span><span class="k" data-group-id="3225595336-6">end</span><span class="w">
+</span><span class="k" data-group-id="3225595336-1">end</span></code></pre>
         </section>
 
 

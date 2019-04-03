@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.19.3">
+    <title>Crux.Cache.None — Crux vdev</title>
+    <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
+    <script src="dist/sidebar_items-45467cebcb.js"></script>
+      <script src="config.js"></script>
+    <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+    <div class="main">
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" title="Toggle night/day mode"></span>
+</button>
+<section class="sidebar">
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
+Crux      </a>
+      <h2 class="sidebar-projectVersion">
+        vdev
+      </h2>
+    </div>
+  </div>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+      <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
+
+      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">Crux vdev</small>
+Crux.Cache.None        
+          <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+      </h1>
+
+
+        <section id="moduledoc">
+<p>  Functions both as <a href="Crux.Cache.html"><code class="inline">Crux.Cache</code></a> and <a href="Crux.Cache.Provider.html"><code class="inline">Crux.Cache.Provider</code></a></p>
+<p>  As <a href="Crux.Cache.Provider.html"><code class="inline">Crux.Cache.Provider</code></a>: returning <a href="#content"><code class="inline">Crux.Cache.None</code></a> for all caches.</p>
+<p>  As <a href="Crux.Cache.html"><code class="inline">Crux.Cache</code></a>:</p>
+<ul>
+<li><code class="inline">cache</code> and <code class="inline">update</code> will always return the atomtified data.
+</li>
+<li><code class="inline">delete</code> is a noop and returns <code class="inline">:ok</code>
+</li>
+<li><code class="inline">fetch</code> is a noop and returns <code class="inline">:error</code>
+</li>
+<li><code class="inline">fetch!</code> is a noop and raises an error.
+</li>
+</ul>
+        </section>
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#channel_cache/0">channel_cache()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a></p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete/1">delete(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Is a noop returning <code class="inline">:ok</code></p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#emoji_cache/0">emoji_cache()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a></p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#fetch/1">fetch(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Is a noop returning <code class="inline">:error</code></p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#fetch!/1">fetch!(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Is a noop raising an error</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#guild_cache/0">guild_cache()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a></p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#insert/1">insert(data)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns atomified data as is</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#presence_cache/0">presence_cache()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a></p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update/1">update(data)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns atomified data as is</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#user_cache/0">user_cache()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a></p>
+</div>
+</div>
+  </div>
+        </section>
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions          </h1>
+          <div class="functions-list">
+<section class="detail" id="channel_cache/0">
+    <div class="detail-header">
+    <a href="#channel_cache/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">channel_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L23" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>channel_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="delete/1">
+    <div class="detail-header">
+    <a href="#delete/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete(id)</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L52" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>delete(<a href="Crux.Cache.html#t:key/0">Crux.Cache.key</a>()) :: :ok</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Is a noop returning <code class="inline">:ok</code>.</p>
+  </section>
+</section>
+<section class="detail" id="emoji_cache/0">
+    <div class="detail-header">
+    <a href="#emoji_cache/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">emoji_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L27" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>emoji_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="fetch/1">
+    <div class="detail-header">
+    <a href="#fetch/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">fetch(id)</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L56" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>fetch(<a href="Crux.Cache.html#t:key/0">Crux.Cache.key</a>()) :: :error</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Is a noop returning <code class="inline">:error</code>.</p>
+  </section>
+</section>
+<section class="detail" id="fetch!/1">
+    <div class="detail-header">
+    <a href="#fetch!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">fetch!(id)</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L60" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>fetch!(<a href="Crux.Cache.html#t:key/0">Crux.Cache.key</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Is a noop raising an error.</p>
+  </section>
+</section>
+<section class="detail" id="guild_cache/0">
+    <div class="detail-header">
+    <a href="#guild_cache/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">guild_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L19" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>guild_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="insert/1">
+    <div class="detail-header">
+    <a href="#insert/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">insert(data)</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L44" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>insert(<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns atomified data as is.</p>
+  </section>
+</section>
+<section class="detail" id="presence_cache/0">
+    <div class="detail-header">
+    <a href="#presence_cache/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">presence_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L31" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>presence_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="update/1">
+    <div class="detail-header">
+    <a href="#update/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">update(data)</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L48" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>update(<a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns atomified data as is.</p>
+  </section>
+</section>
+<section class="detail" id="user_cache/0">
+    <div class="detail-header">
+    <a href="#user_cache/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">user_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/none.ex#L35" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>user_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns <a href="#content"><code class="inline">Crux.Cache.None</code></a>.</p>
+  </section>
+</section>
+          </div>
+        </section>
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  
+  </body>
+</html>
+

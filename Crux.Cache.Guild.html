@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.3">
     <title>Crux.Cache.Guild — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
-    <script src="dist/sidebar_items-7673142791.js"></script>
+    <script src="dist/sidebar_items-45467cebcb.js"></script>
       <script src="config.js"></script>
     <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
     
@@ -94,22 +94,19 @@ Crux.Cache.Guild
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#delete/1">delete(guild_id)</a>
-  </div>
-    <div class="summary-synopsis"><p>Deletes a guild</p>
-</div>
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#delete/2">delete(guild_id, data)</a>
+    <a href="#delete/1">delete(data_or_id)</a>
   </div>
     <div class="summary-synopsis"><p>Deletes a:</p>
 <ul>
-<li><a href="Crux.Structs.User.html"><code class="inline">Crux.Structs.User</code></a> (effectively their <a href="Crux.Structs.Member.html"><code class="inline">Crux.Structs.Member</code></a> and, if applicable, <a href="Crux.Structs.VoiceState.html"><code class="inline">Crux.Structs.VoiceState</code></a>)
+<li><a href="Crux.Structs.Member.html"><code class="inline">Crux.Structs.Member</code></a> (if applicable, also their <a href="Crux.Structs.VoiceState.html"><code class="inline">Crux.Structs.VoiceState</code></a>) from the guild
 </li>
 <li><a href="Crux.Structs.Role.html"><code class="inline">Crux.Structs.Role</code></a> from the guild
 </li>
 <li><a href="Crux.Structs.Channel.html"><code class="inline">Crux.Structs.Channel</code></a> from the guild
+</li>
+<li><p><a href="Crux.Structs.Guild.html"><code class="inline">Crux.Structs.Guild</code></a> itself</p>
+<blockquote><p>This will remove all associated channels and emojis from the appropriate caches</p>
+</blockquote>
 </li>
 </ul>
 </div>
@@ -126,13 +123,6 @@ Crux.Cache.Guild
     <a href="#fetch!/1">fetch!(guild_id)</a>
   </div>
     <div class="summary-synopsis"><p>Fetches a guild from the cache by id, raises if not found</p>
-</div>
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#init/1">init(guild)</a>
-  </div>
-    <div class="summary-synopsis"><p>Invoked when the server is started. <code class="inline">start_link/3</code> or <code class="inline">start/3</code> will<br/>block until it returns</p>
 </div>
 </div>
 <div class="summary-row">
@@ -202,7 +192,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">child_spec(arg)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L10" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L12" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -218,45 +208,35 @@ Functions          </h1>
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">delete(guild_id)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L85" class="view-source" rel="help" title="View Source">
+    <h1 class="signature">delete(data_or_id)</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L100" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>delete(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) :: :ok | :error</pre>
-      </div>
-  </div>
-  <section class="docstring">
-<p>  Deletes a guild.</p>
-<p>  &gt; This will remove all associated channels and emojis from the appropriate caches.</p>
-  </section>
-</section>
-<section class="detail" id="delete/2">
-    <div class="detail-header">
-    <a href="#delete/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature">delete(guild_id, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L94" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-        
-      <div class="specs">
-          <pre>delete(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: :ok | :error</pre>
+          <pre>delete(
+  data_or_id ::
+    <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()
+    | <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()
+    | <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()
+    | <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()
+    | <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()
+) :: :ok</pre>
       </div>
   </div>
   <section class="docstring">
 <p>  Deletes a:</p>
 <ul>
-<li><a href="Crux.Structs.User.html"><code class="inline">Crux.Structs.User</code></a> (effectively their <a href="Crux.Structs.Member.html"><code class="inline">Crux.Structs.Member</code></a> and, if applicable, <a href="Crux.Structs.VoiceState.html"><code class="inline">Crux.Structs.VoiceState</code></a>)
+<li><a href="Crux.Structs.Member.html"><code class="inline">Crux.Structs.Member</code></a> (if applicable, also their <a href="Crux.Structs.VoiceState.html"><code class="inline">Crux.Structs.VoiceState</code></a>) from the guild
 </li>
 <li><a href="Crux.Structs.Role.html"><code class="inline">Crux.Structs.Role</code></a> from the guild
 </li>
 <li><a href="Crux.Structs.Channel.html"><code class="inline">Crux.Structs.Channel</code></a> from the guild
+</li>
+<li><p><a href="Crux.Structs.Guild.html"><code class="inline">Crux.Structs.Guild</code></a> itself</p>
+<blockquote><p>This will remove all associated channels and emojis from the appropriate caches.</p>
+</blockquote>
 </li>
 </ul>
   </section>
@@ -268,7 +248,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">fetch(guild_id)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L100" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L129" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -289,7 +269,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">fetch!(guild_id)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L107" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L137" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -303,36 +283,6 @@ Functions          </h1>
 <p>Fetches a guild from the cache by id, raises if not found.</p>
   </section>
 </section>
-<section class="detail" id="init/1">
-    <div class="detail-header">
-    <a href="#init/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature">init(guild)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L162" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-          </div>
-  <section class="docstring">
-<p>Invoked when the server is started. <code class="inline">start_link/3</code> or <code class="inline">start/3</code> will<br/>block until it returns.</p>
-<p><code class="inline">args</code> is the argument term (second argument) passed to <code class="inline">start_link/3</code>.</p>
-<p>Returning <code class="inline">{:ok, state}</code> will cause <code class="inline">start_link/3</code> to return<br/><code class="inline">{:ok, pid}</code> and the process to enter its loop.</p>
-<p>Returning <code class="inline">{:ok, state, timeout}</code> is similar to <code class="inline">{:ok, state}</code><br/>except <code class="inline">handle_info(:timeout, state)</code> will be called after <code class="inline">timeout</code><br/>milliseconds if no messages are received within the timeout.</p>
-<p>Returning <code class="inline">{:ok, state, :hibernate}</code> is similar to <code class="inline">{:ok, state}</code><br/>except the process is hibernated before entering the loop. See<br/><code class="inline">c:handle_call/3</code> for more information on hibernation.</p>
-<p>Returning <code class="inline">{:ok, state, {:continue, continue}}</code> is similar to<br/><code class="inline">{:ok, state}</code> except that immediately after entering the loop<br/>the <code class="inline">c:handle_continue/2</code> callback will be invoked with the value<br/><code class="inline">continue</code> as first argument.</p>
-<p>Returning <code class="inline">:ignore</code> will cause <code class="inline">start_link/3</code> to return <code class="inline">:ignore</code> and<br/>the process will exit normally without entering the loop or calling<br/><code class="inline">c:terminate/2</code>. If used when part of a supervision tree the parent<br/>supervisor will not fail to start nor immediately try to restart the<br/><a href="https://hexdocs.pm/elixir/GenServer.html"><code class="inline">GenServer</code></a>. The remainder of the supervision tree will be started<br/>and so the <a href="https://hexdocs.pm/elixir/GenServer.html"><code class="inline">GenServer</code></a> should not be required by other processes.<br/>It can be started later with <a href="https://hexdocs.pm/elixir/Supervisor.html#restart_child/2"><code class="inline">Supervisor.restart_child/2</code></a> as the child<br/>specification is saved in the parent supervisor. The main use cases for<br/>this are:</p>
-<ul>
-<li>The <a href="https://hexdocs.pm/elixir/GenServer.html"><code class="inline">GenServer</code></a> is disabled by configuration but might be enabled later.
-</li>
-<li>An error occurred and it will be handled by a different mechanism than the<br/>   <a href="https://hexdocs.pm/elixir/Supervisor.html"><code class="inline">Supervisor</code></a>. Likely this approach involves calling <a href="https://hexdocs.pm/elixir/Supervisor.html#restart_child/2"><code class="inline">Supervisor.restart_child/2</code></a><br/>after a delay to attempt a restart.
-</li>
-</ul>
-<p>Returning <code class="inline">{:stop, reason}</code> will cause <code class="inline">start_link/3</code> to return<br/><code class="inline">{:error, reason}</code> and the process to exit with reason <code class="inline">reason</code> without<br/>entering the loop or calling <code class="inline">c:terminate/2</code>.</p>
-<p>Callback implementation for <a href="https://hexdocs.pm/elixir/GenServer.html#c:init/1"><code class="inline">GenServer.init/1</code></a>.</p>
-  </section>
-</section>
 <section class="detail" id="insert/1">
     <div class="detail-header">
     <a href="#insert/1" class="detail-link" title="Link to this function">
@@ -340,7 +290,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">insert(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L57" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L60" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -374,7 +324,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">lookup(guild_id)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L29" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L31" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -394,7 +344,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">update(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L77" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L81" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

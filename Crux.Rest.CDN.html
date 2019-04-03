@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.3">
     <title>Crux.Rest.CDN — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
-    <script src="dist/sidebar_items-7673142791.js"></script>
+    <script src="dist/sidebar_items-45467cebcb.js"></script>
       <script src="config.js"></script>
     <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
     
@@ -122,6 +122,13 @@ Crux.Rest.CDN
     <a href="#group_dm_icon/2">group_dm_icon(group_dm, options \\ [])</a>
   </div>
     <div class="summary-synopsis"><p>Generates a url to group dm channel icon</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#guild_banner/2">guild_banner(guild, options \\ [])</a>
+  </div>
+    <div class="summary-synopsis"><p>Generates a url to a guild banner</p>
 </div>
 </div>
 <div class="summary-row">
@@ -245,13 +252,13 @@ Functions          </h1>
 <p>  Generates the url to an emoji.</p>
 <p>  This function does not accept any <a href="#t:format_options/0"><code class="inline">format_options/0</code></a>.</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A struct</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5818385197-1">%</span><span class="nc" data-group-id="5818385197-1">Crux.Structs.Emoji</span><span class="p" data-group-id="5818385197-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">438226248293154816</span><span class="p">,</span><span class="w"> </span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p" data-group-id="5818385197-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">custom_emoji</span><span class="p" data-group-id="5818385197-2">(</span><span class="p" data-group-id="5818385197-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="6762133841-1">%</span><span class="nc" data-group-id="6762133841-1">Crux.Structs.Emoji</span><span class="p" data-group-id="6762133841-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">438226248293154816</span><span class="p">,</span><span class="w"> </span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p" data-group-id="6762133841-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">custom_emoji</span><span class="p" data-group-id="6762133841-2">(</span><span class="p" data-group-id="6762133841-2">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/emojis/438226248293154816.png&quot;</span><span class="w">
 
 </span><span class="c1"># A plain map</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5818385197-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">438226248293154816</span><span class="p">,</span><span class="w"> </span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p" data-group-id="5818385197-3">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">custom_emoji</span><span class="p" data-group-id="5818385197-4">(</span><span class="p" data-group-id="5818385197-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="6762133841-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">438226248293154816</span><span class="p">,</span><span class="w"> </span><span class="ss">animated</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p" data-group-id="6762133841-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">custom_emoji</span><span class="p" data-group-id="6762133841-4">(</span><span class="p" data-group-id="6762133841-4">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/emojis/438226248293154816.gif&quot;</span><span class="w">
 </span></code></pre>
   </section>
@@ -263,7 +270,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">default_user_avatar(user)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/cdn.ex#L209" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/cdn.ex#L252" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -278,13 +285,13 @@ Functions          </h1>
   <section class="docstring">
 <p>  Generates a url to the default avatar url of a user.</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A struct</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0950183458-1">%</span><span class="nc" data-group-id="0950183458-1">Crux.Structs.User</span><span class="p" data-group-id="0950183458-1">{</span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p" data-group-id="0950183458-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">default_user_avatar</span><span class="p" data-group-id="0950183458-2">(</span><span class="p" data-group-id="0950183458-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3872469953-1">%</span><span class="nc" data-group-id="3872469953-1">Crux.Structs.User</span><span class="p" data-group-id="3872469953-1">{</span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p" data-group-id="3872469953-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">default_user_avatar</span><span class="p" data-group-id="3872469953-2">(</span><span class="p" data-group-id="3872469953-2">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/embed/avatars/1.png&quot;</span><span class="w">
 
 </span><span class="c1"># A plain map</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0950183458-3">%{</span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p" data-group-id="0950183458-3">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">default_user_avatar</span><span class="p" data-group-id="0950183458-4">(</span><span class="p" data-group-id="0950183458-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3872469953-3">%{</span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p" data-group-id="3872469953-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">default_user_avatar</span><span class="p" data-group-id="3872469953-4">(</span><span class="p" data-group-id="3872469953-4">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/embed/avatars/1.png&quot;</span><span class="w">
 </span></code></pre>
   </section>
@@ -317,23 +324,72 @@ Functions          </h1>
 <p>  Generates a url to group dm channel icon.</p>
 <p>  If the group dm channel has no icon nil will be returned.</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A struct</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5861774951-1">%</span><span class="nc" data-group-id="5861774951-1">Crux.Structs.Channel</span><span class="p" data-group-id="5861774951-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">354042501201526786</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ecd7839b9eed535f1ae3a545c5d5f3c8&quot;</span><span class="p" data-group-id="5861774951-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">group_dm_icon</span><span class="p" data-group-id="5861774951-2">(</span><span class="p" data-group-id="5861774951-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1089563970-1">%</span><span class="nc" data-group-id="1089563970-1">Crux.Structs.Channel</span><span class="p" data-group-id="1089563970-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">354042501201526786</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ecd7839b9eed535f1ae3a545c5d5f3c8&quot;</span><span class="p" data-group-id="1089563970-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">group_dm_icon</span><span class="p" data-group-id="1089563970-2">(</span><span class="p" data-group-id="1089563970-2">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/channel-icons/354042501201526786/ecd7839b9eed535f1ae3a545c5d5f3c8.webp&quot;</span><span class="w">
 
 </span><span class="c1"># A plain map</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5861774951-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">354042501201526786</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ecd7839b9eed535f1ae3a545c5d5f3c8&quot;</span><span class="p" data-group-id="5861774951-3">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">group_dm_icon</span><span class="p" data-group-id="5861774951-4">(</span><span class="p" data-group-id="5861774951-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1089563970-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">354042501201526786</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ecd7839b9eed535f1ae3a545c5d5f3c8&quot;</span><span class="p" data-group-id="1089563970-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">group_dm_icon</span><span class="p" data-group-id="1089563970-4">(</span><span class="p" data-group-id="1089563970-4">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/channel-icons/354042501201526786/ecd7839b9eed535f1ae3a545c5d5f3c8.webp&quot;</span><span class="w">
 
   </span><span class="c1"># With format options</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5861774951-5">%</span><span class="nc" data-group-id="5861774951-5">Crux.Structs.Channel</span><span class="p" data-group-id="5861774951-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">354042501201526786</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ecd7839b9eed535f1ae3a545c5d5f3c8&quot;</span><span class="p" data-group-id="5861774951-5">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">group_dm_icon</span><span class="p" data-group-id="5861774951-6">(</span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="ss">extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;png&quot;</span><span class="p" data-group-id="5861774951-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1089563970-5">%</span><span class="nc" data-group-id="1089563970-5">Crux.Structs.Channel</span><span class="p" data-group-id="1089563970-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">354042501201526786</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ecd7839b9eed535f1ae3a545c5d5f3c8&quot;</span><span class="p" data-group-id="1089563970-5">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">group_dm_icon</span><span class="p" data-group-id="1089563970-6">(</span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="ss">extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;png&quot;</span><span class="p" data-group-id="1089563970-6">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/channel-icons/354042501201526786/ecd7839b9eed535f1ae3a545c5d5f3c8.png?size=16&quot;</span><span class="w">
 
 </span><span class="c1"># Without icon</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5861774951-7">%{</span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="5861774951-7">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">group_dm_icon</span><span class="p" data-group-id="5861774951-8">(</span><span class="p" data-group-id="5861774951-8">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1089563970-7">%{</span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="1089563970-7">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">group_dm_icon</span><span class="p" data-group-id="1089563970-8">(</span><span class="p" data-group-id="1089563970-8">)</span><span class="w">
+</span><span class="no">nil</span><span class="w">
+</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="guild_banner/2">
+  
+    <span id="guild_banner/1"></span>
+  <div class="detail-header">
+    <a href="#guild_banner/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">guild_banner(guild, options \\ [])</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/cdn.ex#L225" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+      <span class="note">(since 0.2.0)</span>
+    
+      <div class="specs">
+          <pre>guild_banner(
+  <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()
+  | %{id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(), banner: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil},
+  <a href="#t:format_options/0">format_options</a>()
+) :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Generates a url to a guild banner.</p>
+<p>  The extension &quot;gif&quot; is not valid here.</p>
+<pre><code class="nohighlight makeup elixir"><span class="c1"># A struct</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1665202651-1">%</span><span class="nc" data-group-id="1665202651-1">Crux.Structs.Guild</span><span class="p" data-group-id="1665202651-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">banner</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;29c1980a3471cb2d5c1208c5196278fb&quot;</span><span class="p" data-group-id="1665202651-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_banner</span><span class="p" data-group-id="1665202651-2">(</span><span class="p" data-group-id="1665202651-2">)</span><span class="w">
+</span><span class="s">&quot;https://cdn.discordapp.com/banners/269508806759809042/29c1980a3471cb2d5c1208c5196278fb.webp&quot;</span><span class="w">
+
+  </span><span class="c1"># A plain map</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1665202651-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">banner</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;29c1980a3471cb2d5c1208c5196278fb&quot;</span><span class="p" data-group-id="1665202651-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_banner</span><span class="p" data-group-id="1665202651-4">(</span><span class="p" data-group-id="1665202651-4">)</span><span class="w">
+</span><span class="s">&quot;https://cdn.discordapp.com/banners/269508806759809042/29c1980a3471cb2d5c1208c5196278fb.webp&quot;</span><span class="w">
+
+</span><span class="c1"># With format_options</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1665202651-5">%</span><span class="nc" data-group-id="1665202651-5">Crux.Structs.Guild</span><span class="p" data-group-id="1665202651-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">banner</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;29c1980a3471cb2d5c1208c5196278fb&quot;</span><span class="p" data-group-id="1665202651-5">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_banner</span><span class="p" data-group-id="1665202651-6">(</span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="ss">extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;png&quot;</span><span class="p" data-group-id="1665202651-6">)</span><span class="w">
+</span><span class="s">&quot;https://cdn.discordapp.com/banners/269508806759809042/29c1980a3471cb2d5c1208c5196278fb.png?size=16&quot;</span><span class="w">
+
+</span><span class="c1"># Without banner</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1665202651-7">%</span><span class="nc" data-group-id="1665202651-7">Crux.Structs.Guild</span><span class="p" data-group-id="1665202651-7">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">banner</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="1665202651-7">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_banner</span><span class="p" data-group-id="1665202651-8">(</span><span class="p" data-group-id="1665202651-8">)</span><span class="w">
 </span><span class="no">nil</span><span class="w">
 </span></code></pre>
   </section>
@@ -366,23 +422,23 @@ Functions          </h1>
 <p>  If the guild has no icon nil will be returned.</p>
 <p>  The extension &quot;gif&quot; is not valid here.</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A guild struct</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4558513900-1">%</span><span class="nc" data-group-id="4558513900-1">Crux.Structs.Guild</span><span class="p" data-group-id="4558513900-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="4558513900-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_icon</span><span class="p" data-group-id="4558513900-2">(</span><span class="p" data-group-id="4558513900-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3362495701-1">%</span><span class="nc" data-group-id="3362495701-1">Crux.Structs.Guild</span><span class="p" data-group-id="3362495701-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="3362495701-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_icon</span><span class="p" data-group-id="3362495701-2">(</span><span class="p" data-group-id="3362495701-2">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/icons/269508806759809042/15abb45cf1c59f90ea291185b99ab1dd.webp&quot;</span><span class="w">
 
 </span><span class="c1"># A plain map</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4558513900-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="4558513900-3">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_icon</span><span class="p" data-group-id="4558513900-4">(</span><span class="p" data-group-id="4558513900-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3362495701-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="3362495701-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_icon</span><span class="p" data-group-id="3362495701-4">(</span><span class="p" data-group-id="3362495701-4">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/icons/269508806759809042/15abb45cf1c59f90ea291185b99ab1dd.webp&quot;</span><span class="w">
 
 </span><span class="c1"># With format_options</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4558513900-5">%</span><span class="nc" data-group-id="4558513900-5">Crux.Structs.Guild</span><span class="p" data-group-id="4558513900-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="4558513900-5">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_icon</span><span class="p" data-group-id="4558513900-6">(</span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="ss">extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;png&quot;</span><span class="p" data-group-id="4558513900-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3362495701-5">%</span><span class="nc" data-group-id="3362495701-5">Crux.Structs.Guild</span><span class="p" data-group-id="3362495701-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="3362495701-5">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_icon</span><span class="p" data-group-id="3362495701-6">(</span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="ss">extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;png&quot;</span><span class="p" data-group-id="3362495701-6">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/icons/269508806759809042/15abb45cf1c59f90ea291185b99ab1dd.png?size=16&quot;</span><span class="w">
 
 </span><span class="c1"># Without icon</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4558513900-7">%</span><span class="nc" data-group-id="4558513900-7">Crux.Structs.Guild</span><span class="p" data-group-id="4558513900-7">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="4558513900-7">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_icon</span><span class="p" data-group-id="4558513900-8">(</span><span class="p" data-group-id="4558513900-8">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3362495701-7">%</span><span class="nc" data-group-id="3362495701-7">Crux.Structs.Guild</span><span class="p" data-group-id="3362495701-7">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">icon</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="3362495701-7">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_icon</span><span class="p" data-group-id="3362495701-8">(</span><span class="p" data-group-id="3362495701-8">)</span><span class="w">
 </span><span class="no">nil</span><span class="w">
 </span></code></pre>
   </section>
@@ -413,25 +469,25 @@ Functions          </h1>
   </div>
   <section class="docstring">
 <p>  Generates a url to a guild splash.</p>
-<p>  The extension &quot;gif&quot; is valid here.</p>
+<p>  The extension &quot;gif&quot; is not valid here.</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A struct</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0234411376-1">%</span><span class="nc" data-group-id="0234411376-1">Crux.Structs.Guild</span><span class="p" data-group-id="0234411376-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">splash</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="0234411376-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_splash</span><span class="p" data-group-id="0234411376-2">(</span><span class="p" data-group-id="0234411376-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1534625817-1">%</span><span class="nc" data-group-id="1534625817-1">Crux.Structs.Guild</span><span class="p" data-group-id="1534625817-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">splash</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="1534625817-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_splash</span><span class="p" data-group-id="1534625817-2">(</span><span class="p" data-group-id="1534625817-2">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/splashes/269508806759809042/15abb45cf1c59f90ea291185b99ab1dd.webp&quot;</span><span class="w">
 
   </span><span class="c1"># A plain map</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0234411376-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">splash</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="0234411376-3">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_splash</span><span class="p" data-group-id="0234411376-4">(</span><span class="p" data-group-id="0234411376-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1534625817-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">splash</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="1534625817-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_splash</span><span class="p" data-group-id="1534625817-4">(</span><span class="p" data-group-id="1534625817-4">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/splashes/269508806759809042/15abb45cf1c59f90ea291185b99ab1dd.webp&quot;</span><span class="w">
 
 </span><span class="c1"># With format_options</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0234411376-5">%</span><span class="nc" data-group-id="0234411376-5">Crux.Structs.Guild</span><span class="p" data-group-id="0234411376-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">splash</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="0234411376-5">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_splash</span><span class="p" data-group-id="0234411376-6">(</span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="ss">extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;png&quot;</span><span class="p" data-group-id="0234411376-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1534625817-5">%</span><span class="nc" data-group-id="1534625817-5">Crux.Structs.Guild</span><span class="p" data-group-id="1534625817-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">splash</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15abb45cf1c59f90ea291185b99ab1dd&quot;</span><span class="p" data-group-id="1534625817-5">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_splash</span><span class="p" data-group-id="1534625817-6">(</span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="ss">extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;png&quot;</span><span class="p" data-group-id="1534625817-6">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/splashes/269508806759809042/15abb45cf1c59f90ea291185b99ab1dd.png?size=16&quot;</span><span class="w">
 
 </span><span class="c1"># Without splash</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0234411376-7">%</span><span class="nc" data-group-id="0234411376-7">Crux.Structs.Guild</span><span class="p" data-group-id="0234411376-7">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">splash</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="0234411376-7">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_splash</span><span class="p" data-group-id="0234411376-8">(</span><span class="p" data-group-id="0234411376-8">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1534625817-7">%</span><span class="nc" data-group-id="1534625817-7">Crux.Structs.Guild</span><span class="p" data-group-id="1534625817-7">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">269508806759809042</span><span class="p">,</span><span class="w"> </span><span class="ss">splash</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="1534625817-7">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">guild_splash</span><span class="p" data-group-id="1534625817-8">(</span><span class="p" data-group-id="1534625817-8">)</span><span class="w">
 </span><span class="no">nil</span><span class="w">
 </span></code></pre>
   </section>
@@ -445,7 +501,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">user_avatar(user, options \\ [])</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/cdn.ex#L254" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/cdn.ex#L297" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -469,23 +525,23 @@ Functions          </h1>
 <p>  If the user has no custom avatar this will return a default one with the extension &quot;webp&quot;.</p>
 <p>  The extension defaults to &quot;gif&quot; or &quot;webp&quot; depending on whether the user has an animated avatar.</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A struct with an avatar</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9941895873-1">%</span><span class="nc" data-group-id="9941895873-1">Crux.Structs.User</span><span class="p" data-group-id="9941895873-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;646a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="9941895873-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">user_avatar</span><span class="p" data-group-id="9941895873-2">(</span><span class="p" data-group-id="9941895873-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5118488845-1">%</span><span class="nc" data-group-id="5118488845-1">Crux.Structs.User</span><span class="p" data-group-id="5118488845-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;646a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="5118488845-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">user_avatar</span><span class="p" data-group-id="5118488845-2">(</span><span class="p" data-group-id="5118488845-2">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/avatars/218348062828003328/646a356e237350bf8b8dfde15667dfc4.webp&quot;</span><span class="w">
 
 </span><span class="c1"># A plain map with an avatar</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9941895873-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;646a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="9941895873-3">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">user_avatar</span><span class="p" data-group-id="9941895873-4">(</span><span class="p" data-group-id="9941895873-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5118488845-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;646a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="5118488845-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">user_avatar</span><span class="p" data-group-id="5118488845-4">(</span><span class="p" data-group-id="5118488845-4">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/avatars/218348062828003328/646a356e237350bf8b8dfde15667dfc4.webp&quot;</span><span class="w">
 
 </span><span class="c1"># With format options</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9941895873-5">%</span><span class="nc" data-group-id="9941895873-5">Crux.Structs.User</span><span class="p" data-group-id="9941895873-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;646a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="9941895873-5">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">user_avatar</span><span class="p" data-group-id="9941895873-6">(</span><span class="ss">extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;png&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="mi">2048</span><span class="p" data-group-id="9941895873-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5118488845-5">%</span><span class="nc" data-group-id="5118488845-5">Crux.Structs.User</span><span class="p" data-group-id="5118488845-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;646a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="5118488845-5">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">user_avatar</span><span class="p" data-group-id="5118488845-6">(</span><span class="ss">extension</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;png&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="mi">2048</span><span class="p" data-group-id="5118488845-6">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/avatars/218348062828003328/646a356e237350bf8b8dfde15667dfc4.png?size=2048&quot;</span><span class="w">
 
 </span><span class="c1"># A struct without an avatar</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9941895873-7">%</span><span class="nc" data-group-id="9941895873-7">Crux.Structs.User</span><span class="p" data-group-id="9941895873-7">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p" data-group-id="9941895873-7">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">user_avatar</span><span class="p" data-group-id="9941895873-8">(</span><span class="p" data-group-id="9941895873-8">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5118488845-7">%</span><span class="nc" data-group-id="5118488845-7">Crux.Structs.User</span><span class="p" data-group-id="5118488845-7">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p" data-group-id="5118488845-7">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Rest.CDN</span><span class="o">.</span><span class="n">user_avatar</span><span class="p" data-group-id="5118488845-8">(</span><span class="p" data-group-id="5118488845-8">)</span><span class="w">
 </span><span class="s">&quot;https://cdn.discordapp.com/embed/avatars/1.png&quot;</span><span class="w">
 </span></code></pre>
   </section>

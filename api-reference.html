@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.3">
     <title>API Reference — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
-    <script src="dist/sidebar_items-7673142791.js"></script>
+    <script src="dist/sidebar_items-45467cebcb.js"></script>
       <script src="config.js"></script>
     <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
     
@@ -74,14 +74,14 @@ Crux      </a>
   <div class="summary-signature">
     <a href="Crux.Base.html">Crux.Base</a>
   </div>
-    <div class="summary-synopsis"><p>Crux &quot;Base&quot; module providing an example implementation of <a href="Crux.Gateway.html"><code class="inline">Crux.Gateway</code></a>, <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a>, and <a href="Crux.Cache.html"><code class="inline">Crux.Cache</code></a> while using <a href="Crux.Structs.html"><code class="inline">Crux.Structs</code></a></p>
+    <div class="summary-synopsis"><p>TODO: Write me</p>
 </div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="Crux.Base.Consumer.html">Crux.Base.Consumer</a>
   </div>
-    <div class="summary-synopsis"><p>Handles consuming and processing of events received from the gateway.<br/>  To consume those processed events subscribe with a consumer to a producer.<br/>  You can fetch said producers via <a href="Crux.Base.html#producers/0"><code class="inline">Crux.Base.producers/0</code></a></p>
+    <div class="summary-synopsis"><p>Handles consuming and processing of events received from the gateway.<br/>  To consume those processed events subscribe with a consumer to a producer.<br/>  You can fetch said producers via <a href="Crux.Base.html#producers/1"><code class="inline">Crux.Base.producers/1</code></a></p>
 </div>
 </div>
 <div class="summary-row">
@@ -89,6 +89,13 @@ Crux      </a>
     <a href="Crux.Base.ConsumerSupervisor.html">Crux.Base.ConsumerSupervisor</a>
   </div>
     <div class="summary-synopsis"><p>Supervises a consumer, for example, a module using <a href="Crux.Base.TaskConsumer.html"><code class="inline">Crux.Base.TaskConsumer</code></a></p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Crux.Base.Processor.html">Crux.Base.Processor</a>
+  </div>
+    <div class="summary-synopsis"><p>Module processing gateway packets into <a href="#t:event/0"><code class="inline">event/0</code></a>s making necessary cache lookups / insertions</p>
 </div>
 </div>
 <div class="summary-row">
@@ -121,6 +128,25 @@ Crux      </a>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Crux.Cache.Default.html">Crux.Cache.Default</a>
+  </div>
+    <div class="summary-synopsis"><p>A provider using the default caches:</p>
+<ul>
+<li><a href="Crux.Cache.Guild.html"><code class="inline">Crux.Cache.Guild</code></a>
+</li>
+<li><a href="Crux.Cache.Channel.html"><code class="inline">Crux.Cache.Channel</code></a>
+</li>
+<li><a href="Crux.Cache.Emoji.html"><code class="inline">Crux.Cache.Emoji</code></a>
+</li>
+<li><a href="Crux.Cache.Presence.html"><code class="inline">Crux.Cache.Presence</code></a>
+</li>
+<li><a href="Crux.Cache.User.html"><code class="inline">Crux.Cache.User</code></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Crux.Cache.Emoji.html">Crux.Cache.Emoji</a>
   </div>
     <div class="summary-synopsis"><p>Default <a href="Crux.Structs.Emoji.html"><code class="inline">Crux.Structs.Emoji</code></a> cache</p>
@@ -135,9 +161,23 @@ Crux      </a>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Crux.Cache.None.html">Crux.Cache.None</a>
+  </div>
+    <div class="summary-synopsis"><p>Functions both as <a href="Crux.Cache.html"><code class="inline">Crux.Cache</code></a> and <a href="Crux.Cache.Provider.html"><code class="inline">Crux.Cache.Provider</code></a></p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Crux.Cache.Presence.html">Crux.Cache.Presence</a>
   </div>
     <div class="summary-synopsis"><p>Default <a href="Crux.Structs.Presence.html"><code class="inline">Crux.Structs.Presence</code></a> cache</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Crux.Cache.Provider.html">Crux.Cache.Provider</a>
+  </div>
+    <div class="summary-synopsis"><p>A behaviour module for cache providers</p>
 </div>
 </div>
 <div class="summary-row">

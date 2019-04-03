@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.19.3">
-    <title>Crux.Base — Crux vdev</title>
+    <title>Crux.Cache.Provider — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
     <script src="dist/sidebar_items-45467cebcb.js"></script>
       <script src="config.js"></script>
@@ -60,8 +60,8 @@ Crux      </a>
 
       <h1>
         <small class="visible-xs">Crux vdev</small>
-Crux.Base        
-          <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Cache.Provider <small>behaviour</small>        
+          <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/provider.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -69,7 +69,8 @@ Crux.Base
 
 
         <section id="moduledoc">
-<p>  TODO: Write me</p>
+<p>  A behaviour module for cache providers.</p>
+<p>  Caches with a <code class="inline">start_link</code> function will be automatically put under the supervision tree when starting the module implementing this behaviour.</p>
         </section>
 
         <section id="summary" class="details-list">
@@ -80,136 +81,154 @@ Crux.Base
             </a>
             Summary
           </h1>
-  <div class="summary-types summary">
+  <div class="summary-callbacks summary">
     <h2>
-      <a href="#types">Types</a>
+      <a href="#callbacks">Callbacks</a>
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#t:options/0">options()</a>
+    <a href="#c:channel_cache/0">channel_cache()</a>
   </div>
-</div>
-  </div>
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#child_spec/1">child_spec(arg)</a>
-  </div>
-    <div class="summary-synopsis"><p>Returns a specification to start this module under a supervisor</p>
+    <div class="summary-synopsis"><p>Fetches the module handling the channel cache</p>
 </div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#producers/1">producers(base)</a>
+    <a href="#c:emoji_cache/0">emoji_cache()</a>
   </div>
-    <div class="summary-synopsis"><p>Computes a map of all producers keyed by shard_id</p>
+    <div class="summary-synopsis"><p>Fetches the module handling the channel cache</p>
 </div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#start_link/1">start_link(options)</a>
+    <a href="#c:guild_cache/0">guild_cache()</a>
   </div>
+    <div class="summary-synopsis"><p>Fetches the module handling the guild cache</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:presence_cache/0">presence_cache()</a>
+  </div>
+    <div class="summary-synopsis"><p>Fetches the module handling the presence cache</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:user_cache/0">user_cache()</a>
+  </div>
+    <div class="summary-synopsis"><p>Fetches the module handling the user cache</p>
+</div>
 </div>
   </div>
         </section>
 
-        <section id="types" class="details-list">
+        <section id="callbacks" class="details-list">
           <h1 class="section-heading">
-            <a class="hover-link" href="#types">
+            <a class="hover-link" href="#callbacks">
               <span class="icon-link" aria-hidden="true"></span>
               <span class="sr-only">Link to this section</span>
             </a>
-Types          </h1>
-          <div class="types-list">
-<section class="detail" id="t:options/0">
+Callbacks          </h1>
+          <div class="callbacks-list">
+<section class="detail" id="c:channel_cache/0">
     <div class="detail-header">
-    <a href="#t:options/0" class="detail-link" title="Link to this type">
+    <a href="#c:channel_cache/0" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this type</span>
+      <span class="sr-only">Link to this callback</span>
     </a>
-    <h1 class="signature">options()</span>
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base.ex#L10" class="view-source" rel="help" title="View Source">
+    <h1 class="signature">channel_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/provider.ex#L16" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>options() ::
-  %{gateway: <a href="Crux.Gateway.html#t:gateway/0">Crux.Gateway.gateway</a>(), cache_provider: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()}
-  | [{:gateway, <a href="Crux.Gateway.html#t:gateway/0">Crux.Gateway.gateway</a>()}]</pre>
+          <pre>channel_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
       </div>
   </div>
   <section class="docstring">
+<p>  Fetches the module handling the channel cache.</p>
   </section>
 </section>
-          </div>
-        </section>
-        <section id="functions" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#functions">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-Functions          </h1>
-          <div class="functions-list">
-<section class="detail" id="child_spec/1">
+<section class="detail" id="c:emoji_cache/0">
     <div class="detail-header">
-    <a href="#child_spec/1" class="detail-link" title="Link to this function">
+    <a href="#c:emoji_cache/0" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
+      <span class="sr-only">Link to this callback</span>
     </a>
-    <h1 class="signature">child_spec(arg)</span>
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base.ex#L6" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-          </div>
-  <section class="docstring">
-<p>Returns a specification to start this module under a supervisor.</p>
-<p>See <a href="https://hexdocs.pm/elixir/Supervisor.html"><code class="inline">Supervisor</code></a>.</p>
-  </section>
-</section>
-<section class="detail" id="producers/1">
-    <div class="detail-header">
-    <a href="#producers/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature">producers(base)</span>
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base.ex#L67" class="view-source" rel="help" title="View Source">
+    <h1 class="signature">emoji_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/provider.ex#L21" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>producers(base :: <a href="https://hexdocs.pm/elixir/Supervisor.html#t:name/0">Supervisor.name</a>()) :: %{required(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pid</a>()}</pre>
+          <pre>emoji_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
       </div>
   </div>
   <section class="docstring">
-<p>  Computes a map of all producers keyed by shard_id.</p>
+<p>  Fetches the module handling the channel cache.</p>
   </section>
 </section>
-<section class="detail" id="start_link/1">
+<section class="detail" id="c:guild_cache/0">
     <div class="detail-header">
-    <a href="#start_link/1" class="detail-link" title="Link to this function">
+    <a href="#c:guild_cache/0" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
+      <span class="sr-only">Link to this callback</span>
     </a>
-    <h1 class="signature">start_link(options)</span>
-      <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base.ex#L22" class="view-source" rel="help" title="View Source">
+    <h1 class="signature">guild_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/provider.ex#L11" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
         
       <div class="specs">
-          <pre>start_link(opts :: <a href="#t:options/0">options</a>() | {<a href="#t:options/0">options</a>(), <a href="https://hexdocs.pm/elixir/GenServer.html#t:options/0">GenServer.options</a>()}) ::
-  <a href="https://hexdocs.pm/elixir/Supervisor.html#t:on_start/0">Supervisor.on_start</a>()</pre>
+          <pre>guild_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
       </div>
   </div>
   <section class="docstring">
+<p>  Fetches the module handling the guild cache.</p>
+  </section>
+</section>
+<section class="detail" id="c:presence_cache/0">
+    <div class="detail-header">
+    <a href="#c:presence_cache/0" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">presence_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/provider.ex#L26" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>presence_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Fetches the module handling the presence cache.</p>
+  </section>
+</section>
+<section class="detail" id="c:user_cache/0">
+    <div class="detail-header">
+    <a href="#c:user_cache/0" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">user_cache()</span>
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/provider.ex#L31" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>user_cache() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Fetches the module handling the user cache.</p>
   </section>
 </section>
           </div>
