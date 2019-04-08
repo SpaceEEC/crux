@@ -1,6 +1,6 @@
 # Crux - Umbrella Repository
 
-> This repository is responsible for generating the umbrella documentation available here: https://curx.randomly.space
+> This repository is responsible for generating the umbrella documentation available here: https://crux.randomly.space
 
 # Child Repositories:
 
