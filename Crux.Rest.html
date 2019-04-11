@@ -4,24 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.19.3">
+    <meta name="generator" content="ExDoc v0.20.1">
+    <meta name="project" content="Crux vdev">
     <title>Crux.Rest — Crux vdev</title>
-    <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
-    <script src="dist/sidebar_items-45467cebcb.js"></script>
-      <script src="config.js"></script>
-    <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
+    <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
+    <script src="dist/sidebar_items-6beddf297b.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
     
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
     <div class="main">
+
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
 </button>
-<button class="sidebar-button night-mode-toggle">
-  <span class="icon-theme" title="Toggle night/day mode"></span>
-</button>
+
 <section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
 
   <div class="sidebar-header">
     <div class="sidebar-projectDetails">
@@ -32,13 +48,6 @@ Crux      </a>
       </h2>
     </div>
   </div>
-
-  <form class="sidebar-search" action="search.html">
-    <button type="submit" class="search-button">
-      <span class="icon-search" aria-hidden="true"></span>
-    </button>
-    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
-  </form>
 
   <ul class="sidebar-listNav">
     <li><a id="extras-list" href="#full-list">Pages</a></li>
@@ -59,7 +68,7 @@ Crux      </a>
 
 
       <h1>
-        <small class="visible-xs">Crux vdev</small>
+        <small class="app-vsn">Crux vdev</small>
 Crux.Rest <small>behaviour</small>        
           <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
@@ -89,169 +98,145 @@ Crux.Rest <small>behaviour</small>
   <div class="summary-signature">
     <a href="#t:add_guild_member_data/0">add_guild_member_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to add a member to a guild via <a href="#c:add_guild_member/3"><code class="inline">add_guild_member/3</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to add a member to a guild via <a href="#c:add_guild_member/3"><code class="inline">add_guild_member/3</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:audit_log_options/0">audit_log_options()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to filter audit log results via <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>.<br/>  The <code class="inline">:user_id</code> field refers to the executor and not the target of the log</p>
-</div>
+    <div class="summary-synopsis"><p>  Used to filter audit log results via <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>.<br>  The <code class="inline">:user_id</code> field refers to the executor and not the target of the log.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:begin_guild_prune_opts/0">begin_guild_prune_opts()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to prune inactive guild members with <a href="#c:begin_guild_prune/2"><code class="inline">begin_guild_prune/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to prune inactive guild members with <a href="#c:begin_guild_prune/2"><code class="inline">begin_guild_prune/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:create_channel_invite_data/0">create_channel_invite_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to create invites via <a href="#c:create_channel_invite/2"><code class="inline">create_channel_invite/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to create invites via <a href="#c:create_channel_invite/2"><code class="inline">create_channel_invite/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:create_guild_channel_data/0">create_guild_channel_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to create a channel via <a href="#c:create_guild_channel/2"><code class="inline">create_guild_channel/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to create a channel via <a href="#c:create_guild_channel/2"><code class="inline">create_guild_channel/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:create_guild_emoji_data/0">create_guild_emoji_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to create emojis via <a href="#c:create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to create emojis via <a href="#c:create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:create_message_data/0">create_message_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to send messages via <a href="#c:create_message/2"><code class="inline">create_message/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to send messages via <a href="#c:create_message/2"><code class="inline">create_message/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:edit_channel_permissions_data/0">edit_channel_permissions_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to edit overwrites for a role or member with <a href="#c:edit_channel_permissions/3"><code class="inline">edit_channel_permissions/3</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to edit overwrites for a role or member with <a href="#c:edit_channel_permissions/3"><code class="inline">edit_channel_permissions/3</code></a></p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:embed/0">embed()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to send and embed via <a href="#c:create_message/2"><code class="inline">create_message/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to send and embed via <a href="#c:create_message/2"><code class="inline">create_message/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:execute_webhook_options/0">execute_webhook_options()</a>
   </div>
-    <div class="summary-synopsis"><p>Used for sending discord webhooks. For more information on non-discord webhooks, check<br/>  <a href="https://api.slack.com/custom-integrations/outgoing-webhooks">Slack Docs</a> or<br/>  <a href="https://developer.github.com/webhooks/">Github Docs</a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used for sending discord webhooks. For more information on non-discord webhooks, check<br>  <a href="https://api.slack.com/custom-integrations/outgoing-webhooks">Slack Docs</a> or<br>  <a href="https://developer.github.com/webhooks/">Github Docs</a></p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:get_current_user_guild_data/0">get_current_user_guild_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to list the current user&#39;s guilds in <code class="inline">c:get_current_user_guild_/1</code></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to list the current user&#39;s guilds in <code class="inline">c:get_current_user_guild_/1</code>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:get_messages_data/0">get_messages_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to get messages from the api via <a href="#c:get_messages/2"><code class="inline">get_messages/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to get messages from the api via <a href="#c:get_messages/2"><code class="inline">get_messages/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:get_reactions_data/0">get_reactions_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to get more specific users who reacted to a message from the api via <a href="#c:get_reactions/4"><code class="inline">get_reactions/4</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to get more specific users who reacted to a message from the api via <a href="#c:get_reactions/4"><code class="inline">get_reactions/4</code></a></p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:guild_role_data/0">guild_role_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to create a role in a guild with <a href="#c:create_guild_role/2"><code class="inline">create_guild_role/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to create a role in a guild with <a href="#c:create_guild_role/2"><code class="inline">create_guild_role/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:list_guild_members_options/0">list_guild_members_options()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to list guild members via <code class="inline">c:listt_guild_members/2</code></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to list guild members via <code class="inline">c:listt_guild_members/2</code>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:message_edit_data/0">message_edit_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to edit messages via <a href="#c:edit_message/2"><code class="inline">edit_message/2</code></a> or <code class="inline">edit_message/3</code></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to edit messages via <a href="#c:edit_message/2"><code class="inline">edit_message/2</code></a> or <code class="inline">edit_message/3</code>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:modify_channel_data/0">modify_channel_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to modify a channel via <a href="#c:modify_channel/2"><code class="inline">modify_channel/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to modify a channel via <a href="#c:modify_channel/2"><code class="inline">modify_channel/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:modify_current_user_data/0">modify_current_user_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to modify the currently logged in <a href="#c:modify_current_user/1"><code class="inline">modify_current_user/1</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to modify the currently logged in <a href="#c:modify_current_user/1"><code class="inline">modify_current_user/1</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:modify_guild_channel_positions_data_entry/0">modify_guild_channel_positions_data_entry()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to change a channel&#39;s position via <a href="#c:modify_guild_channel_positions/2"><code class="inline">modify_guild_channel_positions/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to change a channel&#39;s position via <a href="#c:modify_guild_channel_positions/2"><code class="inline">modify_guild_channel_positions/2</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:modify_guild_data/0">modify_guild_data()</a>
   </div>
-    <div class="summary-synopsis"><p>TBD, see <a href="#c:modify_guild/2"><code class="inline">modify_guild/2</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  TBD, see <a href="#c:modify_guild/2"><code class="inline">modify_guild/2</code></a></p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:modify_guild_emoji_data/0">modify_guild_emoji_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to modify a guild emoji via <a href="#c:modify_guild_emoji/3"><code class="inline">modify_guild_emoji/3</code></a></p>
-</div>
+    <div class="summary-synopsis"><p> Used to modify a guild emoji via <a href="#c:modify_guild_emoji/3"><code class="inline">modify_guild_emoji/3</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:modify_guild_member_data/0">modify_guild_member_data()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to modify a member with <a href="#c:modify_guild_member/3"><code class="inline">modify_guild_member/3</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Used to modify a member with <a href="#c:modify_guild_member/3"><code class="inline">modify_guild_member/3</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:options/0">options()</a>
   </div>
-    <div class="summary-synopsis"><p>Options used to start <a href="#content"><code class="inline">Crux.Rest</code></a></p>
-</div>
+    <div class="summary-synopsis"><p>  Options used to start <a href="#content"><code class="inline">Crux.Rest</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#t:snowflake/0">snowflake()</a>
   </div>
-    <div class="summary-synopsis"><p>A Discord snowflake, fits in a 64bit integer</p>
-</div>
+    <div class="summary-synopsis"><p>  A Discord snowflake, fits in a 64bit integer.</p></div>
 </div>
   </div>
   <div class="summary-functions summary">
@@ -262,22 +247,19 @@ Crux.Rest <small>behaviour</small>
   <div class="summary-signature">
     <a href="#request/2">request(name, request)</a>
   </div>
-    <div class="summary-synopsis"><p>Executes a request</p>
-</div>
+    <div class="summary-synopsis"><p>  Executes a request.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#request!/2">request!(name, request)</a>
   </div>
-    <div class="summary-synopsis"><p>Executes a request, but raises on error</p>
-</div>
+    <div class="summary-synopsis"><p>  Executes a request, but raises on error.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#start_link/1">start_link(args)</a>
   </div>
-    <div class="summary-synopsis"><p>Starts a <a href="#content"><code class="inline">Crux.Rest</code></a> process linked to the current process</p>
-</div>
+    <div class="summary-synopsis"><p>  Starts a <a href="#content"><code class="inline">Crux.Rest</code></a> process linked to the current process.</p></div>
 </div>
   </div>
   <div class="summary-callbacks summary">
@@ -288,99 +270,85 @@ Crux.Rest <small>behaviour</small>
   <div class="summary-signature">
     <a href="#c:add_guild_member/3">add_guild_member(guild, user, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Adds a user to a guild via a provided oauth2 access token with the <a href="https://discordapp.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes"><code class="inline">guilds.join</code></a> scope</p>
-</div>
+    <div class="summary-synopsis"><p>  Adds a user to a guild via a provided oauth2 access token with the <a href="https://discordapp.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes"><code class="inline">guilds.join</code></a> scope.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:add_guild_member!/3">add_guild_member!(guild, user, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:add_guild_member/3"><code class="inline">add_guild_member/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:add_guild_member/3"><code class="inline">add_guild_member/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:add_guild_member_role/4">add_guild_member_role(guild, member, role, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>Adds a role to a member</p>
-</div>
+    <div class="summary-synopsis"><p>  Adds a role to a member.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:add_guild_member_role!/4">add_guild_member_role!(guild, member, role, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:add_guild_member_role/4"><code class="inline">add_guild_member_role/4</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:add_guild_member_role/4"><code class="inline">add_guild_member_role/4</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:add_pinned_message/1">add_pinned_message(message)</a>
   </div>
-    <div class="summary-synopsis"><p>Adds a message to the pinned messages of a channel</p>
-</div>
+    <div class="summary-synopsis"><p>  Adds a message to the pinned messages of a channel.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:add_pinned_message/2">add_pinned_message(channel, message)</a>
   </div>
-    <div class="summary-synopsis"><p>Adds a message to the pinned messages of a channel</p>
-</div>
+    <div class="summary-synopsis"><p>  Adds a message to the pinned messages of a channel.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:add_pinned_message!/1">add_pinned_message!(message)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:add_pinned_message/1"><code class="inline">add_pinned_message/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:add_pinned_message/1"><code class="inline">add_pinned_message/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:add_pinned_message!/2">add_pinned_message!(channel, message)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:add_pinned_message/2"><code class="inline">add_pinned_message/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:add_pinned_message/2"><code class="inline">add_pinned_message/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:begin_guild_prune/2">begin_guild_prune(guild, opts)</a>
   </div>
-    <div class="summary-synopsis"><p>Prunes members in a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Prunes members in a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:begin_guild_prune!/2">begin_guild_prune!(guild, opts)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:begin_guild_prune/2"><code class="inline">begin_guild_prune/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:begin_guild_prune/2"><code class="inline">begin_guild_prune/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_channel_invite/2">create_channel_invite(channel, args)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates an invite to a channel, see <a href="Crux.Rest.html#t:create_channel_invite_data/0"><code class="inline">Crux.Rest.create_channel_invite_data/0</code></a> for available options</p>
-</div>
+    <div class="summary-synopsis"><p>  Creates an invite to a channel, see <a href="Crux.Rest.html#t:create_channel_invite_data/0"><code class="inline">Crux.Rest.create_channel_invite_data/0</code></a> for available options.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_channel_invite!/2">create_channel_invite!(channel, args)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_channel_invite/2"><code class="inline">create_channel_invite/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_channel_invite/2"><code class="inline">create_channel_invite/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_dm/1">create_dm(user)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates a new dm channel with a user</p>
-</div>
+    <div class="summary-synopsis"><p>  Creates a new dm channel with a user.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_dm!/1">create_dm!(user)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_dm/1"><code class="inline">create_dm/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_dm/1"><code class="inline">create_dm/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -391,393 +359,337 @@ Crux.Rest <small>behaviour</small>
   <div class="summary-signature">
     <a href="#c:create_guild!/1">create_guild!(term)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild/1"><code class="inline">create_guild/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild/1"><code class="inline">create_guild/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_ban/3">create_guild_ban(guild, user, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>Bans a user from a guild; The user does not have to be part of the guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Bans a user from a guild; The user does not have to be part of the guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_ban!/3">create_guild_ban!(guild, user, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_ban/3"><code class="inline">create_guild_ban/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_ban/3"><code class="inline">create_guild_ban/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_channel/2">create_guild_channel(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates a channel in a guild, see <a href="Crux.Rest.html#t:create_guild_channel_data/0"><code class="inline">Crux.Rest.create_guild_channel_data/0</code></a> for available options</p>
-</div>
+    <div class="summary-synopsis"><p>  Creates a channel in a guild, see <a href="Crux.Rest.html#t:create_guild_channel_data/0"><code class="inline">Crux.Rest.create_guild_channel_data/0</code></a> for available options.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_channel!/2">create_guild_channel!(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_channel/2"><code class="inline">create_guild_channel/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_channel/2"><code class="inline">create_guild_channel/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_emoji/2">create_guild_emoji(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates an emoji in a guild, see <a href="Crux.Rest.html#t:create_guild_emoji_data/0"><code class="inline">Crux.Rest.create_guild_emoji_data/0</code></a> for available options</p>
-</div>
+    <div class="summary-synopsis"><p>  Creates an emoji in a guild, see <a href="Crux.Rest.html#t:create_guild_emoji_data/0"><code class="inline">Crux.Rest.create_guild_emoji_data/0</code></a> for available options.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_emoji!/2">create_guild_emoji!(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_integration/2">create_guild_integration(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Attaches an integration from the current user to a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Attaches an integration from the current user to a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_integration!/2">create_guild_integration!(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_integration/2"><code class="inline">create_guild_integration/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_integration/2"><code class="inline">create_guild_integration/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_role/2">create_guild_role(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates a role in a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Creates a role in a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_guild_role!/2">create_guild_role!(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_role/2"><code class="inline">create_guild_role/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_guild_role/2"><code class="inline">create_guild_role/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_message/2">create_message(channel, args)</a>
   </div>
-    <div class="summary-synopsis"><p>Sends a message to a channel</p>
-</div>
+    <div class="summary-synopsis"><p>  Sends a message to a channel.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_message!/2">create_message!(channel, args)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_message/2"><code class="inline">create_message/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_message/2"><code class="inline">create_message/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_reaction/2">create_reaction(message, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates a reaction on a message, or increases its count by one</p>
-</div>
+    <div class="summary-synopsis"><p>Creates a reaction on a message, or increases its count by one.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_reaction/3">create_reaction(channel, message, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates a reaction on a message, or increases its count by one</p>
-</div>
+    <div class="summary-synopsis"><p>Creates a reaction on a message, or increases its count by one.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_reaction!/2">create_reaction!(message, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_reaction/2"><code class="inline">create_reaction/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_reaction/2"><code class="inline">create_reaction/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:create_reaction!/3">create_reaction!(channel, message, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:create_reaction/3"><code class="inline">create_reaction/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:create_reaction/3"><code class="inline">create_reaction/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_all_reactions/2">delete_all_reactions(message, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes all reactions from a message</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes all reactions from a message.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_all_reactions/3">delete_all_reactions(channel, message, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes all reactions from a message</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes all reactions from a message.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_all_reactions!/2">delete_all_reactions!(message, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_all_reactions/2"><code class="inline">delete_all_reactions/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_all_reactions/2"><code class="inline">delete_all_reactions/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_all_reactions!/3">delete_all_reactions!(channel, message, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_all_reactions/3"><code class="inline">delete_all_reactions/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_all_reactions/3"><code class="inline">delete_all_reactions/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_channel/2">delete_channel(channel, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes a channel</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes a channel.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_channel!/2">delete_channel!(channel, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_channel/2"><code class="inline">delete_channel/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_channel/2"><code class="inline">delete_channel/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_channel_permissions/3">delete_channel_permissions(channel, target, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes an overwrite from a channel</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes an overwrite from a channel.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_channel_permissions!/3">delete_channel_permissions!(channel, target, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_channel_permissions/3"><code class="inline">delete_channel_permissions/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_channel_permissions/3"><code class="inline">delete_channel_permissions/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_guild/1">delete_guild(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes a guild, can only be used if the executing user is the owner</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes a guild, can only be used if the executing user is the owner.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_guild!/1">delete_guild!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_guild/1"><code class="inline">delete_guild/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_guild/1"><code class="inline">delete_guild/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_guild_emoji/3">delete_guild_emoji(guild, emoji, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes an emoji from a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes an emoji from a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_guild_emoji!/3">delete_guild_emoji!(guild, emoji, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_guild_emoji/3"><code class="inline">delete_guild_emoji/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_guild_emoji/3"><code class="inline">delete_guild_emoji/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_guild_integration/2">delete_guild_integration(guild, integration_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes an integration from a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes an integration from a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_guild_integration!/2">delete_guild_integration!(guild, integration_id)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_guild_integration/2"><code class="inline">delete_guild_integration/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_guild_integration/2"><code class="inline">delete_guild_integration/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_guild_role/3">delete_guild_role(guild, role, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes a role in a guild</p>
-</div>
+    <div class="summary-synopsis"><p>Deletes a role in a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_guild_role!/3">delete_guild_role!(guild, role, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_guild_role/3"><code class="inline">delete_guild_role/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_guild_role/3"><code class="inline">delete_guild_role/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_invite/1">delete_invite(invite_or_code)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes an invite</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes an invite.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_invite!/1">delete_invite!(invite_or_code)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_invite/1"><code class="inline">delete_invite/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_invite/1"><code class="inline">delete_invite/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_message/1">delete_message(message)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes a message</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes a message</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_message/2">delete_message(channel_id, message_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes a message</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes a message</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_message!/1">delete_message!(message)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_message/1"><code class="inline">delete_message/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_message/1"><code class="inline">delete_message/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_message!/2">delete_message!(channel_id, message_id)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_message/2"><code class="inline">delete_message/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_message/2"><code class="inline">delete_message/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_messages/2">delete_messages(channel, messages)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes 2-100 messages not older than 14 days</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes 2-100 messages not older than 14 days.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_messages!/2">delete_messages!(channel, messages)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_messages/2"><code class="inline">delete_messages/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_messages/2"><code class="inline">delete_messages/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_pinned_message/1">delete_pinned_message(message)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes a message from the pinned messages. This does not delete the message itself</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes a message from the pinned messages. This does not delete the message itself.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_pinned_message/2">delete_pinned_message(channel, message)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes a message from the pinned messages. This does not delete the message itself</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes a message from the pinned messages. This does not delete the message itself.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_pinned_message!/1">delete_pinned_message!(message)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_pinned_message/1"><code class="inline">delete_pinned_message/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_pinned_message/1"><code class="inline">delete_pinned_message/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_pinned_message!/2">delete_pinned_message!(channel, message)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_pinned_message/2"><code class="inline">delete_pinned_message/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_pinned_message/2"><code class="inline">delete_pinned_message/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_reaction/4">delete_reaction(channel, message, emoji, user)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes a user from a reaction</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes a user from a reaction.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_reaction!/4">delete_reaction!(channel, message, emoji, user)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_reaction/4"><code class="inline">delete_reaction/4</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_reaction/4"><code class="inline">delete_reaction/4</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_webhook/2">delete_webhook(user, token)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes a webhook</p>
-</div>
+    <div class="summary-synopsis"><p>  Deletes a webhook</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:delete_webhook!/2">delete_webhook!(user, token)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:delete_webhook/2"><code class="inline">delete_webhook/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:delete_webhook/2"><code class="inline">delete_webhook/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:edit_channel_permissions/3">edit_channel_permissions(channel, target, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Edits or creates an overwrite for a user, or member</p>
-</div>
+    <div class="summary-synopsis"><p>Edits or creates an overwrite for a user, or member.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:edit_channel_permissions!/3">edit_channel_permissions!(channel, target, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:edit_channel_permissions/3"><code class="inline">edit_channel_permissions/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:edit_channel_permissions/3"><code class="inline">edit_channel_permissions/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:edit_message/2">edit_message(target, args)</a>
   </div>
-    <div class="summary-synopsis"><p>Edits a message</p>
-</div>
+    <div class="summary-synopsis"><p>Edits a message.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:edit_message/3">edit_message(channel_id, message_id, args)</a>
   </div>
-    <div class="summary-synopsis"><p>Edits a message</p>
-</div>
+    <div class="summary-synopsis"><p>Edits a message.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:edit_message!/2">edit_message!(target, args)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:edit_message/2"><code class="inline">edit_message/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:edit_message/2"><code class="inline">edit_message/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:edit_message!/3">edit_message!(channel_id, message_id, args)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:edit_message/3"><code class="inline">edit_message/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:edit_message/3"><code class="inline">edit_message/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:execute_github_webhook/3">execute_github_webhook(webhook, event, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Executes a github webhook</p>
-</div>
+    <div class="summary-synopsis"><p>  Executes a github webhook</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -793,22 +705,19 @@ Crux.Rest <small>behaviour</small>
   <div class="summary-signature">
     <a href="#c:execute_github_webhook!/4">execute_github_webhook!(webhook, event, wait, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:execute_github_webhook/4"><code class="inline">execute_github_webhook/4</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:execute_github_webhook/4"><code class="inline">execute_github_webhook/4</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:execute_github_webhook!/5">execute_github_webhook!(user, token, event, wait, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:execute_github_webhook/5"><code class="inline">execute_github_webhook/5</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:execute_github_webhook/5"><code class="inline">execute_github_webhook/5</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:execute_slack_webhook/2">execute_slack_webhook(webhook, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Executes a slack webhook</p>
-</div>
+    <div class="summary-synopsis"><p>  Executes a slack webhook</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -824,22 +733,19 @@ Crux.Rest <small>behaviour</small>
   <div class="summary-signature">
     <a href="#c:execute_slack_webhook!/3">execute_slack_webhook!(webhook, wait, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:execute_slack_webhook/3"><code class="inline">execute_slack_webhook/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:execute_slack_webhook/3"><code class="inline">execute_slack_webhook/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:execute_slack_webhook!/4">execute_slack_webhook!(user, token, wait, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:execute_slack_webhook/4"><code class="inline">execute_slack_webhook/4</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:execute_slack_webhook/4"><code class="inline">execute_slack_webhook/4</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:execute_webhook/2">execute_webhook(webhook, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Executes a webhook</p>
-</div>
+    <div class="summary-synopsis"><p>  Executes a webhook</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -855,337 +761,289 @@ Crux.Rest <small>behaviour</small>
   <div class="summary-signature">
     <a href="#c:execute_webhook!/3">execute_webhook!(webhook, wait, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:execute_webhook/3"><code class="inline">execute_webhook/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:execute_webhook/3"><code class="inline">execute_webhook/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:execute_webhook!/4">execute_webhook!(user, token, wait, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:execute_webhook/4"><code class="inline">execute_webhook/4</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:execute_webhook/4"><code class="inline">execute_webhook/4</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:gateway/0">gateway()</a>
   </div>
-    <div class="summary-synopsis"><p>Gets the gateway url from the api</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets the gateway url from the api.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:gateway!/0">gateway!()</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:gateway/0"><code class="inline">gateway/0</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:gateway/0"><code class="inline">gateway/0</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:gateway_bot/0">gateway_bot()</a>
   </div>
-    <div class="summary-synopsis"><p>Gets the gateway url along a recommended shards count from the api</p>
-</div>
+    <div class="summary-synopsis"><p>   Gets the gateway url along a recommended shards count from the api.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:gateway_bot!/0">gateway_bot!()</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:gateway_bot/0"><code class="inline">gateway_bot/0</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:gateway_bot/0"><code class="inline">gateway_bot/0</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_audit_logs/2">get_audit_logs(guild, options)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets the audit logs for a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets the audit logs for a guild</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_audit_logs!/2">get_audit_logs!(guild, options)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_channel/1">get_channel(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a channel from the api.<br/>  This should <em>NOT</em> be necessary</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a channel from the api.<br>  This should <em>NOT</em> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_channel!/1">get_channel!(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_channel/1"><code class="inline">get_channel/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_channel/1"><code class="inline">get_channel/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_channel_invites/1">get_channel_invites(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets invites for the specified channel from the api</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets invites for the specified channel from the api.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_channel_invites!/1">get_channel_invites!(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_channel_invites/1"><code class="inline">get_channel_invites/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_channel_invites/1"><code class="inline">get_channel_invites/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_current_user_guilds/1">get_current_user_guilds(data)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a list of partial <code class="inline">Crux.Structs.Guilds</code> the current user is a member of</p>
-</div>
+    <div class="summary-synopsis"><p>Gets a list of partial <code class="inline">Crux.Structs.Guilds</code> the current user is a member of.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_current_user_guilds!/1">get_current_user_guilds!(data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_current_user_guilds/1"><code class="inline">get_current_user_guilds/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_current_user_guilds/1"><code class="inline">get_current_user_guilds/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild/1">get_guild(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a guild from the api.<br/>  This should usually, due to cache, <strong>NOT</strong> be necessary</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a guild from the api.<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild!/1">get_guild!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild/1"><code class="inline">get_guild/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild/1"><code class="inline">get_guild/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_ban/2">get_guild_ban(guild, user)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a single ban entry by id</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a single ban entry by id.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_ban!/2">get_guild_ban!(guild, user)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_ban/2"><code class="inline">get_guild_ban/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_ban/2"><code class="inline">get_guild_ban/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_bans/1">get_guild_bans(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a map of banned users along their ban reasons</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a map of banned users along their ban reasons.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_bans!/1">get_guild_bans!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_bans/1"><code class="inline">get_guild_bans/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_bans/1"><code class="inline">get_guild_bans/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_channels/1">get_guild_channels(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets all channels from a guild via the api.<br/>  This should usually, due to caching, <strong>NOT</strong> be necessary</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets all channels from a guild via the api.<br>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_channels!/1">get_guild_channels!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_channels/1"><code class="inline">get_guild_channels/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_channels/1"><code class="inline">get_guild_channels/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_embed/1">get_guild_embed(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a guild&#39;s embed (server widget)</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a guild&#39;s embed (server widget).</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_embed!/1">get_guild_embed!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_embed/1"><code class="inline">get_guild_embed/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_embed/1"><code class="inline">get_guild_embed/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_emoji/2">get_guild_emoji(guild, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets an emoji from a guild<br/>  This should usually, due to cache, <strong>NOT</strong> be necessary</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets an emoji from a guild<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_emoji!/2">get_guild_emoji!(guild, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_emoji/2"><code class="inline">get_guild_emoji/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_emoji/2"><code class="inline">get_guild_emoji/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_integrations/1">get_guild_integrations(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a list of guild integrations</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a list of guild integrations.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_integrations!/1">get_guild_integrations!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_integrations/1"><code class="inline">get_guild_integrations/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_integrations/1"><code class="inline">get_guild_integrations/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_invites/1">get_guild_invites(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets all available invites in a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets all available invites in a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_invites!/1">get_guild_invites!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_invites/1"><code class="inline">get_guild_invites/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_invites/1"><code class="inline">get_guild_invites/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_member/2">get_guild_member(guild, user)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a member from the api</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a member from the api.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_member!/2">get_guild_member!(guild, user)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_member/2"><code class="inline">get_guild_member/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_member/2"><code class="inline">get_guild_member/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_prune_count/2">get_guild_prune_count(guild, days)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets the number of members in a guild that would be removed when pruned</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets the number of members in a guild that would be removed when pruned.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_prune_count!/2">get_guild_prune_count!(guild, days)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_prune_count/2"><code class="inline">get_guild_prune_count/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_prune_count/2"><code class="inline">get_guild_prune_count/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_roles/1">get_guild_roles(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a list of roles in a guild.<br/>  This should usually, due to caching, <strong>NOT</strong> be necessary</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a list of roles in a guild.<br>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_roles!/1">get_guild_roles!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_roles/1"><code class="inline">get_guild_roles/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_roles/1"><code class="inline">get_guild_roles/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_vanity_url/1">get_guild_vanity_url(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets the vanity url of a guild, if any</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets the vanity url of a guild, if any</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_vanity_url!/1">get_guild_vanity_url!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_vanity_url/1"><code class="inline">get_guild_vanity_url/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_vanity_url/1"><code class="inline">get_guild_vanity_url/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_voice_regions/1">get_guild_voice_regions(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a list of voice regions for a guild. Returns VIP servers when the guild is VIP-enabled</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a list of voice regions for a guild. Returns VIP servers when the guild is VIP-enabled.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_voice_regions!/1">get_guild_voice_regions!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_voice_regions/1"><code class="inline">get_guild_voice_regions/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_voice_regions/1"><code class="inline">get_guild_voice_regions/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_invite/1">get_invite(code)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets an invite from the api</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets an invite from the api.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_invite!/1">get_invite!(code)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_invite/1"><code class="inline">get_invite/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_invite/1"><code class="inline">get_invite/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_message/2">get_message(channel, message_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a message from the api</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a message from the api.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_message!/2">get_message!(channel, message_id)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_message/2"><code class="inline">get_message/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_message/2"><code class="inline">get_message/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_messages/2">get_messages(channel, args)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets 1-100 messages from the api, this limit is enforced on discord&#39;s end</p>
-</div>
+    <div class="summary-synopsis"><p>Gets 1-100 messages from the api, this limit is enforced on discord&#39;s end.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_messages!/2">get_messages!(channel, args)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_messages/2"><code class="inline">get_messages/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_messages/2"><code class="inline">get_messages/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_pinned_messages/1">get_pinned_messages(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a list of pinned messages from the api</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a list of pinned messages from the api.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_pinned_messages!/1">get_pinned_messages!(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_pinned_messages/1"><code class="inline">get_pinned_messages/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_pinned_messages/1"><code class="inline">get_pinned_messages/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -1196,344 +1054,295 @@ Crux.Rest <small>behaviour</small>
   <div class="summary-signature">
     <a href="#c:get_reactions/4">get_reactions(channel, message, emoji, args)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets users who reacted to a message</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets users who reacted to a message.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_reactions!/3">get_reactions!(message, emoji, args)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_reactions/3"><code class="inline">get_reactions/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_reactions/3"><code class="inline">get_reactions/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_reactions!/4">get_reactions!(channel, message, emoji, args)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_reactions/4"><code class="inline">get_reactions/4</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_reactions/4"><code class="inline">get_reactions/4</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_user/1">get_user(user)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a user from the api</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a user from the api.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_user!/1">get_user!(user)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_user/1"><code class="inline">get_user/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_user/1"><code class="inline">get_user/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_webhook/2">get_webhook(user, token)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a webhook</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a webhook</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_webhook!/2">get_webhook!(user, token)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:get_webhook/2"><code class="inline">get_webhook/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_webhook/2"><code class="inline">get_webhook/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:leave_guild/1">leave_guild(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Leaves a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Leaves a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:leave_guild!/1">leave_guild!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:leave_guild/1"><code class="inline">leave_guild/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:leave_guild/1"><code class="inline">leave_guild/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:list_channel_webhooks/1">list_channel_webhooks(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a channel&#39;s webhook list</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a channel&#39;s webhook list</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:list_channel_webhooks!/1">list_channel_webhooks!(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:list_channel_webhooks/1"><code class="inline">list_channel_webhooks/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:list_channel_webhooks/1"><code class="inline">list_channel_webhooks/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:list_guild_emojis/1">list_guild_emojis(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a list of emojis in a guild.<br/>  This should usually, due to cache, <strong>NOT</strong> be necessary</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a list of emojis in a guild.<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:list_guild_emojis!/1">list_guild_emojis!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:list_guild_emojis/1"><code class="inline">list_guild_emojis/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:list_guild_emojis/1"><code class="inline">list_guild_emojis/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:list_guild_members/2">list_guild_members(guild, options)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a list of members from the guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a list of members from the guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:list_guild_members!/2">list_guild_members!(guild, options)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:list_guild_members/2"><code class="inline">list_guild_members/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:list_guild_members/2"><code class="inline">list_guild_members/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:list_guild_webhooks/1">list_guild_webhooks(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>Gets a guild&#39;s webhook list</p>
-</div>
+    <div class="summary-synopsis"><p>  Gets a guild&#39;s webhook list</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:list_guild_webhooks!/1">list_guild_webhooks!(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:list_guild_webhooks/1"><code class="inline">list_guild_webhooks/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:list_guild_webhooks/1"><code class="inline">list_guild_webhooks/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_channel/2">modify_channel(channel, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifies a channel, see <a href="Crux.Rest.html#t:modify_channel_data/0"><code class="inline">Crux.Rest.modify_channel_data/0</code></a> for available options</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifies a channel, see <a href="Crux.Rest.html#t:modify_channel_data/0"><code class="inline">Crux.Rest.modify_channel_data/0</code></a> for available options.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_channel!/2">modify_channel!(channel, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_channel/2"><code class="inline">modify_channel/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_channel/2"><code class="inline">modify_channel/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_current_user/1">modify_current_user(data)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifes the currently logged in user</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifes the currently logged in user.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_current_user!/1">modify_current_user!(data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_current_user/1"><code class="inline">modify_current_user/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_current_user/1"><code class="inline">modify_current_user/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_current_users_nick/3">modify_current_users_nick(guild, nick, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifies the nickname of the current user in a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifies the nickname of the current user in a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_current_users_nick!/3">modify_current_users_nick!(guild, nick, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_current_users_nick/3"><code class="inline">modify_current_users_nick/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_current_users_nick/3"><code class="inline">modify_current_users_nick/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild/2">modify_guild(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Updates a guild, see <a href="Crux.Rest.html#t:modify_guild_data/0"><code class="inline">Crux.Rest.modify_guild_data/0</code></a> for available options</p>
-</div>
+    <div class="summary-synopsis"><p>  Updates a guild, see <a href="Crux.Rest.html#t:modify_guild_data/0"><code class="inline">Crux.Rest.modify_guild_data/0</code></a> for available options.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild!/2">modify_guild!(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild/2"><code class="inline">modify_guild/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild/2"><code class="inline">modify_guild/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_channel_positions/2">modify_guild_channel_positions(guild, channels)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifyies the position of a list of channels in a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifyies the position of a list of channels in a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_channel_positions!/2">modify_guild_channel_positions!(guild, channels)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_channel_positions/2"><code class="inline">modify_guild_channel_positions/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_channel_positions/2"><code class="inline">modify_guild_channel_positions/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_embed/2">modify_guild_embed(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifies a guild&#39;s embed (server widget)</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifies a guild&#39;s embed (server widget).</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_embed!/2">modify_guild_embed!(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_embed/2"><code class="inline">modify_guild_embed/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_embed/2"><code class="inline">modify_guild_embed/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_emoji/3">modify_guild_emoji(guild, emoji, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifies a guild emoji</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifies a guild emoji.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_emoji!/3">modify_guild_emoji!(guild, emoji, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_emoji/3"><code class="inline">modify_guild_emoji/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_emoji/3"><code class="inline">modify_guild_emoji/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_integration/3">modify_guild_integration(guild, integration_id, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifies an integreation for a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifies an integreation for a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_integration!/3">modify_guild_integration!(guild, integration_id, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_integration/3"><code class="inline">modify_guild_integration/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_integration/3"><code class="inline">modify_guild_integration/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_member/3">modify_guild_member(guild, member, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifies a member in a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifies a member in a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_member!/3">modify_guild_member!(guild, member, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_member/3"><code class="inline">modify_guild_member/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_member/3"><code class="inline">modify_guild_member/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_role/3">modify_guild_role(guild, role, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifies a role in a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifies a role in a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_role!/3">modify_guild_role!(guild, role, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_role/3"><code class="inline">modify_guild_role/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_role/3"><code class="inline">modify_guild_role/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_role_positions/2">modify_guild_role_positions(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Modifies the positions of a list of role objects for a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Modifies the positions of a list of role objects for a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:modify_guild_role_positions!/2">modify_guild_role_positions!(guild, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_role_positions/2"><code class="inline">modify_guild_role_positions/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:modify_guild_role_positions/2"><code class="inline">modify_guild_role_positions/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:remove_guild_ban/3">remove_guild_ban(guild, user, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>Removes a ban for a user from a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Removes a ban for a user from a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:remove_guild_ban!/3">remove_guild_ban!(guild, user, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:remove_guild_ban/3"><code class="inline">remove_guild_ban/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:remove_guild_ban/3"><code class="inline">remove_guild_ban/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:remove_guild_member_role/4">remove_guild_member_role(guild, member, role, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>Removes a role from a member</p>
-</div>
+    <div class="summary-synopsis"><p>  Removes a role from a member.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:remove_guild_member_role!/4">remove_guild_member_role!(guild, member, role, reason)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:remove_guild_member_role/4"><code class="inline">remove_guild_member_role/4</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:remove_guild_member_role/4"><code class="inline">remove_guild_member_role/4</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:sync_guild_integration/2">sync_guild_integration(guild, integration_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Syncs an integration for a guild</p>
-</div>
+    <div class="summary-synopsis"><p>  Syncs an integration for a guild.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:sync_guild_integration!/2">sync_guild_integration!(guild, integration_id)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:sync_guild_integration/2"><code class="inline">sync_guild_integration/2</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:sync_guild_integration/2"><code class="inline">sync_guild_integration/2</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:trigger_typing/1">trigger_typing(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br/>  Should generally be used sparingly for commands that may take a while as a form of acknowledging</p>
-</div>
+    <div class="summary-synopsis"><p>  Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br>  Should generally be used sparingly for commands that may take a while as a form of acknowledging.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:trigger_typing!/1">trigger_typing!(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:trigger_typing/1"><code class="inline">trigger_typing/1</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:trigger_typing/1"><code class="inline">trigger_typing/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:update_webhook/3">update_webhook(user, token, data)</a>
   </div>
-    <div class="summary-synopsis"><p>Updates a webhook</p>
-</div>
+    <div class="summary-synopsis"><p>  Updates a webhook</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:update_webhook!/3">update_webhook!(user, token, data)</a>
   </div>
-    <div class="summary-synopsis"><p>The same as <a href="#c:update_webhook/3"><code class="inline">update_webhook/3</code></a>, but raises an exception if it fails</p>
-</div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:update_webhook/3"><code class="inline">update_webhook/3</code></a>, but raises an exception if it fails.</p></div>
 </div>
   </div>
         </section>
@@ -1615,7 +1424,7 @@ Types          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Used to filter audit log results via <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>.<br/>  The <code class="inline">:user_id</code> field refers to the executor and not the target of the log.</p>
+<p>  Used to filter audit log results via <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>.<br>  The <code class="inline">:user_id</code> field refers to the executor and not the target of the log.</p>
   </section>
 </section>
 <section class="detail" id="t:begin_guild_prune_opts/0">
@@ -1790,7 +1599,7 @@ Types          </h1>
 <p>  Used to create emojis via <a href="#c:create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a>.</p>
 <p>  Notes:</p>
 <ul>
-<li><code class="inline">:name</code> has to be [1-32] chars long, valid chars are [a-Z<em>0-9] (invalid chars may get filtered out instead of erroring).<br/>  A 1 char long name gets suffixed with `</em>` to be 2 chars long.
+<li><code class="inline">:name</code> has to be [1-32] chars long, valid chars are [a-Z<em>0-9] (invalid chars may get filtered out instead of erroring).<br>  A 1 char long name gets suffixed with `</em>` to be 2 chars long.
 </li>
 <li><code class="inline">:image</code> may not be larger than 256kb
 </li>
@@ -1833,7 +1642,7 @@ Types          </h1>
   </div>
   <section class="docstring">
 <p>  Used to send messages via <a href="#c:create_message/2"><code class="inline">create_message/2</code></a>.</p>
-<p>  The content my not exceed 2000 chars.<br/>  The nonce has to fit in a 64 bit integer.<br/>  The whole message payload may not be larger than 8mb, this should only be possible when attaching (a) large file(s).</p>
+<p>  The content my not exceed 2000 chars.<br>  The nonce has to fit in a 64 bit integer.<br>  The whole message payload may not be larger than 8mb, this should only be possible when attaching (a) large file(s).</p>
   </section>
 </section>
 <section class="detail" id="t:edit_channel_permissions_data/0">
@@ -1938,7 +1747,7 @@ Types          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Used for sending discord webhooks. For more information on non-discord webhooks, check<br/>  <a href="https://api.slack.com/custom-integrations/outgoing-webhooks">Slack Docs</a> or<br/>  <a href="https://developer.github.com/webhooks/">Github Docs</a></p>
+<p>  Used for sending discord webhooks. For more information on non-discord webhooks, check<br>  <a href="https://api.slack.com/custom-integrations/outgoing-webhooks">Slack Docs</a> or<br>  <a href="https://developer.github.com/webhooks/">Github Docs</a></p>
   </section>
 </section>
 <section class="detail" id="t:get_current_user_guild_data/0">
@@ -2652,7 +2461,7 @@ Callbacks          </h1>
   </div>
   <section class="docstring">
 <p>  Adds a message to the pinned messages of a channel.</p>
-<p>  You may only have up to 50 pinned messages per channel.<br/>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
+<p>  You may only have up to 50 pinned messages per channel.<br>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
   </section>
 </section>
 <section class="detail" id="c:add_pinned_message/2">
@@ -2678,7 +2487,7 @@ Callbacks          </h1>
   </div>
   <section class="docstring">
 <p>  Adds a message to the pinned messages of a channel.</p>
-<p>  You may only have up to 50 pinned messages per channel.<br/>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
+<p>  You may only have up to 50 pinned messages per channel.<br>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
   </section>
 </section>
 <section class="detail" id="c:add_pinned_message!/1">
@@ -4942,7 +4751,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets a channel from the api.<br/>  This should <em>NOT</em> be necessary.</p>
+<p>  Gets a channel from the api.<br>  This should <em>NOT</em> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#get-channel">Discord Docs</a></p>
   </section>
 </section>
@@ -5089,7 +4898,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets a guild from the api.<br/>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
+<p>  Gets a guild from the api.<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild">Discord Docs</a></p>
   </section>
 </section>
@@ -5255,7 +5064,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets all channels from a guild via the api.<br/>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p>
+<p>  Gets all channels from a guild via the api.<br>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-channels">Discord Docs</a>-</p>
   </section>
 </section>
@@ -5357,7 +5166,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets an emoji from a guild<br/>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
+<p>  Gets an emoji from a guild<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#get-guild-emoji">Discord Docs</a>.</p>
   </section>
 </section>
@@ -5615,7 +5424,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets a list of roles in a guild.<br/>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p>
+<p>  Gets a list of roles in a guild.<br>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-roles">Discord Docs</a>.</p>
   </section>
 </section>
@@ -6275,7 +6084,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets a list of emojis in a guild.<br/>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
+<p>  Gets a list of emojis in a guild.<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#list-guild-emojis">Discord Docs</a>.</p>
   </section>
 </section>
@@ -6532,7 +6341,7 @@ Callbacks          </h1>
   </div>
   <section class="docstring">
 <p>  Modifies the nickname of the current user in a guild.</p>
-<p>  Yes, you read correctly, that has its own endpoint.<br/>  Great, isn&#39;t it?</p>
+<p>  Yes, you read correctly, that has its own endpoint.<br>  Great, isn&#39;t it?</p>
 <p>  For more informations, but not an answer to the question why, see <a href="https://discordapp.com/developers/docs/resources/guild#modify-current-user-nick">Discord Docs</a>.</p>
   </section>
 </section>
@@ -7213,7 +7022,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br/>  Should generally be used sparingly for commands that may take a while as a form of acknowledging.</p>
+<p>  Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br>  Should generally be used sparingly for commands that may take a while as a form of acknowledging.</p>
 <p>  Consider sending a message and edit that later on instead.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#trigger-typing-indicator">Discord Docs</a>.</p>
   </section>
@@ -7324,12 +7133,20 @@ Callbacks          </h1>
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.20.1),
           </span>
           <span class="line">
             designed by
             <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
-            </span>
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
         </p>
       </footer>
     </div>

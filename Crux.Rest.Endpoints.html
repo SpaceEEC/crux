@@ -4,24 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.19.3">
+    <meta name="generator" content="ExDoc v0.20.1">
+    <meta name="project" content="Crux vdev">
     <title>Crux.Rest.Endpoints — Crux vdev</title>
-    <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
-    <script src="dist/sidebar_items-45467cebcb.js"></script>
-      <script src="config.js"></script>
-    <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
+    <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
+    <script src="dist/sidebar_items-6beddf297b.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
     
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
     <div class="main">
+
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
 </button>
-<button class="sidebar-button night-mode-toggle">
-  <span class="icon-theme" title="Toggle night/day mode"></span>
-</button>
+
 <section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
 
   <div class="sidebar-header">
     <div class="sidebar-projectDetails">
@@ -32,13 +48,6 @@ Crux      </a>
       </h2>
     </div>
   </div>
-
-  <form class="sidebar-search" action="search.html">
-    <button type="submit" class="search-button">
-      <span class="icon-search" aria-hidden="true"></span>
-    </button>
-    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
-  </form>
 
   <ul class="sidebar-listNav">
     <li><a id="extras-list" href="#full-list">Pages</a></li>
@@ -59,7 +68,7 @@ Crux      </a>
 
 
       <h1>
-        <small class="visible-xs">Crux vdev</small>
+        <small class="app-vsn">Crux vdev</small>
 Crux.Rest.Endpoints        
           <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/endpoints.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
@@ -88,246 +97,211 @@ Crux.Rest.Endpoints
   <div class="summary-signature">
     <a href="#base_url/0">base_url()</a>
   </div>
-    <div class="summary-synopsis"><p>Base API address</p>
-</div>
+    <div class="summary-synopsis"><p>  Base API address.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel/2">channel(channel_id, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for channel related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for channel related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_invites/1">channel_invites(channel_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for channel invites</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for channel invites.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_messages/2">channel_messages(channel_id, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for channel messages related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for channel messages related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_messages_bulk_delete/1">channel_messages_bulk_delete(channel_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for message deletion functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for message deletion functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_permissions/2">channel_permissions(channel_id, target_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for channel permissions related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for channel permissions related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_pins/2">channel_pins(channel_id, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for pin related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for pin related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_typing/1">channel_typing(channel_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for channel typing</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for channel typing.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#channel_webhooks/1">channel_webhooks(channel_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used to fetch channel webhooks</p>
-</div>
+    <div class="summary-synopsis"><p>  Used to fetch channel webhooks.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#gateway/0">gateway()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to obtain the gateway address</p>
-</div>
+    <div class="summary-synopsis"><p>  Used to obtain the gateway address.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#gateway_bot/0">gateway_bot()</a>
   </div>
-    <div class="summary-synopsis"><p>Used to obtain the gateway address along the recommended shard count</p>
-</div>
+    <div class="summary-synopsis"><p>  Used to obtain the gateway address along the recommended shard count.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild/2">guild(guild_id \\ nil, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for guild related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for guild related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_audit_logs/1">guild_audit_logs(guild_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for guild audit logs fetching</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for guild audit logs fetching.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_bans/2">guild_bans(guild_id, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for ban related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for ban related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_channels/1">guild_channels(guild_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for guild channel functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for guild channel functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_embed/1">guild_embed(guild_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for guild embed functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for guild embed functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_emojis/2">guild_emojis(guild_id, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for guild emoji related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for guild emoji related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_integrations/2">guild_integrations(guild_id, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for integration related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for integration related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_invites/1">guild_invites(guild_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for guild invites functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for guild invites functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_member_roles/3">guild_member_roles(guild_id, member_id, role_id \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for role related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for role related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_members/2">guild_members(guild_id, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for guild members related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for guild members related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_own_nick/1">guild_own_nick(guild_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Discord being special</p>
-</div>
+    <div class="summary-synopsis"><p>Discord being special.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_prune/1">guild_prune(guild_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for guild prune functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for guild prune functions</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_regions/1">guild_regions(guild_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for guild region functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for guild region functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_roles/2">guild_roles(guild_id, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for role related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for role related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#guild_webhooks/1">guild_webhooks(guild_id)</a>
   </div>
-    <div class="summary-synopsis"><p>Used to fetch guild webhooks</p>
-</div>
+    <div class="summary-synopsis"><p>  Used to fetch guild webhooks.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#invite/1">invite(code \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for invite related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for invite related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#me/1">me(suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for functions related to the current user</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for functions related to the current user.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#me_channels/0">me_channels()</a>
   </div>
-    <div class="summary-synopsis"><p>Used for dm channel functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for dm channel functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#me_guilds/1">me_guilds(suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for functions related to the current user&#39;s guilds</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for functions related to the current user&#39;s guilds.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#message_reactions/4">message_reactions(channel_id, message_id, emoji, suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for reactions related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for reactions related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#users/1">users(suffix \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for functions related to users</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for functions related to users.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#webhook/2">webhook(webhook_id, token \\ nil)</a>
   </div>
-    <div class="summary-synopsis"><p>Used for webhook related functions</p>
-</div>
+    <div class="summary-synopsis"><p>  Used for webhook related functions.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#webhook_github/2">webhook_github(webhook_id, token)</a>
   </div>
-    <div class="summary-synopsis"><p>Used to send github formatted webhooks</p>
-</div>
+    <div class="summary-synopsis"><p>  Used to send github formatted webhooks.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#webhook_slack/2">webhook_slack(webhook_id, token)</a>
   </div>
-    <div class="summary-synopsis"><p>Used to send slack formatted webhooks</p>
-</div>
+    <div class="summary-synopsis"><p>  Used to send slack formatted webhooks.</p></div>
 </div>
   </div>
         </section>
@@ -1178,12 +1152,20 @@ Functions          </h1>
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.20.1),
           </span>
           <span class="line">
             designed by
             <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
-            </span>
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
         </p>
       </footer>
     </div>

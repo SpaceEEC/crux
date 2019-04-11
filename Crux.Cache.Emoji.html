@@ -4,24 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.19.3">
+    <meta name="generator" content="ExDoc v0.20.1">
+    <meta name="project" content="Crux vdev">
     <title>Crux.Cache.Emoji — Crux vdev</title>
-    <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
-    <script src="dist/sidebar_items-45467cebcb.js"></script>
-      <script src="config.js"></script>
-    <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
+    <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
+    <script src="dist/sidebar_items-6beddf297b.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
     
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
     <div class="main">
+
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
 </button>
-<button class="sidebar-button night-mode-toggle">
-  <span class="icon-theme" title="Toggle night/day mode"></span>
-</button>
+
 <section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
 
   <div class="sidebar-header">
     <div class="sidebar-projectDetails">
@@ -32,13 +48,6 @@ Crux      </a>
       </h2>
     </div>
   </div>
-
-  <form class="sidebar-search" action="search.html">
-    <button type="submit" class="search-button">
-      <span class="icon-search" aria-hidden="true"></span>
-    </button>
-    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
-  </form>
 
   <ul class="sidebar-listNav">
     <li><a id="extras-list" href="#full-list">Pages</a></li>
@@ -59,7 +68,7 @@ Crux      </a>
 
 
       <h1>
-        <small class="visible-xs">Crux vdev</small>
+        <small class="app-vsn">Crux vdev</small>
 Crux.Cache.Emoji        
           <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/emoji.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
@@ -88,50 +97,43 @@ Crux.Cache.Emoji
   <div class="summary-signature">
     <a href="#child_spec/1">child_spec(arg)</a>
   </div>
-    <div class="summary-synopsis"><p>Returns a specification to start this module under a supervisor</p>
-</div>
+    <div class="summary-synopsis"><p>Returns a specification to start this module under a supervisor.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#delete/1">delete(id)</a>
   </div>
-    <div class="summary-synopsis"><p>Deletes data from the cache by key</p>
-</div>
+    <div class="summary-synopsis"><p>Deletes data from the cache by key.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#fetch/1">fetch(id)</a>
   </div>
-    <div class="summary-synopsis"><p>Fetches data from the cache by key</p>
-</div>
+    <div class="summary-synopsis"><p>Fetches data from the cache by key.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#fetch!/1">fetch!(id)</a>
   </div>
-    <div class="summary-synopsis"><p>Fetches data from the cache by key, raises if not found</p>
-</div>
+    <div class="summary-synopsis"><p>Fetches data from the cache by key, raises if not found.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#insert/1">insert(data)</a>
   </div>
-    <div class="summary-synopsis"><p>Inserts data into the cache</p>
-</div>
+    <div class="summary-synopsis"><p>Inserts data into the cache.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#start_link/1">start_link(args \\ [])</a>
   </div>
-    <div class="summary-synopsis"><p>Used to start anything fitting under a supervision tree, like for example a <a href="https://hexdocs.pm/elixir/GenServer.html"><code class="inline">GenServer</code></a>, instructed with handling the cache</p>
-</div>
+    <div class="summary-synopsis"><p>Used to start anything fitting under a supervision tree, like for example a <a href="https://hexdocs.pm/elixir/GenServer.html"><code class="inline">GenServer</code></a>, instructed with handling the cache.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#update/1">update(data)</a>
   </div>
-    <div class="summary-synopsis"><p>Inserts data into the cache</p>
-</div>
+    <div class="summary-synopsis"><p>Inserts data into the cache.</p></div>
 </div>
   </div>
         </section>
@@ -246,8 +248,8 @@ Functions          </h1>
 <p>For example something like that:</p>
 <pre><code class="nohighlight makeup elixir"><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w">
   </span><span class="n">raw_data</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="3394421790-1">(</span><span class="p" data-group-id="3394421790-1">)</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="3394421790-2">(</span><span class="ss">:id</span><span class="p" data-group-id="3394421790-2">)</span></code></pre>
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="3104045618-1">(</span><span class="p" data-group-id="3104045618-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="3104045618-2">(</span><span class="ss">:id</span><span class="p" data-group-id="3104045618-2">)</span></code></pre>
 <p>Callback implementation for <a href="Crux.Cache.html#c:insert/1"><code class="inline">Crux.Cache.insert/1</code></a>.</p>
   </section>
 </section>
@@ -293,11 +295,11 @@ Functions          </h1>
   </div>
   <section class="docstring">
 <p>Inserts data into the cache.</p>
-<p>Returns &quot;updated&quot; data including changes by merging.<br/>For example from a message embed update to a full message object</p>
+<p>Returns &quot;updated&quot; data including changes by merging.<br>For example from a message embed update to a full message object</p>
 <pre><code class="nohighlight makeup elixir"><span class="n">content</span><span class="w"> </span><span class="o">=</span><span class="w">
   </span><span class="n">partial_message</span><span class="w"> </span><span class="c1"># only contains `:id`, `:channel_id`, and `:embeds`</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">update</span><span class="p" data-group-id="6000206114-1">(</span><span class="p" data-group-id="6000206114-1">)</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="6000206114-2">(</span><span class="ss">:content</span><span class="p" data-group-id="6000206114-2">)</span><span class="w"> </span><span class="c1"># present if the message was cached previously</span></code></pre>
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">update</span><span class="p" data-group-id="9316961734-1">(</span><span class="p" data-group-id="9316961734-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="9316961734-2">(</span><span class="ss">:content</span><span class="p" data-group-id="9316961734-2">)</span><span class="w"> </span><span class="c1"># present if the message was cached previously</span></code></pre>
 <p>Callback implementation for <a href="Crux.Cache.html#c:update/1"><code class="inline">Crux.Cache.update/1</code></a>.</p>
   </section>
 </section>
@@ -307,12 +309,20 @@ Functions          </h1>
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.20.1),
           </span>
           <span class="line">
             designed by
             <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
-            </span>
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
         </p>
       </footer>
     </div>

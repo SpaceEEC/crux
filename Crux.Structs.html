@@ -4,24 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.19.3">
+    <meta name="generator" content="ExDoc v0.20.1">
+    <meta name="project" content="Crux vdev">
     <title>Crux.Structs — Crux vdev</title>
-    <link rel="stylesheet" href="dist/html-17f11fce3c17ca7c2e4e.css" />
-    <script src="dist/sidebar_items-45467cebcb.js"></script>
-      <script src="config.js"></script>
-    <script async src="dist/html-17f11fce3c17ca7c2e4e.js"></script>
+    <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
+    <script src="dist/sidebar_items-6beddf297b.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
     
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
     <div class="main">
+
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
 </button>
-<button class="sidebar-button night-mode-toggle">
-  <span class="icon-theme" title="Toggle night/day mode"></span>
-</button>
+
 <section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
 
   <div class="sidebar-header">
     <div class="sidebar-projectDetails">
@@ -32,13 +48,6 @@ Crux      </a>
       </h2>
     </div>
   </div>
-
-  <form class="sidebar-search" action="search.html">
-    <button type="submit" class="search-button">
-      <span class="icon-search" aria-hidden="true"></span>
-    </button>
-    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
-  </form>
 
   <ul class="sidebar-listNav">
     <li><a id="extras-list" href="#full-list">Pages</a></li>
@@ -59,7 +68,7 @@ Crux      </a>
 
 
       <h1>
-        <small class="visible-xs">Crux vdev</small>
+        <small class="app-vsn">Crux vdev</small>
 Crux.Structs <small>behaviour</small>        
           <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
@@ -88,8 +97,7 @@ Crux.Structs <small>behaviour</small>
   <div class="summary-signature">
     <a href="#create/2">create(data, target)</a>
   </div>
-    <div class="summary-synopsis"><p>Creates a struct or a list of structs invoking their <code class="inline">create/1</code> function if available</p>
-</div>
+    <div class="summary-synopsis"><p>  Creates a struct or a list of structs invoking their <code class="inline">create/1</code> function if available.</p></div>
 </div>
   </div>
   <div class="summary-callbacks summary">
@@ -100,8 +108,7 @@ Crux.Structs <small>behaviour</small>
   <div class="summary-signature">
     <a href="#c:create/1">create(data)</a>
   </div>
-    <div class="summary-synopsis"><p>Can be implemented by structs to transform the inital data</p>
-</div>
+    <div class="summary-synopsis"><p>  Can be implemented by structs to transform the inital data.</p></div>
 </div>
   </div>
         </section>
@@ -141,50 +148,50 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A single member</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="8786214160-1">%{</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1777036460-1">%{</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="s">&quot;nick&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;nick&quot;</span><span class="p">,</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="s">&quot;user&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="p" data-group-id="8786214160-2">%{</span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;discriminator&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;id&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;218348062828003328&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;avatar&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;646a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="8786214160-2">}</span><span class="p">,</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="s">&quot;roles&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="p" data-group-id="8786214160-3">[</span><span class="s">&quot;251158405832638465&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;373405430589816834&quot;</span><span class="p" data-group-id="8786214160-3">]</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="s">&quot;user&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="p" data-group-id="1777036460-2">%{</span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;discriminator&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;id&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;218348062828003328&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;avatar&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;646a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="1777036460-2">}</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="s">&quot;roles&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="p" data-group-id="1777036460-3">[</span><span class="s">&quot;251158405832638465&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;373405430589816834&quot;</span><span class="p" data-group-id="1777036460-3">]</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="s">&quot;mute&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="s">&quot;deaf&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="s">&quot;joined_at&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;2016-11-02T00:51:21.342000+00:00&quot;</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="p" data-group-id="8786214160-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="8786214160-4">(</span><span class="nc">Crux.Structs.Member</span><span class="p" data-group-id="8786214160-4">)</span><span class="w">
-</span><span class="p" data-group-id="8786214160-5">%</span><span class="nc" data-group-id="8786214160-5">Crux.Structs.Member</span><span class="p" data-group-id="8786214160-5">{</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="p" data-group-id="1777036460-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="1777036460-4">(</span><span class="nc">Crux.Structs.Member</span><span class="p" data-group-id="1777036460-4">)</span><span class="w">
+</span><span class="p" data-group-id="1777036460-5">%</span><span class="nc" data-group-id="1777036460-5">Crux.Structs.Member</span><span class="p" data-group-id="1777036460-5">{</span><span class="w">
   </span><span class="ss">nick</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;nick&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">user</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w">
-  </span><span class="ss">roles</span><span class="p">:</span><span class="w"> </span><span class="nc">MapSet</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="8786214160-6">(</span><span class="p" data-group-id="8786214160-7">[</span><span class="mi">251158405832638465</span><span class="p">,</span><span class="w"> </span><span class="mi">373405430589816834</span><span class="p" data-group-id="8786214160-7">]</span><span class="p" data-group-id="8786214160-6">)</span><span class="p">,</span><span class="w">
+  </span><span class="ss">roles</span><span class="p">:</span><span class="w"> </span><span class="nc">MapSet</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="1777036460-6">(</span><span class="p" data-group-id="1777036460-7">[</span><span class="mi">251158405832638465</span><span class="p">,</span><span class="w"> </span><span class="mi">373405430589816834</span><span class="p" data-group-id="1777036460-7">]</span><span class="p" data-group-id="1777036460-6">)</span><span class="p">,</span><span class="w">
   </span><span class="ss">mute</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w">
   </span><span class="ss">deaf</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w">
   </span><span class="ss">joined_at</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2016-11-02T00:51:21.342000+00:00&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">guild_id</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
-</span><span class="p" data-group-id="8786214160-5">}</span><span class="w">
+</span><span class="p" data-group-id="1777036460-5">}</span><span class="w">
 
 </span><span class="c1"># A single user</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="8786214160-8">%{</span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;discriminator&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;id&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;218348062828003328&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;avatar&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="8786214160-8">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="8786214160-9">(</span><span class="nc">Crux.Structs.User</span><span class="p" data-group-id="8786214160-9">)</span><span class="w">
-</span><span class="p" data-group-id="8786214160-10">%</span><span class="nc" data-group-id="8786214160-10">Crux.Structs.User</span><span class="p" data-group-id="8786214160-10">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="8786214160-10">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1777036460-8">%{</span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;discriminator&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;id&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;218348062828003328&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;avatar&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="1777036460-8">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="1777036460-9">(</span><span class="nc">Crux.Structs.User</span><span class="p" data-group-id="1777036460-9">)</span><span class="w">
+</span><span class="p" data-group-id="1777036460-10">%</span><span class="nc" data-group-id="1777036460-10">Crux.Structs.User</span><span class="p" data-group-id="1777036460-10">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="1777036460-10">}</span><span class="w">
 
 </span><span class="c1"># Multiple users</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="8786214160-11">[</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="p" data-group-id="8786214160-12">%{</span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;discriminator&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;id&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;218348062828003328&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;avatar&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="8786214160-12">}</span><span class="p">,</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="p" data-group-id="8786214160-13">%{</span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;Drahcirius&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;discriminator&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;1336&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;id&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;130175406673231873&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;avatar&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;c896aebec82c90f590b08cfebcdc4e3b&quot;</span><span class="p" data-group-id="8786214160-13">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="p" data-group-id="8786214160-11">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="8786214160-14">(</span><span class="nc">Crux.Structs.User</span><span class="p" data-group-id="8786214160-14">)</span><span class="w">
-</span><span class="p" data-group-id="8786214160-15">[</span><span class="w">
-  </span><span class="p" data-group-id="8786214160-16">%</span><span class="nc" data-group-id="8786214160-16">Crux.Structs.User</span><span class="p" data-group-id="8786214160-16">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="8786214160-16">}</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="8786214160-17">%</span><span class="nc" data-group-id="8786214160-17">Crux.Structs.User</span><span class="p" data-group-id="8786214160-17">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Drahcirius&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1336&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">130175406673231873</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;c896aebec82c90f590b08cfebcdc4e3b&quot;</span><span class="p" data-group-id="8786214160-17">}</span><span class="w">
-</span><span class="p" data-group-id="8786214160-15">]</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1777036460-11">[</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="p" data-group-id="1777036460-12">%{</span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;discriminator&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;id&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;218348062828003328&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;avatar&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="1777036460-12">}</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="p" data-group-id="1777036460-13">%{</span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;Drahcirius&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;discriminator&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;1336&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;id&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;130175406673231873&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;avatar&quot;</span><span class="w"> </span><span class="o">=</span><span class="o">&gt;</span><span class="w"> </span><span class="s">&quot;c896aebec82c90f590b08cfebcdc4e3b&quot;</span><span class="p" data-group-id="1777036460-13">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="p" data-group-id="1777036460-11">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="1777036460-14">(</span><span class="nc">Crux.Structs.User</span><span class="p" data-group-id="1777036460-14">)</span><span class="w">
+</span><span class="p" data-group-id="1777036460-15">[</span><span class="w">
+  </span><span class="p" data-group-id="1777036460-16">%</span><span class="nc" data-group-id="1777036460-16">Crux.Structs.User</span><span class="p" data-group-id="1777036460-16">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="1777036460-16">}</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="1777036460-17">%</span><span class="nc" data-group-id="1777036460-17">Crux.Structs.User</span><span class="p" data-group-id="1777036460-17">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Drahcirius&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1336&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">130175406673231873</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;c896aebec82c90f590b08cfebcdc4e3b&quot;</span><span class="p" data-group-id="1777036460-17">}</span><span class="w">
+</span><span class="p" data-group-id="1777036460-15">]</span><span class="w">
 
 </span><span class="c1"># Does not alter already structs</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="8786214160-18">(</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="p" data-group-id="8786214160-19">%</span><span class="nc" data-group-id="8786214160-19">Crux.Structs.User</span><span class="p" data-group-id="8786214160-19">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="8786214160-19">}</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="1777036460-18">(</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="p" data-group-id="1777036460-19">%</span><span class="nc" data-group-id="1777036460-19">Crux.Structs.User</span><span class="p" data-group-id="1777036460-19">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="1777036460-19">}</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="w">  </span><span class="nc">Crux.Structs.User</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="p" data-group-id="8786214160-18">)</span><span class="w">
-</span><span class="p" data-group-id="8786214160-20">%</span><span class="nc" data-group-id="8786214160-20">Crux.Structs.User</span><span class="p" data-group-id="8786214160-20">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="8786214160-20">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="p" data-group-id="1777036460-18">)</span><span class="w">
+</span><span class="p" data-group-id="1777036460-20">%</span><span class="nc" data-group-id="1777036460-20">Crux.Structs.User</span><span class="p" data-group-id="1777036460-20">{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;space&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">discriminator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0001&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">avatar</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;46a356e237350bf8b8dfde15667dfc4&quot;</span><span class="p" data-group-id="1777036460-20">}</span><span class="w">
 
 </span><span class="c1"># Fallback</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="8786214160-21">(</span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="8786214160-21">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs</span><span class="o">.</span><span class="n">create</span><span class="p" data-group-id="1777036460-21">(</span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="1777036460-21">)</span><span class="w">
 </span><span class="no">nil</span><span class="w">
 </span></code></pre>
   </section>
@@ -227,12 +234,20 @@ Callbacks          </h1>
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.3),
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.20.1),
           </span>
           <span class="line">
             designed by
             <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
-            </span>
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
         </p>
       </footer>
     </div>
