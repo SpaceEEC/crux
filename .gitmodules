@@ -16,3 +16,6 @@
 [submodule "apps/crux_structs"]
 	path = apps/crux_structs
 	url = https://github.com/SpaceEEC/crux_structs
+[submodule "apps/crux_extensions"]
+	path = apps/crux_extensions
+	url = https://github.com/SpaceEEC/crux_extensions.git
