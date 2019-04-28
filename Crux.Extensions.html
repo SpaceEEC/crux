@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
     <meta name="project" content="Crux vdev">
-    <title>Crux.Gateway.Connection — Crux vdev</title>
+    <title>Crux.Extensions — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-1e4a7dfcd6.js"></script>
       <script src="docs_config.js"></script>
@@ -69,8 +69,8 @@ Crux      </a>
 
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Gateway.Connection        
-          <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/connection/connection.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Extensions        
+          <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/extensions.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -78,66 +78,15 @@ Crux.Gateway.Connection
 
 
         <section id="moduledoc">
-<p>  Module handling the actual connection (shard) to Discord.</p>
+<p>  TODO: Some kind of description</p>
+<p>  Relevant modules:</p>
+<ul>
+<li><a href="Crux.Extensions.Command.html"><code class="inline">Crux.Extensions.Command</code></a>: Behaviour module being used to compose command pipelines
+</li>
+</ul>
         </section>
 
-        <section id="summary" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#summary">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-            Summary
-          </h1>
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#send_command/3">send_command(gateway, shard_id, command)</a>
-  </div>
-    <div class="summary-synopsis"><p>  Sends a command to the specified shard.</p></div>
-</div>
-  </div>
-        </section>
 
-        <section id="functions" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#functions">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-Functions          </h1>
-          <div class="functions-list">
-<section class="detail" id="send_command/3">
-    <div class="detail-header">
-    <a href="#send_command/3" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature">send_command(gateway, shard_id, command)</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway/connection/connection.ex#L42" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-        
-      <div class="specs">
-          <pre>send_command(
-  gateway :: <a href="Crux.Gateway.html#t:gateway/0">Crux.Gateway.gateway</a>(),
-  shard_id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
-  command :: <a href="Crux.Gateway.Command.html#t:command/0">Crux.Gateway.Command.command</a>()
-) :: :ok</pre>
-      </div>
-  </div>
-  <section class="docstring">
-<p>  Sends a command to the specified shard.</p>
-<blockquote><p>Will be run through a rate limiter which blocks the current process.</p>
-</blockquote>
-  </section>
-</section>
-          </div>
-        </section>
           <footer class="footer">
         <p>
           <span class="line">

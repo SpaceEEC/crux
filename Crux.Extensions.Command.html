@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.20.1">
+    <meta name="project" content="Crux vdev">
+    <title>Crux.Extensions.Command — Crux vdev</title>
+    <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
+    <script src="dist/sidebar_items-1e4a7dfcd6.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+    <div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
+Crux      </a>
+      <h2 class="sidebar-projectVersion">
+        vdev
+      </h2>
+    </div>
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+      <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
+
+      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="app-vsn">Crux vdev</small>
+Crux.Extensions.Command <small>behaviour</small>        
+          <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+      </h1>
+
+
+        <section id="moduledoc">
+<p>  Behaviour module used to compose command pipelines.</p>
+<h2 id="module-example" class="section-heading">
+  <a href="#module-example" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Example
+</h2>
+
+<h3 id="module-commands-middlewares" class="section-heading">
+  <a href="#module-commands-middlewares" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Commands / Middlewares
+</h3>
+
+<h4>A Simple Ping Command</h4>
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Ping</span><span class="w"> </span><span class="k" data-group-id="5295396587-1">do</span><span class="w">
+    </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command</span><span class="w">
+
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="5295396587-2">(</span><span class="p" data-group-id="5295396587-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5295396587-3">[</span><span class="s">&quot;ping&quot;</span><span class="p" data-group-id="5295396587-3">]</span><span class="w">
+
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="5295396587-4">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="5295396587-4">)</span><span class="w"> </span><span class="k" data-group-id="5295396587-5">do</span><span class="w">
+      </span><span class="n">set_response</span><span class="p" data-group-id="5295396587-6">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Pong!&quot;</span><span class="p" data-group-id="5295396587-6">)</span><span class="w">
+    </span><span class="k" data-group-id="5295396587-5">end</span><span class="w">
+  </span><span class="k" data-group-id="5295396587-1">end</span></code></pre>
+<h4>A Simple Middleware</h4>
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="w"> </span><span class="k" data-group-id="9062113302-1">do</span><span class="w">
+    </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command</span><span class="w">
+
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="9062113302-2">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="n">opts</span><span class="p" data-group-id="9062113302-2">)</span><span class="w"> </span><span class="k" data-group-id="9062113302-3">do</span><span class="w">
+      </span><span class="c1"># Default the type to :cat</span><span class="w">
+      </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="9062113302-4">(</span><span class="n">opts</span><span class="p">,</span><span class="w"> </span><span class="ss">:type</span><span class="p">,</span><span class="w"> </span><span class="ss">:cat</span><span class="p" data-group-id="9062113302-4">)</span><span class="w">
+
+      </span><span class="k">case</span><span class="w"> </span><span class="nc">MyBot.Api</span><span class="o">.</span><span class="n">fetch_picture</span><span class="p" data-group-id="9062113302-5">(</span><span class="n">type</span><span class="p" data-group-id="9062113302-5">)</span><span class="w"> </span><span class="k" data-group-id="9062113302-6">do</span><span class="w">
+        </span><span class="p" data-group-id="9062113302-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="9062113302-7">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+          </span><span class="n">assign</span><span class="p" data-group-id="9062113302-8">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">:picture</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="9062113302-8">)</span><span class="w">
+        </span><span class="p" data-group-id="9062113302-9">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="c">_error</span><span class="p" data-group-id="9062113302-9">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+          </span><span class="n">command</span><span class="w">
+          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">set_response</span><span class="p" data-group-id="9062113302-10">(</span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;An error occurred while fetching the picture.&quot;</span><span class="p" data-group-id="9062113302-10">)</span><span class="w">
+          </span><span class="c1"># Halt the pipeline to stop any further execution of commands or middlewares</span><span class="w">
+          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">halt</span><span class="p" data-group-id="9062113302-11">(</span><span class="p" data-group-id="9062113302-11">)</span><span class="w">
+      </span><span class="k" data-group-id="9062113302-6">end</span><span class="w">
+    </span><span class="k" data-group-id="9062113302-3">end</span><span class="w">
+  </span><span class="k" data-group-id="9062113302-1">end</span></code></pre>
+<h4>Using the Middleware</h4>
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Dog</span><span class="w"> </span><span class="k" data-group-id="5983931689-1">do</span><span class="w">
+    </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command</span><span class="w">
+
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="5983931689-2">(</span><span class="p" data-group-id="5983931689-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5983931689-3">[</span><span class="s">&quot;dog&quot;</span><span class="p" data-group-id="5983931689-3">]</span><span class="w">
+
+    </span><span class="c1"># Specify the type of :dog</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">required</span><span class="p" data-group-id="5983931689-4">(</span><span class="p" data-group-id="5983931689-4">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5983931689-5">[</span><span class="p" data-group-id="5983931689-6">{</span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="ss">:dog</span><span class="p" data-group-id="5983931689-6">}</span><span class="p" data-group-id="5983931689-5">]</span><span class="w">
+
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="5983931689-7">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="5983931689-7">)</span><span class="w"> </span><span class="k" data-group-id="5983931689-8">do</span><span class="w">
+      </span><span class="n">set_response</span><span class="p" data-group-id="5983931689-9">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Your dog picture link: </span><span class="si" data-group-id="5983931689-10">#{</span><span class="n">command</span><span class="o">.</span><span class="n">assigns</span><span class="o">.</span><span class="n">picture</span><span class="si" data-group-id="5983931689-10">}</span><span class="s">&quot;</span><span class="p" data-group-id="5983931689-9">)</span><span class="w">
+    </span><span class="k" data-group-id="5983931689-8">end</span><span class="w">
+  </span><span class="k" data-group-id="5983931689-1">end</span></code></pre>
+<h3 id="module-starting-crux-extensions-command" class="section-heading">
+  <a href="#module-starting-crux-extensions-command" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Starting <a href="#content"><code class="inline">Crux.Extensions.Command</code></a>
+</h3>
+
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Application</span><span class="w"> </span><span class="k" data-group-id="8773147951-1">do</span><span class="w">
+    </span><span class="kn">use</span><span class="w"> </span><span class="nc">Application</span><span class="w">
+
+    </span><span class="na">@commands</span><span class="w"> </span><span class="p" data-group-id="8773147951-2">[</span><span class="nc">MyBot.Command.Ping</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Command.Dog</span><span class="p" data-group-id="8773147951-2">]</span><span class="w">
+
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">start</span><span class="p" data-group-id="8773147951-3">(</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="8773147951-3">)</span><span class="w"> </span><span class="k" data-group-id="8773147951-4">do</span><span class="w">
+      </span><span class="n">children</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="8773147951-5">[</span><span class="w">
+        </span><span class="c1"># Other modules, gateway, rest, etc...</span><span class="w">
+        </span><span class="p" data-group-id="8773147951-6">{</span><span class="nc">Crux.Extensions.Command</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8773147951-7">%{</span><span class="w">
+          </span><span class="ss">producers</span><span class="p">:</span><span class="w"> </span><span class="k" data-group-id="8773147951-8">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">fetch_producer_pids</span><span class="p" data-group-id="8773147951-9">(</span><span class="p" data-group-id="8773147951-9">)</span><span class="w"> </span><span class="k" data-group-id="8773147951-8">end</span><span class="p">,</span><span class="w">
+          </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="p">,</span><span class="w">
+          </span><span class="ss">commands</span><span class="p">:</span><span class="w"> </span><span class="na">@commands</span><span class="p">,</span><span class="w">
+          </span><span class="ss">rest</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w">
+        </span><span class="p" data-group-id="8773147951-7">}</span><span class="p" data-group-id="8773147951-6">}</span><span class="w">
+      </span><span class="p" data-group-id="8773147951-5">]</span><span class="w">
+
+      </span><span class="n">opts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="8773147951-10">[</span><span class="ss">strategy</span><span class="p">:</span><span class="w"> </span><span class="ss">:one_for_one</span><span class="p" data-group-id="8773147951-10">]</span><span class="w">
+      </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="8773147951-11">(</span><span class="n">children</span><span class="p">,</span><span class="w"> </span><span class="n">opts</span><span class="p" data-group-id="8773147951-11">)</span><span class="w">
+    </span><span class="k" data-group-id="8773147951-4">end</span><span class="w">
+  </span><span class="k" data-group-id="8773147951-1">end</span></code></pre>
+        </section>
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:command/0">command()</a>
+  </div>
+    <div class="summary-synopsis"><p>  A command module, or command module and options tuple.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:command_mod/0">command_mod()</a>
+  </div>
+    <div class="summary-synopsis"><p>  A module implementing the <a href="#content"><code class="inline">Crux.Extensions.Command</code></a> behaviour.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:command_opts/0">command_opts()</a>
+  </div>
+    <div class="summary-synopsis"><p>  Options being passed to the <a href="#c:call/2"><code class="inline">call/2</code></a> of a <a href="#t:command_mod/0"><code class="inline">command_mod/0</code></a>.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:options/0">options()</a>
+  </div>
+    <div class="summary-synopsis"><p>  Available options used to start handling commands.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:t/0">t()</a>
+  </div>
+    <div class="summary-synopsis"><p>  Represents the current state of an executing command.</p></div>
+</div>
+  </div>
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#assign/3">assign(command, key, value)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#halt/1">halt(command)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_response/2">set_response(command, response)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#set_response_channel/2">set_response_channel(command, response_channel)</a>
+  </div>
+</div>
+  </div>
+  <div class="summary-callbacks summary">
+    <h2>
+      <a href="#callbacks">Callbacks</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:call/2">call(t, command_opts)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:required/0">required()</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:triggers/0">triggers()</a>
+  </div>
+</div>
+  </div>
+        </section>
+
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Types          </h1>
+          <div class="types-list">
+<section class="detail" id="t:command/0">
+    <div class="detail-header">
+    <a href="#t:command/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">command()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L125" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>command() :: <a href="#t:command_mod/0">command_mod</a>() | {<a href="#t:command_mod/0">command_mod</a>(), <a href="#t:command_opts/0">command_opts</a>()}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  A command module, or command module and options tuple.</p>
+  </section>
+</section>
+<section class="detail" id="t:command_mod/0">
+    <div class="detail-header">
+    <a href="#t:command_mod/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">command_mod()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L113" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>command_mod() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  A module implementing the <a href="#content"><code class="inline">Crux.Extensions.Command</code></a> behaviour.</p>
+  </section>
+</section>
+<section class="detail" id="t:command_opts/0">
+    <div class="detail-header">
+    <a href="#t:command_opts/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">command_opts()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L120" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>command_opts() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Options being passed to the <a href="#c:call/2"><code class="inline">call/2</code></a> of a <a href="#t:command_mod/0"><code class="inline">command_mod/0</code></a>.</p>
+<p>  The exact type is defined by the command itself.</p>
+  </section>
+</section>
+<section class="detail" id="t:options/0">
+    <div class="detail-header">
+    <a href="#t:options/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">options()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L136" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>options() :: %{
+  optional(:prefix) => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  :commands => [<a href="#t:command/0">command</a>()],
+  :producers => (() -> [<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pid</a>()]),
+  :rest => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()
+}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Available options used to start handling commands.</p>
+<p>  Notes:</p>
+<ul>
+<li><code class="inline">prefix</code>: Omitting or <code class="inline">nil</code> results in commands being triggered without a prefix.
+</li>
+<li><code class="inline">commands</code>: A list of modules which must implement <a href="#c:triggers/0"><code class="inline">triggers/0</code></a>.
+</li>
+<li><code class="inline">producers</code>: A function returning the current producers to subsribe to.
+</li>
+<li><code class="inline">rest</code>: The module (using <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a>) which should be used to send a response.
+</li>
+</ul>
+  </section>
+</section>
+<section class="detail" id="t:t/0">
+    <div class="detail-header">
+    <a href="#t:t/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">t()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L98" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>t() :: %Crux.Extensions.Command{
+  args: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()],
+  assigns: %{optional(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()},
+  halted: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+  message: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(),
+  response: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  response_channel: <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>(),
+  rest: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>(),
+  shard_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+  trigger: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Represents the current state of an executing command.</p>
+  </section>
+</section>
+          </div>
+        </section>
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions          </h1>
+          <div class="functions-list">
+<section class="detail" id="assign/3">
+    <div class="detail-header">
+    <a href="#assign/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">assign(command, key, value)</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L181" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>assign(<a href="#t:t/0">t</a>(), key :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>(), value :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="#t:t/0">t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="halt/1">
+    <div class="detail-header">
+    <a href="#halt/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">halt(command)</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L176" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>halt(<a href="#t:t/0">t</a>()) :: <a href="#t:t/0">t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="set_response/2">
+    <div class="detail-header">
+    <a href="#set_response/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_response(command, response)</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L163" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>set_response(<a href="#t:t/0">t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="#t:t/0">t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="set_response_channel/2">
+    <div class="detail-header">
+    <a href="#set_response_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">set_response_channel(command, response_channel)</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L168" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>set_response_channel(<a href="#t:t/0">t</a>(), <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>() | nil) ::
+  <a href="#t:t/0">t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+          </div>
+        </section>
+        <section id="callbacks" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#callbacks">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Callbacks          </h1>
+          <div class="callbacks-list">
+<section class="detail" id="c:call/2">
+    <div class="detail-header">
+    <a href="#c:call/2" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">call(t, command_opts)</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L187" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>call(<a href="#t:t/0">t</a>(), <a href="#t:command_opts/0">command_opts</a>()) :: <a href="#t:t/0">t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="c:required/0">
+    <div class="detail-header">
+    <a href="#c:required/0" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">required()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L185" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+      <span class="note">(optional)</span>
+    
+      <div class="specs">
+          <pre>required() :: [<a href="#t:command_mod/0">command_mod</a>() | {<a href="#t:command_mod/0">command_mod</a>(), <a href="#t:command_opts/0">command_opts</a>()}]</pre>
+      </div>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="c:triggers/0">
+    <div class="detail-header">
+    <a href="#c:triggers/0" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">triggers()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L189" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+      <span class="note">(optional)</span>
+    
+      <div class="specs">
+          <pre>triggers() :: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()]</pre>
+      </div>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+          </div>
+        </section>
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.20.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  
+  </body>
+</html>
+
