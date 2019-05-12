@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.20.1">
+    <meta name="project" content="Crux vdev">
+    <title>Crux.Extensions.Command.Handler — Crux vdev</title>
+    <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
+    <script src="dist/sidebar_items-eeac209789.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+    <div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
+Crux      </a>
+      <h2 class="sidebar-projectVersion">
+        vdev
+      </h2>
+    </div>
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+      <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
+
+      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="app-vsn">Crux vdev</small>
+Crux.Extensions.Command.Handler <small>behaviour</small>        
+          <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+      </h1>
+
+
+        <section id="moduledoc">
+<p>  Handler module serving as entry point for command pipelines.</p>
+<p>  ## Example</p>
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Handler</span><span class="w"> </span><span class="k" data-group-id="1768608893-1">do</span><span class="w">
+    </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command.Handler</span><span class="w">
+
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">commands</span><span class="p" data-group-id="1768608893-2">(</span><span class="p" data-group-id="1768608893-2">)</span><span class="w"> </span><span class="k" data-group-id="1768608893-3">do</span><span class="w">
+      </span><span class="p" data-group-id="1768608893-4">[</span><span class="w">
+        </span><span class="nc">MyBot.Command.Ping</span><span class="p">,</span><span class="w">
+        </span><span class="nc">MyBot.Command.Dog</span><span class="w">
+      </span><span class="p" data-group-id="1768608893-4">]</span><span class="w">
+    </span><span class="k" data-group-id="1768608893-3">end</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">producers</span><span class="p" data-group-id="1768608893-5">(</span><span class="p" data-group-id="1768608893-5">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Producers</span><span class="o">.</span><span class="n">fetch</span><span class="p" data-group-id="1768608893-6">(</span><span class="p" data-group-id="1768608893-6">)</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">rest</span><span class="p" data-group-id="1768608893-7">(</span><span class="p" data-group-id="1768608893-7">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">prefixes</span><span class="p" data-group-id="1768608893-8">(</span><span class="p" data-group-id="1768608893-8">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1768608893-9">[</span><span class="s">&quot;!&quot;</span><span class="p" data-group-id="1768608893-9">]</span><span class="w">
+  </span><span class="k" data-group-id="1768608893-1">end</span></code></pre>
+        </section>
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+  <div class="summary-callbacks summary">
+    <h2>
+      <a href="#callbacks">Callbacks</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:commands/0">commands()</a>
+  </div>
+    <div class="summary-synopsis"><p>  Gets all available commands.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:handle_prefixes/1">handle_prefixes(message)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Removes the prefix from content.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:match_commands/3">match_commands(content, message, shard_id)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Gets all commands matching the given content.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:on_error/2">on_error(arg1, todo)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Called when an error occured.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:prefixes/0">prefixes()</a>
+  </div>
+    <div class="summary-synopsis"><p>  Gets the current prefixes.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:producers/0">producers()</a>
+  </div>
+    <div class="summary-synopsis"><p>  Gets the current producers.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:respond/1">respond(arg1)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Called after the command is done to send the response.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:rest/0">rest()</a>
+  </div>
+    <div class="summary-synopsis"><p>  Gets the module handling rest.</p></div>
+</div>
+  </div>
+        </section>
+
+        <section id="callbacks" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#callbacks">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Callbacks          </h1>
+          <div class="callbacks-list">
+<section class="detail" id="c:commands/0">
+    <div class="detail-header">
+    <a href="#c:commands/0" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">commands()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L75" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>commands() :: [<a href="Crux.Extensions.Command.html#t:command/0">Crux.Extensions.Command.command</a>()]</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Gets all available commands.</p>
+  </section>
+</section>
+<section class="detail" id="c:handle_prefixes/1">
+    <div class="detail-header">
+    <a href="#c:handle_prefixes/1" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">handle_prefixes(message)</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L117" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+      <span class="note">(optional)</span>
+    
+      <div class="specs">
+          <pre>handle_prefixes(message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()) :: [
+  {:ok, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()} | :error
+]</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Removes the prefix from content.</p>
+<p>  Returns a list of:</p>
+<ul>
+<li><code class="inline">{:ok, content}</code> if a prefix matched
+</li>
+<li><code class="inline">:error</code> if a prefix did not
+</li>
+</ul>
+  </section>
+</section>
+<section class="detail" id="c:match_commands/3">
+    <div class="detail-header">
+    <a href="#c:match_commands/3" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">match_commands(content, message, shard_id)</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L122" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+      <span class="note">(optional)</span>
+    
+      <div class="specs">
+          <pre>match_commands(
+  content :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(),
+  shard_id :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()
+) :: [{<a href="Crux.Extensions.Command.html#t:command_info/0">Crux.Extensions.Command.command_info</a>(), <a href="Crux.Extensions.Command.html#t:t/0">Crux.Extensions.Command.t</a>()}]</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Gets all commands matching the given content.</p>
+  </section>
+</section>
+<section class="detail" id="c:on_error/2">
+    <div class="detail-header">
+    <a href="#c:on_error/2" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">on_error(arg1, todo)</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L103" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>on_error(<a href="Crux.Extensions.Command.html#t:t/0">Crux.Extensions.Command.t</a>(), todo :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Called when an error occured.</p>
+<p>  &gt; Not implementing this function causes any errors to terminate the handling process.</p>
+  </section>
+</section>
+<section class="detail" id="c:prefixes/0">
+    <div class="detail-header">
+    <a href="#c:prefixes/0" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">prefixes()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L94" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>prefixes() :: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil]</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Gets the current prefixes.</p>
+<p>  &gt; <code class="inline">nil</code> is used for &quot;no prefix&quot;</p>
+  </section>
+</section>
+<section class="detail" id="c:producers/0">
+    <div class="detail-header">
+    <a href="#c:producers/0" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">producers()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L80" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>producers() :: [<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pid</a>()]</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Gets the current producers.</p>
+  </section>
+</section>
+<section class="detail" id="c:respond/1">
+    <div class="detail-header">
+    <a href="#c:respond/1" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">respond(arg1)</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L108" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+      <span class="note">(optional)</span>
+    
+      <div class="specs">
+          <pre>respond(<a href="Crux.Extensions.Command.html#t:t/0">Crux.Extensions.Command.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Called after the command is done to send the response.</p>
+  </section>
+</section>
+<section class="detail" id="c:rest/0">
+    <div class="detail-header">
+    <a href="#c:rest/0" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">rest()</span>
+      <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L87" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+        
+      <div class="specs">
+          <pre>rest() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Gets the module handling rest.</p>
+<p>  &gt; See <a href="Crux.Rest.html"><code class="inline">Crux.Rest</code></a></p>
+  </section>
+</section>
+          </div>
+        </section>
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.20.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  
+  </body>
+</html>
+

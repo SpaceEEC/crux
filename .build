@@ -1,11 +1,11 @@
-dist/search_items-63dba31f3a.js
+dist/search_items-88d97372fa.js
 dist/html-78f1ba308158a498a5a4.css
 dist/html-78f1ba308158a498a5a4.js
 dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/sidebar_items-1e4a7dfcd6.js
+dist/sidebar_items-eeac209789.js
 api-reference.html
 search.html
 404.html
@@ -26,6 +26,7 @@ Crux.Cache.Provider.html
 Crux.Cache.User.html
 Crux.Extensions.html
 Crux.Extensions.Command.html
+Crux.Extensions.Command.Handler.html
 Crux.Gateway.html
 Crux.Gateway.Command.html
 Crux.Gateway.Connection.html
