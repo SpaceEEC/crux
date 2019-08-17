@@ -46,6 +46,7 @@ defmodule Crux.MixProject do
          manager: :mix,
          override: true
        ]},
+      {:credo, "~> 1.1.2", env: :dev, manager: :mix, override: true},
       {:ex_doc,
        git: "https://github.com/spaceeec/ex_doc",
        branch: "feat/umbrella",
