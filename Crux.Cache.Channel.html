@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Cache.Channel — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Cache.Channel        
-          <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/channel.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Cache.Channel          <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/channel.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -95,7 +92,7 @@ Crux.Cache.Channel
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#child_spec/1">child_spec(arg)</a>
+    <a href="#child_spec/1">child_spec(init_arg)</a>
   </div>
     <div class="summary-synopsis"><p>Returns a specification to start this module under a supervisor.</p></div>
 </div>
@@ -147,24 +144,24 @@ Crux.Cache.Channel
 Functions          </h1>
           <div class="functions-list">
 <section class="detail" id="child_spec/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#child_spec/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">child_spec(arg)</span>
+    <h1 class="signature">child_spec(init_arg)</span>
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/channel.ex#L5" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-          </div>
+  </div>
   <section class="docstring">
 <p>Returns a specification to start this module under a supervisor.</p>
 <p>See <a href="https://hexdocs.pm/elixir/Supervisor.html"><code class="inline">Supervisor</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="delete/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#delete/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -174,7 +171,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>delete(id :: <a href="Crux.Cache.html#t:key/0">Crux.Cache.key</a>()) :: :ok</pre>
       </div>
@@ -185,7 +181,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="fetch/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#fetch/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -195,7 +191,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>fetch(id :: <a href="Crux.Cache.html#t:key/0">Crux.Cache.key</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()} | :error</pre>
       </div>
@@ -206,7 +201,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="fetch!/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#fetch!/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -216,7 +211,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>fetch!(id :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">identifier</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()} | :error</pre>
       </div>
@@ -227,7 +221,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="insert/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#insert/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -237,7 +231,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>insert(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
       </div>
@@ -248,13 +241,12 @@ Functions          </h1>
 <p>For example something like that:</p>
 <pre><code class="nohighlight makeup elixir"><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w">
   </span><span class="n">raw_data</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="3300682986-1">(</span><span class="p" data-group-id="3300682986-1">)</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="3300682986-2">(</span><span class="ss">:id</span><span class="p" data-group-id="3300682986-2">)</span></code></pre>
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="9408928614-1">(</span><span class="p" data-group-id="9408928614-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="9408928614-2">(</span><span class="ss">:id</span><span class="p" data-group-id="9408928614-2">)</span></code></pre>
 <p>Callback implementation for <a href="Crux.Cache.html#c:insert/1"><code class="inline">Crux.Cache.insert/1</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="start_link/1">
-  
     <span id="start_link/0"></span>
   <div class="detail-header">
     <a href="#start_link/1" class="detail-link" title="Link to this function">
@@ -266,7 +258,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>start_link(args :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/GenServer.html#t:on_start/0">GenServer.on_start</a>()</pre>
       </div>
@@ -278,7 +269,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="update/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#update/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -288,7 +279,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>update(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
       </div>
@@ -298,14 +288,14 @@ Functions          </h1>
 <p>Returns &quot;updated&quot; data including changes by merging.<br>For example from a message embed update to a full message object</p>
 <pre><code class="nohighlight makeup elixir"><span class="n">content</span><span class="w"> </span><span class="o">=</span><span class="w">
   </span><span class="n">partial_message</span><span class="w"> </span><span class="c1"># only contains `:id`, `:channel_id`, and `:embeds`</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">update</span><span class="p" data-group-id="1371373494-1">(</span><span class="p" data-group-id="1371373494-1">)</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="1371373494-2">(</span><span class="ss">:content</span><span class="p" data-group-id="1371373494-2">)</span><span class="w"> </span><span class="c1"># present if the message was cached previously</span></code></pre>
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">update</span><span class="p" data-group-id="4553474788-1">(</span><span class="p" data-group-id="4553474788-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="4553474788-2">(</span><span class="ss">:content</span><span class="p" data-group-id="4553474788-2">)</span><span class="w"> </span><span class="c1"># present if the message was cached previously</span></code></pre>
 <p>Callback implementation for <a href="Crux.Cache.html#c:update/1"><code class="inline">Crux.Cache.update/1</code></a>.</p>
   </section>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -329,7 +319,5 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-

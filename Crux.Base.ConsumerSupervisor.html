@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Base.ConsumerSupervisor — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Base.ConsumerSupervisor        
-          <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer_supervisor.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Base.ConsumerSupervisor          <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer_supervisor.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -80,22 +77,22 @@ Crux.Base.ConsumerSupervisor
         <section id="moduledoc">
 <p>  Supervises a consumer, for example, a module using <a href="Crux.Base.TaskConsumer.html"><code class="inline">Crux.Base.TaskConsumer</code></a>.</p>
 <p>  A somewhat example of this:</p>
-<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Supervisor</span><span class="w"> </span><span class="k" data-group-id="1696499200-1">do</span><span class="w">
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">start_link</span><span class="p" data-group-id="1696499200-2">(</span><span class="bp">_</span><span class="p" data-group-id="1696499200-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="1696499200-3">(</span><span class="bp">__MODULE__</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1696499200-4">%{</span><span class="p" data-group-id="1696499200-4">}</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="bp">__MODULE__</span><span class="p" data-group-id="1696499200-3">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Supervisor</span><span class="w"> </span><span class="k" data-group-id="0700368545-1">do</span><span class="w">
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">start_link</span><span class="p" data-group-id="0700368545-2">(</span><span class="bp">_</span><span class="p" data-group-id="0700368545-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="0700368545-3">(</span><span class="bp">__MODULE__</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0700368545-4">%{</span><span class="p" data-group-id="0700368545-4">}</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="bp">__MODULE__</span><span class="p" data-group-id="0700368545-3">)</span><span class="w">
 
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">init</span><span class="p" data-group-id="1696499200-5">(</span><span class="c">_args</span><span class="p" data-group-id="1696499200-5">)</span><span class="w"> </span><span class="k" data-group-id="1696499200-6">do</span><span class="w">
-    </span><span class="n">children</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="1696499200-7">[</span><span class="w">
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">init</span><span class="p" data-group-id="0700368545-5">(</span><span class="c">_args</span><span class="p" data-group-id="0700368545-5">)</span><span class="w"> </span><span class="k" data-group-id="0700368545-6">do</span><span class="w">
+    </span><span class="n">children</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="0700368545-7">[</span><span class="w">
       </span><span class="c1"># other childrens...</span><span class="w">
-      </span><span class="p" data-group-id="1696499200-8">[</span><span class="err">{</span><span class="nc">Crux.Base.ConsumerSupervisor</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1696499200-9">{</span><span class="nc">Bot.Consumer</span><span class="p">,</span><span class="w"> </span><span class="nc">Bot.CruxBase</span><span class="p" data-group-id="1696499200-9">}</span><span class="p" data-group-id="1696499200-8">]</span><span class="w">
-    </span><span class="p" data-group-id="1696499200-7">]</span><span class="w">
+      </span><span class="p" data-group-id="0700368545-8">[</span><span class="err">{</span><span class="nc">Crux.Base.ConsumerSupervisor</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0700368545-9">{</span><span class="nc">Bot.Consumer</span><span class="p">,</span><span class="w"> </span><span class="nc">Bot.CruxBase</span><span class="p" data-group-id="0700368545-9">}</span><span class="p" data-group-id="0700368545-8">]</span><span class="w">
+    </span><span class="p" data-group-id="0700368545-7">]</span><span class="w">
 
-    </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">init</span><span class="p" data-group-id="1696499200-10">(</span><span class="n">children</span><span class="p">,</span><span class="w"> </span><span class="ss">strategy</span><span class="p">:</span><span class="w"> </span><span class="ss">:one_for_one</span><span class="p" data-group-id="1696499200-10">)</span><span class="w">
-  </span><span class="k" data-group-id="1696499200-6">end</span><span class="w">
-</span><span class="k" data-group-id="1696499200-1">end</span></code></pre>
+    </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">init</span><span class="p" data-group-id="0700368545-10">(</span><span class="n">children</span><span class="p">,</span><span class="w"> </span><span class="ss">strategy</span><span class="p">:</span><span class="w"> </span><span class="ss">:one_for_one</span><span class="p" data-group-id="0700368545-10">)</span><span class="w">
+  </span><span class="k" data-group-id="0700368545-6">end</span><span class="w">
+</span><span class="k" data-group-id="0700368545-1">end</span></code></pre>
         </section>
 
 
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -119,7 +116,5 @@ Crux.Base.ConsumerSupervisor
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-

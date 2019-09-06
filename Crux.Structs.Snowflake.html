@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.20.1">
+    <meta name="project" content="Crux vdev">
+    <title>Crux.Structs.Snowflake — Crux vdev</title>
+    <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
+Crux      </a>
+      <h2 class="sidebar-projectVersion">
+        vdev
+      </h2>
+    </div>
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+      <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
+
+      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+        <small class="app-vsn">Crux vdev</small>
+Crux.Structs.Snowflake          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L95" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+      </h1>
+
+
+        <section id="moduledoc">
+<p>  Custom non discord api struct to help with working with Discord&#39;s snowflakes.</p>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/reference#snowflakes">Discord Docs</a>.</p>
+        </section>
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:t/0">t()</a>
+  </div>
+    <div class="summary-synopsis"><p>  A discord <code class="inline">snowflake</code>, an unsigned 64 bit integer.</p></div>
+</div>
+  </div>
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#construct/1">construct(parts)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Constructs a <a href="#t:t/0"><code class="inline">t/0</code></a> from its <a href="Crux.Structs.Snowflake.Parts.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.Parts.t/0</code></a> or a keyword of its fields.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#deconstruct/1">deconstruct(snowflake)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Deconstructs a <a href="#t:t/0"><code class="inline">t/0</code></a> to its <a href="Crux.Structs.Snowflake.Parts.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.Parts.t/0</code></a>.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#discord_epoch/0">discord_epoch()</a>
+  </div>
+    <div class="summary-synopsis"><p>The discord epoch, the first second of 2015 or <code class="inline">1420070400000</code>.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#from_integer/1">from_integer(snowflake)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Deconstructs a <a href="#t:t/0"><code class="inline">t/0</code></a> to its <a href="Crux.Structs.Snowflake.Parts.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.Parts.t/0</code></a>.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#is_snowflake/1">is_snowflake(snowflake)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Returns <code class="inline">true</code> if <code class="inline">term</code> is a <a href="#t:t/0"><code class="inline">t/0</code></a>; otherwise returns <code class="inline">false</code>..</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#to_integer/1">to_integer(t)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Constructs a <a href="#t:t/0"><code class="inline">t/0</code></a> from its <a href="Crux.Structs.Snowflake.Parts.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.Parts.t/0</code></a>.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#to_snowflake/1">to_snowflake(snowflake)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Converts a <a href="https://hexdocs.pm/elixir/String.html#t:t/0"><code class="inline">String.t/0</code></a> to a <a href="#t:t/0"><code class="inline">t/0</code></a> while allowing <a href="#t:t/0"><code class="inline">t/0</code></a> and <code class="inline">nil</code> to pass through.</p></div>
+</div>
+  </div>
+        </section>
+
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Types          </h1>
+          <div class="types-list">
+<section class="detail" id="t:t/0">
+  <div class="detail-header">
+    <a href="#t:t/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">t()</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L113" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>t() :: 0..18_446_744_073_709_551_615</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  A discord <code class="inline">snowflake</code>, an unsigned 64 bit integer.</p>
+  </section>
+</section>
+          </div>
+        </section>
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions          </h1>
+          <div class="functions-list">
+<section class="detail" id="construct/1">
+  <div class="detail-header">
+    <a href="#construct/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">construct(parts)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L172" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>construct(<a href="Crux.Structs.Snowflake.Parts.html#t:t/0">Crux.Structs.Snowflake.Parts.t</a>() | <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: <a href="#t:t/0">t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Constructs a <a href="#t:t/0"><code class="inline">t/0</code></a> from its <a href="Crux.Structs.Snowflake.Parts.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.Parts.t/0</code></a> or a keyword of its fields.</p>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="2465059744-1">%</span><span class="nc" data-group-id="2465059744-1">Crux.Structs.Snowflake.Parts</span><span class="p" data-group-id="2465059744-1">{</span><span class="ss">increment</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="ss">process_id</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="ss">timestamp</span><span class="p">:</span><span class="w"> </span><span class="mi">1472128634889</span><span class="p">,</span><span class="w"> </span><span class="ss">worker_id</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="2465059744-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Snowflake</span><span class="o">.</span><span class="n">construct</span><span class="p" data-group-id="2465059744-2">(</span><span class="p" data-group-id="2465059744-2">)</span><span class="w">
+</span><span class="mi">218348062828003328</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Snowflake</span><span class="o">.</span><span class="n">construct</span><span class="p" data-group-id="2465059744-3">(</span><span class="ss">increment</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="ss">timestamp</span><span class="p">:</span><span class="w"> </span><span class="mi">1451106635493</span><span class="p" data-group-id="2465059744-3">)</span><span class="w">
+</span><span class="mi">130175406673231873</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Snowflake</span><span class="o">.</span><span class="n">construct</span><span class="p" data-group-id="2465059744-4">(</span><span class="ss">timestamp</span><span class="p">:</span><span class="w"> </span><span class="nc">Crux.Structs.Snowflake</span><span class="o">.</span><span class="n">discord_epoch</span><span class="p" data-group-id="2465059744-5">(</span><span class="p" data-group-id="2465059744-5">)</span><span class="p" data-group-id="2465059744-4">)</span><span class="w">
+</span><span class="mi">0</span><span class="w">
+</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="deconstruct/1">
+  <div class="detail-header">
+    <a href="#deconstruct/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">deconstruct(snowflake)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L152" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>deconstruct(<a href="#t:t/0">t</a>()) :: <a href="Crux.Structs.Snowflake.Parts.html#t:t/0">Crux.Structs.Snowflake.Parts.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Deconstructs a <a href="#t:t/0"><code class="inline">t/0</code></a> to its <a href="Crux.Structs.Snowflake.Parts.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.Parts.t/0</code></a>.</p>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Snowflake</span><span class="o">.</span><span class="n">deconstruct</span><span class="p" data-group-id="8029431581-1">(</span><span class="mi">218348062828003328</span><span class="p" data-group-id="8029431581-1">)</span><span class="w">
+</span><span class="p" data-group-id="8029431581-2">%</span><span class="nc" data-group-id="8029431581-2">Crux.Structs.Snowflake.Parts</span><span class="p" data-group-id="8029431581-2">{</span><span class="w">
+  </span><span class="ss">increment</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="ss">process_id</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="ss">timestamp</span><span class="p">:</span><span class="w"> </span><span class="mi">1472128634889</span><span class="p">,</span><span class="w">
+  </span><span class="ss">worker_id</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span><span class="p" data-group-id="8029431581-2">}</span><span class="w">
+</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="discord_epoch/0">
+  <div class="detail-header">
+    <a href="#discord_epoch/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">discord_epoch()</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L134" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>discord_epoch() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>The discord epoch, the first second of 2015 or <code class="inline">1420070400000</code>.</p>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Snowflake</span><span class="o">.</span><span class="n">discord_epoch</span><span class="p" data-group-id="8798713140-1">(</span><span class="p" data-group-id="8798713140-1">)</span><span class="w">
+</span><span class="mi">1_420_070_400_000</span><span class="w">
+</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="from_integer/1">
+  <div class="detail-header">
+    <a href="#from_integer/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">from_integer(snowflake)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L214" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>from_integer(<a href="#t:t/0">t</a>()) :: <a href="Crux.Structs.Snowflake.Parts.html#t:t/0">Crux.Structs.Snowflake.Parts.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Deconstructs a <a href="#t:t/0"><code class="inline">t/0</code></a> to its <a href="Crux.Structs.Snowflake.Parts.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.Parts.t/0</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="is_snowflake/1">
+  <div class="detail-header">
+    <a href="#is_snowflake/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <h1 class="signature">is_snowflake(snowflake)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L120" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(macro)</span>
+  </div>
+  <section class="docstring">
+<p>  Returns <code class="inline">true</code> if <code class="inline">term</code> is a <a href="#t:t/0"><code class="inline">t/0</code></a>; otherwise returns <code class="inline">false</code>..</p>
+  </section>
+</section>
+<section class="detail" id="to_integer/1">
+  <div class="detail-header">
+    <a href="#to_integer/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">to_integer(t)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L221" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>to_integer(<a href="Crux.Structs.Snowflake.Parts.html#t:t/0">Crux.Structs.Snowflake.Parts.t</a>()) :: <a href="#t:t/0">t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Constructs a <a href="#t:t/0"><code class="inline">t/0</code></a> from its <a href="Crux.Structs.Snowflake.Parts.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.Parts.t/0</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="to_snowflake/1">
+  <div class="detail-header">
+    <a href="#to_snowflake/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">to_snowflake(snowflake)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L195" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>to_snowflake(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="#t:t/0">t</a>()) :: <a href="#t:t/0">t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+          <pre>to_snowflake(nil) :: nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Converts a <a href="https://hexdocs.pm/elixir/String.html#t:t/0"><code class="inline">String.t/0</code></a> to a <a href="#t:t/0"><code class="inline">t/0</code></a> while allowing <a href="#t:t/0"><code class="inline">t/0</code></a> and <code class="inline">nil</code> to pass through.</p>
+<p>  Raises an <a href="https://hexdocs.pm/elixir/ArgumentError.html"><code class="inline">ArgumentError</code></a> if the provided string is not an integer.</p>
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Snowflake</span><span class="o">.</span><span class="n">to_snowflake</span><span class="p" data-group-id="0732166845-1">(</span><span class="mi">218348062828003328</span><span class="p" data-group-id="0732166845-1">)</span><span class="w">
+  </span><span class="mi">218348062828003328</span><span class="w">
+
+  </span><span class="c1"># Fallbacks</span><span class="w">
+  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Snowflake</span><span class="o">.</span><span class="n">to_snowflake</span><span class="p" data-group-id="0732166845-2">(</span><span class="s">&quot;218348062828003328&quot;</span><span class="p" data-group-id="0732166845-2">)</span><span class="w">
+  </span><span class="mi">218348062828003328</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Snowflake</span><span class="o">.</span><span class="n">to_snowflake</span><span class="p" data-group-id="0732166845-3">(</span><span class="no">nil</span><span class="p" data-group-id="0732166845-3">)</span><span class="w">
+  </span><span class="no">nil</span><span class="w">
+</span></code></pre>
+  </section>
+</section>
+          </div>
+        </section>
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.20.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  </body>
+</html>

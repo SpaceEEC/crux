@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Extensions.Command.Handler — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Extensions.Command.Handler <small>behaviour</small>        
-          <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Extensions.Command.Handler <small>behaviour</small>          <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -84,19 +81,19 @@ Crux.Extensions.Command.Handler <small>behaviour</small>
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Handler</span><span class="w"> </span><span class="k" data-group-id="5849813629-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Handler</span><span class="w"> </span><span class="k" data-group-id="5473973694-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command.Handler</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">commands</span><span class="p" data-group-id="5849813629-2">(</span><span class="p" data-group-id="5849813629-2">)</span><span class="w"> </span><span class="k" data-group-id="5849813629-3">do</span><span class="w">
-      </span><span class="p" data-group-id="5849813629-4">[</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">commands</span><span class="p" data-group-id="5473973694-2">(</span><span class="p" data-group-id="5473973694-2">)</span><span class="w"> </span><span class="k" data-group-id="5473973694-3">do</span><span class="w">
+      </span><span class="p" data-group-id="5473973694-4">[</span><span class="w">
         </span><span class="nc">MyBot.Command.Ping</span><span class="p">,</span><span class="w">
         </span><span class="nc">MyBot.Command.Dog</span><span class="w">
-      </span><span class="p" data-group-id="5849813629-4">]</span><span class="w">
-    </span><span class="k" data-group-id="5849813629-3">end</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">producers</span><span class="p" data-group-id="5849813629-5">(</span><span class="p" data-group-id="5849813629-5">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Producers</span><span class="o">.</span><span class="n">fetch</span><span class="p" data-group-id="5849813629-6">(</span><span class="p" data-group-id="5849813629-6">)</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">rest</span><span class="p" data-group-id="5849813629-7">(</span><span class="p" data-group-id="5849813629-7">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">prefixes</span><span class="p" data-group-id="5849813629-8">(</span><span class="p" data-group-id="5849813629-8">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5849813629-9">[</span><span class="s">&quot;!&quot;</span><span class="p" data-group-id="5849813629-9">]</span><span class="w">
-  </span><span class="k" data-group-id="5849813629-1">end</span></code></pre>
+      </span><span class="p" data-group-id="5473973694-4">]</span><span class="w">
+    </span><span class="k" data-group-id="5473973694-3">end</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">producers</span><span class="p" data-group-id="5473973694-5">(</span><span class="p" data-group-id="5473973694-5">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Producers</span><span class="o">.</span><span class="n">fetch</span><span class="p" data-group-id="5473973694-6">(</span><span class="p" data-group-id="5473973694-6">)</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">rest</span><span class="p" data-group-id="5473973694-7">(</span><span class="p" data-group-id="5473973694-7">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">prefixes</span><span class="p" data-group-id="5473973694-8">(</span><span class="p" data-group-id="5473973694-8">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5473973694-9">[</span><span class="s">&quot;!&quot;</span><span class="p" data-group-id="5473973694-9">]</span><span class="w">
+  </span><span class="k" data-group-id="5473973694-1">end</span></code></pre>
         </section>
 
         <section id="summary" class="details-list">
@@ -171,7 +168,7 @@ Crux.Extensions.Command.Handler <small>behaviour</small>
 Callbacks          </h1>
           <div class="callbacks-list">
 <section class="detail" id="c:commands/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:commands/0" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -181,7 +178,6 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>commands() :: [<a href="Crux.Extensions.Command.html#t:command/0">Crux.Extensions.Command.command</a>()]</pre>
       </div>
@@ -191,7 +187,7 @@ Callbacks          </h1>
   </section>
 </section>
 <section class="detail" id="c:handle_prefixes/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:handle_prefixes/1" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -201,9 +197,7 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(optional)</span>
-    
       <div class="specs">
           <pre>handle_prefixes(message :: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()) :: [
   {:ok, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()} | :error
@@ -222,7 +216,7 @@ Callbacks          </h1>
   </section>
 </section>
 <section class="detail" id="c:match_commands/3">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:match_commands/3" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -232,9 +226,7 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(optional)</span>
-    
       <div class="specs">
           <pre>match_commands(
   content :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
@@ -248,7 +240,7 @@ Callbacks          </h1>
   </section>
 </section>
 <section class="detail" id="c:on_error/2">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:on_error/2" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -258,7 +250,6 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>on_error(<a href="Crux.Extensions.Command.html#t:t/0">Crux.Extensions.Command.t</a>(), todo :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
       </div>
@@ -269,7 +260,7 @@ Callbacks          </h1>
   </section>
 </section>
 <section class="detail" id="c:prefixes/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:prefixes/0" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -279,7 +270,6 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>prefixes() :: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil]</pre>
       </div>
@@ -290,7 +280,7 @@ Callbacks          </h1>
   </section>
 </section>
 <section class="detail" id="c:producers/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:producers/0" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -300,7 +290,6 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>producers() :: [<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pid</a>()]</pre>
       </div>
@@ -310,7 +299,7 @@ Callbacks          </h1>
   </section>
 </section>
 <section class="detail" id="c:respond/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:respond/1" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -320,9 +309,7 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(optional)</span>
-    
       <div class="specs">
           <pre>respond(<a href="Crux.Extensions.Command.html#t:t/0">Crux.Extensions.Command.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
       </div>
@@ -332,7 +319,7 @@ Callbacks          </h1>
   </section>
 </section>
 <section class="detail" id="c:rest/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:rest/0" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -342,7 +329,6 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>rest() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
       </div>
@@ -354,7 +340,7 @@ Callbacks          </h1>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -378,7 +364,5 @@ Callbacks          </h1>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-

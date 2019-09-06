@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Structs.AuditLog — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Structs.AuditLog        
-          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Structs.AuditLog          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -107,7 +104,7 @@ Crux.Structs.AuditLog
   <div class="summary-signature">
     <a href="#create/1">create(data)</a>
   </div>
-    <div class="summary-synopsis"><p>  Creates a <a href="#content"><code class="inline">Crux.Structs.AuditLog</code></a> struct from raw data.</p></div>
+    <div class="summary-synopsis"><p>  Creates a <a href="Crux.Structs.AuditLog.html#t:t/0"><code class="inline">Crux.Structs.AuditLog.t/0</code></a> struct from raw data.</p></div>
 </div>
   </div>
         </section>
@@ -121,7 +118,7 @@ Crux.Structs.AuditLog
 Types          </h1>
           <div class="types-list">
 <section class="detail" id="t:t/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -131,16 +128,14 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.6)</span>
-    
       <div class="specs">
           <pre>t() :: %Crux.Structs.AuditLog{
   audit_log_entries: %{
-    optional(<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) => <a href="Crux.Structs.AuditLogEntry.html#t:t/0">Crux.Structs.AuditLogEntry.t</a>()
+    required(Snowflake.t()) => <a href="Crux.Structs.AuditLogEntry.html#t:t/0">Crux.Structs.AuditLogEntry.t</a>()
   },
-  users: %{optional(<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) => <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()},
-  webhooks: %{optional(<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) => <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>()}
+  users: %{required(Snowflake.t()) => <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()},
+  webhooks: %{required(Snowflake.t()) => <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>()}
 }</pre>
       </div>
   </div>
@@ -158,7 +153,7 @@ Types          </h1>
 Functions          </h1>
           <div class="functions-list">
 <section class="detail" id="create/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#create/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -168,22 +163,20 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.6)</span>
-    
       <div class="specs">
           <pre>create(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
   </div>
   <section class="docstring">
-<p>  Creates a <a href="#content"><code class="inline">Crux.Structs.AuditLog</code></a> struct from raw data.</p>
+<p>  Creates a <a href="Crux.Structs.AuditLog.html#t:t/0"><code class="inline">Crux.Structs.AuditLog.t/0</code></a> struct from raw data.</p>
 <blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
 </blockquote>
   </section>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -207,7 +200,5 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-

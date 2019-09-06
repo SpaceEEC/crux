@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Cache.Guild — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Cache.Guild        
-          <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Cache.Guild          <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -96,7 +93,7 @@ Crux.Cache.Guild
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#child_spec/1">child_spec(arg)</a>
+    <a href="#child_spec/1">child_spec(init_arg)</a>
   </div>
     <div class="summary-synopsis"><p>Returns a specification to start this module under a supervisor.</p></div>
 </div>
@@ -148,24 +145,24 @@ Crux.Cache.Guild
 Functions          </h1>
           <div class="functions-list">
 <section class="detail" id="child_spec/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#child_spec/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">child_spec(arg)</span>
+    <h1 class="signature">child_spec(init_arg)</span>
       <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L12" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-          </div>
+  </div>
   <section class="docstring">
 <p>Returns a specification to start this module under a supervisor.</p>
 <p>See <a href="https://hexdocs.pm/elixir/Supervisor.html"><code class="inline">Supervisor</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="delete/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#delete/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -175,7 +172,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>delete(
   data_or_id ::
@@ -204,7 +200,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="fetch/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#fetch/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -214,7 +210,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>fetch(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) ::
   {:ok, <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>()} | :error</pre>
@@ -225,7 +220,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="fetch!/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#fetch!/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -235,7 +230,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>fetch!(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) ::
   <a href="Crux.Structs.Guild.html#t:t/0">Crux.Structs.Guild.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
@@ -246,17 +240,16 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="insert/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#insert/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">insert(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L60" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L52" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>insert(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
       </div>
@@ -280,7 +273,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="lookup/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#lookup/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -290,7 +283,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>lookup(guild_id :: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pid</a>()} | :error</pre>
       </div>
@@ -300,17 +292,16 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="update/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#update/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">update(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L81" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/guild/guild.ex#L73" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>update(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
       </div>
@@ -335,7 +326,7 @@ Functions          </h1>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -359,7 +350,5 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-

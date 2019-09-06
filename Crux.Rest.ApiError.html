@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Rest.ApiError — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="exceptions">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Rest.ApiError <small>exception</small>        
-          <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Rest.ApiError <small>exception</small>          <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -151,7 +148,7 @@ Crux.Rest.ApiError <small>exception</small>
 Types          </h1>
           <div class="types-list">
 <section class="detail" id="t:t/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -161,16 +158,15 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.0)</span>
-    
       <div class="specs">
-          <pre>t() :: %{
-  status_code: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+          <pre>t() :: %Crux.Rest.ApiError{
+  __exception__: true,
   code: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>() | nil,
   message: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  method: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>(),
   path: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  method: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>()
+  status_code: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
 }</pre>
       </div>
   </div>
@@ -210,21 +206,19 @@ Types          </h1>
 Functions          </h1>
           <div class="functions-list">
 <section class="detail" id="exception/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#exception/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">exception(msg)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L45" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L47" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.0)</span>
-    
       <div class="specs">
-          <pre>exception(message :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="Crux.Rest.ApiError.html#t:t/0">Crux.Rest.ApiError.t</a>()</pre>
+          <pre>exception(message :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>()) :: <a href="https://hexdocs.pm/elixir/Exception.html#t:t/0">Exception.t</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -232,19 +226,17 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="exception/2">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#exception/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">exception(map1, map2)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L58" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/api_error.ex#L60" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.0)</span>
-    
       <div class="specs">
           <pre>exception(<a href="Crux.Rest.Request.html#t:t/0">Crux.Rest.Request.t</a>(), <a href="https://hexdocs.pm/httpoison/1.5.1/HTTPoison.Response.html#t:t/0">HTTPoison.Response.t</a>()) ::
   <a href="Crux.Rest.ApiError.html#t:t/0">Crux.Rest.ApiError.t</a>()</pre>
@@ -256,7 +248,7 @@ Functions          </h1>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -280,7 +272,5 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-

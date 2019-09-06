@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Structs.Guild — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Structs.Guild        
-          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/guild.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Structs.Guild          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/guild.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -81,9 +78,9 @@ Crux.Structs.Guild
 <p>Represents a Discord <a href="https://discordapp.com/developers/docs/resources/guild#guild-object-guild-structure">Guild Object</a>.</p>
 <p>Differences opposed to the Discord API Object:</p>
 <ul>
-<li><code class="inline">:emojis</code> is a <a href="https://hexdocs.pm/elixir/MapSet.html"><code class="inline">MapSet</code></a> of emoji ids
-</li>
 <li><code class="inline">:channels</code> is a <a href="https://hexdocs.pm/elixir/MapSet.html"><code class="inline">MapSet</code></a> of channel ids
+</li>
+<li><code class="inline">:emojis</code> is a <a href="https://hexdocs.pm/elixir/MapSet.html"><code class="inline">MapSet</code></a> of emoji ids
 </li>
 <li><code class="inline">:presences</code> does not exists at all
 </li>
@@ -116,7 +113,7 @@ Crux.Structs.Guild
   <div class="summary-signature">
     <a href="#create/1">create(data)</a>
   </div>
-    <div class="summary-synopsis"><p>  Creates a <a href="#content"><code class="inline">Crux.Structs.Guild</code></a> struct from raw data.</p></div>
+    <div class="summary-synopsis"><p>  Creates a <code class="inline">t:Crux.Structs.Guild/0</code> struct from raw data.</p></div>
 </div>
   </div>
         </section>
@@ -130,51 +127,54 @@ Crux.Structs.Guild
 Types          </h1>
           <div class="types-list">
 <section class="detail" id="t:t/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
     </a>
     <h1 class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/guild.ex#L54" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/guild.ex#L64" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.0)</span>
-    
       <div class="specs">
           <pre>t() :: %Crux.Structs.Guild{
-  afk_channel_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>() | nil,
+  afk_channel_id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>() | nil,
   afk_timeout: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  application_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>() | nil,
+  application_id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>() | nil,
   banner: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
-  channels: <a href="https://hexdocs.pm/elixir/MapSet.html#t:t/1">MapSet.t</a>(<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()),
-  default_message_notifications: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  channels: <a href="https://hexdocs.pm/elixir/MapSet.html#t:t/1">MapSet.t</a>(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()),
+  default_message_notifications: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
   description: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
   embed_enabled: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
-  emojis: <a href="https://hexdocs.pm/elixir/MapSet.html#t:t/1">MapSet.t</a>(<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()),
-  explicit_content_filter: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  emojis: <a href="https://hexdocs.pm/elixir/MapSet.html#t:t/1">MapSet.t</a>(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()),
+  explicit_content_filter: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
   features: <a href="https://hexdocs.pm/elixir/MapSet.html#t:t/1">MapSet.t</a>(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()),
   icon: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
-  id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
+  id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>(),
   joined_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
   large: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
   max_members: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
   max_presences: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>() | nil,
-  member_count: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  members: %{optional(<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) => <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()},
+  member_count: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
+  members: %{required(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => <a href="Crux.Structs.Member.html#t:t/0">Crux.Structs.Member.t</a>()},
   mfa_level: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
   name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
   owner_id: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  preferred_locale: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  premium_subscription_count: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+  premium_tier: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
   region: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  roles: %{optional(<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) => <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()},
-  splash: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  roles: %{optional(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => <a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()},
+  splash: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  system_channel_flags: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+  system_channel_id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>() | nil,
   unavailable: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
   vanity_url_code: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
   verification_level: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
   voice_states: %{
-    optional(<a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()) => <a href="Crux.Structs.VoiceState.html#t:t/0">Crux.Structs.VoiceState.t</a>()
+    optional(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => <a href="Crux.Structs.VoiceState.html#t:t/0">Crux.Structs.VoiceState.t</a>()
   },
   widget_enabled: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()
 }</pre>
@@ -194,32 +194,30 @@ Types          </h1>
 Functions          </h1>
           <div class="functions-list">
 <section class="detail" id="create/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#create/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/guild.ex#L96" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/guild.ex#L115" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.0)</span>
-    
       <div class="specs">
           <pre>create(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
   </div>
   <section class="docstring">
-<p>  Creates a <a href="#content"><code class="inline">Crux.Structs.Guild</code></a> struct from raw data.</p>
+<p>  Creates a <code class="inline">t:Crux.Structs.Guild/0</code> struct from raw data.</p>
 <blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
 </blockquote>
   </section>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -243,7 +241,5 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
     <meta name="project" content="Crux vdev">
-    <title>Crux.Structs.Overwrite — Crux vdev</title>
+    <title>Crux.Structs.Snowflake.Parts — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
@@ -67,7 +67,7 @@ Crux      </a>
 
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Structs.Overwrite          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/overwrite.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Structs.Snowflake.Parts          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -75,7 +75,32 @@ Crux.Structs.Overwrite          <a href="https://github.com/SpaceEEC/crux_struct
 
 
         <section id="moduledoc">
-<p>  Represents a Discord <a href="https://discordapp.com/developers/docs/resources/channel#overwrite-object-overwrite-structure">Overwrite Object</a>.</p>
+<p>  Custom non discord api struct representing a deconstructed Discord snowflake.</p>
+<h2 id="module-structure-of-the-parts" class="section-heading">
+  <a href="#module-structure-of-the-parts" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Structure of the Parts
+</h2>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Field</th><th style="text-align: center">Bits</th><th style="text-align: center">Number of Bits</th><th style="text-align: center">Description</th>
+</tr>
+</thead>
+<tr>
+<td style="text-align: center">Timestamp</td><td style="text-align: center">63 to 22</td><td style="text-align: center">42 bits</td><td style="text-align: center">Milliseconds since Discord Epoch (1420070400000)</td>
+</tr>
+<tr>
+<td style="text-align: center">Internal Worker ID</td><td style="text-align: center">21 to 17</td><td style="text-align: center">5 bits</td><td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: center">Internal Process ID</td><td style="text-align: center">16 to 12</td><td style="text-align: center">5 bits</td><td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: center">Increment</td><td style="text-align: center">11 to  0</td><td style="text-align: center">12 bits</td><td style="text-align: center">For every ID that is generated on that process, this number is incremented</td>
+</tr>
+</table>
+<p>  For more information see <a href="https://discordapp.com/developers/docs/reference#snowflakes">Discord Docs</a>.</p>
         </section>
 
         <section id="summary" class="details-list">
@@ -94,17 +119,7 @@ Crux.Structs.Overwrite          <a href="https://github.com/SpaceEEC/crux_struct
   <div class="summary-signature">
     <a href="#t:t/0">t()</a>
   </div>
-</div>
-  </div>
-  <div class="summary-functions summary">
-    <h2>
-      <a href="#functions">Functions</a>
-    </h2>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#create/1">create(data)</a>
-  </div>
-    <div class="summary-synopsis"><p>  Creates a <a href="Crux.Structs.Overwrite.html#t:t/0"><code class="inline">Crux.Structs.Overwrite.t/0</code></a> struct from raw data.</p></div>
+    <div class="summary-synopsis"><p>  The parts of a <a href="Crux.Structs.Snowflake.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.t/0</code></a>.</p></div>
 </div>
   </div>
         </section>
@@ -124,53 +139,22 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <h1 class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/overwrite.ex#L22" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/snowflake.ex#L43" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-      <span class="note">(since 0.1.0)</span>
+      <span class="note">(since 0.2.1)</span>
       <div class="specs">
-          <pre>t() :: %Crux.Structs.Overwrite{
-  allow: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  deny: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>(),
-  type: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+          <pre>t() :: %Crux.Structs.Snowflake.Parts{
+  increment: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+  process_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+  timestamp: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
+  worker_id: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()
 }</pre>
       </div>
   </div>
   <section class="docstring">
-  </section>
-</section>
-          </div>
-        </section>
-        <section id="functions" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#functions">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-Functions          </h1>
-          <div class="functions-list">
-<section class="detail" id="create/1">
-  <div class="detail-header">
-    <a href="#create/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/overwrite.ex#L37" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-      <span class="note">(since 0.1.0)</span>
-      <div class="specs">
-          <pre>create(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="#t:t/0">t</a>()</pre>
-      </div>
-  </div>
-  <section class="docstring">
-<p>  Creates a <a href="Crux.Structs.Overwrite.html#t:t/0"><code class="inline">Crux.Structs.Overwrite.t/0</code></a> struct from raw data.</p>
-<blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
-</blockquote>
+<p>  The parts of a <a href="Crux.Structs.Snowflake.html#t:t/0"><code class="inline">Crux.Structs.Snowflake.t/0</code></a>.</p>
   </section>
 </section>
           </div>

@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Gateway — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Gateway        
-          <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Gateway          <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -119,7 +116,7 @@ Crux.Gateway
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#child_spec/1">child_spec(arg)</a>
+    <a href="#child_spec/1">child_spec(init_arg)</a>
   </div>
     <div class="summary-synopsis"><p>Returns a specification to start this module under a supervisor.</p></div>
 </div>
@@ -141,7 +138,7 @@ Crux.Gateway
 Types          </h1>
           <div class="types-list">
 <section class="detail" id="t:gateway/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:gateway/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -151,7 +148,6 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>gateway() :: <a href="https://hexdocs.pm/elixir/Supervisor.html#t:supervisor/0">Supervisor.supervisor</a>()</pre>
       </div>
@@ -161,7 +157,7 @@ Types          </h1>
   </section>
 </section>
 <section class="detail" id="t:options/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:options/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -171,7 +167,6 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>options() ::
   %{
@@ -218,7 +213,7 @@ Types          </h1>
   </section>
 </section>
 <section class="detail" id="t:presence/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:presence/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -228,7 +223,6 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>presence() :: (<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() -> <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()</pre>
       </div>
@@ -248,34 +242,33 @@ Types          </h1>
 Functions          </h1>
           <div class="functions-list">
 <section class="detail" id="child_spec/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#child_spec/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">child_spec(arg)</span>
+    <h1 class="signature">child_spec(init_arg)</span>
       <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L8" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-          </div>
+  </div>
   <section class="docstring">
 <p>Returns a specification to start this module under a supervisor.</p>
 <p>See <a href="https://hexdocs.pm/elixir/Supervisor.html"><code class="inline">Supervisor</code></a>.</p>
   </section>
 </section>
 <section class="detail" id="start_link/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#start_link/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">start_link(gateway_opts)</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L36" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L32" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>start_link(opts_or_tuple :: <a href="#t:options/0">options</a>() | {<a href="#t:options/0">options</a>(), <a href="https://hexdocs.pm/elixir/Supervisor.html#t:options/0">Supervisor.options</a>()}) ::
   <a href="https://hexdocs.pm/elixir/Supervisor.html#t:on_start/0">Supervisor.on_start</a>()</pre>
@@ -288,7 +281,7 @@ Functions          </h1>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -312,7 +305,5 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-

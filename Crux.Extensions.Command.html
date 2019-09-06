@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Extensions.Command — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Extensions.Command <small>behaviour</small>        
-          <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Extensions.Command <small>behaviour</small>          <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -89,55 +86,55 @@ Crux.Extensions.Command <small>behaviour</small>
   A Simple Ping Command
 </h3>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Ping</span><span class="w"> </span><span class="k" data-group-id="8514320332-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Ping</span><span class="w"> </span><span class="k" data-group-id="4414669277-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="8514320332-2">(</span><span class="p" data-group-id="8514320332-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8514320332-3">[</span><span class="s">&quot;ping&quot;</span><span class="p" data-group-id="8514320332-3">]</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="4414669277-2">(</span><span class="p" data-group-id="4414669277-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4414669277-3">[</span><span class="s">&quot;ping&quot;</span><span class="p" data-group-id="4414669277-3">]</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="8514320332-4">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="8514320332-4">)</span><span class="w"> </span><span class="k" data-group-id="8514320332-5">do</span><span class="w">
-      </span><span class="n">set_response</span><span class="p" data-group-id="8514320332-6">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Pong!&quot;</span><span class="p" data-group-id="8514320332-6">)</span><span class="w">
-    </span><span class="k" data-group-id="8514320332-5">end</span><span class="w">
-  </span><span class="k" data-group-id="8514320332-1">end</span></code></pre>
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="4414669277-4">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="4414669277-4">)</span><span class="w"> </span><span class="k" data-group-id="4414669277-5">do</span><span class="w">
+      </span><span class="n">set_response</span><span class="p" data-group-id="4414669277-6">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Pong!&quot;</span><span class="p" data-group-id="4414669277-6">)</span><span class="w">
+    </span><span class="k" data-group-id="4414669277-5">end</span><span class="w">
+  </span><span class="k" data-group-id="4414669277-1">end</span></code></pre>
 <h3 id="module-a-simple-middleware-command" class="section-heading">
   <a href="#module-a-simple-middleware-command" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   A Simple Middleware Command
 </h3>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="w"> </span><span class="k" data-group-id="6993029264-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="w"> </span><span class="k" data-group-id="1748826435-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="6993029264-2">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="n">opts</span><span class="p" data-group-id="6993029264-2">)</span><span class="w"> </span><span class="k" data-group-id="6993029264-3">do</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="1748826435-2">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="n">opts</span><span class="p" data-group-id="1748826435-2">)</span><span class="w"> </span><span class="k" data-group-id="1748826435-3">do</span><span class="w">
       </span><span class="c1"># Default the type to :cat</span><span class="w">
-      </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="6993029264-4">(</span><span class="n">opts</span><span class="p">,</span><span class="w"> </span><span class="ss">:type</span><span class="p">,</span><span class="w"> </span><span class="ss">:cat</span><span class="p" data-group-id="6993029264-4">)</span><span class="w">
+      </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="1748826435-4">(</span><span class="n">opts</span><span class="p">,</span><span class="w"> </span><span class="ss">:type</span><span class="p">,</span><span class="w"> </span><span class="ss">:cat</span><span class="p" data-group-id="1748826435-4">)</span><span class="w">
 
-      </span><span class="k">case</span><span class="w"> </span><span class="nc">MyBot.Api</span><span class="o">.</span><span class="n">fetch_picture</span><span class="p" data-group-id="6993029264-5">(</span><span class="n">type</span><span class="p" data-group-id="6993029264-5">)</span><span class="w"> </span><span class="k" data-group-id="6993029264-6">do</span><span class="w">
-        </span><span class="p" data-group-id="6993029264-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="6993029264-7">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
-          </span><span class="n">assign</span><span class="p" data-group-id="6993029264-8">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">:picture</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="6993029264-8">)</span><span class="w">
-        </span><span class="p" data-group-id="6993029264-9">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="c">_error</span><span class="p" data-group-id="6993029264-9">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+      </span><span class="k">case</span><span class="w"> </span><span class="nc">MyBot.Api</span><span class="o">.</span><span class="n">fetch_picture</span><span class="p" data-group-id="1748826435-5">(</span><span class="n">type</span><span class="p" data-group-id="1748826435-5">)</span><span class="w"> </span><span class="k" data-group-id="1748826435-6">do</span><span class="w">
+        </span><span class="p" data-group-id="1748826435-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="1748826435-7">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+          </span><span class="n">assign</span><span class="p" data-group-id="1748826435-8">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">:picture</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="1748826435-8">)</span><span class="w">
+        </span><span class="p" data-group-id="1748826435-9">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="c">_error</span><span class="p" data-group-id="1748826435-9">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
           </span><span class="n">command</span><span class="w">
-          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">set_response</span><span class="p" data-group-id="6993029264-10">(</span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;An error occurred while fetching the picture.&quot;</span><span class="p" data-group-id="6993029264-10">)</span><span class="w">
+          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">set_response</span><span class="p" data-group-id="1748826435-10">(</span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;An error occurred while fetching the picture.&quot;</span><span class="p" data-group-id="1748826435-10">)</span><span class="w">
           </span><span class="c1"># Halt the pipeline to stop any further execution of commands or middlewares</span><span class="w">
-          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">halt</span><span class="p" data-group-id="6993029264-11">(</span><span class="p" data-group-id="6993029264-11">)</span><span class="w">
-      </span><span class="k" data-group-id="6993029264-6">end</span><span class="w">
-    </span><span class="k" data-group-id="6993029264-3">end</span><span class="w">
-  </span><span class="k" data-group-id="6993029264-1">end</span></code></pre>
+          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">halt</span><span class="p" data-group-id="1748826435-11">(</span><span class="p" data-group-id="1748826435-11">)</span><span class="w">
+      </span><span class="k" data-group-id="1748826435-6">end</span><span class="w">
+    </span><span class="k" data-group-id="1748826435-3">end</span><span class="w">
+  </span><span class="k" data-group-id="1748826435-1">end</span></code></pre>
 <h3 id="module-using-the-middleware-command" class="section-heading">
   <a href="#module-using-the-middleware-command" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Using the Middleware Command
 </h3>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Dog</span><span class="w"> </span><span class="k" data-group-id="0223470175-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Dog</span><span class="w"> </span><span class="k" data-group-id="2865518506-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="0223470175-2">(</span><span class="p" data-group-id="0223470175-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0223470175-3">[</span><span class="s">&quot;dog&quot;</span><span class="p" data-group-id="0223470175-3">]</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="2865518506-2">(</span><span class="p" data-group-id="2865518506-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2865518506-3">[</span><span class="s">&quot;dog&quot;</span><span class="p" data-group-id="2865518506-3">]</span><span class="w">
 
     </span><span class="c1"># Specify the type of :dog</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">required</span><span class="p" data-group-id="0223470175-4">(</span><span class="p" data-group-id="0223470175-4">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0223470175-5">[</span><span class="p" data-group-id="0223470175-6">{</span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="ss">:dog</span><span class="p" data-group-id="0223470175-6">}</span><span class="p" data-group-id="0223470175-5">]</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">required</span><span class="p" data-group-id="2865518506-4">(</span><span class="p" data-group-id="2865518506-4">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2865518506-5">[</span><span class="p" data-group-id="2865518506-6">{</span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="ss">:dog</span><span class="p" data-group-id="2865518506-6">}</span><span class="p" data-group-id="2865518506-5">]</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="0223470175-7">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="0223470175-7">)</span><span class="w"> </span><span class="k" data-group-id="0223470175-8">do</span><span class="w">
-      </span><span class="n">set_response</span><span class="p" data-group-id="0223470175-9">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Your dog picture link: </span><span class="si" data-group-id="0223470175-10">#{</span><span class="n">command</span><span class="o">.</span><span class="n">assigns</span><span class="o">.</span><span class="n">picture</span><span class="si" data-group-id="0223470175-10">}</span><span class="s">&quot;</span><span class="p" data-group-id="0223470175-9">)</span><span class="w">
-    </span><span class="k" data-group-id="0223470175-8">end</span><span class="w">
-  </span><span class="k" data-group-id="0223470175-1">end</span></code></pre>
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="2865518506-7">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="2865518506-7">)</span><span class="w"> </span><span class="k" data-group-id="2865518506-8">do</span><span class="w">
+      </span><span class="n">set_response</span><span class="p" data-group-id="2865518506-9">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Your dog picture link: </span><span class="si" data-group-id="2865518506-10">#{</span><span class="n">command</span><span class="o">.</span><span class="n">assigns</span><span class="o">.</span><span class="n">picture</span><span class="si" data-group-id="2865518506-10">}</span><span class="s">&quot;</span><span class="p" data-group-id="2865518506-9">)</span><span class="w">
+    </span><span class="k" data-group-id="2865518506-8">end</span><span class="w">
+  </span><span class="k" data-group-id="2865518506-1">end</span></code></pre>
         </section>
 
         <section id="summary" class="details-list">
@@ -240,7 +237,7 @@ Crux.Extensions.Command <small>behaviour</small>
 Types          </h1>
           <div class="types-list">
 <section class="detail" id="t:command/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:command/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -250,7 +247,6 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>command() :: <a href="#t:command_mod/0">command_mod</a>() | {<a href="#t:command_mod/0">command_mod</a>(), <a href="#t:command_opts/0">command_opts</a>()}</pre>
       </div>
@@ -260,7 +256,7 @@ Types          </h1>
   </section>
 </section>
 <section class="detail" id="t:command_mod/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:command_mod/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -270,7 +266,6 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>command_mod() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">module</a>()</pre>
       </div>
@@ -280,7 +275,7 @@ Types          </h1>
   </section>
 </section>
 <section class="detail" id="t:command_opts/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:command_opts/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -290,7 +285,6 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>command_opts() :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()</pre>
       </div>
@@ -301,7 +295,7 @@ Types          </h1>
   </section>
 </section>
 <section class="detail" id="t:t/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -311,11 +305,10 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>t() :: %Crux.Extensions.Command{
   args: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()],
-  assigns: %{optional(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()},
+  assigns: %{required(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()},
   halted: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
   message: <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>(),
   response: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
@@ -340,7 +333,7 @@ Types          </h1>
 Functions          </h1>
           <div class="functions-list">
 <section class="detail" id="assign/3">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#assign/3" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -350,7 +343,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>assign(<a href="#t:t/0">t</a>(), key :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>(), value :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
@@ -360,7 +352,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="halt/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#halt/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -370,7 +362,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>halt(<a href="#t:t/0">t</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
@@ -380,7 +371,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="set_response/2">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#set_response/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -390,7 +381,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>set_response(<a href="#t:t/0">t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
@@ -400,7 +390,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="set_response_channel/2">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#set_response_channel/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -410,7 +400,6 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>set_response_channel(<a href="#t:t/0">t</a>(), <a href="Crux.Rest.Util.html#t:channel_id_resolvable/0">Crux.Rest.Util.channel_id_resolvable</a>() | nil) ::
   <a href="#t:t/0">t</a>()</pre>
@@ -431,7 +420,7 @@ Functions          </h1>
 Callbacks          </h1>
           <div class="callbacks-list">
 <section class="detail" id="c:call/2">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:call/2" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -441,7 +430,6 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-        
       <div class="specs">
           <pre>call(<a href="#t:t/0">t</a>(), <a href="#t:command_opts/0">command_opts</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
@@ -451,7 +439,7 @@ Callbacks          </h1>
   </section>
 </section>
 <section class="detail" id="c:required/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:required/0" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -461,9 +449,7 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(optional)</span>
-    
       <div class="specs">
           <pre>required() :: [<a href="#t:command_mod/0">command_mod</a>() | {<a href="#t:command_mod/0">command_mod</a>(), <a href="#t:command_opts/0">command_opts</a>()}]</pre>
       </div>
@@ -473,7 +459,7 @@ Callbacks          </h1>
   </section>
 </section>
 <section class="detail" id="c:triggers/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#c:triggers/0" class="detail-link" title="Link to this callback">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this callback</span>
@@ -483,9 +469,7 @@ Callbacks          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(optional)</span>
-    
       <div class="specs">
           <pre>triggers() :: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil]</pre>
       </div>
@@ -497,7 +481,7 @@ Callbacks          </h1>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -521,7 +505,5 @@ Callbacks          </h1>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-

@@ -8,14 +8,13 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Structs.AuditLogEntry — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-32c14257a8.js"></script>
+    <script src="dist/sidebar_items-54fe6ae213.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
-    
   </head>
   <body data-type="modules">
     <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
-    <div class="main">
+<div class="main">
 
 <button class="sidebar-button sidebar-toggle">
   <span class="icon-menu" title="Collapse/expand sidebar"></span>
@@ -66,11 +65,9 @@ Crux      </a>
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-
       <h1>
         <small class="app-vsn">Crux vdev</small>
-Crux.Structs.AuditLogEntry        
-          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_entry.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Structs.AuditLogEntry          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_entry.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -113,7 +110,7 @@ Crux.Structs.AuditLogEntry
   <div class="summary-signature">
     <a href="#create/1">create(data)</a>
   </div>
-    <div class="summary-synopsis"><p>  Creates a <a href="#content"><code class="inline">Crux.Structs.AuditLogEntry</code></a> struct from raw data.</p></div>
+    <div class="summary-synopsis"><p>  Creates a <a href="Crux.Structs.AuditLogEntry.html#t:t/0"><code class="inline">Crux.Structs.AuditLogEntry.t/0</code></a> struct from raw data.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -139,7 +136,7 @@ Crux.Structs.AuditLogEntry
 Types          </h1>
           <div class="types-list">
 <section class="detail" id="t:event_name/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:event_name/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -149,9 +146,7 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.6)</span>
-    
       <div class="specs">
           <pre>event_name() ::
   :guild_update
@@ -187,7 +182,7 @@ Types          </h1>
   </section>
 </section>
 <section class="detail" id="t:t/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
@@ -197,18 +192,16 @@ Types          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.6)</span>
-    
       <div class="specs">
           <pre>t() :: %Crux.Structs.AuditLogEntry{
   action_type: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>(),
-  changes: %{optional(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) => <a href="Crux.Structs.AuditLogChange.html#t:t/0">Crux.Structs.AuditLogChange.t</a>()},
-  id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
+  changes: %{required(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) => <a href="Crux.Structs.AuditLogChange.html#t:t/0">Crux.Structs.AuditLogChange.t</a>()},
+  id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>(),
   options: %{} | nil,
   reason: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
-  target_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>(),
-  user_id: <a href="Crux.Rest.html#t:snowflake/0">Crux.Rest.snowflake</a>()
+  target_id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>(),
+  user_id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()
 }</pre>
       </div>
   </div>
@@ -226,7 +219,7 @@ Types          </h1>
 Functions          </h1>
           <div class="functions-list">
 <section class="detail" id="create/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#create/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -236,21 +229,19 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.6)</span>
-    
       <div class="specs">
           <pre>create(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
   </div>
   <section class="docstring">
-<p>  Creates a <a href="#content"><code class="inline">Crux.Structs.AuditLogEntry</code></a> struct from raw data.</p>
+<p>  Creates a <a href="Crux.Structs.AuditLogEntry.html#t:t/0"><code class="inline">Crux.Structs.AuditLogEntry.t/0</code></a> struct from raw data.</p>
 <blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
 </blockquote>
   </section>
 </section>
 <section class="detail" id="event_name/1">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#event_name/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -260,9 +251,7 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.6)</span>
-    
       <div class="specs">
           <pre>event_name(action_type :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">atom</a>()</pre>
       </div>
@@ -272,7 +261,7 @@ Functions          </h1>
   </section>
 </section>
 <section class="detail" id="events/0">
-    <div class="detail-header">
+  <div class="detail-header">
     <a href="#events/0" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
@@ -282,11 +271,9 @@ Functions          </h1>
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-    
       <span class="note">(since 0.1.6)</span>
-    
       <div class="specs">
-          <pre>events() :: %{optional(<a href="#t:event_name/0">event_name</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()}</pre>
+          <pre>events() :: %{required(<a href="#t:event_name/0">event_name</a>()) => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()}</pre>
       </div>
   </div>
   <section class="docstring">
@@ -295,7 +282,7 @@ Functions          </h1>
 </section>
           </div>
         </section>
-          <footer class="footer">
+      <footer class="footer">
         <p>
           <span class="line">
             Built using
@@ -319,7 +306,5 @@ Functions          </h1>
   </div>
 </section>
 </div>
-  
   </body>
 </html>
-
