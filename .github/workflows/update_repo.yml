@@ -1,0 +1,91 @@
+name: Update Repository
+
+on:
+  repository_dispatch:
+    event_types: [docs]
+
+jobs:
+  update_submodules:
+    name: Submodules
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v1
+        with:
+          submodules: true
+          ref: master
+      
+      - name: Update submodules
+        run: git submodule foreach git pull origin master
+
+      - name: Commit updated submodules
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add .
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git commit -m "chore: update submodules"
+          git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:refs/heads/master
+
+  update_docs:
+    name: Documentation
+
+    needs: [update_submodules]
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: spaceeec/elixir:1.9-slim
+
+    steps:
+      - name: Setup ssh
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        run: |
+          mkdir /root/.ssh
+
+          echo "${DEPLOY_KEY}" > /root/.ssh/id_rsa
+          chmod 600 /root/.ssh/id_rsa
+          eval $(ssh-agent -s)
+          ssh-add /root/.ssh/id_rsa
+          ssh-keyscan -t rsa github.com >> /root/.ssh/known_hosts
+
+      - name: Clone repository
+        run: git clone --recurse-submodules "git@github.com:${GITHUB_REPOSITORY}.git" master -b master
+
+      - name: Install dependencies
+        working-directory: master
+        run: |
+          mix local.rebar --force
+          mix local.hex --force
+          mix deps.get
+
+      - name: Compile code
+        working-directory: master
+        run: mix compile
+
+      - name: Generate documentation
+        working-directory: master
+        run: |
+          mix docs
+          echo "crux.randomly.space" > ./doc/CNAME
+      
+      - name: Clone repository (gh-pages branch)
+        run: git clone "git@github.com:${GITHUB_REPOSITORY}.git" gh-pages -b gh-pages
+
+      - name: Copy documentation
+        run: |
+          rm -rf ./gh-pages/*
+          cp -R ./master/doc/* ./gh-pages
+
+      - name: Commit documentation
+        working-directory: gh-pages
+        run: |
+          git add .
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git commit -m "docs: documentation build for ${GITHUB_SHA}"
+          git push origin HEAD:refs/heads/gh-pages
