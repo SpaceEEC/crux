@@ -20,6 +20,17 @@ jobs:
       - name: Update submodules
         run: git submodule foreach git pull origin master
 
+      - name: Install dependencies
+        working-directory: master
+        run: |
+          mix local.rebar --force
+          mix local.hex --force
+          mix deps.get
+
+      - name: Compile code
+        working-directory: master
+        run: mix compile
+
       - name: Commit updated submodules
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
