@@ -8,7 +8,7 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Structs.AuditLog — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-54fe6ae213.js"></script>
+    <script src="dist/sidebar_items-da6452be3a.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
   </head>
@@ -92,6 +92,12 @@ Crux.Structs.AuditLog          <a href="https://github.com/SpaceEEC/crux_structs
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:id_resolvable/0">id_resolvable()</a>
+  </div>
+    <div class="summary-synopsis"><p>  All available types that can be resolved into an audit log id.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:t/0">t()</a>
   </div>
 </div>
@@ -117,6 +123,27 @@ Crux.Structs.AuditLog          <a href="https://github.com/SpaceEEC/crux_structs
             </a>
 Types          </h1>
           <div class="types-list">
+<section class="detail" id="t:id_resolvable/0">
+  <div class="detail-header">
+    <a href="#t:id_resolvable/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">id_resolvable()</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log.ex#L31" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>id_resolvable() ::
+  <a href="Crux.Structs.AuditLog.html#t:t/0">Crux.Structs.AuditLog.t</a>() | <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  All available types that can be resolved into an audit log id.</p>
+  </section>
+</section>
 <section class="detail" id="t:t/0">
   <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
@@ -132,10 +159,10 @@ Types          </h1>
       <div class="specs">
           <pre>t() :: %Crux.Structs.AuditLog{
   audit_log_entries: %{
-    required(Snowflake.t()) => <a href="Crux.Structs.AuditLogEntry.html#t:t/0">Crux.Structs.AuditLogEntry.t</a>()
+    required(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => <a href="Crux.Structs.AuditLogEntry.html#t:t/0">Crux.Structs.AuditLogEntry.t</a>()
   },
-  users: %{required(Snowflake.t()) => <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()},
-  webhooks: %{required(Snowflake.t()) => <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>()}
+  users: %{required(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => <a href="Crux.Structs.User.html#t:t/0">Crux.Structs.User.t</a>()},
+  webhooks: %{required(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>()}
 }</pre>
       </div>
   </div>
@@ -159,7 +186,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log.ex#L35" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log.ex#L41" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

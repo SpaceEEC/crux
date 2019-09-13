@@ -8,7 +8,7 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Rest — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-54fe6ae213.js"></script>
+    <script src="dist/sidebar_items-da6452be3a.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
   </head>
@@ -87,16 +87,16 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
 
 </li>
 </ul>
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="6493271072-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="5487640343-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Rest</span><span class="w">
 
     </span><span class="c1"># Define helper functions as needed</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="6493271072-2">(</span><span class="p" data-group-id="6493271072-2">)</span><span class="w"> </span><span class="k" data-group-id="6493271072-3">do</span><span class="w">
-      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="6493271072-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="6493271072-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="6493271072-5">(</span><span class="p" data-group-id="6493271072-5">)</span><span class="w"> </span><span class="k" data-group-id="6493271072-6">do</span><span class="w">
-        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="6493271072-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="6493271072-8">(</span><span class="p" data-group-id="6493271072-8">)</span><span class="p" data-group-id="6493271072-7">)</span><span class="w">
-      </span><span class="k" data-group-id="6493271072-6">end</span><span class="w">
-    </span><span class="k" data-group-id="6493271072-3">end</span><span class="w">
-  </span><span class="k" data-group-id="6493271072-1">end</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="5487640343-2">(</span><span class="p" data-group-id="5487640343-2">)</span><span class="w"> </span><span class="k" data-group-id="5487640343-3">do</span><span class="w">
+      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="5487640343-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="5487640343-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="5487640343-5">(</span><span class="p" data-group-id="5487640343-5">)</span><span class="w"> </span><span class="k" data-group-id="5487640343-6">do</span><span class="w">
+        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="5487640343-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="5487640343-8">(</span><span class="p" data-group-id="5487640343-8">)</span><span class="p" data-group-id="5487640343-7">)</span><span class="w">
+      </span><span class="k" data-group-id="5487640343-6">end</span><span class="w">
+    </span><span class="k" data-group-id="5487640343-3">end</span><span class="w">
+  </span><span class="k" data-group-id="5487640343-1">end</span><span class="w">
 </span></code></pre>
 <p>  This module fits under a supervision tree, see <a href="#start_link/1"><code class="inline">start_link/1</code></a>&#39;s&#39; arguments for configuration.<br>  The same applies to modules <code class="inline">use</code>-ing this module.</p>
         </section>

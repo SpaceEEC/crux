@@ -8,7 +8,7 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Structs.Reaction — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-54fe6ae213.js"></script>
+    <script src="dist/sidebar_items-da6452be3a.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
   </head>
@@ -92,6 +92,12 @@ Crux.Structs.Reaction          <a href="https://github.com/SpaceEEC/crux_structs
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:id_resolvable/0">id_resolvable()</a>
+  </div>
+    <div class="summary-synopsis"><p>  All available types that can be resolved into a reaction / emoji id.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:t/0">t()</a>
   </div>
 </div>
@@ -106,6 +112,12 @@ Crux.Structs.Reaction          <a href="https://github.com/SpaceEEC/crux_structs
   </div>
     <div class="summary-synopsis"><p>  Creates a <a href="Crux.Structs.Presence.html#t:t/0"><code class="inline">Crux.Structs.Presence.t/0</code></a> struct from raw data.</p></div>
 </div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#resolve_id/1">resolve_id(resolvable)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Resolves the id of a <a href="Crux.Structs.Reaction.html#t:t/0"><code class="inline">Crux.Structs.Reaction.t/0</code></a>.</p></div>
+</div>
   </div>
         </section>
 
@@ -117,6 +129,27 @@ Crux.Structs.Reaction          <a href="https://github.com/SpaceEEC/crux_structs
             </a>
 Types          </h1>
           <div class="types-list">
+<section class="detail" id="t:id_resolvable/0">
+  <div class="detail-header">
+    <a href="#t:id_resolvable/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">id_resolvable()</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/reaction.ex#L32" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>id_resolvable() ::
+  Reaction.t() | <a href="Crux.Structs.Emoji.html#t:t/0">Crux.Structs.Emoji.t</a>() | Snowflake.t() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  All available types that can be resolved into a reaction / emoji id.</p>
+  </section>
+</section>
 <section class="detail" id="t:t/0">
   <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
@@ -157,7 +190,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/reaction.ex#L36" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/reaction.ex#L71" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -170,6 +203,44 @@ Functions          </h1>
 <p>  Creates a <a href="Crux.Structs.Presence.html#t:t/0"><code class="inline">Crux.Structs.Presence.t/0</code></a> struct from raw data.</p>
 <blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
 </blockquote>
+  </section>
+</section>
+<section class="detail" id="resolve_id/1">
+  <div class="detail-header">
+    <a href="#resolve_id/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">resolve_id(resolvable)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/reaction.ex#L61" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>resolve_id(<a href="#t:id_resolvable/0">id_resolvable</a>()) :: Snowflake.t() | nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Resolves the id of a <a href="Crux.Structs.Reaction.html#t:t/0"><code class="inline">Crux.Structs.Reaction.t/0</code></a>.</p>
+<blockquote><p>Automatically invoked by <a href="Crux.Structs.html#resolve_id/2"><code class="inline">Crux.Structs.resolve_id/2</code></a>.</p>
+</blockquote>
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9111956531-1">%</span><span class="nc" data-group-id="9111956531-1">Crux.Structs.Reaction</span><span class="p" data-group-id="9111956531-1">{</span><span class="ss">emoji</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9111956531-2">%</span><span class="nc" data-group-id="9111956531-2">Crux.Structs.Emoji</span><span class="p" data-group-id="9111956531-2">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">618731477143912448</span><span class="p" data-group-id="9111956531-2">}</span><span class="p" data-group-id="9111956531-1">}</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Reaction</span><span class="o">.</span><span class="n">resolve_id</span><span class="p" data-group-id="9111956531-3">(</span><span class="p" data-group-id="9111956531-3">)</span><span class="w">
+  </span><span class="mi">618731477143912448</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9111956531-4">%</span><span class="nc" data-group-id="9111956531-4">Crux.Structs.Emoji</span><span class="p" data-group-id="9111956531-4">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">618731477143912448</span><span class="p" data-group-id="9111956531-4">}</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Reaction</span><span class="o">.</span><span class="n">resolve_id</span><span class="p" data-group-id="9111956531-5">(</span><span class="p" data-group-id="9111956531-5">)</span><span class="w">
+  </span><span class="mi">618731477143912448</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="mi">618731477143912448</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Reaction</span><span class="o">.</span><span class="n">resolve_id</span><span class="p" data-group-id="9111956531-6">(</span><span class="p" data-group-id="9111956531-6">)</span><span class="w">
+  </span><span class="mi">618731477143912448</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="s">&quot;618731477143912448&quot;</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Reaction</span><span class="o">.</span><span class="n">resolve_id</span><span class="p" data-group-id="9111956531-7">(</span><span class="p" data-group-id="9111956531-7">)</span><span class="w">
+  </span><span class="mi">618731477143912448</span><span class="w">
+</span></code></pre>
   </section>
 </section>
           </div>

@@ -8,7 +8,7 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Extensions.Command.Handler — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-54fe6ae213.js"></script>
+    <script src="dist/sidebar_items-da6452be3a.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
   </head>
@@ -81,19 +81,19 @@ Crux.Extensions.Command.Handler <small>behaviour</small>          <a href="https
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Handler</span><span class="w"> </span><span class="k" data-group-id="2303563823-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Handler</span><span class="w"> </span><span class="k" data-group-id="2998412753-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command.Handler</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">commands</span><span class="p" data-group-id="2303563823-2">(</span><span class="p" data-group-id="2303563823-2">)</span><span class="w"> </span><span class="k" data-group-id="2303563823-3">do</span><span class="w">
-      </span><span class="p" data-group-id="2303563823-4">[</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">commands</span><span class="p" data-group-id="2998412753-2">(</span><span class="p" data-group-id="2998412753-2">)</span><span class="w"> </span><span class="k" data-group-id="2998412753-3">do</span><span class="w">
+      </span><span class="p" data-group-id="2998412753-4">[</span><span class="w">
         </span><span class="nc">MyBot.Command.Ping</span><span class="p">,</span><span class="w">
         </span><span class="nc">MyBot.Command.Dog</span><span class="w">
-      </span><span class="p" data-group-id="2303563823-4">]</span><span class="w">
-    </span><span class="k" data-group-id="2303563823-3">end</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">producers</span><span class="p" data-group-id="2303563823-5">(</span><span class="p" data-group-id="2303563823-5">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Producers</span><span class="o">.</span><span class="n">fetch</span><span class="p" data-group-id="2303563823-6">(</span><span class="p" data-group-id="2303563823-6">)</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">rest</span><span class="p" data-group-id="2303563823-7">(</span><span class="p" data-group-id="2303563823-7">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">prefixes</span><span class="p" data-group-id="2303563823-8">(</span><span class="p" data-group-id="2303563823-8">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2303563823-9">[</span><span class="s">&quot;!&quot;</span><span class="p" data-group-id="2303563823-9">]</span><span class="w">
-  </span><span class="k" data-group-id="2303563823-1">end</span></code></pre>
+      </span><span class="p" data-group-id="2998412753-4">]</span><span class="w">
+    </span><span class="k" data-group-id="2998412753-3">end</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">producers</span><span class="p" data-group-id="2998412753-5">(</span><span class="p" data-group-id="2998412753-5">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Producers</span><span class="o">.</span><span class="n">fetch</span><span class="p" data-group-id="2998412753-6">(</span><span class="p" data-group-id="2998412753-6">)</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">rest</span><span class="p" data-group-id="2998412753-7">(</span><span class="p" data-group-id="2998412753-7">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">prefixes</span><span class="p" data-group-id="2998412753-8">(</span><span class="p" data-group-id="2998412753-8">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2998412753-9">[</span><span class="s">&quot;!&quot;</span><span class="p" data-group-id="2998412753-9">]</span><span class="w">
+  </span><span class="k" data-group-id="2998412753-1">end</span></code></pre>
         </section>
 
         <section id="summary" class="details-list">

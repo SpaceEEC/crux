@@ -8,7 +8,7 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Structs.Channel — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-54fe6ae213.js"></script>
+    <script src="dist/sidebar_items-da6452be3a.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
   </head>
@@ -159,6 +159,18 @@ Crux.Structs.Channel          <a href="https://github.com/SpaceEEC/crux_structs/
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:id_resolvable/0">id_resolvable()</a>
+  </div>
+    <div class="summary-synopsis"><p>  All available types that can be resolved into a channel id.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:position_resolvable/0">position_resolvable()</a>
+  </div>
+    <div class="summary-synopsis"><p>  All available types that can be resolved into a channel position.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:t/0">t()</a>
   </div>
 </div>
@@ -172,6 +184,18 @@ Crux.Structs.Channel          <a href="https://github.com/SpaceEEC/crux_structs/
     <a href="#create/1">create(data)</a>
   </div>
     <div class="summary-synopsis"><p>  Creates a <a href="Crux.Structs.Channel.html#t:t/0"><code class="inline">Crux.Structs.Channel.t/0</code></a> struct from raw data.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#resolve_id/1">resolve_id(resolvable)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Resolves the id of a <a href="Crux.Structs.Channel.html#t:t/0"><code class="inline">Crux.Structs.Channel.t/0</code></a>.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#resolve_position/1">resolve_position(resolvable)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Resolves a <a href="#t:position_resolvable/0"><code class="inline">position_resolvable/0</code></a> into a channel position.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -190,6 +214,54 @@ Crux.Structs.Channel          <a href="https://github.com/SpaceEEC/crux_structs/
             </a>
 Types          </h1>
           <div class="types-list">
+<section class="detail" id="t:id_resolvable/0">
+  <div class="detail-header">
+    <a href="#t:id_resolvable/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">id_resolvable()</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L88" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>id_resolvable() ::
+  <a href="Crux.Structs.Message.html#t:t/0">Crux.Structs.Message.t</a>()
+  | <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()
+  | <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()
+  | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  All available types that can be resolved into a channel id.</p>
+  </section>
+</section>
+<section class="detail" id="t:position_resolvable/0">
+  <div class="detail-header">
+    <a href="#t:position_resolvable/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">position_resolvable()</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L132" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>position_resolvable() ::
+  <a href="Crux.Structs.Channel.html#t:t/0">Crux.Structs.Channel.t</a>()
+  | %{channel: <a href="#t:id_resolvable/0">id_resolvable</a>(), position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}
+  | {<a href="#t:id_resolvable/0">id_resolvable</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}
+  | %{id: <a href="#t:id_resolvable/0">id_resolvable</a>(), position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  All available types that can be resolved into a channel position.</p>
+  </section>
+</section>
 <section class="detail" id="t:t/0">
   <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
@@ -197,7 +269,7 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <h1 class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L62" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L63" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -247,7 +319,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L91" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L206" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -262,6 +334,90 @@ Functions          </h1>
 </blockquote>
   </section>
 </section>
+<section class="detail" id="resolve_id/1">
+  <div class="detail-header">
+    <a href="#resolve_id/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">resolve_id(resolvable)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L117" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>resolve_id(<a href="#t:id_resolvable/0">id_resolvable</a>()) :: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>() | nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Resolves the id of a <a href="Crux.Structs.Channel.html#t:t/0"><code class="inline">Crux.Structs.Channel.t/0</code></a>.</p>
+<blockquote><p>Automatically invoked by <a href="Crux.Structs.html#resolve_id/2"><code class="inline">Crux.Structs.resolve_id/2</code></a>.</p>
+</blockquote>
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9223201123-1">%</span><span class="nc" data-group-id="9223201123-1">Crux.Structs.Message</span><span class="p" data-group-id="9223201123-1">{</span><span class="ss">channel_id</span><span class="p">:</span><span class="w"> </span><span class="mi">222079895583457280</span><span class="p" data-group-id="9223201123-1">}</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">resolve_id</span><span class="p" data-group-id="9223201123-2">(</span><span class="p" data-group-id="9223201123-2">)</span><span class="w">
+  </span><span class="mi">222079895583457280</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="9223201123-3">%</span><span class="nc" data-group-id="9223201123-3">Crux.Structs.Channel</span><span class="p" data-group-id="9223201123-3">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">222079895583457280</span><span class="p" data-group-id="9223201123-3">}</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">resolve_id</span><span class="p" data-group-id="9223201123-4">(</span><span class="p" data-group-id="9223201123-4">)</span><span class="w">
+  </span><span class="mi">222079895583457280</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="mi">222079895583457280</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">resolve_id</span><span class="p" data-group-id="9223201123-5">(</span><span class="p" data-group-id="9223201123-5">)</span><span class="w">
+  </span><span class="mi">222079895583457280</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="s">&quot;222079895583457280&quot;</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">resolve_id</span><span class="p" data-group-id="9223201123-6">(</span><span class="p" data-group-id="9223201123-6">)</span><span class="w">
+  </span><span class="mi">222079895583457280</span><span class="w">
+</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="resolve_position/1">
+  <div class="detail-header">
+    <a href="#resolve_position/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">resolve_position(resolvable)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L168" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>resolve_position(<a href="#t:position_resolvable/0">position_resolvable</a>()) ::
+  %{id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>(), position: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()} | nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Resolves a <a href="#t:position_resolvable/0"><code class="inline">position_resolvable/0</code></a> into a channel position.</p>
+<h2 id="resolve_position/1-examples" class="section-heading">
+  <a href="#resolve_position/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4740656700-1">%</span><span class="nc" data-group-id="4740656700-1">Crux.Structs.Channel</span><span class="p" data-group-id="4740656700-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">222079895583457280</span><span class="p">,</span><span class="w"> </span><span class="ss">position</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="4740656700-1">}</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">resolve_position</span><span class="p" data-group-id="4740656700-2">(</span><span class="p" data-group-id="4740656700-2">)</span><span class="w">
+  </span><span class="p" data-group-id="4740656700-3">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">222079895583457280</span><span class="p">,</span><span class="w"> </span><span class="ss">position</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="4740656700-3">}</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4740656700-4">{</span><span class="p" data-group-id="4740656700-5">%</span><span class="nc" data-group-id="4740656700-5">Crux.Structs.Channel</span><span class="p" data-group-id="4740656700-5">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">222079895583457280</span><span class="p" data-group-id="4740656700-5">}</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="4740656700-4">}</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">resolve_position</span><span class="p" data-group-id="4740656700-6">(</span><span class="p" data-group-id="4740656700-6">)</span><span class="w">
+  </span><span class="p" data-group-id="4740656700-7">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">222079895583457280</span><span class="p">,</span><span class="w"> </span><span class="ss">position</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="4740656700-7">}</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4740656700-8">{</span><span class="mi">222079895583457280</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="4740656700-8">}</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">resolve_position</span><span class="p" data-group-id="4740656700-9">(</span><span class="p" data-group-id="4740656700-9">)</span><span class="w">
+  </span><span class="p" data-group-id="4740656700-10">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">222079895583457280</span><span class="p">,</span><span class="w"> </span><span class="ss">position</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="4740656700-10">}</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4740656700-11">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">222079895583457280</span><span class="p">,</span><span class="w"> </span><span class="ss">position</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="4740656700-11">}</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">resolve_position</span><span class="p" data-group-id="4740656700-12">(</span><span class="p" data-group-id="4740656700-12">)</span><span class="w">
+  </span><span class="p" data-group-id="4740656700-13">%{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">222079895583457280</span><span class="p">,</span><span class="w"> </span><span class="ss">position</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="4740656700-13">}</span><span class="w">
+
+  </span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4740656700-14">{</span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="4740656700-14">}</span><span class="w">
+  </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">resolve_position</span><span class="p" data-group-id="4740656700-15">(</span><span class="p" data-group-id="4740656700-15">)</span><span class="w">
+  </span><span class="no">nil</span><span class="w">
+</span></code></pre>
+  </section>
+</section>
 <section class="detail" id="to_mention/1">
   <div class="detail-header">
     <a href="#to_mention/1" class="detail-link" title="Link to this function">
@@ -269,7 +425,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">to_mention(channel)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L121" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/channel.ex#L236" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -285,8 +441,8 @@ Functions          </h1>
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="8148072538-1">%</span><span class="nc" data-group-id="8148072538-1">Crux.Structs.Channel</span><span class="p" data-group-id="8148072538-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">316880197314019329</span><span class="p" data-group-id="8148072538-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="8148072538-2">(</span><span class="p" data-group-id="8148072538-2">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="2943160182-1">%</span><span class="nc" data-group-id="2943160182-1">Crux.Structs.Channel</span><span class="p" data-group-id="2943160182-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="mi">316880197314019329</span><span class="p" data-group-id="2943160182-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Channel</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="2943160182-2">(</span><span class="p" data-group-id="2943160182-2">)</span><span class="w">
 </span><span class="s">&quot;&lt;#316880197314019329&gt;&quot;</span><span class="w">
 </span></code></pre>
   </section>

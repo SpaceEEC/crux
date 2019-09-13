@@ -8,7 +8,7 @@
     <meta name="project" content="Crux vdev">
     <title>Crux.Structs.Member — Crux vdev</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-54fe6ae213.js"></script>
+    <script src="dist/sidebar_items-da6452be3a.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
   </head>
@@ -97,6 +97,12 @@ Crux.Structs.Member          <a href="https://github.com/SpaceEEC/crux_structs/b
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#t:id_resolvable/0">id_resolvable()</a>
+  </div>
+    <div class="summary-synopsis"><p>  All available types that can be resolved into a user id.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#t:t/0">t()</a>
   </div>
 </div>
@@ -110,6 +116,12 @@ Crux.Structs.Member          <a href="https://github.com/SpaceEEC/crux_structs/b
     <a href="#create/1">create(data)</a>
   </div>
     <div class="summary-synopsis"><p>  Creates a <a href="Crux.Structs.Member.html#t:t/0"><code class="inline">Crux.Structs.Member.t/0</code></a> struct from raw data.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#resolve_id/1">resolve_id(resolvable)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Resolves the id of a <a href="Crux.Structs.Member.html#t:t/0"><code class="inline">Crux.Structs.Member.t/0</code></a>.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -128,6 +140,26 @@ Crux.Structs.Member          <a href="https://github.com/SpaceEEC/crux_structs/b
             </a>
 Types          </h1>
           <div class="types-list">
+<section class="detail" id="t:id_resolvable/0">
+  <div class="detail-header">
+    <a href="#t:id_resolvable/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <h1 class="signature">id_resolvable()</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/member.ex#L43" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>id_resolvable() :: <a href="Crux.Structs.User.html#t:id_resolvable/0">Crux.Structs.User.id_resolvable</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  All available types that can be resolved into a user id.</p>
+  </section>
+</section>
 <section class="detail" id="t:t/0">
   <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
@@ -172,7 +204,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/member.ex#L46" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/member.ex#L65" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -187,6 +219,29 @@ Functions          </h1>
 </blockquote>
   </section>
 </section>
+<section class="detail" id="resolve_id/1">
+  <div class="detail-header">
+    <a href="#resolve_id/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">resolve_id(resolvable)</span>
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/member.ex#L55" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>resolve_id(<a href="#t:id_resolvable/0">id_resolvable</a>()) :: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>() | nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Resolves the id of a <a href="Crux.Structs.Member.html#t:t/0"><code class="inline">Crux.Structs.Member.t/0</code></a>.</p>
+<blockquote><p>Automatically invoked by <a href="Crux.Structs.html#resolve_id/2"><code class="inline">Crux.Structs.resolve_id/2</code></a>.</p>
+</blockquote>
+<p>  For examples see <a href="Crux.Structs.User.html#resolve_id/1"><code class="inline">Crux.Structs.User.resolve_id/1</code></a>.</p>
+  </section>
+</section>
 <section class="detail" id="to_mention/1">
   <div class="detail-header">
     <a href="#to_mention/1" class="detail-link" title="Link to this function">
@@ -194,7 +249,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">to_mention(member)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/member.ex#L77" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/member.ex#L96" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -211,13 +266,13 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># Without nickname</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0143267325-1">%</span><span class="nc" data-group-id="0143267325-1">Crux.Structs.Member</span><span class="p" data-group-id="0143267325-1">{</span><span class="ss">user</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">nick</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="0143267325-1">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Member</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="0143267325-2">(</span><span class="p" data-group-id="0143267325-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1970321177-1">%</span><span class="nc" data-group-id="1970321177-1">Crux.Structs.Member</span><span class="p" data-group-id="1970321177-1">{</span><span class="ss">user</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">nick</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="1970321177-1">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Member</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="1970321177-2">(</span><span class="p" data-group-id="1970321177-2">)</span><span class="w">
 </span><span class="s">&quot;&lt;@218348062828003328&gt;&quot;</span><span class="w">
 
 </span><span class="c1"># With nickname</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0143267325-3">%</span><span class="nc" data-group-id="0143267325-3">Crux.Structs.Member</span><span class="p" data-group-id="0143267325-3">{</span><span class="ss">user</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">nick</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;weltraum&quot;</span><span class="p" data-group-id="0143267325-3">}</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Member</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="0143267325-4">(</span><span class="p" data-group-id="0143267325-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="1970321177-3">%</span><span class="nc" data-group-id="1970321177-3">Crux.Structs.Member</span><span class="p" data-group-id="1970321177-3">{</span><span class="ss">user</span><span class="p">:</span><span class="w"> </span><span class="mi">218348062828003328</span><span class="p">,</span><span class="w"> </span><span class="ss">nick</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;weltraum&quot;</span><span class="p" data-group-id="1970321177-3">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Member</span><span class="o">.</span><span class="n">to_mention</span><span class="p" data-group-id="1970321177-4">(</span><span class="p" data-group-id="1970321177-4">)</span><span class="w">
 </span><span class="s">&quot;&lt;@!218348062828003328&gt;&quot;</span><span class="w">
 </span></code></pre>
   </section>
