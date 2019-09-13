@@ -276,8 +276,8 @@ Callbacks          </h1>
 <p>For example something like that:</p>
 <pre><code class="nohighlight makeup elixir"><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w">
   </span><span class="n">raw_data</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="2615996859-1">(</span><span class="p" data-group-id="2615996859-1">)</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="2615996859-2">(</span><span class="ss">:id</span><span class="p" data-group-id="2615996859-2">)</span></code></pre>
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="3152594244-1">(</span><span class="p" data-group-id="3152594244-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="3152594244-2">(</span><span class="ss">:id</span><span class="p" data-group-id="3152594244-2">)</span></code></pre>
   </section>
 </section>
 <section class="detail" id="c:start_link/1">
@@ -321,8 +321,8 @@ Callbacks          </h1>
 <p>Returns &quot;updated&quot; data including changes by merging.<br>For example from a message embed update to a full message object</p>
 <pre><code class="nohighlight makeup elixir"><span class="n">content</span><span class="w"> </span><span class="o">=</span><span class="w">
   </span><span class="n">partial_message</span><span class="w"> </span><span class="c1"># only contains `:id`, `:channel_id`, and `:embeds`</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">update</span><span class="p" data-group-id="2187474424-1">(</span><span class="p" data-group-id="2187474424-1">)</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="2187474424-2">(</span><span class="ss">:content</span><span class="p" data-group-id="2187474424-2">)</span><span class="w"> </span><span class="c1"># present if the message was cached previously</span></code></pre>
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">update</span><span class="p" data-group-id="6792948434-1">(</span><span class="p" data-group-id="6792948434-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="6792948434-2">(</span><span class="ss">:content</span><span class="p" data-group-id="6792948434-2">)</span><span class="w"> </span><span class="c1"># present if the message was cached previously</span></code></pre>
   </section>
 </section>
           </div>
