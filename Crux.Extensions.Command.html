@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-09-13 17:31:47Z">
-    <title>Crux.Extensions.Command — Crux v2019-09-13 17:31:47Z</title>
+    <meta name="project" content="Crux v2019-09-13 17:49:35Z">
+    <title>Crux.Extensions.Command — Crux v2019-09-13 17:49:35Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-da6452be3a.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-09-13 17:31:47Z
+        v2019-09-13 17:49:35Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-09-13 17:31:47Z</small>
+        <small class="app-vsn">Crux v2019-09-13 17:49:35Z</small>
 Crux.Extensions.Command <small>behaviour</small>          <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/command.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -86,55 +86,55 @@ Crux.Extensions.Command <small>behaviour</small>          <a href="https://githu
   A Simple Ping Command
 </h3>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Ping</span><span class="w"> </span><span class="k" data-group-id="2693446205-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Ping</span><span class="w"> </span><span class="k" data-group-id="0590413536-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="2693446205-2">(</span><span class="p" data-group-id="2693446205-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2693446205-3">[</span><span class="s">&quot;ping&quot;</span><span class="p" data-group-id="2693446205-3">]</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="0590413536-2">(</span><span class="p" data-group-id="0590413536-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0590413536-3">[</span><span class="s">&quot;ping&quot;</span><span class="p" data-group-id="0590413536-3">]</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="2693446205-4">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="2693446205-4">)</span><span class="w"> </span><span class="k" data-group-id="2693446205-5">do</span><span class="w">
-      </span><span class="n">set_response</span><span class="p" data-group-id="2693446205-6">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Pong!&quot;</span><span class="p" data-group-id="2693446205-6">)</span><span class="w">
-    </span><span class="k" data-group-id="2693446205-5">end</span><span class="w">
-  </span><span class="k" data-group-id="2693446205-1">end</span></code></pre>
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="0590413536-4">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="0590413536-4">)</span><span class="w"> </span><span class="k" data-group-id="0590413536-5">do</span><span class="w">
+      </span><span class="n">set_response</span><span class="p" data-group-id="0590413536-6">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Pong!&quot;</span><span class="p" data-group-id="0590413536-6">)</span><span class="w">
+    </span><span class="k" data-group-id="0590413536-5">end</span><span class="w">
+  </span><span class="k" data-group-id="0590413536-1">end</span></code></pre>
 <h3 id="module-a-simple-middleware-command" class="section-heading">
   <a href="#module-a-simple-middleware-command" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   A Simple Middleware Command
 </h3>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="w"> </span><span class="k" data-group-id="7643557304-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="w"> </span><span class="k" data-group-id="0824241872-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="7643557304-2">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="n">opts</span><span class="p" data-group-id="7643557304-2">)</span><span class="w"> </span><span class="k" data-group-id="7643557304-3">do</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="0824241872-2">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="n">opts</span><span class="p" data-group-id="0824241872-2">)</span><span class="w"> </span><span class="k" data-group-id="0824241872-3">do</span><span class="w">
       </span><span class="c1"># Default the type to :cat</span><span class="w">
-      </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="7643557304-4">(</span><span class="n">opts</span><span class="p">,</span><span class="w"> </span><span class="ss">:type</span><span class="p">,</span><span class="w"> </span><span class="ss">:cat</span><span class="p" data-group-id="7643557304-4">)</span><span class="w">
+      </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="0824241872-4">(</span><span class="n">opts</span><span class="p">,</span><span class="w"> </span><span class="ss">:type</span><span class="p">,</span><span class="w"> </span><span class="ss">:cat</span><span class="p" data-group-id="0824241872-4">)</span><span class="w">
 
-      </span><span class="k">case</span><span class="w"> </span><span class="nc">MyBot.Api</span><span class="o">.</span><span class="n">fetch_picture</span><span class="p" data-group-id="7643557304-5">(</span><span class="n">type</span><span class="p" data-group-id="7643557304-5">)</span><span class="w"> </span><span class="k" data-group-id="7643557304-6">do</span><span class="w">
-        </span><span class="p" data-group-id="7643557304-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="7643557304-7">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
-          </span><span class="n">assign</span><span class="p" data-group-id="7643557304-8">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">:picture</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="7643557304-8">)</span><span class="w">
-        </span><span class="p" data-group-id="7643557304-9">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="c">_error</span><span class="p" data-group-id="7643557304-9">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+      </span><span class="k">case</span><span class="w"> </span><span class="nc">MyBot.Api</span><span class="o">.</span><span class="n">fetch_picture</span><span class="p" data-group-id="0824241872-5">(</span><span class="n">type</span><span class="p" data-group-id="0824241872-5">)</span><span class="w"> </span><span class="k" data-group-id="0824241872-6">do</span><span class="w">
+        </span><span class="p" data-group-id="0824241872-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="0824241872-7">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+          </span><span class="n">assign</span><span class="p" data-group-id="0824241872-8">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">:picture</span><span class="p">,</span><span class="w"> </span><span class="n">picture</span><span class="p" data-group-id="0824241872-8">)</span><span class="w">
+        </span><span class="p" data-group-id="0824241872-9">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="c">_error</span><span class="p" data-group-id="0824241872-9">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
           </span><span class="n">command</span><span class="w">
-          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">set_response</span><span class="p" data-group-id="7643557304-10">(</span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;An error occurred while fetching the picture.&quot;</span><span class="p" data-group-id="7643557304-10">)</span><span class="w">
+          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">set_response</span><span class="p" data-group-id="0824241872-10">(</span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;An error occurred while fetching the picture.&quot;</span><span class="p" data-group-id="0824241872-10">)</span><span class="w">
           </span><span class="c1"># Halt the pipeline to stop any further execution of commands or middlewares</span><span class="w">
-          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">halt</span><span class="p" data-group-id="7643557304-11">(</span><span class="p" data-group-id="7643557304-11">)</span><span class="w">
-      </span><span class="k" data-group-id="7643557304-6">end</span><span class="w">
-    </span><span class="k" data-group-id="7643557304-3">end</span><span class="w">
-  </span><span class="k" data-group-id="7643557304-1">end</span></code></pre>
+          </span><span class="o">|&gt;</span><span class="w"> </span><span class="n">halt</span><span class="p" data-group-id="0824241872-11">(</span><span class="p" data-group-id="0824241872-11">)</span><span class="w">
+      </span><span class="k" data-group-id="0824241872-6">end</span><span class="w">
+    </span><span class="k" data-group-id="0824241872-3">end</span><span class="w">
+  </span><span class="k" data-group-id="0824241872-1">end</span></code></pre>
 <h3 id="module-using-the-middleware-command" class="section-heading">
   <a href="#module-using-the-middleware-command" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Using the Middleware Command
 </h3>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Dog</span><span class="w"> </span><span class="k" data-group-id="8628931808-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Command.Dog</span><span class="w"> </span><span class="k" data-group-id="5087385539-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="8628931808-2">(</span><span class="p" data-group-id="8628931808-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8628931808-3">[</span><span class="s">&quot;dog&quot;</span><span class="p" data-group-id="8628931808-3">]</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">triggers</span><span class="p" data-group-id="5087385539-2">(</span><span class="p" data-group-id="5087385539-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5087385539-3">[</span><span class="s">&quot;dog&quot;</span><span class="p" data-group-id="5087385539-3">]</span><span class="w">
 
     </span><span class="c1"># Specify the type of :dog</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">required</span><span class="p" data-group-id="8628931808-4">(</span><span class="p" data-group-id="8628931808-4">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8628931808-5">[</span><span class="p" data-group-id="8628931808-6">{</span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="ss">:dog</span><span class="p" data-group-id="8628931808-6">}</span><span class="p" data-group-id="8628931808-5">]</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">required</span><span class="p" data-group-id="5087385539-4">(</span><span class="p" data-group-id="5087385539-4">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5087385539-5">[</span><span class="p" data-group-id="5087385539-6">{</span><span class="nc">MyBot.Middleware.FetchPicture</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="ss">:dog</span><span class="p" data-group-id="5087385539-6">}</span><span class="p" data-group-id="5087385539-5">]</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="8628931808-7">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="8628931808-7">)</span><span class="w"> </span><span class="k" data-group-id="8628931808-8">do</span><span class="w">
-      </span><span class="n">set_response</span><span class="p" data-group-id="8628931808-9">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Your dog picture link: </span><span class="si" data-group-id="8628931808-10">#{</span><span class="n">command</span><span class="o">.</span><span class="n">assigns</span><span class="o">.</span><span class="n">picture</span><span class="si" data-group-id="8628931808-10">}</span><span class="s">&quot;</span><span class="p" data-group-id="8628931808-9">)</span><span class="w">
-    </span><span class="k" data-group-id="8628931808-8">end</span><span class="w">
-  </span><span class="k" data-group-id="8628931808-1">end</span></code></pre>
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">call</span><span class="p" data-group-id="5087385539-7">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="c">_opts</span><span class="p" data-group-id="5087385539-7">)</span><span class="w"> </span><span class="k" data-group-id="5087385539-8">do</span><span class="w">
+      </span><span class="n">set_response</span><span class="p" data-group-id="5087385539-9">(</span><span class="n">command</span><span class="p">,</span><span class="w"> </span><span class="ss">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Your dog picture link: </span><span class="si" data-group-id="5087385539-10">#{</span><span class="n">command</span><span class="o">.</span><span class="n">assigns</span><span class="o">.</span><span class="n">picture</span><span class="si" data-group-id="5087385539-10">}</span><span class="s">&quot;</span><span class="p" data-group-id="5087385539-9">)</span><span class="w">
+    </span><span class="k" data-group-id="5087385539-8">end</span><span class="w">
+  </span><span class="k" data-group-id="5087385539-1">end</span></code></pre>
         </section>
 
         <section id="summary" class="details-list">

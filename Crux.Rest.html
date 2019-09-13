@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-09-13 17:31:47Z">
-    <title>Crux.Rest — Crux v2019-09-13 17:31:47Z</title>
+    <meta name="project" content="Crux v2019-09-13 17:49:35Z">
+    <title>Crux.Rest — Crux v2019-09-13 17:49:35Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-da6452be3a.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-09-13 17:31:47Z
+        v2019-09-13 17:49:35Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-09-13 17:31:47Z</small>
+        <small class="app-vsn">Crux v2019-09-13 17:49:35Z</small>
 Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -87,16 +87,16 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
 
 </li>
 </ul>
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="7302738546-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="5563202329-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Rest</span><span class="w">
 
     </span><span class="c1"># Define helper functions as needed</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="7302738546-2">(</span><span class="p" data-group-id="7302738546-2">)</span><span class="w"> </span><span class="k" data-group-id="7302738546-3">do</span><span class="w">
-      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="7302738546-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="7302738546-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="7302738546-5">(</span><span class="p" data-group-id="7302738546-5">)</span><span class="w"> </span><span class="k" data-group-id="7302738546-6">do</span><span class="w">
-        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="7302738546-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="7302738546-8">(</span><span class="p" data-group-id="7302738546-8">)</span><span class="p" data-group-id="7302738546-7">)</span><span class="w">
-      </span><span class="k" data-group-id="7302738546-6">end</span><span class="w">
-    </span><span class="k" data-group-id="7302738546-3">end</span><span class="w">
-  </span><span class="k" data-group-id="7302738546-1">end</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="5563202329-2">(</span><span class="p" data-group-id="5563202329-2">)</span><span class="w"> </span><span class="k" data-group-id="5563202329-3">do</span><span class="w">
+      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="5563202329-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="5563202329-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="5563202329-5">(</span><span class="p" data-group-id="5563202329-5">)</span><span class="w"> </span><span class="k" data-group-id="5563202329-6">do</span><span class="w">
+        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="5563202329-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="5563202329-8">(</span><span class="p" data-group-id="5563202329-8">)</span><span class="p" data-group-id="5563202329-7">)</span><span class="w">
+      </span><span class="k" data-group-id="5563202329-6">end</span><span class="w">
+    </span><span class="k" data-group-id="5563202329-3">end</span><span class="w">
+  </span><span class="k" data-group-id="5563202329-1">end</span><span class="w">
 </span></code></pre>
 <p>  This module fits under a supervision tree, see <a href="#start_link/1"><code class="inline">start_link/1</code></a>&#39;s&#39; arguments for configuration.<br>  The same applies to modules <code class="inline">use</code>-ing this module.</p>
         </section>
