@@ -7,6 +7,7 @@ defmodule Crux.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       name: "Crux",
+      version: DateTime.utc_now() |> DateTime.truncate(:second) |> DateTime.to_string(),
       docs: [
         groups_for_modules: groups_for_modules(),
         source_url_pattern: "https://github.com/SpaceEEC/%{app}/blob/master/%{path}#L%{line}"
