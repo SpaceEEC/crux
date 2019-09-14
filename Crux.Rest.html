@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-09-14 09:45:57Z">
-    <title>Crux.Rest — Crux v2019-09-14 09:45:57Z</title>
+    <meta name="project" content="Crux v2019-09-14 09:53:05Z">
+    <title>Crux.Rest — Crux v2019-09-14 09:53:05Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-61212442d0.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-09-14 09:45:57Z
+        v2019-09-14 09:53:05Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-09-14 09:45:57Z</small>
+        <small class="app-vsn">Crux v2019-09-14 09:53:05Z</small>
 Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -87,16 +87,16 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
 
 </li>
 </ul>
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="5252832928-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="1244685491-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Rest</span><span class="w">
 
     </span><span class="c1"># Define helper functions as needed</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="5252832928-2">(</span><span class="p" data-group-id="5252832928-2">)</span><span class="w"> </span><span class="k" data-group-id="5252832928-3">do</span><span class="w">
-      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="5252832928-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="5252832928-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="5252832928-5">(</span><span class="p" data-group-id="5252832928-5">)</span><span class="w"> </span><span class="k" data-group-id="5252832928-6">do</span><span class="w">
-        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="5252832928-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="5252832928-8">(</span><span class="p" data-group-id="5252832928-8">)</span><span class="p" data-group-id="5252832928-7">)</span><span class="w">
-      </span><span class="k" data-group-id="5252832928-6">end</span><span class="w">
-    </span><span class="k" data-group-id="5252832928-3">end</span><span class="w">
-  </span><span class="k" data-group-id="5252832928-1">end</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="1244685491-2">(</span><span class="p" data-group-id="1244685491-2">)</span><span class="w"> </span><span class="k" data-group-id="1244685491-3">do</span><span class="w">
+      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="1244685491-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="1244685491-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="1244685491-5">(</span><span class="p" data-group-id="1244685491-5">)</span><span class="w"> </span><span class="k" data-group-id="1244685491-6">do</span><span class="w">
+        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="1244685491-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="1244685491-8">(</span><span class="p" data-group-id="1244685491-8">)</span><span class="p" data-group-id="1244685491-7">)</span><span class="w">
+      </span><span class="k" data-group-id="1244685491-6">end</span><span class="w">
+    </span><span class="k" data-group-id="1244685491-3">end</span><span class="w">
+  </span><span class="k" data-group-id="1244685491-1">end</span><span class="w">
 </span></code></pre>
 <p>  This module fits under a supervision tree, see <a href="#start_link/1"><code class="inline">start_link/1</code></a>&#39;s&#39; arguments for configuration.<br>  The same applies to modules <code class="inline">use</code>-ing this module.</p>
         </section>
@@ -2613,7 +2613,7 @@ Callbacks          </h1>
           <pre>create_channel_invite!(
   channel :: <a href="Crux.Structs.Channel.html#t:id_resolvable/0">Crux.Structs.Channel.id_resolvable</a>(),
   args :: <a href="Crux.Rest.html#t:create_channel_invite_data/0">Crux.Rest.create_channel_invite_data</a>()
-) :: Invite.t() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+) :: <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -3519,8 +3519,8 @@ Callbacks          </h1>
       <span class="note">(optional)</span>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
-          <pre>delete_invite!(invite_or_code :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | Invite.t()) ::
-  Invite.t() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+          <pre>delete_invite!(invite_or_code :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()) ::
+  <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -4098,7 +4098,7 @@ Callbacks          </h1>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
           <pre>execute_github_webhook!(
-  webhook :: Webhook.t(),
+  webhook :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>(),
   event :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
   data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
 ) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
@@ -4123,7 +4123,7 @@ Callbacks          </h1>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
           <pre>execute_github_webhook!(
-  webhook :: Webhook.t(),
+  webhook :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>(),
   event :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
   wait :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>() | nil,
   data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
@@ -4246,7 +4246,7 @@ Callbacks          </h1>
       <span class="note">(optional)</span>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
-          <pre>execute_slack_webhook!(webhook :: Webhook.t(), data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) ::
+          <pre>execute_slack_webhook!(webhook :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>(), data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()) ::
   :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
@@ -4269,7 +4269,7 @@ Callbacks          </h1>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
           <pre>execute_slack_webhook!(
-  webhook :: Webhook.t(),
+  webhook :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>(),
   wait :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>() | nil,
   data :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
 ) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
@@ -4393,7 +4393,7 @@ Callbacks          </h1>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
           <pre>execute_webhook!(
-  webhook :: Webhook.t(),
+  webhook :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>(),
   data :: <a href="Crux.Rest.html#t:execute_webhook_options/0">Crux.Rest.execute_webhook_options</a>()
 ) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
@@ -4417,7 +4417,7 @@ Callbacks          </h1>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
           <pre>execute_webhook!(
-  webhook :: Webhook.t(),
+  webhook :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>(),
   wait :: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>() | nil,
   data :: <a href="Crux.Rest.html#t:execute_webhook_options/0">Crux.Rest.execute_webhook_options</a>()
 ) :: :ok | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
@@ -4577,7 +4577,7 @@ Callbacks          </h1>
           <pre>get_audit_logs!(
   guild :: <a href="Crux.Structs.Guild.html#t:id_resolvable/0">Crux.Structs.Guild.id_resolvable</a>(),
   options :: <a href="Crux.Rest.html#t:audit_log_options/0">Crux.Rest.audit_log_options</a>() | nil
-) :: AuditLog.t() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+) :: <a href="Crux.Structs.AuditLog.html#t:t/0">Crux.Structs.AuditLog.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -4665,7 +4665,7 @@ Callbacks          </h1>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
           <pre>get_channel_invites!(channel :: <a href="Crux.Structs.Channel.html#t:id_resolvable/0">Crux.Structs.Channel.id_resolvable</a>()) ::
-  %{required(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) => Invite.t()} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+  %{required(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) => <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -5136,7 +5136,7 @@ Callbacks          </h1>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
           <pre>get_guild_invites!(guild :: <a href="Crux.Structs.Guild.html#t:id_resolvable/0">Crux.Structs.Guild.id_resolvable</a>()) ::
-  %{required(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) => Invite.t()} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+  %{required(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) => <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -5410,7 +5410,7 @@ Callbacks          </h1>
       <span class="note">(optional)</span>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
-          <pre>get_invite!(code :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: Invite.t() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+          <pre>get_invite!(code :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -5755,7 +5755,7 @@ Callbacks          </h1>
           <pre>get_webhook!(
   user :: <a href="Crux.Structs.User.html#t:id_resolvable/0">Crux.Structs.User.id_resolvable</a>(),
   token :: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil
-) :: Webhook.t() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+) :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -5843,7 +5843,8 @@ Callbacks          </h1>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
           <pre>list_channel_webhooks!(channel :: <a href="Crux.Structs.Channel.html#t:id_resolvable/0">Crux.Structs.Channel.id_resolvable</a>()) ::
-  %{required(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => Webhook.t()} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+  %{required(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>()}
+  | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -5984,7 +5985,8 @@ Callbacks          </h1>
       <span class="note">(since 0.2.0)</span>
       <div class="specs">
           <pre>list_guild_webhooks!(guild :: <a href="Crux.Structs.Guild.html#t:id_resolvable/0">Crux.Structs.Guild.id_resolvable</a>()) ::
-  %{required(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => Webhook.t()} | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+  %{required(<a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()) => <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>()}
+  | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
@@ -6819,7 +6821,7 @@ Callbacks          </h1>
         avatar: <a href="Crux.Rest.Util.html#t:image/0">Crux.Rest.Util.image</a>(),
         channel_id: <a href="Crux.Structs.Channel.html#t:id_resolvable/0">Crux.Structs.Channel.id_resolvable</a>()
       ]
-) :: Webhook.t() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+) :: <a href="Crux.Structs.Webhook.html#t:t/0">Crux.Structs.Webhook.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
   <section class="docstring">
