@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-09-15 12:18:11Z">
-    <title>Crux.Rest — Crux v2019-09-15 12:18:11Z</title>
+    <meta name="project" content="Crux v2019-09-17 10:26:38Z">
+    <title>Crux.Rest — Crux v2019-09-17 10:26:38Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-61212442d0.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-09-15 12:18:11Z
+        v2019-09-17 10:26:38Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-09-15 12:18:11Z</small>
+        <small class="app-vsn">Crux v2019-09-17 10:26:38Z</small>
 Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -79,7 +79,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
 <p>  For a more convenient way to consume this module you can <code class="inline">use</code> it in your own.</p>
 <p>  Possible <code class="inline">use</code> options are:</p>
 <ul>
-<li><p><code class="inline">transform</code> - whether to transform the received JSON further into the documented structs.<br>Defaults to <code class="inline">true</code>.</p>
+<li><p><code class="inline">transform</code> - whether to transform the received JSON further into the documented structs.<br />Defaults to <code class="inline">true</code>.</p>
 <h3 id="module-example" class="section-heading">
   <a href="#module-example" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Example
@@ -87,18 +87,18 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
 
 </li>
 </ul>
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="8505569479-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="1399307726-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Rest</span><span class="w">
 
     </span><span class="c1"># Define helper functions as needed</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="8505569479-2">(</span><span class="p" data-group-id="8505569479-2">)</span><span class="w"> </span><span class="k" data-group-id="8505569479-3">do</span><span class="w">
-      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="8505569479-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="8505569479-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="8505569479-5">(</span><span class="p" data-group-id="8505569479-5">)</span><span class="w"> </span><span class="k" data-group-id="8505569479-6">do</span><span class="w">
-        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="8505569479-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="8505569479-8">(</span><span class="p" data-group-id="8505569479-8">)</span><span class="p" data-group-id="8505569479-7">)</span><span class="w">
-      </span><span class="k" data-group-id="8505569479-6">end</span><span class="w">
-    </span><span class="k" data-group-id="8505569479-3">end</span><span class="w">
-  </span><span class="k" data-group-id="8505569479-1">end</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="1399307726-2">(</span><span class="p" data-group-id="1399307726-2">)</span><span class="w"> </span><span class="k" data-group-id="1399307726-3">do</span><span class="w">
+      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="1399307726-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="1399307726-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="1399307726-5">(</span><span class="p" data-group-id="1399307726-5">)</span><span class="w"> </span><span class="k" data-group-id="1399307726-6">do</span><span class="w">
+        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="1399307726-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="1399307726-8">(</span><span class="p" data-group-id="1399307726-8">)</span><span class="p" data-group-id="1399307726-7">)</span><span class="w">
+      </span><span class="k" data-group-id="1399307726-6">end</span><span class="w">
+    </span><span class="k" data-group-id="1399307726-3">end</span><span class="w">
+  </span><span class="k" data-group-id="1399307726-1">end</span><span class="w">
 </span></code></pre>
-<p>  This module fits under a supervision tree, see <a href="#start_link/1"><code class="inline">start_link/1</code></a>&#39;s&#39; arguments for configuration.<br>  The same applies to modules <code class="inline">use</code>-ing this module.</p>
+<p>  This module fits under a supervision tree, see <a href="#start_link/1"><code class="inline">start_link/1</code></a>&#39;s&#39; arguments for configuration.<br />  The same applies to modules <code class="inline">use</code>-ing this module.</p>
         </section>
 
         <section id="summary" class="details-list">
@@ -123,7 +123,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
   <div class="summary-signature">
     <a href="#t:audit_log_options/0">audit_log_options()</a>
   </div>
-    <div class="summary-synopsis"><p>  Used to filter audit log results via <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>.<br>  The <code class="inline">:user_id</code> field refers to the executor and not the target of the log.</p></div>
+    <div class="summary-synopsis"><p>  Used to filter audit log results via <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>.<br />  The <code class="inline">:user_id</code> field refers to the executor and not the target of the log.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -171,7 +171,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
   <div class="summary-signature">
     <a href="#t:execute_webhook_options/0">execute_webhook_options()</a>
   </div>
-    <div class="summary-synopsis"><p>  Used for sending discord webhooks. For more information on non-discord webhooks, check<br>  <a href="https://api.slack.com/custom-integrations/outgoing-webhooks">Slack Docs</a> or<br>  <a href="https://developer.github.com/webhooks/">Github Docs</a></p></div>
+    <div class="summary-synopsis"><p>  Used for sending discord webhooks. For more information on non-discord webhooks, check<br /><a href="https://api.slack.com/custom-integrations/outgoing-webhooks">Slack Docs</a> or<br /><a href="https://developer.github.com/webhooks/">Github Docs</a></p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -846,7 +846,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
   <div class="summary-signature">
     <a href="#c:get_channel/1">get_channel(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>  Gets a channel from the api.<br>  This should <em>NOT</em> be necessary.</p></div>
+    <div class="summary-synopsis"><p>  Gets a channel from the api.<br />  This should <em>NOT</em> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -894,7 +894,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
   <div class="summary-signature">
     <a href="#c:get_guild/1">get_guild(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>  Gets a guild from the api.<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p></div>
+    <div class="summary-synopsis"><p>  Gets a guild from the api.<br />  This should usually, due to cache, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -930,7 +930,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
   <div class="summary-signature">
     <a href="#c:get_guild_channels/1">get_guild_channels(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>  Gets all channels from a guild via the api.<br>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p></div>
+    <div class="summary-synopsis"><p>  Gets all channels from a guild via the api.<br />  This should usually, due to caching, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -954,7 +954,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
   <div class="summary-signature">
     <a href="#c:get_guild_emoji/2">get_guild_emoji(guild, emoji)</a>
   </div>
-    <div class="summary-synopsis"><p>  Gets an emoji from a guild<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p></div>
+    <div class="summary-synopsis"><p>  Gets an emoji from a guild<br />  This should usually, due to cache, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -1014,7 +1014,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
   <div class="summary-signature">
     <a href="#c:get_guild_roles/1">get_guild_roles(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>  Gets a list of roles in a guild.<br>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p></div>
+    <div class="summary-synopsis"><p>  Gets a list of roles in a guild.<br />  This should usually, due to caching, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -1169,7 +1169,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
   <div class="summary-signature">
     <a href="#c:list_guild_emojis/1">list_guild_emojis(guild)</a>
   </div>
-    <div class="summary-synopsis"><p>  Gets a list of emojis in a guild.<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p></div>
+    <div class="summary-synopsis"><p>  Gets a list of emojis in a guild.<br />  This should usually, due to cache, <strong>NOT</strong> be necessary.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -1373,7 +1373,7 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
   <div class="summary-signature">
     <a href="#c:trigger_typing/1">trigger_typing(channel)</a>
   </div>
-    <div class="summary-synopsis"><p>  Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br>  Should generally be used sparingly for commands that may take a while as a form of acknowledging.</p></div>
+    <div class="summary-synopsis"><p>  Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br />  Should generally be used sparingly for commands that may take a while as a form of acknowledging.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -1469,7 +1469,7 @@ Types          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Used to filter audit log results via <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>.<br>  The <code class="inline">:user_id</code> field refers to the executor and not the target of the log.</p>
+<p>  Used to filter audit log results via <a href="#c:get_audit_logs/2"><code class="inline">get_audit_logs/2</code></a>.<br />  The <code class="inline">:user_id</code> field refers to the executor and not the target of the log.</p>
   </section>
 </section>
 <section class="detail" id="t:begin_guild_prune_opts/0">
@@ -1640,7 +1640,7 @@ Types          </h1>
 <p>  Used to create emojis via <a href="#c:create_guild_emoji/2"><code class="inline">create_guild_emoji/2</code></a>.</p>
 <p>  Notes:</p>
 <ul>
-<li><code class="inline">:name</code> has to be [1-32] chars long, valid chars are [a-Z<em>0-9] (invalid chars may get filtered out instead of erroring).<br>  A 1 char long name gets suffixed with `</em>` to be 2 chars long.
+<li><code class="inline">:name</code> has to be [1-32] chars long, valid chars are [a-Z<em>0-9] (invalid chars may get filtered out instead of erroring).<br />  A 1 char long name gets suffixed with `</em>` to be 2 chars long.
 </li>
 <li><code class="inline">:image</code> may not be larger than 256kb
 </li>
@@ -1681,7 +1681,7 @@ Types          </h1>
   </div>
   <section class="docstring">
 <p>  Used to send messages via <a href="#c:create_message/2"><code class="inline">create_message/2</code></a>.</p>
-<p>  The content my not exceed 2000 chars.<br>  The nonce has to fit in a 64 bit integer.<br>  The whole message payload may not be larger than 8mb, this should only be possible when attaching (a) large file(s).</p>
+<p>  The content my not exceed 2000 chars.<br />  The nonce has to fit in a 64 bit integer.<br />  The whole message payload may not be larger than 8mb, this should only be possible when attaching (a) large file(s).</p>
   </section>
 </section>
 <section class="detail" id="t:edit_channel_permissions_data/0">
@@ -1782,7 +1782,7 @@ Types          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Used for sending discord webhooks. For more information on non-discord webhooks, check<br>  <a href="https://api.slack.com/custom-integrations/outgoing-webhooks">Slack Docs</a> or<br>  <a href="https://developer.github.com/webhooks/">Github Docs</a></p>
+<p>  Used for sending discord webhooks. For more information on non-discord webhooks, check<br /><a href="https://api.slack.com/custom-integrations/outgoing-webhooks">Slack Docs</a> or<br /><a href="https://developer.github.com/webhooks/">Github Docs</a></p>
   </section>
 </section>
 <section class="detail" id="t:get_current_user_guild_data/0">
@@ -2460,7 +2460,7 @@ Callbacks          </h1>
   </div>
   <section class="docstring">
 <p>  Adds a message to the pinned messages of a channel.</p>
-<p>  You may only have up to 50 pinned messages per channel.<br>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
+<p>  You may only have up to 50 pinned messages per channel.<br />  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
   </section>
 </section>
 <section class="detail" id="c:add_pinned_message/2">
@@ -2484,7 +2484,7 @@ Callbacks          </h1>
   </div>
   <section class="docstring">
 <p>  Adds a message to the pinned messages of a channel.</p>
-<p>  You may only have up to 50 pinned messages per channel.<br>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
+<p>  You may only have up to 50 pinned messages per channel.<br />  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#add-pinned-channel-message">Discord Docs</a>.</p>
   </section>
 </section>
 <section class="detail" id="c:add_pinned_message!/1">
@@ -3788,7 +3788,7 @@ Callbacks          </h1>
   <section class="docstring">
 <p>  Deletes a user from a reaction.</p>
 <p>  The first argument is optional if a <a href="Crux.Structs.Message.html"><code class="inline">Crux.Structs.Message</code></a> is provided.</p>
-<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-own-reaction">Discord Docs</a> <a href="https://discordapp.com/developers/docs/resources/channel#delete-user-reaction">2</a>.</p>
+<p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#delete-own-reaction">Discord Docs</a><a href="https://discordapp.com/developers/docs/resources/channel#delete-user-reaction">2</a>.</p>
   </section>
 </section>
 <section class="detail" id="c:delete_reaction!/4">
@@ -4610,7 +4610,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets a channel from the api.<br>  This should <em>NOT</em> be necessary.</p>
+<p>  Gets a channel from the api.<br />  This should <em>NOT</em> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#get-channel">Discord Docs</a></p>
   </section>
 </section>
@@ -4786,7 +4786,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets a guild from the api.<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
+<p>  Gets a guild from the api.<br />  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild">Discord Docs</a></p>
   </section>
 </section>
@@ -4940,7 +4940,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets all channels from a guild via the api.<br>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p>
+<p>  Gets all channels from a guild via the api.<br />  This should usually, due to caching, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-channels">Discord Docs</a>-</p>
   </section>
 </section>
@@ -5033,7 +5033,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets an emoji from a guild<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
+<p>  Gets an emoji from a guild<br />  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#get-guild-emoji">Discord Docs</a>.</p>
   </section>
 </section>
@@ -5267,7 +5267,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets a list of roles in a guild.<br>  This should usually, due to caching, <strong>NOT</strong> be necessary.</p>
+<p>  Gets a list of roles in a guild.<br />  This should usually, due to caching, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/guild#get-guild-roles">Discord Docs</a>.</p>
   </section>
 </section>
@@ -5878,7 +5878,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Gets a list of emojis in a guild.<br>  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
+<p>  Gets a list of emojis in a guild.<br />  This should usually, due to cache, <strong>NOT</strong> be necessary.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/emoji#list-guild-emojis">Discord Docs</a>.</p>
   </section>
 </section>
@@ -6115,7 +6115,7 @@ Callbacks          </h1>
   </div>
   <section class="docstring">
 <p>  Modifies the nickname of the current user in a guild.</p>
-<p>  Yes, you read correctly, that has its own endpoint.<br>  Great, isn&#39;t it?</p>
+<p>  Yes, you read correctly, that has its own endpoint.<br />  Great, isn&#39;t it?</p>
 <p>  For more informations, but not an answer to the question why, see <a href="https://discordapp.com/developers/docs/resources/guild#modify-current-user-nick">Discord Docs</a>.</p>
   </section>
 </section>
@@ -6739,7 +6739,7 @@ Callbacks          </h1>
       </div>
   </div>
   <section class="docstring">
-<p>  Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br>  Should generally be used sparingly for commands that may take a while as a form of acknowledging.</p>
+<p>  Lets the bot appear as typing for roughly ~9 seconds or until a message is sent.<br />  Should generally be used sparingly for commands that may take a while as a form of acknowledging.</p>
 <p>  Consider sending a message and edit that later on instead.</p>
 <p>  For more informations see <a href="https://discordapp.com/developers/docs/resources/channel#trigger-typing-indicator">Discord Docs</a>.</p>
   </section>
