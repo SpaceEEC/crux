@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-09-20 19:17:01Z">
-    <title>Crux.Base.ConsumerSupervisor — Crux v2019-09-20 19:17:01Z</title>
+    <meta name="project" content="Crux v2019-09-21 19:16:36Z">
+    <title>Crux.Base.ConsumerSupervisor — Crux v2019-09-21 19:16:36Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-61212442d0.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-09-20 19:17:01Z
+        v2019-09-21 19:16:36Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-09-20 19:17:01Z</small>
+        <small class="app-vsn">Crux v2019-09-21 19:16:36Z</small>
 Crux.Base.ConsumerSupervisor          <a href="https://github.com/SpaceEEC/crux_base/blob/master/lib/base/consumer_supervisor.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -77,18 +77,18 @@ Crux.Base.ConsumerSupervisor          <a href="https://github.com/SpaceEEC/crux_
         <section id="moduledoc">
 <p>  Supervises a consumer, for example, a module using <a href="Crux.Base.TaskConsumer.html"><code class="inline">Crux.Base.TaskConsumer</code></a>.</p>
 <p>  A somewhat example of this:</p>
-<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Supervisor</span><span class="w"> </span><span class="k" data-group-id="5427294875-1">do</span><span class="w">
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">start_link</span><span class="p" data-group-id="5427294875-2">(</span><span class="bp">_</span><span class="p" data-group-id="5427294875-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="5427294875-3">(</span><span class="bp">__MODULE__</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5427294875-4">%{</span><span class="p" data-group-id="5427294875-4">}</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="bp">__MODULE__</span><span class="p" data-group-id="5427294875-3">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Bot.Supervisor</span><span class="w"> </span><span class="k" data-group-id="0894929853-1">do</span><span class="w">
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">start_link</span><span class="p" data-group-id="0894929853-2">(</span><span class="bp">_</span><span class="p" data-group-id="0894929853-2">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="0894929853-3">(</span><span class="bp">__MODULE__</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0894929853-4">%{</span><span class="p" data-group-id="0894929853-4">}</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="bp">__MODULE__</span><span class="p" data-group-id="0894929853-3">)</span><span class="w">
 
-  </span><span class="kd">def</span><span class="w"> </span><span class="nf">init</span><span class="p" data-group-id="5427294875-5">(</span><span class="c">_args</span><span class="p" data-group-id="5427294875-5">)</span><span class="w"> </span><span class="k" data-group-id="5427294875-6">do</span><span class="w">
-    </span><span class="n">children</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="5427294875-7">[</span><span class="w">
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">init</span><span class="p" data-group-id="0894929853-5">(</span><span class="c">_args</span><span class="p" data-group-id="0894929853-5">)</span><span class="w"> </span><span class="k" data-group-id="0894929853-6">do</span><span class="w">
+    </span><span class="n">children</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="0894929853-7">[</span><span class="w">
       </span><span class="c1"># other childrens...</span><span class="w">
-      </span><span class="p" data-group-id="5427294875-8">[</span><span class="err">{</span><span class="nc">Crux.Base.ConsumerSupervisor</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5427294875-9">{</span><span class="nc">Bot.Consumer</span><span class="p">,</span><span class="w"> </span><span class="nc">Bot.CruxBase</span><span class="p" data-group-id="5427294875-9">}</span><span class="p" data-group-id="5427294875-8">]</span><span class="w">
-    </span><span class="p" data-group-id="5427294875-7">]</span><span class="w">
+      </span><span class="p" data-group-id="0894929853-8">[</span><span class="err">{</span><span class="nc">Crux.Base.ConsumerSupervisor</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0894929853-9">{</span><span class="nc">Bot.Consumer</span><span class="p">,</span><span class="w"> </span><span class="nc">Bot.CruxBase</span><span class="p" data-group-id="0894929853-9">}</span><span class="p" data-group-id="0894929853-8">]</span><span class="w">
+    </span><span class="p" data-group-id="0894929853-7">]</span><span class="w">
 
-    </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">init</span><span class="p" data-group-id="5427294875-10">(</span><span class="n">children</span><span class="p">,</span><span class="w"> </span><span class="ss">strategy</span><span class="p">:</span><span class="w"> </span><span class="ss">:one_for_one</span><span class="p" data-group-id="5427294875-10">)</span><span class="w">
-  </span><span class="k" data-group-id="5427294875-6">end</span><span class="w">
-</span><span class="k" data-group-id="5427294875-1">end</span></code></pre>
+    </span><span class="nc">Supervisor</span><span class="o">.</span><span class="n">init</span><span class="p" data-group-id="0894929853-10">(</span><span class="n">children</span><span class="p">,</span><span class="w"> </span><span class="ss">strategy</span><span class="p">:</span><span class="w"> </span><span class="ss">:one_for_one</span><span class="p" data-group-id="0894929853-10">)</span><span class="w">
+  </span><span class="k" data-group-id="0894929853-6">end</span><span class="w">
+</span><span class="k" data-group-id="0894929853-1">end</span></code></pre>
         </section>
 
 

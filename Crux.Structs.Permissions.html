@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-09-20 19:17:01Z">
-    <title>Crux.Structs.Permissions — Crux v2019-09-20 19:17:01Z</title>
+    <meta name="project" content="Crux v2019-09-21 19:16:36Z">
+    <title>Crux.Structs.Permissions — Crux v2019-09-21 19:16:36Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-61212442d0.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-09-20 19:17:01Z
+        v2019-09-21 19:16:36Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-09-20 19:17:01Z</small>
+        <small class="app-vsn">Crux v2019-09-21 19:16:36Z</small>
 Crux.Structs.Permissions          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/permissions.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -331,8 +331,8 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="ss">:administrator</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">add</span><span class="p" data-group-id="4575308687-1">(</span><span class="ss">:manage_guild</span><span class="p" data-group-id="4575308687-1">)</span><span class="w">
-</span><span class="p" data-group-id="4575308687-2">%</span><span class="nc" data-group-id="4575308687-2">Crux.Structs.Permissions</span><span class="p" data-group-id="4575308687-2">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x28</span><span class="p" data-group-id="4575308687-2">}</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">add</span><span class="p" data-group-id="9038899432-1">(</span><span class="ss">:manage_guild</span><span class="p" data-group-id="9038899432-1">)</span><span class="w">
+</span><span class="p" data-group-id="9038899432-2">%</span><span class="nc" data-group-id="9038899432-2">Crux.Structs.Permissions</span><span class="p" data-group-id="9038899432-2">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x28</span><span class="p" data-group-id="9038899432-2">}</span><span class="w">
 </span></code></pre>
   </section>
 </section>
@@ -429,19 +429,19 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># Administrator won&#39;t grant any other permissions</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="1603766299-1">(</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">all</span><span class="p" data-group-id="1603766299-2">(</span><span class="p" data-group-id="1603766299-2">)</span><span class="p" data-group-id="1603766299-1">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="6030808060-1">(</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">all</span><span class="p" data-group-id="6030808060-2">(</span><span class="p" data-group-id="6030808060-2">)</span><span class="p" data-group-id="6030808060-1">)</span><span class="w">
 </span><span class="no">false</span><span class="w">
 
 </span><span class="c1"># Resolving a list of `permissions_name`s</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="1603766299-3">(</span><span class="p" data-group-id="1603766299-4">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p">,</span><span class="w"> </span><span class="ss">:read_message_history</span><span class="p" data-group-id="1603766299-4">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1603766299-5">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p" data-group-id="1603766299-5">]</span><span class="p" data-group-id="1603766299-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="6030808060-3">(</span><span class="p" data-group-id="6030808060-4">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p">,</span><span class="w"> </span><span class="ss">:read_message_history</span><span class="p" data-group-id="6030808060-4">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6030808060-5">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p" data-group-id="6030808060-5">]</span><span class="p" data-group-id="6030808060-3">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 
 </span><span class="c1"># Resolving different types of `permissions`s</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="1603766299-6">(</span><span class="ss">:administrator</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8</span><span class="p" data-group-id="1603766299-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="6030808060-6">(</span><span class="ss">:administrator</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8</span><span class="p" data-group-id="6030808060-6">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 
 </span><span class="c1"># In different order</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="1603766299-7">(</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="ss">:administrator</span><span class="p" data-group-id="1603766299-7">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">has</span><span class="p" data-group-id="6030808060-7">(</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="ss">:administrator</span><span class="p" data-group-id="6030808060-7">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 </span></code></pre>
   </section>
@@ -498,20 +498,20 @@ Functions          </h1>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">missing</span><span class="p" data-group-id="2879637467-1">(</span><span class="p" data-group-id="2879637467-2">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p" data-group-id="2879637467-2">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2879637467-3">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p">,</span><span class="w"> </span><span class="ss">:embed_links</span><span class="p" data-group-id="2879637467-3">]</span><span class="p" data-group-id="2879637467-1">)</span><span class="w">
-</span><span class="p" data-group-id="2879637467-4">%</span><span class="nc" data-group-id="2879637467-4">Crux.Structs.Permissions</span><span class="p" data-group-id="2879637467-4">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x4000</span><span class="p" data-group-id="2879637467-4">}</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">missing</span><span class="p" data-group-id="3346785282-1">(</span><span class="p" data-group-id="3346785282-2">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p" data-group-id="3346785282-2">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3346785282-3">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p">,</span><span class="w"> </span><span class="ss">:embed_links</span><span class="p" data-group-id="3346785282-3">]</span><span class="p" data-group-id="3346785282-1">)</span><span class="w">
+</span><span class="p" data-group-id="3346785282-4">%</span><span class="nc" data-group-id="3346785282-4">Crux.Structs.Permissions</span><span class="p" data-group-id="3346785282-4">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x4000</span><span class="p" data-group-id="3346785282-4">}</span><span class="w">
 
 </span><span class="c1"># Administrator won&#39;t implicilty grant other permissions</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">missing</span><span class="p" data-group-id="2879637467-5">(</span><span class="p" data-group-id="2879637467-6">[</span><span class="ss">:administrator</span><span class="p" data-group-id="2879637467-6">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2879637467-7">[</span><span class="ss">:send_messages</span><span class="p" data-group-id="2879637467-7">]</span><span class="p" data-group-id="2879637467-5">)</span><span class="w">
-</span><span class="p" data-group-id="2879637467-8">%</span><span class="nc" data-group-id="2879637467-8">Crux.Structs.Permissions</span><span class="p" data-group-id="2879637467-8">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x800</span><span class="p" data-group-id="2879637467-8">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">missing</span><span class="p" data-group-id="3346785282-5">(</span><span class="p" data-group-id="3346785282-6">[</span><span class="ss">:administrator</span><span class="p" data-group-id="3346785282-6">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3346785282-7">[</span><span class="ss">:send_messages</span><span class="p" data-group-id="3346785282-7">]</span><span class="p" data-group-id="3346785282-5">)</span><span class="w">
+</span><span class="p" data-group-id="3346785282-8">%</span><span class="nc" data-group-id="3346785282-8">Crux.Structs.Permissions</span><span class="p" data-group-id="3346785282-8">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x800</span><span class="p" data-group-id="3346785282-8">}</span><span class="w">
 
 </span><span class="c1"># Everything set</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">missing</span><span class="p" data-group-id="2879637467-9">(</span><span class="p" data-group-id="2879637467-10">[</span><span class="ss">:kick_members</span><span class="p">,</span><span class="w"> </span><span class="ss">:ban_members</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_audit_log</span><span class="p" data-group-id="2879637467-10">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2879637467-11">[</span><span class="ss">:kick_members</span><span class="p">,</span><span class="w"> </span><span class="ss">:ban_members</span><span class="p" data-group-id="2879637467-11">]</span><span class="p" data-group-id="2879637467-9">)</span><span class="w">
-</span><span class="p" data-group-id="2879637467-12">%</span><span class="nc" data-group-id="2879637467-12">Crux.Structs.Permissions</span><span class="p" data-group-id="2879637467-12">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="2879637467-12">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">missing</span><span class="p" data-group-id="3346785282-9">(</span><span class="p" data-group-id="3346785282-10">[</span><span class="ss">:kick_members</span><span class="p">,</span><span class="w"> </span><span class="ss">:ban_members</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_audit_log</span><span class="p" data-group-id="3346785282-10">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3346785282-11">[</span><span class="ss">:kick_members</span><span class="p">,</span><span class="w"> </span><span class="ss">:ban_members</span><span class="p" data-group-id="3346785282-11">]</span><span class="p" data-group-id="3346785282-9">)</span><span class="w">
+</span><span class="p" data-group-id="3346785282-12">%</span><span class="nc" data-group-id="3346785282-12">Crux.Structs.Permissions</span><span class="p" data-group-id="3346785282-12">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="3346785282-12">}</span><span class="w">
 
 </span><span class="c1"># No permissions</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">missing</span><span class="p" data-group-id="2879637467-13">(</span><span class="p" data-group-id="2879637467-14">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p" data-group-id="2879637467-14">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2879637467-15">[</span><span class="p" data-group-id="2879637467-15">]</span><span class="p" data-group-id="2879637467-13">)</span><span class="w">
-</span><span class="p" data-group-id="2879637467-16">%</span><span class="nc" data-group-id="2879637467-16">Crux.Structs.Permissions</span><span class="p" data-group-id="2879637467-16">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="2879637467-16">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">missing</span><span class="p" data-group-id="3346785282-13">(</span><span class="p" data-group-id="3346785282-14">[</span><span class="ss">:send_messages</span><span class="p">,</span><span class="w"> </span><span class="ss">:view_channel</span><span class="p" data-group-id="3346785282-14">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3346785282-15">[</span><span class="p" data-group-id="3346785282-15">]</span><span class="p" data-group-id="3346785282-13">)</span><span class="w">
+</span><span class="p" data-group-id="3346785282-16">%</span><span class="nc" data-group-id="3346785282-16">Crux.Structs.Permissions</span><span class="p" data-group-id="3346785282-16">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="3346785282-16">}</span><span class="w">
 </span></code></pre>
   </section>
 </section>
@@ -579,9 +579,9 @@ Functions          </h1>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="4482484048-1">[</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="mh">0x20</span><span class="p" data-group-id="4482484048-1">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">remove</span><span class="p" data-group-id="4482484048-2">(</span><span class="p" data-group-id="4482484048-3">[</span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="mh">0x20</span><span class="p" data-group-id="4482484048-3">]</span><span class="p" data-group-id="4482484048-2">)</span><span class="w">
-</span><span class="p" data-group-id="4482484048-4">%</span><span class="nc" data-group-id="4482484048-4">Crux.Structs.Permissions</span><span class="p" data-group-id="4482484048-4">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x8</span><span class="p" data-group-id="4482484048-4">}</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="6078691923-1">[</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="mh">0x20</span><span class="p" data-group-id="6078691923-1">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">remove</span><span class="p" data-group-id="6078691923-2">(</span><span class="p" data-group-id="6078691923-3">[</span><span class="mh">0x10</span><span class="p">,</span><span class="w"> </span><span class="mh">0x20</span><span class="p" data-group-id="6078691923-3">]</span><span class="p" data-group-id="6078691923-2">)</span><span class="w">
+</span><span class="p" data-group-id="6078691923-4">%</span><span class="nc" data-group-id="6078691923-4">Crux.Structs.Permissions</span><span class="p" data-group-id="6078691923-4">{</span><span class="ss">bitfield</span><span class="p">:</span><span class="w"> </span><span class="mh">0x8</span><span class="p" data-group-id="6078691923-4">}</span><span class="w">
 </span></code></pre>
   </section>
 </section>
@@ -610,32 +610,32 @@ Functions          </h1>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># A single bitflag</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="mh">0x8</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5260362977-1">(</span><span class="p" data-group-id="5260362977-1">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="3939043095-1">(</span><span class="p" data-group-id="3939043095-1">)</span><span class="w">
 </span><span class="mh">0x8</span><span class="w">
 
 </span><span class="c1"># A single name</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="ss">:administrator</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5260362977-2">(</span><span class="p" data-group-id="5260362977-2">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="3939043095-2">(</span><span class="p" data-group-id="3939043095-2">)</span><span class="w">
 </span><span class="mh">0x8</span><span class="w">
 
 </span><span class="c1"># A list of bitflags</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5260362977-3">[</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4</span><span class="p" data-group-id="5260362977-3">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5260362977-4">(</span><span class="p" data-group-id="5260362977-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3939043095-3">[</span><span class="mh">0x8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4</span><span class="p" data-group-id="3939043095-3">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="3939043095-4">(</span><span class="p" data-group-id="3939043095-4">)</span><span class="w">
 </span><span class="mh">0xC</span><span class="w">
 
 </span><span class="c1"># A list of names</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5260362977-5">[</span><span class="ss">:administrator</span><span class="p">,</span><span class="w"> </span><span class="ss">:ban_members</span><span class="p" data-group-id="5260362977-5">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5260362977-6">(</span><span class="p" data-group-id="5260362977-6">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3939043095-5">[</span><span class="ss">:administrator</span><span class="p">,</span><span class="w"> </span><span class="ss">:ban_members</span><span class="p" data-group-id="3939043095-5">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="3939043095-6">(</span><span class="p" data-group-id="3939043095-6">)</span><span class="w">
 </span><span class="mh">0xC</span><span class="w">
 
 </span><span class="c1"># A mixture of both</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5260362977-7">[</span><span class="ss">:manage_roles</span><span class="p">,</span><span class="w"> </span><span class="mh">0x400</span><span class="p">,</span><span class="w"> </span><span class="mh">0x800</span><span class="p">,</span><span class="w"> </span><span class="ss">:add_reactions</span><span class="p" data-group-id="5260362977-7">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5260362977-8">(</span><span class="p" data-group-id="5260362977-8">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3939043095-7">[</span><span class="ss">:manage_roles</span><span class="p">,</span><span class="w"> </span><span class="mh">0x400</span><span class="p">,</span><span class="w"> </span><span class="mh">0x800</span><span class="p">,</span><span class="w"> </span><span class="ss">:add_reactions</span><span class="p" data-group-id="3939043095-7">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="3939043095-8">(</span><span class="p" data-group-id="3939043095-8">)</span><span class="w">
 </span><span class="mh">0x10000C40</span><span class="w">
 
 </span><span class="c1"># An empty list</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="5260362977-9">[</span><span class="p" data-group-id="5260362977-9">]</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="5260362977-10">(</span><span class="p" data-group-id="5260362977-10">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="3939043095-9">[</span><span class="p" data-group-id="3939043095-9">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">resolve</span><span class="p" data-group-id="3939043095-10">(</span><span class="p" data-group-id="3939043095-10">)</span><span class="w">
 </span><span class="mh">0x0</span><span class="w">
 </span></code></pre>
   </section>
@@ -664,8 +664,8 @@ Functions          </h1>
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="mh">0x30</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">to_list</span><span class="p" data-group-id="6752659110-1">(</span><span class="p" data-group-id="6752659110-1">)</span><span class="w">
-</span><span class="p" data-group-id="6752659110-2">[</span><span class="ss">:manage_guild</span><span class="p">,</span><span class="w"> </span><span class="ss">:manage_channels</span><span class="p" data-group-id="6752659110-2">]</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Crux.Structs.Permissions</span><span class="o">.</span><span class="n">to_list</span><span class="p" data-group-id="5953449200-1">(</span><span class="p" data-group-id="5953449200-1">)</span><span class="w">
+</span><span class="p" data-group-id="5953449200-2">[</span><span class="ss">:manage_guild</span><span class="p">,</span><span class="w"> </span><span class="ss">:manage_channels</span><span class="p" data-group-id="5953449200-2">]</span><span class="w">
 </span></code></pre>
   </section>
 </section>
