@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-10-02 12:28:46Z">
-    <title>Crux.Gateway — Crux v2019-10-02 12:28:46Z</title>
+    <meta name="project" content="Crux v2019-10-04 18:48:47Z">
+    <title>Crux.Gateway — Crux v2019-10-04 18:48:47Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-61212442d0.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-10-02 12:28:46Z
+        v2019-10-04 18:48:47Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-10-02 12:28:46Z</small>
+        <small class="app-vsn">Crux v2019-10-04 18:48:47Z</small>
 Crux.Gateway          <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -163,7 +163,7 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <h1 class="signature">options()</span>
-      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L69" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_gateway/blob/master/lib/gateway.ex#L70" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -171,7 +171,7 @@ Types          </h1>
           <pre>options() ::
   %{
     :token => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-    :url => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+    :url => <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | (() -> <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()),
     :shard_count => <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
     optional(:shards) => [<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>() | <a href="https://hexdocs.pm/elixir/Range.html#t:t/0">Range.t</a>()],
     optional(:presence) => <a href="#t:presence/0">presence</a>(),
@@ -190,6 +190,8 @@ Types          </h1>
 <li><p><code class="inline">:token</code> can be retrieved from <a href="https://discordapp.com/developers/applications/me">here</a>.</p>
 </li>
 <li><p><code class="inline">:url</code> you can GET from <code class="inline">/gateway/bot</code> (or <a href="Crux.Rest.html#c:gateway_bot/0"><code class="inline">Crux.Rest.gateway_bot/0</code></a>).</p>
+<blockquote><p>This can also be a function with an arity of 0 returning it.</p>
+</blockquote>
 </li>
 <li><p><code class="inline">:shard_count</code> same as <code class="inline">:url</code>.</p>
 </li>
