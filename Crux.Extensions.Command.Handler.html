@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-11-09 18:57:33Z">
-    <title>Crux.Extensions.Command.Handler — Crux v2019-11-09 18:57:33Z</title>
+    <meta name="project" content="Crux v2019-11-09 19:01:13Z">
+    <title>Crux.Extensions.Command.Handler — Crux v2019-11-09 19:01:13Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-a995035452.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-11-09 18:57:33Z
+        v2019-11-09 19:01:13Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-11-09 18:57:33Z</small>
+        <small class="app-vsn">Crux v2019-11-09 19:01:13Z</small>
 Crux.Extensions.Command.Handler <small>behaviour</small>          <a href="https://github.com/SpaceEEC/crux_extensions/blob/master/lib/extensions/command/handler.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -81,19 +81,19 @@ Crux.Extensions.Command.Handler <small>behaviour</small>          <a href="https
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Handler</span><span class="w"> </span><span class="k" data-group-id="8877587724-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Handler</span><span class="w"> </span><span class="k" data-group-id="6494738176-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Extensions.Command.Handler</span><span class="w">
 
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">commands</span><span class="p" data-group-id="8877587724-2">(</span><span class="p" data-group-id="8877587724-2">)</span><span class="w"> </span><span class="k" data-group-id="8877587724-3">do</span><span class="w">
-      </span><span class="p" data-group-id="8877587724-4">[</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">commands</span><span class="p" data-group-id="6494738176-2">(</span><span class="p" data-group-id="6494738176-2">)</span><span class="w"> </span><span class="k" data-group-id="6494738176-3">do</span><span class="w">
+      </span><span class="p" data-group-id="6494738176-4">[</span><span class="w">
         </span><span class="nc">MyBot.Command.Ping</span><span class="p">,</span><span class="w">
         </span><span class="nc">MyBot.Command.Dog</span><span class="w">
-      </span><span class="p" data-group-id="8877587724-4">]</span><span class="w">
-    </span><span class="k" data-group-id="8877587724-3">end</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">producers</span><span class="p" data-group-id="8877587724-5">(</span><span class="p" data-group-id="8877587724-5">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Producers</span><span class="o">.</span><span class="n">fetch</span><span class="p" data-group-id="8877587724-6">(</span><span class="p" data-group-id="8877587724-6">)</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">rest</span><span class="p" data-group-id="8877587724-7">(</span><span class="p" data-group-id="8877587724-7">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">prefixes</span><span class="p" data-group-id="8877587724-8">(</span><span class="p" data-group-id="8877587724-8">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8877587724-9">[</span><span class="s">&quot;!&quot;</span><span class="p" data-group-id="8877587724-9">]</span><span class="w">
-  </span><span class="k" data-group-id="8877587724-1">end</span></code></pre>
+      </span><span class="p" data-group-id="6494738176-4">]</span><span class="w">
+    </span><span class="k" data-group-id="6494738176-3">end</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">producers</span><span class="p" data-group-id="6494738176-5">(</span><span class="p" data-group-id="6494738176-5">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Producers</span><span class="o">.</span><span class="n">fetch</span><span class="p" data-group-id="6494738176-6">(</span><span class="p" data-group-id="6494738176-6">)</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">rest</span><span class="p" data-group-id="6494738176-7">(</span><span class="p" data-group-id="6494738176-7">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">prefixes</span><span class="p" data-group-id="6494738176-8">(</span><span class="p" data-group-id="6494738176-8">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6494738176-9">[</span><span class="s">&quot;!&quot;</span><span class="p" data-group-id="6494738176-9">]</span><span class="w">
+  </span><span class="k" data-group-id="6494738176-1">end</span></code></pre>
         </section>
 
         <section id="summary" class="details-list">
