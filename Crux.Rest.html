@@ -5,10 +5,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-11-09 16:19:04Z">
-    <title>Crux.Rest — Crux v2019-11-09 16:19:04Z</title>
+    <meta name="project" content="Crux v2019-11-09 18:53:50Z">
+    <title>Crux.Rest — Crux v2019-11-09 18:53:50Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-61212442d0.js"></script>
+    <script src="dist/sidebar_items-a995035452.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
   </head>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-11-09 16:19:04Z
+        v2019-11-09 18:53:50Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-11-09 16:19:04Z</small>
+        <small class="app-vsn">Crux v2019-11-09 18:53:50Z</small>
 Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -87,16 +87,16 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
 
 </li>
 </ul>
-<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="2438834721-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="kd">defmodule</span><span class="w"> </span><span class="nc">MyBot.Rest</span><span class="w"> </span><span class="k" data-group-id="2080510807-1">do</span><span class="w">
     </span><span class="kn">use</span><span class="w"> </span><span class="nc">Crux.Rest</span><span class="w">
 
     </span><span class="c1"># Define helper functions as needed</span><span class="w">
-    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="2438834721-2">(</span><span class="p" data-group-id="2438834721-2">)</span><span class="w"> </span><span class="k" data-group-id="2438834721-3">do</span><span class="w">
-      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="2438834721-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="2438834721-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="2438834721-5">(</span><span class="p" data-group-id="2438834721-5">)</span><span class="w"> </span><span class="k" data-group-id="2438834721-6">do</span><span class="w">
-        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="2438834721-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="2438834721-8">(</span><span class="p" data-group-id="2438834721-8">)</span><span class="p" data-group-id="2438834721-7">)</span><span class="w">
-      </span><span class="k" data-group-id="2438834721-6">end</span><span class="w">
-    </span><span class="k" data-group-id="2438834721-3">end</span><span class="w">
-  </span><span class="k" data-group-id="2438834721-1">end</span><span class="w">
+    </span><span class="kd">def</span><span class="w"> </span><span class="nf">gateway_bot_additional_info</span><span class="p" data-group-id="2080510807-2">(</span><span class="p" data-group-id="2080510807-2">)</span><span class="w"> </span><span class="k" data-group-id="2080510807-3">do</span><span class="w">
+      </span><span class="k">with</span><span class="w"> </span><span class="p" data-group-id="2080510807-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="2080510807-4">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gateway_bot</span><span class="p" data-group-id="2080510807-5">(</span><span class="p" data-group-id="2080510807-5">)</span><span class="w"> </span><span class="k" data-group-id="2080510807-6">do</span><span class="w">
+        </span><span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p" data-group-id="2080510807-7">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;additional_info&quot;</span><span class="p">,</span><span class="w"> </span><span class="nc">MyBot.Additional</span><span class="o">.</span><span class="n">info</span><span class="p" data-group-id="2080510807-8">(</span><span class="p" data-group-id="2080510807-8">)</span><span class="p" data-group-id="2080510807-7">)</span><span class="w">
+      </span><span class="k" data-group-id="2080510807-6">end</span><span class="w">
+    </span><span class="k" data-group-id="2080510807-3">end</span><span class="w">
+  </span><span class="k" data-group-id="2080510807-1">end</span><span class="w">
 </span></code></pre>
 <p>  This module fits under a supervision tree, see <a href="#start_link/1"><code class="inline">start_link/1</code></a>&#39;s&#39; arguments for configuration.<br />  The same applies to modules <code class="inline">use</code>-ing this module.</p>
         </section>
@@ -1024,13 +1024,27 @@ Crux.Rest <small>behaviour</small>          <a href="https://github.com/SpaceEEC
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#c:get_guild_vanity_invite/1">get_guild_vanity_invite(guild)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Gets the vanity invite of a guild, if any</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#c:get_guild_vanity_invite!/1">get_guild_vanity_invite!(guild)</a>
+  </div>
+    <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_vanity_invite/1"><code class="inline">get_guild_vanity_invite/1</code></a>, but raises an exception if it fails.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#c:get_guild_vanity_url/1">get_guild_vanity_url(guild)</a>
+      <span class="deprecated" title="Use get_guild_vanity_invite/1 instead">deprecated</span>
   </div>
     <div class="summary-synopsis"><p>  Gets the vanity url of a guild, if any</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#c:get_guild_vanity_url!/1">get_guild_vanity_url!(guild)</a>
+      <span class="deprecated" title="Use get_guild_vanity_invite/1 instead">deprecated</span>
   </div>
     <div class="summary-synopsis"><p>The same as <a href="#c:get_guild_vanity_url/1"><code class="inline">get_guild_vanity_url/1</code></a>, but raises an exception if it fails.</p></div>
 </div>
@@ -1765,7 +1779,7 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <h1 class="signature">execute_webhook_options()</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1460" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1468" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1792,7 +1806,7 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <h1 class="signature">get_current_user_guild_data()</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1620" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1628" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2044,7 +2058,7 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <h1 class="signature">modify_current_user_data()</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1598" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1606" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2214,7 +2228,7 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <h1 class="signature">options()</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1719" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1727" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2274,7 +2288,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">request(name, request)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1680" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1688" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2295,7 +2309,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">request!(name, request)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1706" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1714" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2316,7 +2330,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">start_link(args)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1732" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1740" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -2635,7 +2649,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">create_dm(user)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1657" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1665" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3498,7 +3512,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">delete_invite(invite_or_code)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1573" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1581" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -3824,7 +3838,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">delete_webhook(user, token)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1450" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1458" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4021,7 +4035,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">execute_github_webhook(webhook, event, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1535" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1543" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4049,7 +4063,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">execute_github_webhook(webhook, event, wait, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1540" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1548" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4073,7 +4087,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">execute_github_webhook(user, token, event, wait, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1548" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1556" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4176,7 +4190,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">execute_slack_webhook(webhook, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1507" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1515" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4200,7 +4214,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">execute_slack_webhook(webhook, wait, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1510" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1518" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4223,7 +4237,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">execute_slack_webhook(user, token, wait, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1517" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1525" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4320,7 +4334,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">execute_webhook(webhook, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1478" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1486" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4346,7 +4360,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">execute_webhook(webhook, wait, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1484" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1492" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4369,7 +4383,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">execute_webhook(user, token, wait, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1491" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1499" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4468,7 +4482,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">gateway()</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1665" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1673" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4510,7 +4524,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">gateway_bot()</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1673" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1681" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4687,7 +4701,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">get_current_user()</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1591" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1599" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -4729,7 +4743,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">get_current_user_guilds(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1640" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1648" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -5293,6 +5307,49 @@ Callbacks          </h1>
 <p>The same as <a href="#c:get_guild_roles/1"><code class="inline">get_guild_roles/1</code></a>, but raises an exception if it fails.</p>
   </section>
 </section>
+<section class="detail" id="c:get_guild_vanity_invite/1">
+  <div class="detail-header">
+    <a href="#c:get_guild_vanity_invite/1" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">get_guild_vanity_invite(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1391" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>get_guild_vanity_invite(guild :: <a href="Crux.Structs.Guild.html#t:id_resolvable/0">Crux.Structs.Guild.id_resolvable</a>()) ::
+  {:ok, <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Gets the vanity invite of a guild, if any</p>
+  </section>
+</section>
+<section class="detail" id="c:get_guild_vanity_invite!/1">
+  <div class="detail-header">
+    <a href="#c:get_guild_vanity_invite!/1" class="detail-link" title="Link to this callback">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this callback</span>
+    </a>
+    <h1 class="signature">get_guild_vanity_invite!(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L49" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+      <span class="note">(optional)</span>
+      <span class="note">(since 0.2.1)</span>
+      <div class="specs">
+          <pre>get_guild_vanity_invite!(guild :: <a href="Crux.Structs.Guild.html#t:id_resolvable/0">Crux.Structs.Guild.id_resolvable</a>()) ::
+  <a href="Crux.Structs.Invite.html#t:t/0">Crux.Structs.Invite.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>The same as <a href="#c:get_guild_vanity_invite/1"><code class="inline">get_guild_vanity_invite/1</code></a>, but raises an exception if it fails.</p>
+  </section>
+</section>
 <section class="detail" id="c:get_guild_vanity_url/1">
   <div class="detail-header">
     <a href="#c:get_guild_vanity_url/1" class="detail-link" title="Link to this callback">
@@ -5300,7 +5357,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">get_guild_vanity_url(guild)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1383" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1384" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -5310,6 +5367,9 @@ Callbacks          </h1>
   {:ok, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()}</pre>
       </div>
   </div>
+    <div class="deprecated">
+      This callback is deprecated. Use get_guild_vanity_invite/1 instead.
+    </div>
   <section class="docstring">
 <p>  Gets the vanity url of a guild, if any</p>
   </section>
@@ -5332,6 +5392,9 @@ Callbacks          </h1>
   <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">no_return</a>()</pre>
       </div>
   </div>
+    <div class="deprecated">
+      This callback is deprecated. Use get_guild_vanity_invite/1 instead.
+    </div>
   <section class="docstring">
 <p>The same as <a href="#c:get_guild_vanity_url/1"><code class="inline">get_guild_vanity_url/1</code></a>, but raises an exception if it fails.</p>
   </section>
@@ -5389,7 +5452,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">get_invite(code)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1564" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1572" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -5685,7 +5748,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">get_user(user)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1583" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1591" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -5729,7 +5792,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">get_webhook(user, token)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1417" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1425" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -5777,7 +5840,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">leave_guild(guild)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1649" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1657" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -5820,7 +5883,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">list_channel_webhooks(channel)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1407" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1415" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -5962,7 +6025,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">list_guild_webhooks(guild)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1397" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1405" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -6056,7 +6119,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">modify_current_user(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1612" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1620" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -6773,7 +6836,7 @@ Callbacks          </h1>
       <span class="sr-only">Link to this callback</span>
     </a>
     <h1 class="signature">update_webhook(user, token, data)</span>
-      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1427" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest.ex#L1435" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
