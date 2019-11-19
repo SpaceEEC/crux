@@ -5,10 +5,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-11-19 15:31:22Z">
-    <title>Crux.Rest.Functions — Crux v2019-11-19 15:31:22Z</title>
+    <meta name="project" content="Crux v2019-11-19 15:49:43Z">
+    <title>Crux.Rest.Functions — Crux v2019-11-19 15:49:43Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
-    <script src="dist/sidebar_items-a995035452.js"></script>
+    <script src="dist/sidebar_items-d828c61de2.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-78f1ba308158a498a5a4.js"></script>
   </head>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-11-19 15:31:22Z
+        v2019-11-19 15:49:43Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-11-19 15:31:22Z</small>
+        <small class="app-vsn">Crux v2019-11-19 15:49:43Z</small>
 Crux.Rest.Functions          <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -85,7 +85,1856 @@ Crux.Rest.Functions          <a href="https://github.com/SpaceEEC/crux_rest/blob
 </ul>
         </section>
 
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_guild_member/3">add_guild_member(guild, user, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_guild_member_role/4">add_guild_member_role(guild, user, role, reason \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_pinned_message/1">add_pinned_message(map)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#add_pinned_message/2">add_pinned_message(channel, message)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#begin_guild_prune/2">begin_guild_prune(guild, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_channel_invite/2">create_channel_invite(channel, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_dm/1">create_dm(user)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild/1">create_guild(data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_ban/3">create_guild_ban(guild, user, reason \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_channel/2">create_guild_channel(guild, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_emoji/2">create_guild_emoji(guild, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_integration/2">create_guild_integration(guild, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_guild_role/2">create_guild_role(guild, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_message/2">create_message(channel_or_message, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_reaction/2">create_reaction(map, emoji)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_reaction/3">create_reaction(channel, message, emoji)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_all_reactions/2">delete_all_reactions(map, emoji)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_all_reactions/3">delete_all_reactions(channel, message, emoji)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_channel/2">delete_channel(channel, reason \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_channel_permissions/3">delete_channel_permissions(channel, target, reason \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild/1">delete_guild(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild_emoji/3">delete_guild_emoji(guild, emoji, reason \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild_integration/2">delete_guild_integration(guild, integration)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_guild_role/3">delete_guild_role(guild, role, reason \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_invite/1">delete_invite(code)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_message/1">delete_message(map)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_message/2">delete_message(channel, message)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_messages/2">delete_messages(channel, messages)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_pinned_message/1">delete_pinned_message(map)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_pinned_message/2">delete_pinned_message(channel, message)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_reaction/4">delete_reaction(message_or_channel, emoji_or_message_id, emoji_or_maybe_user \\ &quot;@me&quot;, mayber_user \\ &quot;@me&quot;)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_webhook/2">delete_webhook(user, token \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edit_channel_permissions/3">edit_channel_permissions(channel, target, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edit_message/2">edit_message(map, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#edit_message/3">edit_message(channel, message, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#execute_github_webhook/3">execute_github_webhook(map, event, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#execute_github_webhook/5">execute_github_webhook(user, token, event, wait \\ false, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#execute_slack_webhook/2">execute_slack_webhook(map, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#execute_slack_webhook/4">execute_slack_webhook(user, token, wait \\ false, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#execute_webhook/2">execute_webhook(map, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#execute_webhook/4">execute_webhook(user, token, wait \\ false, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gateway/0">gateway()</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gateway_bot/0">gateway_bot()</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_audit_logs/2">get_audit_logs(guild, data \\ [])</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_channel/1">get_channel(channel)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_channel_invites/1">get_channel_invites(channel)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_current_user/0">get_current_user()</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_current_user_guilds/1">get_current_user_guilds(data \\ [])</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild/1">get_guild(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_ban/2">get_guild_ban(guild, user)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_bans/1">get_guild_bans(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_channels/1">get_guild_channels(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_embed/1">get_guild_embed(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_emoji/2">get_guild_emoji(guild, emoji)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_integrations/1">get_guild_integrations(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_invites/1">get_guild_invites(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_member/2">get_guild_member(guild, user)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_prune_count/2">get_guild_prune_count(guild, days)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_roles/1">get_guild_roles(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_vanity_invite/1">get_guild_vanity_invite(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_vanity_url/1">get_guild_vanity_url(guild)</a>
+      <span class="deprecated" title="Use get_guild_vanity_invite/1 instead">deprecated</span>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_guild_voice_regions/1">get_guild_voice_regions(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_invite/1">get_invite(code)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_message/2">get_message(channel, message)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_messages/2">get_messages(channel, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_pinned_messages/1">get_pinned_messages(channel)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_reactions/4">get_reactions(channel_or_message, emoji_or_message_id, emoji_or_maybe_data \\ [], maybe_data \\ [])</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user/1">get_user(user)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_webhook/2">get_webhook(user, token \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#leave_guild/1">leave_guild(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_channel_webhooks/1">list_channel_webhooks(channel)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_guild_emojis/1">list_guild_emojis(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_guild_members/2">list_guild_members(guild, options)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_guild_webhooks/1">list_guild_webhooks(guild)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_channel/2">modify_channel(channel, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_current_user/1">modify_current_user(data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_current_users_nick/3">modify_current_users_nick(guild, nick, reason \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild/2">modify_guild(guild, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_channel_positions/2">modify_guild_channel_positions(guild, channels)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_embed/2">modify_guild_embed(guild, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_emoji/3">modify_guild_emoji(guild, emoji, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_integration/3">modify_guild_integration(guild, integration, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_member/3">modify_guild_member(guild, user, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_role/3">modify_guild_role(guild, role, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#modify_guild_role_positions/2">modify_guild_role_positions(guild, data)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#remove_guild_ban/3">remove_guild_ban(guild, user, reason \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#remove_guild_member_role/4">remove_guild_member_role(guild, user, role, reason \\ nil)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#sync_guild_integration/2">sync_guild_integration(guild, integration)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#trigger_typing/1">trigger_typing(channel)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_webhook/3">update_webhook(user, token \\ nil, data)</a>
+  </div>
+</div>
+  </div>
+        </section>
 
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions          </h1>
+          <div class="functions-list">
+<section class="detail" id="add_guild_member/3">
+  <div class="detail-header">
+    <a href="#add_guild_member/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">add_guild_member(guild, user, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L584" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="add_guild_member_role/4">
+    <span id="add_guild_member_role/3"></span>
+  <div class="detail-header">
+    <a href="#add_guild_member_role/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">add_guild_member_role(guild, user, role, reason \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L708" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="add_pinned_message/1">
+  <div class="detail-header">
+    <a href="#add_pinned_message/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">add_pinned_message(map)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L142" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="add_pinned_message/2">
+  <div class="detail-header">
+    <a href="#add_pinned_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">add_pinned_message(channel, message)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L146" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="begin_guild_prune/2">
+  <div class="detail-header">
+    <a href="#begin_guild_prune/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">begin_guild_prune(guild, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L779" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_channel_invite/2">
+  <div class="detail-header">
+    <a href="#create_channel_invite/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_channel_invite(channel, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L361" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_dm/1">
+  <div class="detail-header">
+    <a href="#create_dm/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_dm(user)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1137" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_guild/1">
+  <div class="detail-header">
+    <a href="#create_guild/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_guild(data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L456" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_guild_ban/3">
+    <span id="create_guild_ban/2"></span>
+  <div class="detail-header">
+    <a href="#create_guild_ban/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_guild_ban(guild, user, reason \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L661" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_guild_channel/2">
+  <div class="detail-header">
+    <a href="#create_guild_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_guild_channel(guild, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L521" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_guild_emoji/2">
+  <div class="detail-header">
+    <a href="#create_guild_emoji/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_guild_emoji(guild, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L397" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_guild_integration/2">
+  <div class="detail-header">
+    <a href="#create_guild_integration/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_guild_integration(guild, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L803" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_guild_role/2">
+  <div class="detail-header">
+    <a href="#create_guild_role/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_guild_role(guild, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L697" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_message/2">
+  <div class="detail-header">
+    <a href="#create_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_message(channel_or_message, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L52" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_reaction/2">
+  <div class="detail-header">
+    <a href="#create_reaction/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_reaction(map, emoji)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L184" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="create_reaction/3">
+  <div class="detail-header">
+    <a href="#create_reaction/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_reaction(channel, message, emoji)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L188" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_all_reactions/2">
+  <div class="detail-header">
+    <a href="#delete_all_reactions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_all_reactions(map, emoji)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L254" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_all_reactions/3">
+  <div class="detail-header">
+    <a href="#delete_all_reactions/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_all_reactions(channel, message, emoji)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L258" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_channel/2">
+    <span id="delete_channel/1"></span>
+  <div class="detail-header">
+    <a href="#delete_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_channel(channel, reason \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L307" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_channel_permissions/3">
+    <span id="delete_channel_permissions/2"></span>
+  <div class="detail-header">
+    <a href="#delete_channel_permissions/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_channel_permissions(channel, target, reason \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L340" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_guild/1">
+  <div class="detail-header">
+    <a href="#delete_guild/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_guild(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L499" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_guild_emoji/3">
+    <span id="delete_guild_emoji/2"></span>
+  <div class="detail-header">
+    <a href="#delete_guild_emoji/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_guild_emoji(guild, emoji, reason \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L441" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_guild_integration/2">
+  <div class="detail-header">
+    <a href="#delete_guild_integration/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_guild_integration(guild, integration)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L822" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_guild_role/3">
+    <span id="delete_guild_role/2"></span>
+  <div class="detail-header">
+    <a href="#delete_guild_role/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_guild_role(guild, role, reason \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L753" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_invite/1">
+  <div class="detail-header">
+    <a href="#delete_invite/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_invite(code)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1072" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_message/1">
+  <div class="detail-header">
+    <a href="#delete_message/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_message(map)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L115" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_message/2">
+  <div class="detail-header">
+    <a href="#delete_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_message(channel, message)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L119" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_messages/2">
+  <div class="detail-header">
+    <a href="#delete_messages/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_messages(channel, messages)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L132" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_pinned_message/1">
+  <div class="detail-header">
+    <a href="#delete_pinned_message/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_pinned_message(map)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L155" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_pinned_message/2">
+  <div class="detail-header">
+    <a href="#delete_pinned_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_pinned_message(channel, message)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L159" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_reaction/4">
+    <span id="delete_reaction/2"></span>
+    <span id="delete_reaction/3"></span>
+  <div class="detail-header">
+    <a href="#delete_reaction/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_reaction(message_or_channel, emoji_or_message_id, emoji_or_maybe_user \\ &quot;@me&quot;, mayber_user \\ &quot;@me&quot;)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L230" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="delete_webhook/2">
+    <span id="delete_webhook/1"></span>
+  <div class="detail-header">
+    <a href="#delete_webhook/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_webhook(user, token \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L951" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="edit_channel_permissions/3">
+  <div class="detail-header">
+    <a href="#edit_channel_permissions/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">edit_channel_permissions(channel, target, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L318" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="edit_message/2">
+  <div class="detail-header">
+    <a href="#edit_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">edit_message(map, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L98" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="edit_message/3">
+  <div class="detail-header">
+    <a href="#edit_message/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">edit_message(channel, message, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L102" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="execute_github_webhook/3">
+  <div class="detail-header">
+    <a href="#execute_github_webhook/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">execute_github_webhook(map, event, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1008" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="execute_github_webhook/5">
+    <span id="execute_github_webhook/4"></span>
+  <div class="detail-header">
+    <a href="#execute_github_webhook/5" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">execute_github_webhook(user, token, event, wait \\ false, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1012" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="execute_slack_webhook/2">
+  <div class="detail-header">
+    <a href="#execute_slack_webhook/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">execute_slack_webhook(map, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L986" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="execute_slack_webhook/4">
+    <span id="execute_slack_webhook/3"></span>
+  <div class="detail-header">
+    <a href="#execute_slack_webhook/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">execute_slack_webhook(user, token, wait \\ false, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L990" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="execute_webhook/2">
+  <div class="detail-header">
+    <a href="#execute_webhook/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">execute_webhook(map, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L959" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="execute_webhook/4">
+    <span id="execute_webhook/3"></span>
+  <div class="detail-header">
+    <a href="#execute_webhook/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">execute_webhook(user, token, wait \\ false, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L963" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="gateway/0">
+  <div class="detail-header">
+    <a href="#gateway/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">gateway()</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1148" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="gateway_bot/0">
+  <div class="detail-header">
+    <a href="#gateway_bot/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">gateway_bot()</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1154" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_audit_logs/2">
+    <span id="get_audit_logs/1"></span>
+  <div class="detail-header">
+    <a href="#get_audit_logs/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_audit_logs(guild, data \\ [])</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1038" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_channel/1">
+  <div class="detail-header">
+    <a href="#get_channel/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_channel(channel)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L281" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_channel_invites/1">
+  <div class="detail-header">
+    <a href="#get_channel_invites/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_channel_invites(channel)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L351" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_current_user/0">
+  <div class="detail-header">
+    <a href="#get_current_user/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_current_user()</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1092" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_current_user_guilds/1">
+    <span id="get_current_user_guilds/0"></span>
+  <div class="detail-header">
+    <a href="#get_current_user_guilds/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_current_user_guilds(data \\ [])</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1113" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild/1">
+  <div class="detail-header">
+    <a href="#get_guild/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L469" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_ban/2">
+  <div class="detail-header">
+    <a href="#get_guild_ban/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_ban(guild, user)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L650" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_bans/1">
+  <div class="detail-header">
+    <a href="#get_guild_bans/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_bans(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L635" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_channels/1">
+  <div class="detail-header">
+    <a href="#get_guild_channels/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_channels(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L511" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_embed/1">
+  <div class="detail-header">
+    <a href="#get_guild_embed/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_embed(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L844" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_emoji/2">
+  <div class="detail-header">
+    <a href="#get_guild_emoji/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_emoji(guild, emoji)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L386" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_integrations/1">
+  <div class="detail-header">
+    <a href="#get_guild_integrations/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_integrations(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L795" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_invites/1">
+  <div class="detail-header">
+    <a href="#get_guild_invites/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_invites(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L869" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_member/2">
+  <div class="detail-header">
+    <a href="#get_guild_member/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_member(guild, user)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L558" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_prune_count/2">
+  <div class="detail-header">
+    <a href="#get_guild_prune_count/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_prune_count(guild, days)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L768" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_roles/1">
+  <div class="detail-header">
+    <a href="#get_guild_roles/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_roles(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L687" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_vanity_invite/1">
+  <div class="detail-header">
+    <a href="#get_guild_vanity_invite/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_vanity_invite(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L891" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_vanity_url/1">
+  <div class="detail-header">
+    <a href="#get_guild_vanity_url/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_vanity_url(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L881" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+    <div class="deprecated">
+      This function is deprecated. Use get_guild_vanity_invite/1 instead.
+    </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_guild_voice_regions/1">
+  <div class="detail-header">
+    <a href="#get_guild_voice_regions/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_guild_voice_regions(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1056" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_invite/1">
+  <div class="detail-header">
+    <a href="#get_invite/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_invite(code)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1064" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_message/2">
+  <div class="detail-header">
+    <a href="#get_message/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_message(channel, message)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L68" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_messages/2">
+  <div class="detail-header">
+    <a href="#get_messages/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_messages(channel, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L79" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_pinned_messages/1">
+  <div class="detail-header">
+    <a href="#get_pinned_messages/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_pinned_messages(channel)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L168" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_reactions/4">
+    <span id="get_reactions/2"></span>
+    <span id="get_reactions/3"></span>
+  <div class="detail-header">
+    <a href="#get_reactions/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_reactions(channel_or_message, emoji_or_message_id, emoji_or_maybe_data \\ [], maybe_data \\ [])</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L199" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_user/1">
+  <div class="detail-header">
+    <a href="#get_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_user(user)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1082" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="get_webhook/2">
+    <span id="get_webhook/1"></span>
+  <div class="detail-header">
+    <a href="#get_webhook/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_webhook(user, token \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L925" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="leave_guild/1">
+  <div class="detail-header">
+    <a href="#leave_guild/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">leave_guild(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1129" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="list_channel_webhooks/1">
+  <div class="detail-header">
+    <a href="#list_channel_webhooks/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_channel_webhooks(channel)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L915" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="list_guild_emojis/1">
+  <div class="detail-header">
+    <a href="#list_guild_emojis/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_guild_emojis(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L376" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="list_guild_members/2">
+  <div class="detail-header">
+    <a href="#list_guild_members/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_guild_members(guild, options)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L569" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="list_guild_webhooks/1">
+  <div class="detail-header">
+    <a href="#list_guild_webhooks/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_guild_webhooks(guild)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L905" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_channel/2">
+  <div class="detail-header">
+    <a href="#modify_channel/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_channel(channel, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L291" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_current_user/1">
+  <div class="detail-header">
+    <a href="#modify_current_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_current_user(data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L1100" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_current_users_nick/3">
+    <span id="modify_current_users_nick/2"></span>
+  <div class="detail-header">
+    <a href="#modify_current_users_nick/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_current_users_nick(guild, nick, reason \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L619" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_guild/2">
+  <div class="detail-header">
+    <a href="#modify_guild/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_guild(guild, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L479" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_guild_channel_positions/2">
+  <div class="detail-header">
+    <a href="#modify_guild_channel_positions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_guild_channel_positions(guild, channels)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L545" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_guild_embed/2">
+  <div class="detail-header">
+    <a href="#modify_guild_embed/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_guild_embed(guild, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L852" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_guild_emoji/3">
+  <div class="detail-header">
+    <a href="#modify_guild_emoji/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_guild_emoji(guild, emoji, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L420" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_guild_integration/3">
+  <div class="detail-header">
+    <a href="#modify_guild_integration/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_guild_integration(guild, integration, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L812" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_guild_member/3">
+  <div class="detail-header">
+    <a href="#modify_guild_member/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_guild_member(guild, user, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L602" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_guild_role/3">
+  <div class="detail-header">
+    <a href="#modify_guild_role/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_guild_role(guild, role, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L741" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="modify_guild_role_positions/2">
+  <div class="detail-header">
+    <a href="#modify_guild_role_positions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">modify_guild_role_positions(guild, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L732" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="remove_guild_ban/3">
+    <span id="remove_guild_ban/2"></span>
+  <div class="detail-header">
+    <a href="#remove_guild_ban/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">remove_guild_ban(guild, user, reason \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L672" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="remove_guild_member_role/4">
+    <span id="remove_guild_member_role/3"></span>
+  <div class="detail-header">
+    <a href="#remove_guild_member_role/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">remove_guild_member_role(guild, user, role, reason \\ nil)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L720" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="sync_guild_integration/2">
+  <div class="detail-header">
+    <a href="#sync_guild_integration/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">sync_guild_integration(guild, integration)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L831" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="trigger_typing/1">
+  <div class="detail-header">
+    <a href="#trigger_typing/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">trigger_typing(channel)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L273" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+<section class="detail" id="update_webhook/3">
+    <span id="update_webhook/2"></span>
+  <div class="detail-header">
+    <a href="#update_webhook/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">update_webhook(user, token \\ nil, data)</span>
+      <a href="https://github.com/SpaceEEC/crux_rest/blob/master/lib/rest/functions.ex#L935" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+  </section>
+</section>
+          </div>
+        </section>
       <footer class="footer">
         <p>
           <span class="line">
