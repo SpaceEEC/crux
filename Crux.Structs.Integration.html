@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
     <meta name="project" content="Crux v2019-11-21 11:01:33Z">
-    <title>Crux.Structs.AuditLogChange — Crux v2019-11-21 11:01:33Z</title>
+    <title>Crux.Structs.Integration — Crux v2019-11-21 11:01:33Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-0a976cbb0d.js"></script>
       <script src="docs_config.js"></script>
@@ -67,7 +67,7 @@ Crux      </a>
 
       <h1>
         <small class="app-vsn">Crux v2019-11-21 11:01:33Z</small>
-Crux.Structs.AuditLogChange          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_change.ex#L1" title="View Source" class="view-source" rel="help">
+Crux.Structs.Integration          <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/integration.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -75,7 +75,7 @@ Crux.Structs.AuditLogChange          <a href="https://github.com/SpaceEEC/crux_s
 
 
         <section id="moduledoc">
-<p>  Represents a Discord <a href="https://discordapp.com/developers/docs/resources/audit-log#audit-log-change">Audit Log Change Object</a></p>
+<p>  Represents a Discord <a href="https://discordapp.com/developers/docs/resources/guild#integration-object">Integration Object</a>.</p>
         </section>
 
         <section id="summary" class="details-list">
@@ -92,12 +92,6 @@ Crux.Structs.AuditLogChange          <a href="https://github.com/SpaceEEC/crux_s
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#t:audit_log_change_value/0">audit_log_change_value()</a>
-  </div>
-    <div class="summary-synopsis"><p>  Represents a value before or after a change.</p></div>
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
     <a href="#t:t/0">t()</a>
   </div>
 </div>
@@ -110,7 +104,7 @@ Crux.Structs.AuditLogChange          <a href="https://github.com/SpaceEEC/crux_s
   <div class="summary-signature">
     <a href="#create/1">create(data)</a>
   </div>
-    <div class="summary-synopsis"><p>  Creates a <a href="Crux.Structs.AuditLogChange.html#t:t/0"><code class="inline">Crux.Structs.AuditLogChange.t/0</code></a> struct from raw data.</p></div>
+    <div class="summary-synopsis"><p>  Creates a <a href="Crux.Structs.Integration.html#t:t/0"><code class="inline">Crux.Structs.Integration.t/0</code></a> struct from raw data.</p></div>
 </div>
   </div>
         </section>
@@ -123,34 +117,6 @@ Crux.Structs.AuditLogChange          <a href="https://github.com/SpaceEEC/crux_s
             </a>
 Types          </h1>
           <div class="types-list">
-<section class="detail" id="t:audit_log_change_value/0">
-  <div class="detail-header">
-    <a href="#t:audit_log_change_value/0" class="detail-link" title="Link to this type">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this type</span>
-    </a>
-    <h1 class="signature">audit_log_change_value()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_change.ex#L27" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-      <span class="note">(since 0.1.6)</span>
-      <div class="specs">
-          <pre>audit_log_change_value() ::
-  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
-  | <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()
-  | <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
-  | <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>()
-  | [<a href="Crux.Structs.Role.html#t:t/0">Crux.Structs.Role.t</a>()]
-  | [<a href="Crux.Structs.Overwrite.html#t:t/0">Crux.Structs.Overwrite.t</a>()]</pre>
-      </div>
-  </div>
-  <section class="docstring">
-<p>  Represents a value before or after a change.</p>
-<blockquote><p>Note that the Role object returned by Discord in audit logs is a partial role that only contains id and name.</p>
-</blockquote>
-  </section>
-</section>
 <section class="detail" id="t:t/0">
   <div class="detail-header">
     <a href="#t:t/0" class="detail-link" title="Link to this type">
@@ -158,16 +124,24 @@ Types          </h1>
       <span class="sr-only">Link to this type</span>
     </a>
     <h1 class="signature">t()</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_change.ex#L37" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/integration.ex#L29" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-      <span class="note">(since 0.1.6)</span>
+      <span class="note">(since 0.2.2)</span>
       <div class="specs">
-          <pre>t() :: %Crux.Structs.AuditLogChange{
-  key: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  new_value: <a href="#t:audit_log_change_value/0">audit_log_change_value</a>() | nil,
-  old_value: <a href="#t:audit_log_change_value/0">audit_log_change_value</a>() | nil
+          <pre>t() :: %Crux.Structs.Integration{
+  account: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>(),
+  enabled: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+  expire_behavior: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  expire_grace_period: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>(),
+  name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  role_id: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>(),
+  synced_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  syncing: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+  type: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  user: <a href="Crux.Structs.Snowflake.html#t:t/0">Crux.Structs.Snowflake.t</a>()
 }</pre>
       </div>
   </div>
@@ -191,17 +165,17 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">create(data)</span>
-      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/audit_log_change.ex#L51" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/SpaceEEC/crux_structs/blob/master/lib/structs/integration.ex#L51" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
-      <span class="note">(since 0.1.6)</span>
+      <span class="note">(since 0.2.2)</span>
       <div class="specs">
           <pre>create(data :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="#t:t/0">t</a>()</pre>
       </div>
   </div>
   <section class="docstring">
-<p>  Creates a <a href="Crux.Structs.AuditLogChange.html#t:t/0"><code class="inline">Crux.Structs.AuditLogChange.t/0</code></a> struct from raw data.</p>
+<p>  Creates a <a href="Crux.Structs.Integration.html#t:t/0"><code class="inline">Crux.Structs.Integration.t/0</code></a> struct from raw data.</p>
 <blockquote><p>Automatically invoked by <a href="Crux.Structs.html#create/2"><code class="inline">Crux.Structs.create/2</code></a>.</p>
 </blockquote>
   </section>
