@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.1">
-    <meta name="project" content="Crux v2019-11-21 11:53:07Z">
-    <title>Crux.Cache.Presence — Crux v2019-11-21 11:53:07Z</title>
+    <meta name="project" content="Crux v2019-11-21 12:04:18Z">
+    <title>Crux.Cache.Presence — Crux v2019-11-21 12:04:18Z</title>
     <link rel="stylesheet" href="dist/html-78f1ba308158a498a5a4.css" />
     <script src="dist/sidebar_items-0a976cbb0d.js"></script>
       <script src="docs_config.js"></script>
@@ -43,7 +43,7 @@
       <a href="https://github.com/SpaceEEC/crux/" class="sidebar-projectName">
 Crux      </a>
       <h2 class="sidebar-projectVersion">
-        v2019-11-21 11:53:07Z
+        v2019-11-21 12:04:18Z
       </h2>
     </div>
   </div>
@@ -66,7 +66,7 @@ Crux      </a>
     <div id="content" class="content-inner">
 
       <h1>
-        <small class="app-vsn">Crux v2019-11-21 11:53:07Z</small>
+        <small class="app-vsn">Crux v2019-11-21 12:04:18Z</small>
 Crux.Cache.Presence          <a href="https://github.com/SpaceEEC/crux_cache/blob/master/lib/cache/presence.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
@@ -241,8 +241,8 @@ Functions          </h1>
 <p>For example something like that:</p>
 <pre><code class="nohighlight makeup elixir"><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w">
   </span><span class="n">raw_data</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="9040197951-1">(</span><span class="p" data-group-id="9040197951-1">)</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="9040197951-2">(</span><span class="ss">:id</span><span class="p" data-group-id="9040197951-2">)</span></code></pre>
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="4047868440-1">(</span><span class="p" data-group-id="4047868440-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="4047868440-2">(</span><span class="ss">:id</span><span class="p" data-group-id="4047868440-2">)</span></code></pre>
 <p>Callback implementation for <a href="Crux.Cache.html#c:insert/1"><code class="inline">Crux.Cache.insert/1</code></a>.</p>
   </section>
 </section>
@@ -288,8 +288,8 @@ Functions          </h1>
 <p>Returns &quot;updated&quot; data including changes by merging.<br />For example from a message embed update to a full message object</p>
 <pre><code class="nohighlight makeup elixir"><span class="n">content</span><span class="w"> </span><span class="o">=</span><span class="w">
   </span><span class="n">partial_message</span><span class="w"> </span><span class="c1"># only contains `:id`, `:channel_id`, and `:embeds`</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">update</span><span class="p" data-group-id="9106572641-1">(</span><span class="p" data-group-id="9106572641-1">)</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="9106572641-2">(</span><span class="ss">:content</span><span class="p" data-group-id="9106572641-2">)</span><span class="w"> </span><span class="c1"># present if the message was cached previously</span></code></pre>
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Cache</span><span class="o">.</span><span class="n">update</span><span class="p" data-group-id="9973013519-1">(</span><span class="p" data-group-id="9973013519-1">)</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Map</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="9973013519-2">(</span><span class="ss">:content</span><span class="p" data-group-id="9973013519-2">)</span><span class="w"> </span><span class="c1"># present if the message was cached previously</span></code></pre>
 <p>Callback implementation for <a href="Crux.Cache.html#c:update/1"><code class="inline">Crux.Cache.update/1</code></a>.</p>
   </section>
 </section>
